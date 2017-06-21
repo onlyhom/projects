@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>人民艺投</title>
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<meta name="keywords" content="人民艺投">  
+	<meta name="description" content="人民艺投">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/layer/layer.js" type="text/javascript"></script>
+	<script src="js/jquery.formVerify.js" type="text/javascript"></script>
+	<script src="js/lightbox-2.6.min.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+    <script src="js/sweetalert.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="page-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 notice">欢迎来到人民艺投！</div>
+			<div class="col-lg-6 links">
+				<a href="user.html">oulihong123，你好！</a>
+				<a href="user.html">用户中心</a>
+				<a href="user_collection.html">我的藏品(15)</a> 
+				<a href="user_order_auction.html">交易订单</a>
+				<a href="message.html">消息(8)</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="header sub-header">
+	<div class="container">
+		<div class="row middle">
+			<div class="col-lg-3 logo">
+				<div class="row">
+					<div class="col-lg-6">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<div class="page-name">确认订单</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 search">
+               	<!-- 搜索框 -->
+				<form action="searchResult.html">
+					<div class="searchBox">
+						<input type="text" >
+						<input type="submit" value="">
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-2 collect">
+				<a href="user_attention.html">
+					我的关注
+					<div class="acount">177</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container sub-main">
+	<form method="" action="">
+		<div class="comfirm-order">
+			<div class="tips">温馨提示：确认订单后请尽快付款，过时订单讲自动取消。</div>
+
+			<div class="section section-title">
+				确认收货地址
+				<a href="user_address.html" target="_blank">管理收货地址</a>
+			</div>
+
+			<div class="section section-addr">
+				<div class="radio-ui on" onclick="selectAddr($(this));"></div>
+				<div class="line row">
+					<div class="col-lg-4">收货人：李某某</div>
+					<div class="col-lg-8">15757161360</div>
+				</div>
+				<div class="line locate">
+					收货地址：浙江省杭州市江干区下沙6号大街
+					<div class="change-addr"></div>
+				</div>
+			</div>
+
+			<div class="other-addr-list">
+
+				<div class="section section-addr">
+					<div class="radio-ui" onclick="selectAddr($(this));"></div>
+					<div class="line row">
+						<div class="col-lg-4">收货人：李某某</div>
+						<div class="col-lg-8">15757161360</div>
+					</div>
+					<div class="line locate">
+						收货地址：浙江省杭州市江干区下沙6号大街
+					</div>
+				</div>
+
+				<div class="section section-addr">
+					<div class="radio-ui" onclick="selectAddr($(this));"></div>
+					<div class="line row">
+						<div class="col-lg-4">收货人：李某某</div>
+						<div class="col-lg-8">15757161360</div>
+					</div>
+					<div class="line locate">
+						收货地址：浙江省杭州市江干区下沙6号大街
+					</div>
+				</div>
+				<div class="add-addr pop-trigger">使用新地址</div>
+			</div>
+
+			<div class="section section-title">确认订单信息</div>
+			<div class="section section-info">
+				<div class="info-list">
+					<!-- 表头 -->
+					<div class="cell cell-title">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-3">名称</div>
+						<div class="col-lg-7">
+							<div class="row">
+								<div class="col-lg-4">编号</div>
+								<div class="col-lg-4">艺术家</div>
+								<div class="col-lg-4">价格</div>	
+							</div>
+						</div>	
+					</div>	
+					<!-- 表头 END -->
+					<!-- 内容 -->
+					<div class="cell">
+						<div class="col-lg-2">
+							<a href="product_detail_auction.html" target="_blank">
+								<div class="zoomImage" style="background-image: url(images/test1.jpg);"></div>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="product_detail_auction.html" target="_blank">
+								<div class="name">字幅字画字幅字画字幅字画字幅字画字幅字画</div>
+							</a>
+						</div>
+						<div class="col-lg-7">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="number">13445</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="normal">文征明</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="price">8888.00</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!-- 内容 END-->
+				</div>
+			</div>
+
+			<div class="section section-price">
+				实付款： <i class="price">8888.00</i>
+			</div>
+
+			<input type="submit" value="提交订单">
+		</div>
+	</form>
+
+</div>
+
+
+<div class="footer">
+	<div class="container">
+		<div class="row row-fix">
+			<div class="col-lg-2">
+				<div class="title">关于艺投</div>
+				<p>
+					<a href="">集团简介</a>
+				</p>
+				<p>
+					<a href="">加入艺投</a>
+				</p>
+				<p>
+					<a href="">企业社会责任</a>
+				</p>
+				<p>
+					<a href="">最新艺术品</a>
+				</p>
+			</div>
+			<div class="col-lg-2">
+				<div class="title">帮助中心</div>
+				<p>
+					<a href="">网站申声明</a>
+				</p>
+				<p>
+					<a href="">联系我们</a>
+				</p>
+				<p>
+					<a href="">网站地图</a>
+				</p>
+				<p>
+					<a href="">最新消息</a>
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<img src="images/logo.png" class="logo" alt="人民艺投logo">
+			</div>
+			<div class="col-lg-2">
+				<div class="title">微信公众号</div>
+				<img src="images/test_code.jpg" class="code" alt="微信公众号二维码">
+			</div>
+			<div class="col-lg-2">
+				<div class="title">微信客服</div>
+				<img src="images/test_code.jpg" class="code" alt="微信客服二维码">
+			</div>
+		</div>
+	</div>
+	<div class="page-bottom">
+		<div class="container">
+			<p>Copyright ©2016 - 2019 杭州XXXXXXXX股份有限公司  苏ICP备05026939号</p>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- 地址窗口 -->
+<div class="pop pop-address">
+    <div class="popBG">
+         <div class="popUp">
+            <i class="closeButton"></i>
+            <div class="content">
+				<form class="formVerify" method="" action="">
+					<div class="line">
+						<p><i class="red">* </i>收货人：</p>
+						<input id="name" type="text" name="" msgError="请输入收货人姓名">
+					</div>
+
+					<div class="line">
+						<p><i class="red">* </i>所在地区：</p>
+						<!-- 省市区三级联动 -->
+						<select id="province" msgError="请选择省份">
+							<option value="">请选择</option>
+							<option value="1">浙江省</option>
+						</select>
+
+						<select id="city" msgError="请选择城市">
+							<option value="">请选择</option>
+							<option value="1">杭州市</option>
+						</select>
+
+						<select id="county" msgError="请选择区县">
+							<option value="">请选择</option>
+							<option value="1">江干区</option>
+						</select>
+					</div>
+
+					<div class="line">
+						<p><i class="red">*</i> 详细地址：</p>
+						<input id="detailAddr" type="text" name="" msgError="请输入详细地址">
+					</div>
+
+					<div class="line">
+						<p><i class="red">*</i> 手机号码：</p>
+						<input id="phone" type="text" name="" msgError="请输入正确的手机号码">
+					</div>
+
+					<div class="operation">
+						<input type="button" value="取消" class="cancel">
+						<input type="submit" value="保存收货地址" class="payNow">
+					</div>
+				</form>
+
+            </div><!-- content -->
+        </div>
+    </div>
+</div>
+<!-- 地址窗口 END-->
+
+
+
+
+<script type="text/javascript">
+	$('.page-name').css('line-height',$('.logo').height()+'px');
+	$('.nav-cell a').eq(0).addClass('on'); //导航加上on
+
+	$('.user-nav .cell').eq(2).addClass('on'); //给导航中的-收货地址 加上on
+
+
+	$('.change-addr').on('click',function(){
+		$(this).toggleClass('on');
+		$('.other-addr-list').slideToggle();
+	});
+
+
+
+    //弹出窗口
+    $('.pop-trigger').on('click',function(){
+      $('.pop').addClass('popShow');
+    });
+      
+    $('.cancel, .closeButton, .popBG').on('click',function(){
+        $('.pop').removeClass('popShow');
+    });
+
+    //阻止事件冒泡
+    $(".popUp").on('click',function(event){
+         event.stopPropagation();        
+    });
+
+
+
+    function selectAddr(_this){
+    	$('.radio-ui').removeClass('on');
+    	_this.addClass('on')
+    }
+
+
+	//表单验证
+	$('.formVerify').formVerify({
+	    data:[
+	        {id:"name", check:"checkNull"},
+	        {id:"province", check:"checkNull"},
+	        {id:"city", check:"checkNull"},
+	        {id:"county", check:"checkNull"},
+	        {id:"detailAddr", check:"checkNull"},
+	        {id:"phone", check:"checkPhone"}
+	    ],
+	    callback:function(){
+	        //验证通过后执行的回调函数
+	        //return false;
+
+	        // $.ajax({
+	        //     type:"POST",
+	        //     url:"__URL__/checkNameAndPass",
+	        //     async:false,
+	        //     data:{"name":name,"pass":pass},
+	        //     dataType:"JSON",
+	        //     success:function(data){
+	        //         switch(data.statue){
+	        //             case "success":
+	        //                 break;
+
+	        //             default:
+	        //                 layer.msg(data.msg);
+	        //                 return false;
+	        //         }
+	        //     },
+	        //     error:function(){
+	        //         layer.msg("发生未知错误，请联系网站管理员");
+	        //         return false;
+	        //     }
+	        // });
+	        
+	    }
+	});
+
+
+
+
+</script>
+
+
+</body>
+</html>

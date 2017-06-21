@@ -1,0 +1,59 @@
+@charset "utf-8";
+body{margin:0 auto;padding:0;font-size:12px;font-family:'Microsoft Yahei';color:#505050;-webkit-text-size-adjust:none;background:#fff}
+button,dd,div,dl,dt,form,h1,h2,h3,h4,h5,input,li,ol,p,td,textarea,th,ul{margin:0;padding:0}
+input,select{font-size:12px;line-height:20px;height:20px}
+input{letter-spacing:normal;word-spacing:normal;text-transform:none;text-indent:0;text-shadow:none;display:inline-block;text-align:start}
+img{border:0;-ms-interpolation-mode:bicubic}
+li,ul{list-style-type:none}
+:focus{outline:0}
+h2,h3,h4{font-size:14px;font-family:"Microsoft Yahei"}
+h5{font-size:12px;font-weight:400}
+a{color:#505050;text-decoration:none}
+a:hover{color:#fa7106;text-decoration:underline}
+.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden}
+em,i{font-style:normal}
+.clearfix{zoom:1}
+.clear{clear:both}
+/* comm */
+.fl{float:left;display:inline}
+.fr{float:right;display:inline}
+.red{color:#ba3022}
+.org{color:#fa7106}
+.green{color:#14a814}
+.blue{color:#135bad}
+.gray{color:#888}
+.bold{font-weight:700}
+.fz12{font-size:12px}
+.fz14{font-size:14px}
+.fz16{font-size:16px}
+.fz18{font-size:18px}
+.mt10{margin-top:10px}
+.mt5{margin-top:5px}
+.mr10{margin-right:10px}
+.mr5{margin-right:5px}
+.w1000{width:1000px;margin:0 auto;overflow:hidden}
+.list24 li{height:24px;line-height:24px;background:url(../images/cngold_sprite.png) -657px -77px no-repeat;text-indent:13px;overflow:hidden}
+.list24 li span{float:right;font-size:10px;font-family:Arial;color:#a0a0a0}
+.list28 li{height:28px;line-height:28px;background:url(../images/cngold_sprite.png) -655px -74px no-repeat;text-indent:15px;overflow:hidden;font-size:14px;color:#ccc}
+.list30 li{height:30px;line-height:30px;background:url(../images/cngold_sprite.png) -655px -74px no-repeat;text-indent:15px;overflow:hidden}
+.row2 li{width:49%;float:left}
+.row3 li{width:32%;float:left}
+.row4 li{width:24%;float:left}
+/*foot*/
+.foot{width:100%;height:168px;border-top:1px solid #e8e8e8;margin-top:30px;background:#fff}
+.foot .link{width:100%;height:60px;border-bottom:1px solid #f0f0f0;line-height:60px;color:#d7d7d7;text-align:center;margin-bottom:20px}
+.foot .link a{color:#268dcd;margin:0 10px}
+.foot .link a:hover{color:#e01a1a;text-decoration:underline}
+.foot p{font-size:14px;color:#888;height:30px;line-height:30px;text-align:center}
+/* 2015-05-26 白银频道新增粤微盘扫码左侧浮窗 */
+.ag_fwindow_ywp{position:fixed;bottom:220px;z-index:999;left:1px}
+.ag_fwindow_ywp,.ag_fwindow_ywpcon,.ag_fwindow_ywpcon a.ahref{width:144px;height:254px}
+.ag_fwindow_ywpcon{position:relative;z-index:2;background:url(../images/ag_fwindow_ywp.png) 0 0 no-repeat}
+.ag_fwindow_ywpcon a.aclose{position:absolute;width:18px;height:65px;overflow:hidden;background:url(../images/ag_fwindow_ywp.png) -2px -256px no-repeat;bottom:10px;right:-18px}
+.ag_fwindow_ywpcon a.aclose:hover{width:20px;background-position:0 -256px;right:-20px}
+.ag_fwindow_ywpcon02{position:relative;z-index:1;top:-105px;left:0}
+.ag_fwindow_ywpcon02,.ag_fwindow_ywpcon02 a.aopen{width:80px;height:101px}
+.ag_fwindow_ywpcon02 a.aopen{display:block;background:url(../images/ag_fwindow_ywp.png) -21px -259px no-repeat;overflow:hidden}
+.ag_fwindow_ywpcon a.aclose,.ag_fwindow_ywpcon a.ahref,.ag_fwindow_ywpcon02 a.aopen{display:block;text-indent:-999em;cursor:pointer}
+/* 2015-04-21新增底部浮动广告 - 20151208修改 */
+html{_background-image:url(../images/blank);_background-attachment:fixed;}

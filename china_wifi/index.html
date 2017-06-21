@@ -1,0 +1,1591 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>中国安全WIFI地图</title>
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<meta name="keywords" content="中国安全WIFI地图">  
+	<meta name="description" content="中国安全WIFI地图">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/layer/layer.js" type="text/javascript"></script>
+	<script src="js/jquery.formVerify.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+    <script src="js/sweetalert.min.js" type="text/javascript"></script>
+    
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
+
+
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<a href="">
+					<img src="images/logo.png" alt="logo" class="logo">
+				</a>
+			</div>
+			<div class="col-lg-8">
+				<div class="row row-fix header-nav">
+					<a href="index.html" class="col-lg-4 cell">首页</a>
+					<a href="rank.html" class="col-lg-4 cell">WIFI数据统计</a>
+					<a href="about.html" class="col-lg-4 cell">关于我们</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--banner start-->
+<div class="banner">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/banner_index.jpg" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/banner_index.jpg" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/banner_index.jpg" alt="">
+			</div>
+		</div>
+		<div class="pagination"></div>
+	</div>
+	<!-- banner右边的登录注册 -->
+	<div class="form-box banner-box">
+		<form class="login-verify" method="" action="">
+			<div class="title">登录WiFi圈</div>
+			<div class="line phone">
+				<input type="text" id="account" name="" placeholder="手机号/用户名" msgError="请输入正确的手机号/用户名">
+			</div>
+			<div class="line lock">
+				<input type="password" id="password" name="" placeholder="请输入密码" msgError="请输入正确的密码">
+			</div>
+
+			<div class="label-ui">
+				<input type="checkbox" name="" id="autoLogin" checked="checked">
+				<label for="autoLogin">下次自动登录</label> 
+			</div>
+			<input type="submit" value="登 录">
+		</form>
+		<div class="other-login">
+			<div class="tips">
+				<span></span>
+				快捷登录
+				<span></span>
+			</div>
+			<div class="icons">
+				<a href="" title="微信登录">
+					<img src="images/login_wechat.png">
+				</a>
+			</div>
+		</div>
+		<div class="links">
+			<a href="javascript:;" class="pop-trigger">立即注册</a>
+		</div>
+	</div>
+
+	<!-- banner右边的登陆后 显示内容 -->
+<!-- 	<div class="form-box banner-box">
+			<div class="zoomImage avatar" style="background-image: url(images/default_avatar.jpg);"></div>
+			<div class="welcome">oulihong888，你好！</div>
+			<div class="operate">
+				<a href="">退出登录</a><br>
+				您是运营商<a href="">管理WIFI</a>
+				您是管理员<a href="">管理WIFI</a>
+			</div>
+
+			<div class="attention">
+					<img src="images/test_code.jpg" class="code">
+					<div class="text">关注<br/>公众微信号</div>
+			</div>
+	</div> -->
+
+
+
+</div>
+<div class="banner-object"></div>
+<!--banner end-->
+
+<div class="container main">
+	<div class="map-contain">
+		<div class="search-bar">
+			<div class="icon-search"></div>
+			<input type="text" name="" id="tip_input" value="请输入地址搜索wifi" onfocus='this.value=""'>
+		</div>
+		<div class="map-popup">
+			<div class="city-bar">
+				城市列表<div class="toggle-btn on"></div>
+			</div>
+			<div class="content">
+				<div class="title-bar">
+					<i></i><span>定位城市</span>
+				</div>
+				<div class="hot-city">
+					<i class="on">全国</i>
+					<i>北京</i>
+					<i>上海</i>
+					<i>广州</i>
+					<i>深圳</i>
+					<i>成都</i>
+					<i>天津</i>
+					<i>南京</i>
+					<i>杭州</i>
+					<i>武汉</i>
+					<i>重庆</i>
+				</div>
+				<div class="classify">
+					<div class="tab">
+						<span class="on">按省份</span>
+						<span>按城市</span>
+					</div>
+				</div>
+
+				<div class="city-list rank-province">
+					<div class="capital">
+						<a href="javascript:;">A</a>
+						<a href="javascript:;">F</a>
+						<a href="javascript:;">G</a>
+						<a href="javascript:;">H</a>
+						<a href="javascript:;">J</a>
+						<a href="javascript:;">L</a>
+						<a href="javascript:;">N</a>
+						<a href="javascript:;">Q</a>
+						<a href="javascript:;">S</a>
+						<a href="javascript:;">T</a>
+						<a href="javascript:;">X</a>
+						<a href="javascript:;">Y</a>
+						<a href="javascript:;">Z</a>
+						<a href="javascript:;">其它</a>
+					</div>
+					<div class="list">
+						<table>
+							<tr>
+								<td>
+									<div class="letter">A</div>
+								</td>
+								<th><i>安徽</i></th>
+								<td>
+									<i>合肥</i>
+									<i>安庆</i>
+									<i>蚌埠</i>
+									<i>亳州</i>
+									<i>巢湖</i>
+									<i>池州</i>
+									<i>滁州</i>
+									<i>阜阳</i>
+									<i>淮北</i>
+									<i>淮南</i>
+									<i>黄山</i>
+									<i>六安</i>
+									<i>马鞍山</i>
+									<i>宿州</i>
+									<i>铜陵</i>
+									<i>芜湖</i>
+									<i>宣城</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">F</div>
+								</td>
+								<th><i>福建</i></th>
+								<td>
+									<i>福州</i>
+									<i>龙岩</i>
+									<i>南平</i>
+									<i>宁德</i>
+									<i>莆田</i>
+									<i>泉州</i>
+									<i>三明</i>
+									<i>厦门</i>
+									<i>漳州</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter test">G</div>
+								</td>
+								<th><i>广东</i></th>
+								<td>
+									<i>广州</i>
+									<i>潮州</i>
+									<i>东莞</i>
+									<i>佛山</i>
+									<i>河源</i>
+									<i>惠州</i>
+									<i>江门</i>
+									<i>揭阳</i>
+									<i>茂名</i>
+									<i>梅州</i>
+									<i>清远</i>
+									<i>汕头</i>
+									<i>汕尾</i>
+									<i>韶关</i>
+									<i>深圳</i>
+									<i>阳江</i>
+									<i>云浮</i>
+									<i>湛江</i>
+									<i>肇庆</i>
+									<i>中山</i>
+									<i>珠海</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>广西</i></th>
+								<td>
+									<i>南宁</i>
+									<i>百色</i>
+									<i>北海</i>
+									<i>崇左</i>
+									<i>防城港</i>
+									<i>桂林</i>
+									<i>贵港</i>
+									<i>河池</i>
+									<i>贺州</i>
+									<i>来宾</i>
+									<i>柳州</i>
+									<i>钦州</i>
+									<i>梧州</i>
+									<i>玉林</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>贵州</i></th>
+								<td>
+					                <i>贵阳</i>
+					                <i>安顺</i>
+					                <i>毕节地区</i>
+					                <i>六盘水</i>
+					                <i>铜仁地区</i>
+					                <i>遵义</i>
+					                <i name="黔西南布依族苗族自治州">黔西南州</i>
+					                <i name="黔东南苗族侗族自治州">黔东南州</i>
+					                <i name="黔南布依族苗族自治州">黔南州</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>甘肃</i></th>
+								<td>
+					                <i>兰州</i>
+					                <i>白银</i>
+					                <i>定西</i>
+					                <i name="甘南藏族自治州">甘南州</i>
+					                <i>嘉峪关</i>
+					                <i>金昌</i>
+					                <i>酒泉</i>
+					                <i name="临夏回族自治州">临夏州</i>
+					                <i>陇南</i>
+					                <i>平凉</i>
+					                <i>庆阳</i>
+					                <i>天水</i>
+					                <i>武威</i>
+					                <i>张掖</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">H</div>
+								</td>
+								<th><i>海南</i></th>
+								<td>
+					                <i>海口</i>
+					                <i name="白沙黎族自治县">白沙</i>
+					                <i name="保亭黎族苗族自治县">保亭</i>
+					                <i name="昌江黎族自治县">昌江</i>
+					                <i>儋州</i>
+					                <i>澄迈</i>
+					                <i>东方</i>
+					                <i>定安</i>
+					                <i>琼海</i>
+					                <i name="琼中黎族苗族自治县">琼中</i>
+					                <i name="乐东黎族自治县">乐东</i>
+					                <i>临高</i>
+					                <i name="陵水黎族自治县">陵水</i>
+					                <i>三亚</i>
+					                <i>屯昌</i>
+					                <i>万宁</i>
+					                <i>文昌</i>
+					                <i>五指山</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>河南</i></th>
+								<td>
+									<i>郑州</i>
+									<i>安阳</i>
+									<i>鹤壁</i>
+									<i>焦作</i>
+									<i>开封</i>
+									<i>洛阳</i>
+									<i>漯河</i>
+									<i>南阳</i>
+									<i>平顶山</i>
+									<i>濮阳</i>
+									<i>三门峡</i>
+									<i>商丘</i>
+									<i>新乡</i>
+									<i>信阳</i>
+									<i>许昌</i>
+									<i>周口</i>
+									<i>驻马店</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>黑龙江</i></th>
+								<td>
+									<i>哈尔滨</i>
+									<i>大庆</i>
+									<i>大兴安岭地区</i>
+									<i>鹤岗</i>
+									<i>黑河</i>
+									<i>鸡西</i>
+									<i>佳木斯</i>
+									<i>牡丹江</i>
+									<i>七台河</i>
+									<i>齐齐哈尔</i>
+									<i>双鸭山</i>
+									<i>绥化</i>
+									<i>伊春</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>湖北</i></th>
+								<td>
+					                <i>武汉</i>
+					                <i>鄂州</i>
+					                <i name="恩施土家族苗族自治州">恩施</i>
+					                <i>黄冈</i>
+					                <i>黄石</i>
+					                <i>荆门</i>
+					                <i>荆州</i>
+					                <i>潜江</i>
+					                <i>神农架林区</i>
+					                <i>十堰</i>
+					                <i>随州</i>
+					                <i>天门</i>
+					                <i>仙桃</i>
+					                <i>咸宁</i>
+					                <i>襄阳</i>
+					                <i>孝感</i>
+					                <i>宜昌</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>湖南</i></th>
+								<td>
+					                <i>长沙</i>
+					                <i>常德</i>
+					                <i>郴州</i>
+					                <i>衡阳</i>
+					                <i>怀化</i>
+					                <i>娄底</i>
+					                <i>邵阳</i>
+					                <i>湘潭</i>
+					                <i name="湘西土家族苗族自治州">湘西州</i>
+					                <i>益阳</i>
+					                <i>永州</i>
+					                <i>岳阳</i>
+					                <i>张家界</i>
+					                <i>株洲</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>河北</i></th>
+								<td>
+					                <i>石家庄</i>
+					                <i>保定</i>
+					                <i>沧州</i>
+					                <i>承德</i>
+					                <i>邯郸</i>
+					                <i>衡水</i>
+					                <i>廊坊</i>
+					                <i>秦皇岛</i>
+					                <i>唐山</i>
+					                <i>邢台</i>
+					                <i>张家口</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">J</div>
+								</td>
+								<th><i>江苏</i></th>
+								<td>
+					                <i>南京</i>
+					                <i>常州</i>
+					                <i>淮安</i>
+					                <i>连云港</i>
+					                <i>南通</i>
+					                <i>苏州</i>
+					                <i>宿迁</i>
+					                <i>泰州</i>
+					                <i>无锡</i>
+					                <i>徐州</i>
+					                <i>盐城</i>
+					                <i>扬州</i>
+					                <i>镇江</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>江西</i></th>
+								<td>
+					                <i>南昌</i>
+					                <i>抚州</i>
+					                <i>赣州</i>
+					                <i>吉安</i>
+					                <i>景德镇</i>
+					                <i>九江</i>
+					                <i>萍乡</i>
+					                <i>上饶</i>
+					                <i>新余</i>
+					                <i>宜春</i>
+					                <i>鹰潭</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>吉林</i></th>
+								<td>
+					                <i>长春</i>
+					                <i>白城</i>
+					                <i>白山</i>
+					                <i>吉林市</i>
+					                <i>辽源</i>
+					                <i>四平</i>
+					                <i>松原</i>
+					                <i>通化</i>
+					                <i name="延边朝鲜族自治州">延边</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">L</div>
+								</td>
+								<th><i>辽宁</i></th>
+								<td>
+					                <i>沈阳</i>
+					                <i>鞍山</i>
+					                <i>本溪</i>
+					                <i>朝阳</i>
+					                <i>大连</i>
+					                <i>丹东</i>
+					                <i>抚顺</i>
+					                <i>阜新</i>
+					                <i>葫芦岛</i>
+					                <i>锦州</i>
+					                <i>辽阳</i>
+					                <i>盘锦</i>
+					                <i>铁岭</i>
+					                <i>营口</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">N</div>
+								</td>
+								<th><i>宁夏</i></th>
+								<td>
+					                <i>银川</i>
+					                <i>固原</i>
+					                <i>石嘴山</i>
+					                <i>吴忠</i>
+					                <i>中卫</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>内蒙古</i></th>
+								<td>
+					                <i>呼和浩特</i>
+					                <i>阿拉善盟</i>
+					                <i>包头</i>
+					                <i>巴彦淖尔</i>
+					                <i>赤峰</i>
+					                <i>鄂尔多斯</i>
+					                <i>呼伦贝尔</i>
+					                <i>通辽</i>
+					                <i>乌海</i>
+					                <i>乌兰察布</i>
+					                <i>锡林郭勒盟</i>
+					                <i>兴安盟</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">Q</div>
+								</td>
+								<th><i>青海</i></th>
+								<td>
+					                <i>西宁</i>
+					                <i name="果洛藏族自治州">果洛州</i>
+					                <i>海东地区</i>
+					                <i name="海北藏族自治州">海北州</i>
+					                <i name="海南藏族自治州">海南州</i>
+					                <i name="海西蒙古族藏族自治州">海西州</i>
+					                <i name="黄南藏族自治州">黄南州</i>
+					                <i name="玉树藏族自治州">玉树州</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">S</div>
+								</td>
+								<th><i>山东</i></th>
+								<td>
+					                <i>济南</i>
+					                <i>滨州</i>
+					                <i>东营</i>
+					                <i>德州</i>
+					                <i>菏泽</i>
+					                <i>济宁</i>
+					                <i>莱芜</i>
+					                <i>聊城</i>
+					                <i>临沂</i>
+					                <i>青岛</i>
+					                <i>日照</i>
+					                <i>泰安</i>
+					                <i>威海</i>
+					                <i>潍坊</i>
+					                <i>烟台</i>
+					                <i>枣庄</i>
+					                <i>淄博</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>山西</i></th>
+								<td>
+					                <i>太原</i>
+					                <i>长治</i>
+					                <i>大同</i>
+					                <i>晋城</i>
+					                <i>晋中</i>
+					                <i>临汾</i>
+					                <i>吕梁</i>
+					                <i>朔州</i>
+					                <i>忻州</i>
+					                <i>阳泉</i>
+					                <i>运城</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>陕西</i></th>
+								<td>
+					                <i>西安</i>
+					                <i>安康</i>
+					                <i>宝鸡</i>
+					                <i>汉中</i>
+					                <i>商洛</i>
+					                <i>铜川</i>
+					                <i>渭南</i>
+					                <i>咸阳</i>
+					                <i>延安</i>
+					                <i>榆林</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>四川</i></th>
+								<td>
+					                <i>成都</i>
+					                <i name="阿坝藏族羌族自治州">阿坝州</i>
+					                <i>巴中</i>
+					                <i>达州</i>
+					                <i>德阳</i>
+					                <i name="甘孜藏族自治州">甘孜州</i>
+					                <i>广安</i>
+					                <i>广元</i>
+					                <i>乐山</i>
+					                <i name="凉山彝族自治州">凉山州</i>
+					                <i>泸州</i>
+					                <i>南充</i>
+					                <i>眉山</i>
+					                <i>绵阳</i>
+					                <i>内江</i>
+					                <i>攀枝花</i>
+					                <i>遂宁</i>
+					                <i>雅安</i>
+					                <i>宜宾</i>
+					                <i>资阳</i>
+					                <i>自贡</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">T</div>
+								</td>
+								<th><i>台湾</i></th>
+								<td>
+					                <i>台北</i>
+					                <i>高雄</i>
+					                <i>台中</i>
+					                <i>台南</i>
+					                <i>新北</i>
+					                <i>基隆</i>
+					                <i>新竹</i>
+					                <i>嘉义</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">X</div>
+								</td>
+								<th><i>西藏</i></th>
+								<td>
+					                <i>拉萨</i>
+					                <i>阿里地区</i>
+					                <i>昌都地区</i>
+					                <i>林芝地区</i>
+					                <i>那曲地区</i>
+					                <i>日喀则地区</i>
+					                <i>山南地区</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th><i>新疆</i></th>
+								<td>
+					                <i>乌鲁木齐</i>
+					                <i>阿拉尔</i>
+					                <i>阿克苏地区</i>
+					                <i>阿勒泰地区</i>
+					                <i name="巴音郭楞蒙古自治州">巴音郭楞</i>
+					                <i name="博尔塔拉蒙古自治州">博尔塔拉州</i>
+					                <i name="昌吉回族自治州">昌吉州</i>
+					                <i>哈密地区</i>
+					                <i>和田地区</i>
+					                <i>喀什地区</i>
+					                <i>克拉玛依</i>
+					                <i name="克孜勒苏柯尔克孜自治州">克孜勒苏州</i>
+					                <i>石河子</i>
+					                <i>塔城地区</i>
+					                <i>图木舒克</i>
+					                <i>吐鲁番地区</i>
+					                <i>五家渠</i>
+					                <i name="伊犁哈萨克自治州">伊犁州</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">Y</div>
+								</td>
+								<th><i>云南</i></th>
+								<td>
+					                <i>昆明</i>
+					                <i>保山</i>
+					                <i name="楚雄彝族自治州">楚雄州</i>
+					                <i name="大理白族自治州">大理州</i>
+					                <i name="德宏傣族景颇族自治州">德宏州</i>
+					                <i name="迪庆藏族自治州">迪庆州</i>
+					                <i name="红河哈尼族彝族自治州">红河州</i>
+					                <i>丽江</i>
+					                <i>临沧</i>
+					                <i name="怒江傈僳族自治州">怒江州</i>
+					                <i>普洱</i>
+					                <i>曲靖</i>
+					                <i>昭通</i>
+					                <i name="文山壮族苗族自治州">文山</i>
+					                <i name="西双版纳傣族自治州">西双版纳</i>
+					                <i>玉溪</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter">Z</div>
+								</td>
+								<th><i>浙江</i></th>
+								<td>
+					                <i>杭州</i>
+					                <i>湖州</i>
+					                <i>嘉兴</i>
+					                <i>金华</i>
+					                <i>丽水</i>
+					                <i>宁波</i>
+					                <i>衢州</i>
+					                <i>绍兴</i>
+					                <i>台州</i>
+					                <i>温州</i>
+					                <i>舟山</i>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="letter"></div>
+								</td>
+								<th class="other">其它</th>
+								<td>
+					                <i>香港</i>
+					                <i>澳门</i>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="city-list rank-city" style="display: none;">
+					<div class="capital">
+						<a href="javascript:;">A</a>
+						<a href="javascript:;">B</a>
+						<a href="javascript:;">C</a>
+						<a href="javascript:;">D</a>
+						<a href="javascript:;">E</a>
+						<a href="javascript:;">F</a>
+						<a href="javascript:;">G</a>
+						<a href="javascript:;">H</a>
+						<a href="javascript:;">J</a>
+						<a href="javascript:;">K</a>
+						<a href="javascript:;">L</a>
+						<a href="javascript:;">M</a>
+						<a href="javascript:;">N</a>
+						<a href="javascript:;">P</a>
+						<a href="javascript:;">Q</a>
+						<a href="javascript:;">R</a>
+						<a href="javascript:;">S</a>
+						<a href="javascript:;">T</a>
+						<a href="javascript:;">W</a>
+						<a href="javascript:;">X</a>
+						<a href="javascript:;">Y</a>
+						<a href="javascript:;">Z</a>
+					</div>
+					<div class="list">
+						<table>
+                            <tr>
+                                <td>
+                                    <div class="letter">A</div>
+                                </td>
+                                <td>
+                                    <i>阿拉尔</i>
+                                    <i>安顺</i>
+                                    <i>安庆</i>
+                                    <i>阿勒泰地区</i>
+                                    <i>阿克苏地区</i>
+                                    <i>鞍山</i>
+                                    <i>澳门</i>
+                                    <i>阿里地区</i>
+                                    <i>安康</i>
+                                    <i>安阳</i>
+                                    <i>阿拉善盟</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">B</div>
+                                </td>
+                                <td>
+                                    <i>巴中</i>
+                                    <i>白银</i>
+                                    <i>白城</i>
+                                    <i name="博尔塔拉蒙古自治州">博尔塔拉州</i>
+                                    <i>本溪</i>
+                                    <i>北京</i>
+                                    <i>宝鸡</i>
+                                    <i name="巴音郭楞蒙古自治州">巴音郭楞</i>
+                                    <i>百色</i>
+                                    <i>北海</i>
+                                    <i>巴彦淖尔</i>
+                                    <i>亳州</i>
+                                    <i>保山</i>
+                                    <i>蚌埠</i>
+                                    <i>白山</i>
+                                    <i>毕节地区</i>
+                                    <i>滨州</i>
+                                    <i name="白沙黎族自治县">白沙</i>
+                                    <i name="保亭黎族苗族自治县">保亭</i>
+                                    <i>保定</i>
+                                    <i>包头</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">C</div>
+                                </td>
+                                <td>
+                                    <i>长治</i>
+                                    <i>郴州</i>
+                                    <i>常州</i>
+                                    <i>滁州</i>
+                                    <i>崇左</i>
+                                    <i>潮州</i>
+                                    <i>长春</i>
+                                    <i name="楚雄彝族自治州">楚雄州</i>
+                                    <i>巢湖</i>
+                                    <i>常德</i>
+                                    <i>昌都地区</i>
+                                    <i>重庆</i>
+                                    <i>承德</i>
+                                    <i>沧州</i>
+                                    <i>长沙</i>
+                                    <i>朝阳</i>
+                                    <i name="昌吉回族自治州">昌吉州</i>
+                                    <i name="昌江黎族自治县">昌江</i>
+                                    <i name="阿坝藏族羌族自治州">阿坝州</i>
+                                    <i>澄迈</i>
+                                    <i>成都</i>
+                                    <i>池州</i>
+                                    <i>赤峰</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">D</div>
+                                    </td>
+                                <td>
+                                    <i>大兴安岭地区</i>
+                                    <i>达州</i>
+                                    <i>儋州</i>
+                                    <i>东营</i>
+                                    <i>德州</i>
+                                    <i>大同</i>
+                                    <i name="迪庆藏族自治州">迪庆州</i>
+                                    <i name="德宏傣族景颇族自治州">德宏州</i>
+                                    <i>东方</i>
+                                    <i>丹东</i>
+                                    <i>大连</i>
+                                    <i>定安</i>
+                                    <i>德阳</i>
+                                    <i>大庆</i>
+                                    <i>东莞</i>
+                                    <i>定西</i>
+                                    <i name="大理白族自治州">大理州</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">E</div>
+                                </td>
+                                <td>
+                                    <i>鄂尔多斯</i>
+                                    <i>鄂州</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">F</div>
+                                </td>
+                                <td>
+                                    <i>佛山</i>
+                                    <i>防城港</i>
+                                    <i>抚顺</i>
+                                    <i>阜新</i>
+                                    <i>福州</i>
+                                    <i>阜阳</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">G</div>
+                                </td>
+                                <td>
+                                    <i>高雄</i>
+                                    <i>桂林</i>
+                                    <i name="果洛藏族自治州">果洛州</i>
+                                    <i>赣州</i>
+                                    <i>固原</i>
+                                    <i>广元</i>
+                                    <i>广安</i>
+                                    <i name="甘孜藏族自治州">甘孜州</i>
+                                    <i>贵阳</i>
+                                    <i>广州</i>
+                                    <i name="甘南藏族自治州">甘南州</i>
+                                    <i>贵港</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">H</div>
+                                </td>
+                                <td>
+                                    <i name="黄南藏族自治州">黄南州</i>
+                                    <i>邯郸</i>
+                                    <i>衡水</i>
+                                    <i>海口</i>
+                                    <i>呼和浩特</i>
+                                    <i>葫芦岛</i>
+                                    <i>杭州</i>
+                                    <i name="红河哈尼族彝族自治州">红河州</i>
+                                    <i>淮北</i>
+                                    <i>鹤壁</i>
+                                    <i>和田地区</i>
+                                    <i>河池</i>
+                                    <i>贺州</i>
+                                    <i>哈密地区</i>
+                                    <i name="海西蒙古族藏族自治州">海西州</i>
+                                    <i name="海南藏族自治州">海南州</i>
+                                    <i name="海北藏族自治州">海北州</i>
+                                    <i>临高</i>
+                                    <i>河源</i>
+                                    <i>哈尔滨</i>
+                                    <i>惠州</i>
+                                    <i>呼伦贝尔</i>
+                                    <i>鹤岗</i>
+                                    <i>黑河</i>
+                                    <i>汉中</i>
+                                    <i>淮安</i>
+                                    <i>淮南</i>
+                                    <i>怀化</i>
+                                    <i>衡阳</i>
+                                    <i>菏泽</i>
+                                    <i>黄山</i>
+                                    <i>合肥</i>
+                                    <i>湖州</i>
+                                    <i>黄冈</i>
+                                    <i>黄石</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">J</div>
+                                </td>
+                                <td>
+                                    <i>景德镇</i>
+                                    <i>吉安</i>
+                                    <i>锦州</i>
+                                    <i>晋城</i>
+                                    <i>嘉义</i>
+                                    <i>嘉峪关</i>
+                                    <i>济宁</i>
+                                    <i>金昌</i>
+                                    <i>鸡西</i>
+                                    <i>佳木斯</i>
+                                    <i>焦作</i>
+                                    <i>江门</i>
+                                    <i>揭阳</i>
+                                    <i>酒泉</i>
+                                    <i>嘉兴</i>
+                                    <i>基隆</i>
+                                    <i>吉林市</i>
+                                    <i>金华</i>
+                                    <i>济南</i>
+                                    <i>晋中</i>
+                                    <i>九江</i>
+                                    <i>荆门</i>
+                                    <i>荆州</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">K</div>
+                                    </td>
+                                <td>
+                                    <i>昆明</i>
+                                    <i name="克孜勒苏柯尔克孜自治州">克孜勒苏州</i>
+                                    <i>克拉玛依</i>
+                                    <i>喀什地区</i>
+                                    <i>开封</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">L</div>
+                                </td>
+                                <td>
+                                    <i>六盘水</i>
+                                    <i>龙岩</i>
+                                    <i>临沧</i>
+                                    <i>丽江</i>
+                                    <i>丽水</i>
+                                    <i name="临夏回族自治州">临夏州</i>
+                                    <i>陇南</i>
+                                    <i>娄底</i>
+                                    <i>林芝地区</i>
+                                    <i>拉萨</i>
+                                    <i>泸州</i>
+                                    <i name="凉山彝族自治州">凉山州</i>
+                                    <i>六安</i>
+                                    <i>乐山</i>
+                                    <i>吕梁</i>
+                                    <i>临汾</i>
+                                    <i>连云港</i>
+                                    <i>来宾</i>
+                                    <i>柳州</i>
+                                    <i>临沂</i>
+                                    <i>聊城</i>
+                                    <i>莱芜</i>
+                                    <i name="乐东黎族自治县">乐东</i>
+                                    <i>廊坊</i>
+                                    <i>辽阳</i>
+                                    <i>兰州</i>
+                                    <i>洛阳</i>
+                                    <i>漯河</i>
+                                    <i>辽源</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">M</div>
+                                </td>
+                                <td>
+                                    <i>眉山</i>
+                                    <i>绵阳</i>
+                                    <i>茂名</i>
+                                    <i>马鞍山</i>
+                                    <i>梅州</i>
+                                    <i>牡丹江</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">N</div>
+                                </td>
+                                <td>
+                                    <i>南昌</i>
+                                    <i>南充</i>
+                                    <i name="恩施土家族苗族自治州">恩施</i>
+                                    <i>南通</i>
+                                    <i>南平</i>
+                                    <i>南阳</i>
+                                    <i>宁波</i>
+                                    <i>宁德</i>
+                                    <i>内江</i>
+                                    <i>南宁</i>
+                                    <i>那曲地区</i>
+                                    <i name="怒江傈僳族自治州">怒江州</i>
+                                    <i>南京</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">P</div>
+                                </td>
+                                <td>
+                                    <i>攀枝花</i>
+                                    <i>盘锦</i>
+                                    <i>萍乡</i>
+                                    <i>平顶山</i>
+                                    <i>平凉</i>
+                                    <i>莆田</i>
+                                    <i>濮阳</i>
+                                    <i>普洱</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">Q</div>
+                                </td>
+                                <td>
+                                    <i>七台河</i>
+                                    <i>庆阳</i>
+                                    <i>清远</i>
+                                    <i>衢州</i>
+                                    <i>泉州</i>
+                                    <i>潜江</i>
+                                    <i>秦皇岛</i>
+                                    <i>齐齐哈尔</i>
+                                    <i>曲靖</i>
+                                    <i>钦州</i>
+                                    <i>青岛</i>
+                                    <i name="黔西南布依族苗族自治州">黔西南州</i>
+                                    <i name="黔东南苗族侗族自治州">黔东南州</i>
+                                    <i name="黔南布依族苗族自治州">黔南州</i>
+                                    <i>琼海</i>
+                                    <i name="琼中黎族苗族自治县">琼中</i>
+                                    <i name="陵水黎族自治县">陵水</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">R</div>
+                                </td>
+                                <td>
+                                    <i>日照</i>
+                                    <i>日喀则地区</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">S</div>
+                                    </td>
+                                <td>
+                                    <i>石家庄</i>
+                                    <i>三门峡</i>
+                                    <i>随州</i>
+                                    <i>十堰</i>
+                                    <i>四平</i>
+                                    <i>宿迁</i>
+                                    <i>上饶</i>
+                                    <i>三明</i>
+                                    <i>神农架林区</i>
+                                    <i>上海</i>
+                                    <i>石河子</i>
+                                    <i>松原</i>
+                                    <i>苏州</i>
+                                    <i>朔州</i>
+                                    <i>绥化</i>
+                                    <i>商洛</i>
+                                    <i>双鸭山</i>
+                                    <i>沈阳</i>
+                                    <i>深圳</i>
+                                    <i>韶关</i>
+                                    <i>汕尾</i>
+                                    <i>汕头</i>
+                                    <i>山南地区</i>
+                                    <i>宿州</i>
+                                    <i>石嘴山</i>
+                                    <i>三亚</i>
+                                    <i>遂宁</i>
+                                    <i>绍兴</i>
+                                    <i>邵阳</i>
+                                    <i>商丘</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">T</div>
+                                </td>
+                                <td>
+                                    <i>唐山</i>
+                                    <i>铁岭</i>
+                                    <i>屯昌</i>
+                                    <i>台南</i>
+                                    <i>天水</i>
+                                    <i>台州</i>
+                                    <i>通化</i>
+                                    <i>铜川</i>
+                                    <i>通辽</i>
+                                    <i>太原</i>
+                                    <i>台北</i>
+                                    <i>塔城地区</i>
+                                    <i>图木舒克</i>
+                                    <i>吐鲁番地区</i>
+                                    <i>泰安</i>
+                                    <i>泰州</i>
+                                    <i>台中</i>
+                                    <i>天门</i>
+                                    <i>铜仁地区</i>
+                                    <i>天津</i>
+                                    <i>铜陵</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">W</div>
+                                </td>
+                                <td>
+                                    <i>吴忠</i>
+                                    <i>威海</i>
+                                    <i>渭南</i>
+                                    <i>武汉</i>
+                                    <i>温州</i>
+                                    <i>梧州</i>
+                                    <i>潍坊</i>
+                                    <i>乌兰察布</i>
+                                    <i>乌海</i>
+                                    <i>五家渠</i>
+                                    <i>文昌</i>
+                                    <i>乌鲁木齐</i>
+                                    <i>抚州</i>
+                                    <i>无锡</i>
+                                    <i>武威</i>
+                                    <i>芜湖</i>
+                                    <i>五指山</i>
+                                    <i name="文山壮族苗族自治州">文山</i>
+                                    <i>万宁</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">X</div>
+                                </td>
+                                <td>
+                                    <i>邢台</i>
+                                    <i>孝感</i>
+                                    <i>信阳</i>
+                                    <i>兴安盟</i>
+                                    <i>新竹</i>
+                                    <i name="湘西土家族苗族自治州">湘西州</i>
+                                    <i>锡林郭勒盟</i>
+                                    <i>襄阳</i>
+                                    <i>咸宁</i>
+                                    <i>仙桃</i>
+                                    <i>厦门</i>
+                                    <i>徐州</i>
+                                    <i>咸阳</i>
+                                    <i>忻州</i>
+                                    <i>西安</i>
+                                    <i>海东地区</i>
+                                    <i>西宁</i>
+                                    <i>新北</i>
+                                    <i>新乡</i>
+                                    <i>宣城</i>
+                                    <i>湘潭</i>
+                                    <i name="西双版纳傣族自治州">西双版纳</i>
+                                    <i>新余</i>
+                                    <i>香港</i>
+                                    <i>许昌</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">Y</div>
+                                </td>
+                                <td>
+                                    <i>玉林</i>
+                                    <i>延安</i>
+                                    <i>榆林</i>
+                                    <i>宜春</i>
+                                    <i name="伊犁哈萨克自治州">伊犁州</i>
+                                    <i name="延边朝鲜族自治州">延边</i>
+                                    <i>云浮</i>
+                                    <i>阳江</i>
+                                    <i>鹰潭</i>
+                                    <i>永州</i>
+                                    <i>岳阳</i>
+                                    <i>营口</i>
+                                    <i>阳泉</i>
+                                    <i>运城</i>
+                                    <i>盐城</i>
+                                    <i name="玉树藏族自治州">玉树州</i>
+                                    <i>银川</i>
+                                    <i>扬州</i>
+                                    <i>宜昌</i>
+                                    <i>伊春</i>
+                                    <i>玉溪</i>
+                                    <i>益阳</i>
+                                    <i>雅安</i>
+                                    <i>宜宾</i>
+                                    <i>烟台</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="letter">Z</div>
+                                </td>
+                                <td>
+                                    <i>昭通</i>
+                                    <i>张掖</i>
+                                    <i>自贡</i>
+                                    <i>资阳</i>
+                                    <i>湛江</i>
+                                    <i>肇庆</i>
+                                    <i>舟山</i>
+                                    <i>中山</i>
+                                    <i>珠海</i>
+                                    <i>淄博</i>
+                                    <i>漳州</i>
+                                    <i>遵义</i>
+                                    <i>中卫</i>
+                                    <i>张家口</i>
+                                    <i>郑州</i>
+                                    <i>周口</i>
+                                    <i>驻马店</i>
+                                    <i>镇江</i>
+                                    <i>株洲</i>
+                                    <i>张家界</i>
+                                    <i>枣庄</i>
+                                </td>
+                            </tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="map" style="width: 100%;height: 600px;"></div>
+	</div>
+</div>
+
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="tell">400-202-2222</div>
+				<div class="fax">公司传真：0571-52521124</div>
+				<div class="tag">联系我们</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="wifi-detail">
+					<div class="title">WiFi热点统计</div>
+					<a href="">城市公共WiFi</a>
+					<a href="">场景公共WiFi</a>
+					<a href="">运营商公共WiFi</a>
+					<a href="">运营商服务公共WiFi</a>
+				</div>
+			</div>
+			<div class="col-lg-4 contact-code">
+				<div class="row">
+					<div class="col-lg-7">
+						<img src="images/footer_wechat.png" class="wx-icon">
+						<p>扫一扫右侧二维码关注我们</p>
+						<p>联系电话：400-2042-222</p>
+						<p>门店地址：浙江省杭州市江干区xx街</p>
+					</div>
+					<div class="col-lg-5">
+						<img src="images/test_code.jpg" class="code">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 注册窗口 -->
+<div class="pop pop-form">
+    <div class="popBG">
+         <div class="popUp">
+            <i class="closeButton"></i>
+            <div class="content">
+				<div class="form-box">
+					<form class="reg-verify" method="" action="">
+						<div class="title">注册WiFi圈</div>
+
+						<div class="line user">
+							<input type="text" id="userName" name="" placeholder="用户名" msgError="用户名至少由6位字符组成">
+						</div>
+
+						<div class="line lock">
+							<input type="password" id="rPassword" name="" placeholder="设置密码" msgError="密码至少由6位字符组成">
+						</div><!-- 注意id是 rPassword 避免和登录里的password同id名 -->
+
+						<div class="line lock">
+							<input type="password" id="comfirmPassword" name="" placeholder="再次输入密码" msgError="两次输入的密码不一致">
+						</div>
+
+						
+						<div class="line phone">
+							<input type="text" id="phone" name="" placeholder="手机号" msgError="请输入正确的手机号">
+						</div>
+
+						<div class="line safe">
+							<input type="text" id="code" name="" placeholder="输入验证码" msgError="请输入验证码">
+							<i class="acquireCode" id="acquireCode">获取验证码</i>
+						</div>
+
+						<div class="label-ui">
+							<input type="checkbox" name="" id="rOperate">
+							<label for="rOperate">申请注册WiFi运营商</label> 
+						</div>
+						<input type="submit" value="注 册">
+					</form>
+
+				</div>
+            </div><!-- content -->
+        </div>
+    </div>
+</div>
+<!-- 注册窗口 END-->
+
+
+
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=bab3e750d525f725d4cbb247d5a96643"></script>
+<script type="text/javascript" src="js/test_data.js"></script>
+<script type="text/javascript" src="js/wifi_map.js"></script>
+<script type="text/javascript">
+
+	$('.header-nav .cell').eq(0).addClass('on');
+	var mySwiper = new Swiper('.swiper-container',{
+	    pagination: '.pagination',
+	    loop:true,
+	    grabCursor: true,
+	    paginationClickable: true,
+	    autoplay:4000
+	});
+
+	$('.city-list .capital a').on('click',function(){
+		if($(this).text() === "其它"){
+			$(this).parent().next().scrollTop(document.getElementsByClassName('other')[0].parentNode.offsetTop);
+			console.log($('.other').offset());
+		}else{
+			var letterArr = $(this).parent().next().find('.letter');
+			for(var i=0; i<letterArr.length; i++ ){
+				if($(this).text() == letterArr[i].innerHTML){
+					$(this).parent().next().scrollTop(letterArr[i].parentNode.parentNode.offsetTop);
+					break;
+				}
+			}
+		}
+	});
+
+
+    //弹出窗口
+    $('.pop-trigger').click(function(){
+      $('.pop').addClass('pop-show');
+    });
+      
+    $('.cancel, .closeButton, .popBG').click(function(){
+        $('.pop').removeClass('pop-show');
+    });
+
+    //阻止事件冒泡
+    $(".popUp").click(function(event){
+         event.stopPropagation();        
+    });
+
+
+	//表单验证-登录
+	$('.login-verify').formVerify({
+	    data:[
+	        {id:"account", check:"checkString"},
+	        {id:"password", check:"checkString"}
+	    ],
+	    callback:function(){
+	        //验证通过后执行的回调函数
+	        //return false;
+
+	        // $.ajax({
+	        //     type:"POST",
+	        //     url:"__URL__/checkNameAndPass",
+	        //     async:false,
+	        //     data:{"name":name,"pass":pass},
+	        //     dataType:"JSON",
+	        //     success:function(data){
+	        //         switch(data.statue){
+	        //             case "success":
+	        //                 break;
+
+	        //             default:
+	        //                 layer.msg(data.msg);
+	        //                 return false;
+	        //         }
+	        //     },
+	        //     error:function(){
+	        //         layer.msg("发生未知错误，请联系网站管理员");
+	        //         return false;
+	        //     }
+	        // });
+	        
+	    }
+	});
+
+	//表单验证-注册
+	$('.reg-verify').formVerify({
+	    data:[
+	        {id:"userName", check:"checkString"},
+	        {id:"rPassword", check:"checkString"},
+	        {id:"comfirmPassword", check:"checkConfirm", compareObject:"rPassword"},
+	        {id:"phone", check:"checkPhone"},
+	        {id:"code", check:"checkNull"}
+	    ],
+	    callback:function(){
+	        //验证通过后执行的回调函数
+	        //return false;
+
+	        // $.ajax({
+	        //     type:"POST",
+	        //     url:"__URL__/checkNameAndPass",
+	        //     async:false,
+	        //     data:{"name":name,"pass":pass},
+	        //     dataType:"JSON",
+	        //     success:function(data){
+	        //         switch(data.statue){
+	        //             case "success":
+	        //                 break;
+
+	        //             default:
+	        //                 layer.msg(data.msg);
+	        //                 return false;
+	        //         }
+	        //     },
+	        //     error:function(){
+	        //         layer.msg("发生未知错误，请联系网站管理员");
+	        //         return false;
+	        //     }
+	        // });
+	        
+	    }
+	});
+
+
+	//获取短信验证码定时器
+	$('#acquireCode').click(function(){
+	   if($(this).hasClass('disabled')){
+	       return;
+	   }else{
+	       $(this).addClass('disabled');
+	       var t = 59;
+	       $('#acquireCode').text('已发送('+t+'s)');
+	       var clock = setInterval(function(){
+	           if(t <= 1){
+	               $('#acquireCode').text('获取验证码');
+	               $('#acquireCode').removeClass('disabled');
+	               clearInterval(clock);
+	               return; 
+	           }else{
+	               t=t-1;
+	               $('#acquireCode').text('已发送('+t+'s)');
+	           }
+	        },1000);  
+	   }
+	});
+
+	//城市列表展开-收起切换
+	$('.city-bar').on('click',function(){
+		$('.toggle-btn').toggleClass('on');
+		$(this).next('.content').slideToggle();
+	});
+
+	//按省份-按城市按钮切换
+    $('.map-popup .tab span').on('click',function(){
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+        $('.city-list').hide();
+        $('.city-list').eq($(this).index()).show();
+    });
+
+</script>
+
+
+
+
+</body>
+</html>

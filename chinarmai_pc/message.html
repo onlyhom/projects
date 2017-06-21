@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>人民艺投</title>
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<meta name="keywords" content="人民艺投">  
+	<meta name="description" content="人民艺投">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/layer/layer.js" type="text/javascript"></script>
+	<script src="js/jquery.formVerify.js" type="text/javascript"></script>
+	<script src="js/lightbox-2.6.min.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+	<script src="js/page.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="page-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 notice">欢迎来到人民艺投！</div>
+			<div class="col-lg-6 links">
+				<a href="user.html">oulihong123，你好！</a>
+				<a href="user.html">用户中心</a>
+				<a href="user_collection.html">我的藏品(15)</a> 
+				<a href="user_order_auction.html">交易订单</a>
+				<a href="message.html">消息(8)</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="header sub-header">
+	<div class="container">
+		<div class="row middle">
+			<div class="col-lg-3 logo">
+				<div class="row">
+					<div class="col-lg-6">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<div class="page-name">消息</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 search">
+               	<!-- 搜索框 -->
+				<form action="searchResult.html">
+					<div class="searchBox">
+						<input type="text" >
+						<input type="submit" value="">
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-2 collect">
+				<a href="user_attention.html">
+					我的关注
+					<div class="acount">177</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container sub-main">
+
+	<div class="user">
+		<div class="user-nav">
+			<div class="title">消息</div>
+			<div class="list">
+				<a class="cell" href="message.html">系统消息</a>
+				<a class="cell" href="message_notice.html">系统公告</a>
+			</div>
+		</div>
+		
+		<div class="user-content message-list">
+			<div class="cell">
+				<div class="time">2017-03-07 23:17:47</div>
+				<div class="box">
+					<div class="type">邮件</div>
+					<div class="text">
+						<div class="abstract">
+							<a href="javascript:;" onclick="showPop();">
+								艺术品034595有人向您发出了邀约购买请求
+							</a>
+						</div>
+						<div class="status">待处理</div>
+					</div>
+					<div class="link">
+						<a href="javascript:;" onclick="showPop();">查看详情> </a>
+					</div>
+				</div>	
+			</div>
+
+			<div class="cell">
+				<div class="time">2017-03-07 23:17:47</div>
+				<div class="box">
+					<div class="type">邮件</div>
+					<div class="text">
+						<div class="abstract">
+							艺术品034595有人向您发出了邀约购买请求
+						</div>
+						<div class="status on">已拒绝</div>
+					</div>
+				</div>	
+			</div>
+
+			<div class="cell">
+				<div class="time">2017-03-07 23:17:47</div>
+				<div class="box">
+					<div class="type">邮件</div>
+					<div class="text">
+						<div class="abstract">
+							<a href=""> <!-- 链接到生成的订单页 -->
+								艺术品034595有人向您发出了邀约购买请求
+							</a>
+						</div>
+						<div class="status on">已同意</div>
+					</div>
+					<div class="link">
+						<a href="">查看详情> </a> <!-- 链接到生成的订单页 -->
+					</div>
+				</div>	
+			</div>
+
+			<!-- 分页 -->
+	        <div class="center">
+	            <ul class="pagination">
+	                <li><a href="#">&laquo;</a></li>
+	                <li class="active"><a href="#">1</a></li>
+	                <li><a href="#">2</a></li>
+	                <li><a href="#">3</a></li>
+	                <li><a href="#">4</a></li>
+	                <li><a href="#">5</a></li>
+	                <li><a href="#">&raquo;</a></li>
+	            </ul>
+	        </div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="footer">
+	<div class="container">
+		<div class="row row-fix">
+			<div class="col-lg-2">
+				<div class="title">关于艺投</div>
+				<p>
+					<a href="">集团简介</a>
+				</p>
+				<p>
+					<a href="">加入艺投</a>
+				</p>
+				<p>
+					<a href="">企业社会责任</a>
+				</p>
+				<p>
+					<a href="">最新艺术品</a>
+				</p>
+			</div>
+			<div class="col-lg-2">
+				<div class="title">帮助中心</div>
+				<p>
+					<a href="">网站申声明</a>
+				</p>
+				<p>
+					<a href="">联系我们</a>
+				</p>
+				<p>
+					<a href="">网站地图</a>
+				</p>
+				<p>
+					<a href="">最新消息</a>
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<img src="images/logo.png" class="logo" alt="人民艺投logo">
+			</div>
+			<div class="col-lg-2">
+				<div class="title">微信公众号</div>
+				<img src="images/test_code.jpg" class="code" alt="微信公众号二维码">
+			</div>
+			<div class="col-lg-2">
+				<div class="title">微信客服</div>
+				<img src="images/test_code.jpg" class="code" alt="微信客服二维码">
+			</div>
+		</div>
+	</div>
+	<div class="page-bottom">
+		<div class="container">
+			<p>Copyright ©2016 - 2019 杭州XXXXXXXX股份有限公司  苏ICP备05026939号</p>
+		</div>
+	</div>
+</div>
+
+
+<!-- 邀约信息窗口 -->
+<div class="pop pop-confirm">
+    <div class="popBG">
+         <div class="popUp">
+            <i class="closeButton"></i>
+            <div class="sub-title">
+            	消费者投资人onlihong123向您发出购买申请<br>
+            	您是否愿意与他进行交易？
+            </div>
+            <div class="content">
+				<div class="zoomImage" style="background-image:url(images/test1.jpg);"></div>
+				<table>
+					<tr>
+						<th>艺术品编号</th>
+						<td>A9235854263463</td>
+					</tr>
+
+
+					<tr>
+						<th>艺术品名称</th>
+						<td>字幅字画字幅字画字幅字画</td>
+					</tr>
+
+					<tr>
+						<th>艺术家</th>
+						<td>文征明</td>
+					</tr>
+
+					<tr>
+						<th>他的报价</th>
+						<td>8888.00元</td>
+					</tr>
+				</table>
+
+				<div class="clearfix"></div>
+				<!-- <div class="qa"></div> -->
+				<div class="operation">
+					<input type="button" value="不同意" class="cancel">
+					<input type="button" value="同意" class="cancel payNow">
+				</div>
+
+            </div><!-- content -->
+        </div>
+    </div>
+</div>
+<!-- 邀约信息窗口 END-->
+
+
+
+
+<script type="text/javascript">
+	$('.page-name').css('line-height',$('.logo').height()+'px');
+	$('.nav-cell a').eq(0).addClass('on'); //导航加上on
+
+	$('.user-nav .cell').eq(0).addClass('on'); //给导航中的-系统消息 加上on
+
+
+    //弹出窗口
+    function showPop(){
+		$('.pop').addClass('popShow');
+    }
+
+    $('.cancel, .closeButton, .popBG').on('click',function(){
+        $('.pop').removeClass('popShow');
+    });
+
+    //阻止事件冒泡
+    $(".popUp").on('click',function(event){
+         event.stopPropagation();        
+    });
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

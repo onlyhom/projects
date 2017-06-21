@@ -1,0 +1,66 @@
+.clearfix() {
+  &:after {
+  content: ".";
+  display: block;
+  height:0;
+  clear:both;
+  visibility: hidden;
+  }
+}
+.nowrap(){
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.nowrapClear(){
+    overflow: visible;
+    white-space:normal;
+}
+
+
+.nowrap2(@line:2){
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+.zoomImage{
+  width:100%;
+  height:0;
+  padding-bottom: 100%;
+  overflow:hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+}
+.zoomImage(){
+  width:100%;
+  height:0;
+  padding-bottom: 100%;
+  overflow:hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+}
+.zoomImageFun(@width:100%,@height:100%){
+  width:@width;
+  height:0;
+  padding-bottom: @height;
+  overflow:hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+}
+
+.center{text-align: center;}
+
+i{
+  font-style: normal;
+}

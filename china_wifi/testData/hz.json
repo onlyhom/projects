@@ -1,0 +1,20 @@
+[
+    {
+        "id" : "1",
+        "name" : "杭州西湖公共wifi",
+        "score" : "4",
+        "operator": "中国移动",
+        "address": "杭州市西湖区龙井路1号",
+        "link": "wifi_detail.html",
+        "position": [120.10848,30.220673]
+    },
+    {
+        "id" : "2",
+        "name" : "武林广场免费wifi",
+        "score" : "3",
+        "operator": "中国移动",
+        "address": "杭州市下城区阜通东大街6号院3号楼东北8.3公里",
+        "link": "wifi_detail.html",
+        "position": [120.163277,30.271347]
+    }
+]

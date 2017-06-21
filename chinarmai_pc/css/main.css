@@ -1,0 +1,361 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    
+}
+li {
+    list-style: outside none none;
+}
+a {
+    text-decoration: none;
+}
+body {
+  margin: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+    text-decoration: none; /* 去除默认下划线 */
+}
+
+a:focus {
+    outline:thin dotted; /* 处理“outline”在Chrome浏览器中和其它浏览器之间的不一致 */
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+h1 { /* 使h1标签在section标签和article标签的留白和字体样式统一。可同时兼容Firefox 4+、Safari 5和Chrome等不同的浏览器 */
+    // font-size: 2em;
+    margin: 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;  
+    /* 解决首字母样式在IE8/9、Safari 5和chrome浏览器中未定义的问题 */
+}
+
+b,
+strong {
+    font-weight: bold; /* 添加加粗样式，应用于Firefox 4+、Safari 5和Chrome */
+}
+
+dfn {
+    font-size:italic; /* 添加斜体样式，应用于Safari 5和chrome */
+}
+
+hr {    /* 解决其在Firefox中的兼容性问题 */
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    height: 0;
+}
+
+mark { /* 解决其在IE8/9中样式未定义的问题 */
+    background: #ff0; 
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp { /* 更正关联字体在Safari 5和Chrome中的老式设置 */
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre { /* 提高pre标签格式化文本在所有浏览器中的可读性 */
+    white-space: pre-wrap;
+}
+
+q { /* 设置相一致的引号类型 */
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small { /* 统一所有浏览器中字体大小不一致的兼容性问题 */
+    font-size: 80%;
+}
+
+sub, 
+sup { /* 在所有浏览器中，防止“sub”和“sup”标签影响“line-height”属性 */
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0; /* 在IE8/9浏览器中，当img标签中包含a标签时，去除img边框属性。 */
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 0;
+}
+
+fieldset { /* 定义一致的边框、内边距和外边距 */
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0; /* 更改“color”属性在IE8/9浏览器中没有被继承的问题 */
+    padding: 0; /* 去除外边距，如此即使人们将字段集归零也不会失去样式 */ 
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 更改关联字体属性在IE8/9浏览器中没有被继承的问题 */
+    font-size: 100%; /* 更改字体大小属性在IE8/9浏览器中没有被继承的问题 */
+    margin: 0; /* 调整边距设置在Firefox 4+, Safari 5, 和 Chrome浏览器中的兼容性问题 */
+}
+
+button,
+input {
+    line-height: normal; 
+    /* 调整Firefox 4+浏览器下，客户端样式表中设置了“!important”的“line-height”属性的input表单 */
+}
+
+button,
+select {
+    text-transform: none;
+    /**
+     * 调整“button”和“select”的“text-transform”继承不一致性的问题
+     * 其他表单控件元素不继承“text-transform”属性
+     * 修正“button”标签在Chrome, Safari 5+, and IE 8+中的样式继承问题
+     * 修正“select”标签在Firefox 4+ 和Opera中的样式继承问题
+     */ 
+}
+
+button,
+html input[type="button"], /* 避免webKit bug发生在Android 4.0.* 设备上，破坏原生“audio”和“video”控制组件 */
+input[type="reset"],
+input[type="submit"] { 
+    -webkit-appearance: button; /* 改正iOS设备中“input”类型表单样式不可用的问题 */
+    cursor: pointer; /* 增强光标样式在input表单和其他表单的可用性和一致性 */
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default; /* 为禁用表单重设定默认光标样式 */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; /* 调整IE 8/9中尺寸属性设置为“内容框”的盒子模型 */
+    padding: 0; /* 去除IE 8/9中的多余的外边距留白部分 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 兼容Safari 5 and Chrome上 “searchfield” 上设置 “appearance”属性 */
+    -webkit-box-sizing: content-box; /* 兼容Safari 5 and Chrome上 “border-box” 上设置 “box-sizing”属性 */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;   /* 去除OS X系统上Safari 5和Chrome中容器内边距和搜索取消按钮属性 */
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { /*Firefox 4+浏览器中，去除容器内边距和边框属性
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto; /* IE 8/9中，去除默认垂直滚动条属性 */
+    vertical-align: top; /* 提高所有浏览器中的文本可读性和版式 */
+} 
+
+
+
+/* 移动端页面样式 */
+
+html {
+    font-size: 10px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.content {
+    padding: 1rem;
+    font-size: 1.4rem;
+    word-spacing: 0.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+}
+.content img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.content .title{
+    font-size: 1.6rem;
+    text-align: center;
+    color:#333;
+    padding: 1rem 0;
+    border-bottom: 1px dotted #999;
+    margin-bottom: 1rem;
+}
+
+.content .title h1{
+    font-size: 1.6rem; 
+    color:#333;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.content .title .info{
+    font-size: 1.2rem; 
+    color:#999;
+    letter-spacing: 0;
+}
+
+
+div,ul,li {
+    margin: 0;
+    padding: 0;
+}
+table {
+    margin: 0 auto;
+    text-align: center;
+}

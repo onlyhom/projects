@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>人民艺投</title>
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<meta name="keywords" content="人民艺投">  
+	<meta name="description" content="人民艺投">
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/layer/layer.js" type="text/javascript"></script>
+	<script src="js/jquery.formVerify.js" type="text/javascript"></script>
+	<script src="js/lightbox-2.6.min.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+	<script src="js/page.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="page-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 notice">
+				欢迎来到人民艺投！
+			</div>
+			<div class="col-lg-6 links">
+				<a href="user.html">oulihong123，你好！</a>
+				<a href="user.html">用户中心</a>
+				<a href="user_collection.html">我的藏品(15)</a> 
+				<a href="user_order_auction.html">交易订单</a>
+				<a href="message.html">消息(8)</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="header sub-header">
+	<div class="container">
+		<div class="row middle">
+			<div class="col-lg-3 logo">
+				<div class="row">
+					<div class="col-lg-6">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="col-lg-6">
+						<div class="page-name">艺术品详情</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7 search">
+               	<!-- 搜索框 -->
+				<form action="">
+					<div class="searchBox">
+						<input type="text" >
+						<input type="submit" value="">
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-2 collect">
+				<a href="user_attention.html">
+					我的关注
+					<div class="acount">177</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="container sub-main product">
+	<div class="product-info">
+		<div class="zoomImage" style="background-image: url(images/test1.jpg)"></div>
+		<div class="text">
+
+			<div class="line normal">
+				<div class="title">编号</div>
+				<div class="right">
+					A031941
+				</div>
+			</div>	
+
+			<div class="line normal">
+				<div class="title">名称</div>
+				<div class="right">
+					文征明千字文小楷文征明千字文小楷文征明千字文小楷文征
+				</div>
+			</div>	
+
+			<div class="line normal">
+				<div class="title">艺术家</div>
+				<div class="right">
+					文征明
+				</div>
+			</div>	
+
+			<div class="line current-price block-price">
+				<div class="title">当前价</div>
+				<div class="right">
+					<div class="price">8898.00<span>元</span></div> 
+                    <div class="tag-public">涨幅：<i>20%</i></div>
+                    <div class="tag-public">历史最高价：<i>10000.00</i></div>
+				</div>
+			</div>
+
+			<div class="line icon-list">
+				<div class="cell">
+					<img src="images/fixed_price_icon1.png">
+					<p>专一服务</p>
+				</div>	
+				<div class="cell">
+					<img src="images/fixed_price_icon2.png">
+					<p>价格优势</p>
+				</div>	
+				<div class="cell">
+					<img src="images/fixed_price_icon3.png">
+					<p>操作简单</p>
+				</div>	
+				<div class="cell">
+					<img src="images/fixed_price_icon4.png">
+					<p>优惠超多</p>
+				</div>	
+			</div>	
+
+			<div class="line operate">
+				<a href="javascript:;" class="button">立即购买</a>
+				<a href="javascript:;" class="button pay-attention"></a> <!-- 关注商品 -->
+			</div>
+
+		</div>	
+	</div>
+
+
+	<!-- 价格趋势图 -->
+	<div class="price-chart">
+		<div class="title">艺术品最近价格趋势图</div>
+		<div id="chart" class="chart" style="width: 100%; height: 480px;"></div>
+	</div>
+
+    <div class="product-section">
+        <div class="nav-tag">
+            <div class="tag on">作者-作品介绍</div>
+        </div>
+        <div class="content">
+            作品介绍作品介绍作品介绍作品介绍作品介绍
+        </div>
+    </div>
+
+
+	<div class="product-section fold-section">
+		<div class="nav-tag">
+			<div class="tag on">重要提示</div>
+			<div class="tag">购买须知</div>
+			<div class="tag">艺术品介绍</div>
+		</div>
+
+		<!-- 重要提示 -->
+		<div class="content">
+			重要提示描述重要提示描述重要提示描述重要提示描述
+		</div>
+
+		<!-- 购买须知 -->
+		<div class="content">
+			购买须知购买须知购买须知购买须知购买须知购买须知
+		</div>
+
+		<!-- 艺术品介绍 -->
+		<div class="content">
+			艺术品介绍艺术品介绍艺术品介绍艺术品介绍艺术品介绍
+		</div>
+	</div>	
+
+
+
+</div>
+
+
+<div class="footer">
+	<div class="container">
+		<div class="row row-fix">
+			<div class="col-lg-2">
+				<div class="title">关于艺投</div>
+				<p>
+					<a href="">集团简介</a>
+				</p>
+				<p>
+					<a href="">加入艺投</a>
+				</p>
+				<p>
+					<a href="">企业社会责任</a>
+				</p>
+				<p>
+					<a href="">最新艺术品</a>
+				</p>
+			</div>
+			<div class="col-lg-2">
+				<div class="title">帮助中心</div>
+				<p>
+					<a href="">网站申声明</a>
+				</p>
+				<p>
+					<a href="">联系我们</a>
+				</p>
+				<p>
+					<a href="">网站地图</a>
+				</p>
+				<p>
+					<a href="">最新消息</a>
+				</p>
+			</div>
+			<div class="col-lg-4">
+				<img src="images/logo.png" class="logo" alt="人民艺投logo">
+			</div>
+			<div class="col-lg-2">
+				<div class="title">微信公众号</div>
+				<img src="images/test_code.jpg" class="code" alt="微信公众号二维码">
+			</div>
+			<div class="col-lg-2">
+				<div class="title">微信客服</div>
+				<img src="images/test_code.jpg" class="code" alt="微信客服二维码">
+			</div>
+		</div>
+	</div>
+	<div class="page-bottom">
+		<div class="container">
+			<p>Copyright ©2016 - 2019 杭州XXXXXXXX股份有限公司  苏ICP备05026939号</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/echarts.js" ></script>
+<script type="text/javascript">
+	$('.page-name').css('line-height',$('.logo').height()+'px');
+	$('.nav-cell a').eq(0).addClass('on'); //导航加上on
+
+
+	$('.fold-section .content').eq(0).show();
+	$('.fold-section .nav-tag .tag').on('click',function(){
+		$(this).siblings().removeClass('on');
+		$(this).addClass('on');
+		$('.fold-section .content').hide(); 
+		$('.fold-section .content').eq($(this).index()).fadeIn(); 
+	});
+
+	$('.pay-attention').on('click',function(){
+		$(this).toggleClass('on');
+	});
+
+
+	//*******价格趋势图******
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('chart'));
+
+    var chartsData = [ 
+        {
+            date:'2017-01-01 13:50:00',
+            price:'8000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-02 14:50:00',
+            price:'7000.00',
+            isAuction:true,
+            record:[
+                {
+                    price: '6000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '7100.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '8000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                }
+            ]
+        },
+        {
+            date:'2017-01-03 13:50:00',
+            price:'8000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-04 13:50:00',
+            price:'9000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-05 13:50:00',
+            price:'6000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-06 13:50:00',
+            price:'5000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-07 14:50:00',
+            price:'4000.00',
+            isAuction:true,
+            record:[
+                {
+                    price: '6000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '7100.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '8000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                }
+            ]
+        },
+        {
+            date:'2017-01-08 13:50:00',
+            price:'6000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-09 13:50:00',
+            price:'8000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-10 13:50:00',
+            price:'9000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-01 13:50:00',
+            price:'8000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-02 14:50:00',
+            price:'7000.00',
+            isAuction:true,
+            record:[
+                {
+                    price: '6000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '7100.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '8000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                }
+            ]
+        },
+        {
+            date:'2017-01-03 13:50:00',
+            price:'8000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-04 13:50:00',
+            price:'9000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-05 13:50:00',
+            price:'6000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-06 13:50:00',
+            price:'5000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-07 14:50:00',
+            price:'4000.00',
+            isAuction:true,
+            record:[
+                {
+                    price: '6000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '7100.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '8000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                },
+                {
+                    price: '9000.00',
+                    time:'2017-01-01 13:00:00'
+                }
+            ]
+        },
+        {
+            date:'2017-01-08 13:50:00',
+            price:'6000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-09 13:50:00',
+            price:'8000.00',
+            isAuction:false
+        },
+        {
+            date:'2017-01-10 13:50:00',
+            price:'9000.00',
+            isAuction:false
+        }
+    ];
+
+    var xAxisData = [];
+    var priceData = [];
+    for(var i=0; i<chartsData.length; i++){
+    	xAxisData.push(chartsData[i].date);
+    	priceData.push(chartsData[i].price)
+    }
+
+	option = {
+	    title: {
+	        text: ''
+	    },
+	    tooltip: {
+	        trigger: 'axis',
+	        formatter: function(params) { 
+				var res = params[0].name+'<br/>'; 
+				var index = params[0].dataIndex;
+				if(chartsData[index].isAuction){
+					res += '竞拍成交价：';
+					res += priceData[index]+'元<br/>';
+					res += '—— 竞拍记录 ——<br/>';
+					if(chartsData[index].record){
+						for(var j=0; j<chartsData[index].record.length; j++){
+							res += '竞拍价 '+chartsData[index].record[j].price+'元 &nbsp;'+chartsData[index].record[j].time +'<br/>';
+						}
+					}else{
+						res += '暂无竞拍记录<br/>';
+					}
+
+				}else{
+					res += '一口价：';
+					res += priceData[params[0].dataIndex]+'元';
+				}
+
+				return res;  
+	        }
+	    },
+	    legend: {
+	        data:['成交价格']
+	    },
+	    grid: {
+	        left: '3%',
+	        right: '4%',
+	        bottom: '3%',
+	        containLabel: true
+	    },
+	    xAxis: {
+	        type: 'category',
+	        boundaryGap: false,
+	        data: xAxisData
+	    },
+	    yAxis: {
+	        type: 'value'
+	    },
+        grid: {
+            left: '10%',
+            right: '10%',
+            bottom: 90
+        },
+        dataZoom: [
+            {
+                textStyle: {
+                    color: '#8392A5'
+                },
+                handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+                handleSize: '80%',
+                dataBackground: {
+                    areaStyle: {
+                        color: '#8392A5'
+                    },
+                    lineStyle: {
+                        opacity: 0.8,
+                        color: '#8392A5'
+                    }
+                },
+                handleStyle: {
+                    color: '#fff',
+                    shadowBlur: 3,
+                    shadowColor: 'rgba(0, 0, 0, 0.6)',
+                    shadowOffsetX: 2,
+                    shadowOffsetY: 2
+                }
+            }, 
+            {
+                type: 'inside'
+            }
+        ],
+	    series: [
+	        {
+	            name:'成交价格',
+	            type:'line',
+	            stack: '总量',
+	            data:priceData
+	        }
+	    ]
+	};
+
+	myChart.setOption(option);
+
+
+
+</script> 
+
+
+
+
+
+</body>
+</html>

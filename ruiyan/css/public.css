@@ -1,0 +1,70 @@
+/*@media (max-width:1400px) {
+  body{zoom:0.8;}
+}*/
+
+ html { 
+   overflow-x: hidden; 
+   overflow-y: auto; 
+} 
+
+body{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+}
+
+ .container{
+   width: 1920px;
+   margin:0 auto;
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   position:absolute;
+   left:50%;margin-left:-960px;
+   background: white;
+   min-height: 1000px;
+   animation:containerInto 0.8s;
+   -webkit-animation:containerInto 0.8s;
+   -moz-animation:containerInto 0.8s;
+   -o-animation:containerInto 0.8s;
+}
+
+@keyframes containerInto{
+  from{opacity: 0; top: -30px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-webkit-keyframes containerInto{
+  from{opacity: 0; top: -30px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-moz-keyframes containerInto{
+  from{opacity: 0; top: -30px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-o-keyframes containerInto{
+  from{opacity: 0; top: -30px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+
+
+
+ .container a,button,input,textarea{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+ }
+
+button{
+  cursor: pointer;
+  outline: none;
+}
+
+.Left{
+  float: left;
+}
+
+.Right{
+  float: right;
+}
