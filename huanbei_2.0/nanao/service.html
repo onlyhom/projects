@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>南奥—您身边的整合营销传播架构</title>
+        <meta name="keywords" content="南奥,整合营销,一站式活动解决平台">  
+        <meta name="description" content="南奥—您身边的整合营销传播架构">
+        <link rel="stylesheet" href="statics/css/bootstrap.css">
+        <link rel="stylesheet" href="statics/css/front.css">
+        <script src="statics/js/jquery-1.12.2.min.js"></script>
+        <script src="statics/js/bootstrap.js"></script>
+        <script src="statics/js/front.js"></script>
+        <script src="statics/js/jquery.mouseDelay.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo_box">
+                <img src="statics/images/577112de1a8ff.png" style="width: 220px; margin: 0 0 10px 0;">
+                <p>—— 南奥，您身边的整合营销传播架构！——</p>
+            </div>
+            <div class="clear"></div>
+            <div class="header_menu_box">
+                <div class="menu_list" style="width: 1000px; margin: 0 auto;">
+                    <a class="menu" id="index" href="index.html">首页</a>  
+                    <a class="menu" id="aboutUs" href="aboutUs.html">认识南奥</a>
+                    <a class="menu" id="service" href="service.html">南奥服务</a>
+                    <a class="menu" id="news" href="news.html">南奥资讯</a>
+                    <a class="menu" id="cases" href="cases.html">南奥案例</a> 
+                    <a class="menu" id="contactUs" href="contactUs.html">联系南奥</a>  
+                    <a class="menu" id="joinUs" href="joinUs.html">加入南奥</a> 
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="statics/css/front_v2.css-t=1475111549.css">
+<link rel="stylesheet" href="statics/css/img_group.css-t=1475111549.css">
+<script src="statics/js/img_group.js"></script>
+
+<style>
+    .carousel-inner{
+        height: 506px;
+        overflow: hidden;
+        background: #eeeeee;
+    }
+    .carousel-inner .item{
+        margin: 50px 0 0 0;
+        text-align: center;
+        height: 400px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+        display: inline-table;
+        height: 400px;
+    }
+    .carousel-indicators{
+        bottom: 10px;
+    }
+    .carousel-indicators li{
+        margin: 0 6px;
+        width: 12px;
+        height: 12px;
+    }
+    .carousel-indicators .active{
+        margin: 0 6px;
+        width: 12px;
+        height: 12px;
+        background: red;
+        border: 1px solid red;
+    }
+    
+    .carousel-control.left{
+        width: 54px;
+        height: 80px;
+        background-image: url("statics/images/icon_left.png");
+        left: 60px;
+        top: 42%;
+        
+    }
+    .carousel-control.left:hover{
+        width: 54px;
+        height: 80px;
+        background-image: url("statics/images/icon_left_current.png");
+        left: 60px;
+        top: 42%;
+        
+    }
+    .carousel-control.right{
+        width: 54px;
+        height: 80px;
+        background-image: url("statics/images/icon_right.png");
+        right: 60px;
+        top: 42%;
+    }
+    .carousel-control.right:hover{
+        width: 54px;
+        height: 80px;
+        background-image: url("statics/images/icon_right_current.png");
+        right: 60px;
+        top: 42%;
+    }
+    
+    .carousel-inner .item .item_1_content_1{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+    .carousel-inner .item .item_1_content_2{
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+    .carousel-inner .item .item_2_content_1{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+    .carousel-inner .item .item_2_content_2{
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+    .carousel-inner .item .item_3_content_1{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+    .carousel-inner .item .item_3_content_2{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+    }
+</style>
+
+<div class="container">
+    <div class="slogen_v2">
+        <div class="title_1">一站式活动解决方案提供平台</div>
+        <div class="sub_title">专精于活动管理服务，活动策划+活动执行</div>
+    </div>
+</div>
+<div class="container_main_1">
+    <div class="container_v2_1">
+        <div class="section_1">
+            <div class="title_1">
+                我们的定位：组织活动管家
+            </div>
+            <div class="setion_1_img_list">
+                <div class="item first">
+                    <div class="img_box"><img src="statics/images/setion_1_img_1.png"></div>
+                    <div class="content">项目管家</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_1_img_2.png"></div>
+                    <div class="content">策划管家</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_1_img_3.png"></div>
+                    <div class="content">设计管家</div>
+                </div>
+                <div class="item last">
+                    <div class="img_box"><img src="statics/images/setion_1_img_4.png"></div>
+                    <div class="content">执行管家</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators hidden">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol>
+   <div class="carousel-inner">
+        <div class="item active" style="background-image: url('statics/images/setion_2_img_1_1.png')">
+            <div class="item_1_content_1">我们帮助客户实现单个活动活动前、活动中到活动后的全流程管理</div>
+            <div class="item_1_content_2">活动前：活动场地确定、活动主题确定、活动嘉宾邀约、活<br>动赞助事宜明确、活动场地设计布置规划、活动流程确定</div>
+        </div>
+        <div class="item" style="background-image: url('statics/images/setion_2_img_1_2.png')">
+            <div class="item_2_content_1">我们帮助客户实现单个活动活动前、活动中到活动后的全流程管理</div>
+            <div class="item_2_content_2">活动中：活动嘉宾接待、现场布置搭建、灯光舞<br>美调试使用、节目编排、流程彩排、活动控场</div>
+        </div>
+        <div class="item" style="background-image: url('statics/images/setion_2_img_1_3.png')">
+            <div class="item_2_content_1">我们帮助客户实现单个活动活动前、活动中到活动后的全流程管理</div>
+            <div class="item_2_content_2">活动后：活动效果反馈、活动数据统计</div>
+        </div>
+   </div>
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&nbsp;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&nbsp;</a>
+</div>
+
+
+<div class="container_main_2 hidden">
+    <div class="section_2">
+        <div class="title_1">
+            我们帮助客户实现单个活动活动前、活动中到活动后的全流程管理
+        </div>
+        <div class="img_content">
+            <img src="statics/images/setion_2_img_1.png">
+        </div>
+    </div>
+</div>
+<div class="container_main_1">
+    <div class="container_v2_1">
+        <div class="section_3">
+            <div class="title_1">
+                我们帮助客户管理规划全年的活动
+            </div>
+            <div class="sub_title_1">
+                一个组织全年有很多活动方式可以规划，其中，包含对外市场活动与内部行政活动两类<br>
+                我们根据行业特性、公司特性做全年活动规划，根据活动需求出具体活动方案策略
+            </div>
+            <div class="setion_3_img_list">
+                <div class="item_1">
+                    <div class="img_box_1"><img src="statics/images/setion_3_img_1.png"></div>
+                    <div class="content">对外市场活动</div>
+                </div>
+                <div class="item_2">
+                    <div class="img_box_2"><img src="statics/images/setion_3_img_2.png"></div>
+                    <div class="content">内部行政活动</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_main_2">
+    <div class="container_v2_2">
+        <div class="section_4">
+            <div class="title_1">
+                我们提供活动组织策划以及活动落地执行的整体活动管理服务<br>
+                但是！除了活动本身，我们还具备众多周边资源！
+            </div>
+            <div class="setion_4_img_list">
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_4_img_1.png"></div>
+                    <div class="content">场地资源</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_4_img_2.png"></div>
+                    <div class="content">媒体资源</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_4_img_3.png"></div>
+                    <div class="content">贴心礼品</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_4_img_4.png"></div>
+                    <div class="content">宣传片</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_4_img_5.png"></div>
+                    <div class="content">印刷资源</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_4_img_6.png"></div>
+                    <div class="content">活动设计</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_4_img_7.png"></div>
+                    <div class="content">名人资源</div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_4_img_8.png"></div>
+                    <div class="content">组织资源</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container_main_1 hidden">
+    <div class="container_v2_1">
+        <div class="section_5">
+            <div class="title_1">
+                享受过活动管家服务的客户们：
+            </div>
+            <div class="setion_5_img_list">
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_5_img_1_1.jpg"></div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_5_img_1_2.jpg"></div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_5_img_1_3.jpg"></div>
+                </div>
+                <br>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_5_img_1_4.jpg"></div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_5_img_1_5.jpg"></div>
+                </div>
+                <div class="item">
+                    <div class="img_box"><img src="statics/images/setion_5_img_1_6.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container_main_1">
+    <div class="container_v2_1">
+        <div class="section_5">
+            <div class="title_1">
+                享受过活动管家服务的客户们：
+            </div>
+            <div class="container_main_1">
+                <div class="cd-gallery-container">
+                    <nav class="cd-filter hidden">
+                        <ul>
+                            <li><a class="selected" data-type="img_group_1" href="#0" id="img_group_index_1">img_group_1</a></li>
+                            <li><a data-type="img_group_2" href="#0" id="img_group_index_2">img_group_2</a></li>
+                            <li><a data-type="img_group_3" href="#0" id="img_group_index_3">img_group_3</a></li>
+                            <li><a data-type="img_group_4" href="#0" id="img_group_index_4">img_group_4</a></li>
+                            <li><a data-type="img_group_5" href="#0" id="img_group_index_5">img_group_5</a></li>
+                            <li><a data-type="img_group_6" href="#0" id="img_group_index_6">img_group_6</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="cd-gallery cd-container setion_5_img_list">
+                        <li class="item">
+                            <ul class="cd-item-wrapper img_box">
+                                <li data-type="img_group_1" class="is-visible"><img src="statics/images/setion_5_img_1_1.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_2" class="is-hidden"><img src="statics/images/setion_5_img_2_1.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_3" class="is-hidden"><img src="statics/images/setion_5_img_3_1.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_4" class="is-hidden"><img src="statics/images/setion_5_img_4_1.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_5" class="is-hidden"><img src="statics/images/setion_5_img_5_1.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_6" class="is-hidden"><img src="statics/images/setion_5_img_6_1.jpg" alt="thumbnail"></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <ul class="cd-item-wrapper img_box">
+                                <li data-type="img_group_1" class="is-visible"><img src="statics/images/setion_5_img_1_2.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_2" class="is-hidden"><img src="statics/images/setion_5_img_2_2.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_3" class="is-hidden"><img src="statics/images/setion_5_img_3_2.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_4" class="is-hidden"><img src="statics/images/setion_5_img_4_2.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_5" class="is-hidden"><img src="statics/images/setion_5_img_5_2.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_6" class="is-hidden"><img src="statics/images/setion_5_img_6_2.jpg" alt="thumbnail"></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <ul class="cd-item-wrapper img_box">
+                                <li data-type="img_group_1" class="is-visible"><img src="statics/images/setion_5_img_1_3.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_2" class="is-hidden"><img src="statics/images/setion_5_img_2_3.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_3" class="is-hidden"><img src="statics/images/setion_5_img_3_3.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_4" class="is-hidden"><img src="statics/images/setion_5_img_4_3.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_5" class="is-hidden"><img src="statics/images/setion_5_img_5_3.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_6" class="is-hidden"><img src="statics/images/setion_5_img_6_3.jpg" alt="thumbnail"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <ul class="cd-gallery cd-container setion_5_img_list">
+                        <li class="item">
+                            <ul class="cd-item-wrapper img_box">
+                                <li data-type="img_group_1" class="is-visible"><img src="statics/images/setion_5_img_1_4.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_2" class="is-hidden"><img src="statics/images/setion_5_img_2_4.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_3" class="is-hidden"><img src="statics/images/setion_5_img_3_4.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_4" class="is-hidden"><img src="statics/images/setion_5_img_4_4.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_5" class="is-hidden"><img src="statics/images/setion_5_img_5_4.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_6" class="is-hidden"><img src="statics/images/setion_5_img_6_4.jpg" alt="thumbnail"></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <ul class="cd-item-wrapper img_box">
+                                <li data-type="img_group_1" class="is-visible"><img src="statics/images/setion_5_img_1_5.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_2" class="is-hidden"><img src="statics/images/setion_5_img_2_5.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_3" class="is-hidden"><img src="statics/images/setion_5_img_3_5.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_4" class="is-hidden"><img src="statics/images/setion_5_img_4_5.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_5" class="is-hidden"><img src="statics/images/setion_5_img_5_5.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_6" class="is-hidden"><img src="statics/images/setion_5_img_6_5.jpg" alt="thumbnail"></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <ul class="cd-item-wrapper img_box">
+                                <li data-type="img_group_1" class="is-visible"><img src="statics/images/setion_5_img_1_6.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_2" class="is-hidden"><img src="statics/images/setion_5_img_2_6.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_3" class="is-hidden"><img src="statics/images/setion_5_img_3_6.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_4" class="is-hidden"><img src="statics/images/setion_5_img_4_6.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_5" class="is-hidden"><img src="statics/images/setion_5_img_5_6.jpg" alt="thumbnail"></li>
+                                <li data-type="img_group_6" class="is-hidden"><img src="statics/images/setion_5_img_6_6.jpg" alt="thumbnail"></li>
+                            </ul>
+                        </li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+	var current_img_group_index = 1;
+	
+	function imgGroupChange()
+	{
+		current_img_group_index++;
+		if(6 < current_img_group_index) {
+			current_img_group_index = 1;
+		}
+		$('#img_group_index_'+current_img_group_index).click();
+	}
+	
+	$(document).ready(function(){
+		setInterval('imgGroupChange()', 3000);
+	});
+</script>
+
+        <div class="contact_box share">
+            <a name="contact_box"></a>
+            <div class="item">
+                <img src="statics/images/bottom_icon1.png">
+                <h5><o>最新动态</o></h5>
+                <div><a href="">新闻标题新闻标题1</a></div>
+                <div><a href="">新闻标题新闻标题2</a></div>
+                <div><a href="">新闻标题新闻标题3</a></div>  
+            </div>
+
+            <div class="item">
+                <img src="statics/images/bottom_icon2.png">
+                <h5><o>最新案例</o></h5>
+                <div><a href="">案例名称案例名称1</a></div>
+                <div><a href="">案例名称案例名称2</a></div>
+                <div><a href="">案例名称案例名称3</a></div>
+            </div>
+            <div class="item">
+                <img src="statics/images/bottom_icon3.png">
+                <h5><o>友情链接</o></h5>
+                <div><a href="">友情网站1</a></div>
+                <div><a href="">友情网站2</a></div>
+                <div><a href="">友情网站3</a></div>
+            </div>
+
+        </div>
+        <div class="footer_menu_box">
+            <div class="footer_menu_container">
+                <a class="footer_menu" href="aboutUs.html">关于我们</a>
+                <a class="footer_menu" href="joinUs.html">加入我们</a>
+                <a class="footer_menu" href="contactUs.html">联系我们</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                Copyright (c) 20011-2016 NAAO [ Innovation for China ] 沪ICP备08104990号            </div>
+        </div>
+
+        <script language="javascript">
+            var referer = 'index.html';
+            var current_page = '/Web/Index/service';
+            var tp_module = '/Web';
+            $(document).ready(function(){
+                $('#service').addClass('current');
+                
+                //图片经过效果
+                $('.hover_img').hover(function(){
+                    var hover_img = $(this).attr('hover_img_in');
+                    $(this).attr('src', hover_img);
+                }, function(){
+                    var hover_img = $(this).attr('hover_img_out');
+                    $(this).attr('src', hover_img);
+                });
+                
+                //右侧悬浮bar
+                $(".right_bar_icon_contact").mouseDelay(100).hover(function(){
+                        var img_name = $(this).attr('img_name');
+                        $(this).find('img').attr('src', 'statics/images/'+img_name+'_current.png');
+                    },function(){
+                        var img_name = $(this).attr('img_name');
+                        $(this).find('img').attr('src', 'statics/images/'+img_name+'.png');
+                    }
+                );
+                $(".right_bar_icon_qq").mouseDelay(100).hover(function(){
+                        $('#right_bar_icon_qq_img').hide();
+                        $('.right_bar_icon_qq_current').show();
+                    },function(){
+                        $('.right_bar_icon_qq_current').hide();
+                        $('#right_bar_icon_qq_img').show();
+                    }
+                );
+                $(".right_bar_icon_phone").mouseDelay(100).hover(function(){
+                        var img_name = $(this).attr('img_name');
+                        $(this).find('img').attr('src', 'statics/images/'+img_name+'_current.png');
+                        $('.right_bar_icon_phone_current').show();
+                    },function(){
+                        var img_name = $(this).attr('img_name');
+                        $(this).find('img').attr('src', 'statics/images/'+img_name+'.png');
+                        $('.right_bar_icon_phone_current').hide();
+                    }
+                );
+                $(".right_bar_icon_wechat").mouseDelay(100).hover(function(){
+                        var img_name = $(this).attr('img_name');
+                        $('#right_bar_icon_wechat').attr('src', 'statics/images/'+img_name+'_current.png');
+                        $('.right_bar_icon_wechat_current').show();
+                    },function(){
+                        var img_name = $(this).attr('img_name');
+                        $('#right_bar_icon_wechat').attr('src', 'statics/images/'+img_name+'.png');
+                        $('.right_bar_icon_wechat_current').hide();
+                    }
+                );
+                
+                //鼠标滚动事件，只有看不到了首页slider，才展示
+                if ('/Web/Index/index' == current_page) {
+                    var main_content_bar_box_top_height = 0;
+                    $(document).scroll(function() {
+                        main_content_bar_box_top_height = $('.main_content_bar_box').offset().top;
+                        if (460 <= main_content_bar_box_top_height) {
+                            $('.main_content_bar_box').show();
+                        } else {
+                            $('.main_content_bar_box').hide();
+                        }
+                    });
+                } else {
+                    $('.main_content_bar_box').show();
+                }
+                
+                //隐藏统计代码
+                $("#LXB_CONTAINER").hide();
+                
+                if (isMobile()){
+                    location.href= 'Wap.html';
+                }
+            });
+        </script>
+    </body>
+<.htmll>

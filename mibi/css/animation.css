@@ -1,0 +1,200 @@
+
+.bottomNumber p i:nth-child(1){
+  -o-animation-duration:2.4s;
+  -moz-animation-duration:2.4s;
+  -webkit-animation-duration:2.4s;
+  animation-duration:2.4s;
+}
+
+
+.bottomNumber p i:nth-child(2){
+  -o-animation-duration:2.2s;
+  -moz-animation-duration:2.2s;
+  -webkit-animation-duration:2.2s;
+  animation-duration:2.2s;
+}
+
+
+.bottomNumber p i:nth-child(3){
+  -o-animation-duration:2s;
+  -moz-animation-duration:2s;
+  -webkit-animation-duration:2s;
+  animation-duration:2s;
+}
+
+.bottomNumber p i:nth-child(4){
+  -o-animation-duration:1.8s;
+  -moz-animation-duration:1.8s;
+  -webkit-animation-duration:1.8s;
+  animation-duration:1.8s;
+}
+
+.bottomNumber p i:nth-child(5){
+  -o-animation-duration:1.6s;
+  -moz-animation-duration:1.6s;
+  -webkit-animation-duration:1.6s;
+  animation-duration:1.6s;
+}
+
+.bottomNumber p i:nth-child(6){
+  -o-animation-duration:1.4s;
+  -moz-animation-duration:1.4s;
+  -webkit-animation-duration:1.4s;
+  animation-duration:1.4s;
+}
+
+
+.bottomNumber p i:nth-child(7){
+  -o-animation-duration:1.2s;
+  -moz-animation-duration:1.2s;
+  -webkit-animation-duration:1.2s;
+  animation-duration:1.2s;
+}
+
+.bottomNumber p i:nth-child(8){
+  -o-animation-duration:1s;
+  -moz-animation-duration:1s;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.bottomNumber p i:nth-child(9){
+  -o-animation-duration:0.8s;
+  -moz-animation-duration:0.8s;
+  -webkit-animation-duration:0.8s;
+  animation-duration:0.8s;
+}
+
+.bottomNumber p i:nth-child(10){
+  -o-animation-duration:0.7s;
+  -moz-animation-duration:0.7s;
+  -webkit-animation-duration:0.7s;
+  animation-duration:0.7s;
+}
+
+
+
+/*
+.bottomNumber p i:nth-child(1){
+  animation-name:Number1Into;
+  animation-duration:0.8s;
+}
+
+@keyframes Number1Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(360deg);}
+}
+
+
+
+.bottomNumber p i:nth-child(2){
+  animation-name:Number2Into;
+  animation-duration:1s;
+}
+
+@keyframes Number2Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(360deg);}
+}
+
+
+
+
+.bottomNumber p i:nth-child(3){
+  animation-name:Number3Into;
+  animation-duration:1.2s;
+}
+
+@keyframes Number3Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(720deg);}
+}
+
+
+
+.bottomNumber p i:nth-child(4){
+  animation-name:Number4Into;
+  animation-duration:1.4s;
+}
+
+@keyframes Number4Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(720deg);}
+}
+
+
+
+
+.bottomNumber p i:nth-child(5){
+  animation-name:Number5Into;
+  animation-duration:1.6s;
+}
+
+@keyframes Number5Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(720deg);}
+}
+
+
+
+
+.bottomNumber p i:nth-child(6){
+  animation-name:Number6Into;
+  animation-duration:1.8s;
+}
+
+@keyframes Number6Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(1080deg);}
+}
+
+
+
+
+.bottomNumber p i:nth-child(7){
+  animation-name:Number7Into;
+  animation-duration:2s;
+}
+
+@keyframes Number7Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(1080deg);}
+}
+
+
+
+.bottomNumber p i:nth-child(8){
+  animation-name:Number8Into;
+  animation-duration:2.2s;
+}
+
+@keyframes Number8Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(1080deg);}
+}
+
+
+
+
+.bottomNumber p i:nth-child(9){
+  animation-name:Number9Into;
+  animation-duration:2.8s;
+}
+
+@keyframes Number9Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(1440deg);}
+}
+
+
+
+
+.bottomNumber p i:nth-child(10){
+  animation-name:Number10Into;
+  animation-duration:3s;
+}
+
+@keyframes Number10Into{
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(1440deg);}
+}*/

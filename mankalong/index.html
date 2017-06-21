@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<title>曼卡龙幸运大抽奖</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/awardRotate.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+
+
+</head>
+<body>
+
+  <div class="contain">
+  	
+    <div class="fullBG"><img src="images/bg.jpg" alt=""></div><!-- 主页背景 -->
+    <div class="popText"><img src="images/pop.gif" alt=""></div><!-- 曼卡龙幸运大抽奖 -->
+    <a href="introduce.html" class="activityDetail"><img src="images/detail.png" alt=""></a>
+    <a href="" class="checkMyPrize"><img src="images/check.png" alt="查看我的奖品"></a>
+
+	<div class="banner">
+		<div class="turnplate">
+			<canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
+      <div class="halo"><img src="images/halo.png" alt=""></div><!-- 曼卡龙幸运大抽奖 -->
+			<img class="pointer" src="images/turnplate-pointer.png"/>
+		</div>
+	</div>
+<!--     <img src="images/1.png" id="shan-img" style="display:none;" />
+    <img src="images/2.png" id="sorry-img" style="display:none;" /> -->
+  </div><!-- contain -->
+
+
+<!-- 客户信息填写窗口 -->
+<div class="pop clientInfoPop" style="display:none;">
+  <div class="popBG"></div>
+  <div class="popWindow">
+     <div class="title"><i class="closeButton"></i></div>
+     <!-- 内容开始 -->
+     <div class="content">
+       <div class="fixWidth">
+         <form action="">
+            <h2>请输入姓名</h2>
+            <input type="text" required="required">
+            <h2>请输入手机号</h2>
+            <input type="text" required="required">
+            <h2>请选择抽奖门店</h2>
+
+            <div class="line">
+              <select name="" id="secProvince"></select> <!-- 省 -->
+              <select name="" id="secCity"></select><!-- 市 -->
+            </div>
+
+            <select name="" id="secStore"></select><!-- 门店名 -->
+            <input type="submit" value="开始抽奖">
+         </form>
+       </div>
+     </div><!-- content -->
+  </div>
+</div>
+<!-- 客户信息填写窗口 END-->
+
+
+<!-- 奖品窗口 -->
+<div class="pop luckyPrize" style="display:none;">
+  <div class="popBG"></div>
+  <div class="popWindow">
+     <div class="title"><i class="closeButton"></i></div>
+     <!-- 内容开始 -->
+     <div class="content">
+        <div class="winPrize">
+          <h2>恭喜您抽中</h2>
+          <h1>2000元优惠券</h1>
+          <img src="images/winPrize.png" alt="">
+          <div class="clickToReceive"><img src="images/clickTo.png" alt="点击领取"></div>
+        </div>
+     </div><!-- content -->
+  </div>
+</div>
+<!-- 奖品窗口 END-->
+
+<!-- 查看奖品窗口 -->
+<div class="pop tipsBox" style="display:none;">
+  <div class="popBG"></div>
+  <div class="popWindow">
+     <div class="title"><i class="closeButton"></i></div>
+     <!-- 内容开始 -->
+     <div class="content">
+       <div class="fixWidth">
+          <div class="tipsBoxBG">
+            <div class="box">
+              <p>奖品已放入您的微信卡券中</p>
+              <p>请注意查收</p>
+              <a href="" class="whiteBtn">查看我的奖品</a>
+            </div>
+          </div><!-- tipsBox -->
+       </div>
+     </div><!-- content -->
+  </div>
+</div>
+<!-- 查看奖品窗口 END-->
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/page.js"></script><!-- 转盘渲染 窗口的显示与切换 -->
+<script type="text/javascript" src="js/storeData.js"></script><!-- 地区-门店信息 -->
+
+</body>
+</html>

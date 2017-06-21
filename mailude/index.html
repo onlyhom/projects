@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>迈路德</title>
+	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.luara.0.0.1.min.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+           <div id="head">
+               <img src="images/logo.jpg" alt="" id="logo">
+                   <ul id="nav">
+                     <a href="index.html"><li>网站首页</li></a>
+                     <a href="aboutUS.html"><li>关于我们</li></a>
+                     <a href="dynamicNews.html"><li>新闻动态</li></a>
+                     <a href="productCenter.html"><li>产品中心</li></a>
+                     <a href="contactUs.html"><li>联系我们</li></a>
+                   </ul>
+           </div>
+        </div><!-- header -->
+
+    	<div id="main">
+<!--     		<img src="images/banner.jpg" alt=""> -->
+    <div class="example2">
+        <ul>
+            <li><img src="images/banner.jpg" alt="1"/></li>
+            <li><img src="images/banner.jpg" alt="2"/></li>
+            <li><img src="images/banner.jpg" alt="3"/></li>
+            <li><img src="images/banner.jpg" alt="4"/></li>
+        </ul>
+        <center><ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol></center>
+    </div>
+    <script>
+        $(function(){
+            <!--调用Luara-->
+            $(".example2").luara({width:"1920",height:"855",interval:2000,selected:"seleted",deriction:"left"});
+
+        });
+    </script>
+           
+
+            <div id="sectionWelcome">
+
+            	   <center> <img src="images/欢迎来到迈路德.jpg" alt="">
+		            <div id="sectionWelcomeText">
+			            <p>杭州迈路德汽配有限公司成立于2007年10月是由XXXXXXX和XXXXX共同出资组建，由XX汽车授权经营上汽制造有限公司自主研发的XXXX系列汽车的销
+						售服务企业，公司占地面积6700平方米，公司是集汽车、维修、配件供应及信息反馈为一体的4S专营店。</p>
+						<p>公司秉承XX的高贵优雅的气质，遵循“以人为本”、 “顾客满意”服务准则，让消费者体验充满绅士风范的每一个细节，为客户创造全新的
+						汽车文化体验。开辟上门试乘试驾服务、上门维修保养和用户免费的商务会报等尊荣服务。</p>
+					</div>
+
+
+			         <button id="knowMore" onclick="window.open('#')">了解更多</button>
+			     </center>
+            </div>
+
+            <div id="sectionProduct">
+            	 <div id="sectionProductMain">
+		            	 
+		            	<center><img src="images/最新产品.jpg" alt=""></center>
+		            	 
+		            	  <div id="goods">				         
+				          	<img src="images/刹车片.jpg" alt=""></br>
+                                <B>刹车片</B></br>
+				          		<p>市场价： </p><p class="textDelete">680000.00</p></br>
+				          		<p>价格： </p><p class="textRed">650000.00</p>
+				          </div>
+
+		            	  <div id="goods">				         
+				          	<img src="images/刹车片.jpg" alt=""></br>
+                                <B>刹车片</B></br>
+				          		<p>市场价： </p><p class="textDelete">680000.00</p></br>
+				          		<p>价格： </p><p class="textRed">650000.00</p>
+				          </div>
+
+		            	  <div id="goods">				         
+				          	<img src="images/刹车片.jpg" alt=""></br>
+                                <B>刹车片</B></br>
+				          		<p>市场价： </p><p class="textDelete">680000.00</p></br>
+				          		<p>价格： </p><p class="textRed">650000.00</p>
+				          </div>
+
+		            	  <div id="goods">				         
+				          	<img src="images/刹车片.jpg" alt=""></br>
+                                <B>刹车片</B></br>
+				          		<p>市场价： </p><p class="textDelete">680000.00</p></br>
+				          		<p>价格： </p><p class="textRed">650000.00</p>
+				          </div>
+            	 </div>
+            </div>
+
+            <div id="sectionGuide">
+
+            	       <center><img src="images/选购指南.jpg" alt=""></center>
+		            	  <div id="goodsGuide">				         
+				          	<img src="images/轮胎.jpg" alt=""></br>
+                                <p class="goodsGuideTitle">如何不被“暗算”？</p></br>
+				          		<p class="goodsGuideText">记者在采访过程中发现许多消费者购车时由于准备不充分思考不到位，而在购车过程中上当受骗。</p></br>
+				          </div>
+
+		            	  <div id="goodsGuide">				         
+				          	<img src="images/轮胎.jpg" alt=""></br>
+                                <p class="goodsGuideTitle">如何不被“暗算”？</p></br>
+				          		<p class="goodsGuideText">记者在采访过程中发现许多消费者购车时由于准备不充分思考不到位，而在购车过程中上当受骗。</p></br>
+				          </div>
+
+		            	  <div id="goodsGuide">				         
+				          	<img src="images/轮胎.jpg" alt=""></br>
+                                <p class="goodsGuideTitle">如何不被“暗算”？</p></br>
+				          		<p class="goodsGuideText">记者在采访过程中发现许多消费者购车时由于准备不充分思考不到位，而在购车过程中上当受骗。</p></br>
+				          </div>
+			              <center>  <button id="knowMore" onclick="window.open('#')">了解更多</button> </center>
+
+            </div>
+
+
+
+            <div id="sectionContact">
+                <div id="sectionContactMain">
+                		<center><img src="images/联系我们.png" alt=""></center>
+
+                <div id="lside">
+                	<img src="images/联系.png" alt=""></br></br>
+
+                	<img src="images/logo2.png" alt="">
+                	<p id="lsideTitle">杭州迈路德汽配有限公司</p></br>
+                	<p id="lsideText">杭州迈路德汽配有限公司是致力于网络开发与营销技术的高新技术企业，经过几年的稳步发展，已成为杭州地区网络服务的重要力量，在业界拥有良好的口碑。</p>
+        
+                    <ul>
+                    	<li style="background:url(images/qq1.png) no-repeat;">QQ：18658876399</li></br>
+                    	<li style="background:url(images/气泡.png) no-repeat;">Tel：18658876399</li></br>
+                    	<li style="background:url(images/信息.png) no-repeat;">email：18658876399@qq.com</li></br>
+                    	<li style="background:url(images/飞机.png) no-repeat;">address：杭州市拱墅区花园岗街111号金通汽配城8幢19-20号</li>
+                    </ul></br>
+                     
+                     <div id="contact">
+                     	 <a href="#" target=_blank><img src="images/微博.png" alt=""></a>
+                     	 <a href="#" target=_blank><img src="images/腾讯.png" alt=""></a>
+                     	 <a href="#" target=_blank><img src="images/QQ.png" alt=""></a>
+                     	 <a href="#" target=_blank><img src="images/淘宝.png" alt=""></a>
+
+                     </div>
+
+                </div>
+
+
+
+                <div id="rside">
+                	<img src="images/留言.png" alt=""></br></br></br></br></br>
+
+                	<form action="">
+	                	<p class=textRed>*</p><label for="name">昵称：</br></label> <input type="text" name="name" id="name" size="59px"></br></br>
+	                	<p class=textRed>*</p><label for="email">电子邮箱：</br></label> <input type="text" name="email" id="email"	size="59px"></br></br>
+	                	<p class=textRed>*</p><label for="content">留言内容：</br></label> <textarea name="content" id="content"cols ="60" rows = "6"></textarea></br></br></br>
+	                	<input type="submit" value="提交" id="subButton">
+                	</form>
+                </div>
+
+
+
+
+
+                </div>	
+            </div>
+
+
+
+    	</div><!-- main -->
+
+
+
+        <div id="footer">
+        	<center>
+        	<p>Copyright © 2008-2013 All rights reserved. 版权所有： 杭州迈路德汽配有限公司</p>
+        	<p>电话：+86-0571-89912235 传 真： +86-0571-89912237 公司地址：杭州市拱墅区花园岗街111号金通汽配城8幢19-20号  备案号：浙ICP备11033703号</p>
+        	<p>您是第1217618位访客常年法律顾问：浙江东孚律师事务所 邵义 律师</p>
+            </center>
+
+        </div> <!-- footer-->
+
+
+
+
+
+
+    </div><!-- 容器 -->
+
+
+	
+</body>
+</html>

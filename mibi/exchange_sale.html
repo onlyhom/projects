@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>象与国际-交易所</title>
+<!–[if IE]>  
+  <script src="js/html5.js" type="text/javascript"></script>
+<![endif]–>
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="exchange">
+  <h1>交易所</h1>
+
+   <ul class="topNav">
+     <a href="exchange_sale.html"><li class="on">【出售】</li></a>
+     <a href="exchange_askBuy.html"><li>【求购】</li></a>
+     <a href="exchange_checkSale.html"><li>【登记】</li></a>
+     <a href="exchange_history.html"><li>【历史交易】</li></a>
+     <div class="clearfix"></div>
+   </ul>
+
+   <!-- 出售 -->
+   <div class="frames deal">
+      <div class="menuBar">
+        <i class="refresh">刷新</i> 
+        <select name="" id="">
+          <option value="">单价升序</option>
+          <option value="">单价降序</option>
+        </select>
+      </div>
+      <ul class="leftNav">
+        <h2>分类</h2>
+        <li class="on">全部</li>
+        <li>0-10米币</li>
+        <li>11-50米币</li>
+        <li>51-100米币</li>
+        <li>100米币以上</li>
+      </ul>
+      <div class="tradeSection rightSide">
+        <table>
+          <tr class="title"><th>商品名</th><th>价格</th><th>出售方</th><th>操作</th></tr>
+          <tr>
+            <td class="productName"><img src="images/gift.jpg" alt="">30米币</td>
+            <td class="price">9000.00</td>
+            <td class="sellerName">卖家昵称</td>
+            <td class="buy"> <span>购买</span> </td>
+          </tr>
+          <tr>
+            <td class="productName"><img src="images/gift.jpg" alt="">50米币</td>
+            <td class="price">15000.00</td>
+            <td class="sellerName">卖家昵称</td>
+            <td class="buy"> <span>购买</span> </td>
+          </tr>
+          <tr>
+            <td class="productName"><img src="images/gift.jpg" alt="">70米币</td>
+            <td class="price">20000.00</td>
+            <td class="sellerName">卖家昵称</td>
+            <td class="buy"> <span>购买</span> </td>
+          </tr>
+          <tr>
+            <td class="productName"><img src="images/gift.jpg" alt="">30米币</td>
+            <td class="price">9000.00</td>
+            <td class="sellerName">卖家昵称</td>
+            <td class="buy"> <span>购买</span> </td>
+          </tr>
+          <tr>
+            <td class="productName"><img src="images/gift.jpg" alt="">300米币</td>
+            <td class="price">90000.00</td>
+            <td class="sellerName">卖家昵称</td>
+            <td class="buy"> <span>购买</span> </td>
+          </tr>
+          <tr>
+            <td class="productName"><img src="images/gift.jpg" alt="">30米币</td>
+            <td class="price">90.00</td>
+            <td class="sellerName">卖家昵称</td>
+            <td class="buy"> <span>购买</span> </td>
+          </tr>
+          <tr>
+            <td class="productName"><img src="images/gift.jpg" alt="">30米币</td>
+            <td class="price">9000.00</td>
+            <td class="sellerName">卖家昵称卖家昵称</td>
+            <td class="buy"> <span>购买</span> </td>
+          </tr>
+          <tr>
+            <td class="productName"><img src="images/gift.jpg" alt="">30米币</td>
+            <td class="price">9000.00</td>
+            <td class="sellerName">卖家昵称</td>
+            <td class="buy"> <span>购买</span> </td>
+          </tr>
+        </table>
+           <!-- 页码 -->
+           <div class="pages">
+              <a href="#"><div class="arrowL"> </div></a>
+              <a href="#" class="current">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#"><div class="arrowR"> </div></a>
+              <i>跳转到：</i><input type="text"> <input type="submit" value="GO">
+            </div>
+      </div>
+      <div class="clearfix"></div>
+   </div><!-- frames END -->
+
+
+
+
+<div class="clearfix"></div>
+</div><!-- exchange -->
+
+
+
+
+
+<!-- 确认购买弹窗 -->
+<div class="pop minBox confirmBuy" style="display: none;">
+  <div class="popBG"></div>
+  <div class="popUp">
+     <div class="title">系统提示<i class="closeButton"></i></div>
+     <div class="content">
+      <form action="">
+          <div class="center">
+           <p>30米币 售价：<i class="red">9000元</i></p>
+           <p>是否确认购买?</p>
+          </div>
+          <div class="bottom">
+             <input type="submit" value="是" class="checkInSuccess"> 
+             <input type="button" value="否" class="cancel">
+          </div>
+      </form>
+     </div><!-- content -->
+  </div>
+</div>
+<!-- 确认购买弹窗END -->
+
+
+
+
+
+
+<script src="js/page.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

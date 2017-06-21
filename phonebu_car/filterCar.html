@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>风步豪车租赁服务</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="汽车租赁,豪车租赁,汽车长期租赁">  
+    <meta name="description" content="汽车租赁">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.formVerify.js" type="text/javascript"></script>
+    <script src="js/jquery.rippleButton.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.3dflow.js" type="text/javascript"></script>
+    <script src="js/mobileSelect.js" type="text/javascript"></script>
+    <script src="js/sliderBar.js" type="text/javascript"></script>
+    <script src="js/vue.js" type="text/javascript"></script>
+    <script src="js/page.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+</head>
+<body>
+
+
+<div class="contain">
+
+    <div class="navBox"></div>
+    <div class="nav">
+        <div class="fixWidth">
+            <a onClick="javascript:history.back(-1);" class="returnBtn">返回</a>
+            <h1>风步豪车租赁服务</h1>
+        </div>
+    </div>
+
+    <div class="fixWidth filterPage">
+        <div class="filterMenu">
+            <div class="sortType">
+
+                <div class="input" id="sortType">婚礼用车</div>
+                <!-- <input type="text" value="婚礼用车" id="sortType" readonly="readonly"> -->
+            </div>
+
+
+            <div class="filters">
+                <div class="filter">
+                    <div class="input" id="carType">车型选择</div>
+                    <!-- <input type="text" value="车型选择" id="carType" readonly="readonly"> -->
+                </div>
+                <div class="filter">
+                    <div class="input" id="address">选择地区</div>
+                    <!-- <input type="text" value="选择地区" id="address" readonly="readonly"> -->
+                </div>
+                <div class="filter">
+                    <div class="input" id="priceRange">日租金</div>
+                    <!-- <input type="text" value="日租金" id="priceRange" readonly="readonly"> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="test">测试111</div>
+
+        <ul class="carList">
+            <a href="carDetail.html">
+                <li>
+                    <div class="zoomImage" style="background-image:url(images/test3.jpg)"></div>
+                    <div class="info">
+                        <h3>劳斯莱斯-型号劳斯莱斯-型号劳斯莱斯-型号劳斯莱斯-型号</h3>
+                        <h4>1300</h4>
+                    </div>
+                </li>
+            </a>
+            <a href="carDetail.html">
+                <li>
+                    <div class="zoomImage" style="background-image:url(images/test3.jpg)"></div>
+                    <div class="info">
+                        <h3>劳斯莱斯-型号劳斯莱斯-型号劳斯莱斯-型号劳斯莱斯-型号</h3>
+                        <h4>1300</h4>
+                    </div>
+                </li>
+            </a>
+<!--             <a href="carDetail.html">
+                <li>
+                    <div class="zoomImage" style="background-image:url(images/test3.jpg)"></div>
+                    <div class="info">
+                        <h3>劳斯莱斯-型号劳斯莱斯-型号劳斯莱斯-型号劳斯莱斯-型号</h3>
+                        <h4>1300</h4>
+                    </div>
+                </li>
+            </a>
+            <a href="carDetail.html">
+                <li>
+                    <div class="zoomImage" style="background-image:url(images/test3.jpg)"></div>
+                    <div class="info">
+                        <h3>劳斯莱斯-型号劳斯莱斯-型号劳斯莱斯-型号劳斯莱斯-型号</h3>
+                        <h4>1300</h4>
+                    </div>
+                </li>
+            </a> -->
+        </ul>
+    </div><!-- fixWidth -->
+
+    <!-- 底部导航 -->
+    <div class="bottomMenuEmpty"></div>
+    <ul class="bottomMenu">
+        <li class="on">
+            <a href="selectCar.html">
+                <div class="icon icon1"></div>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="tel:4006880000">
+                <div class="icon icon2"></div>
+                <p>客服</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="order.html">
+                <div class="icon icon3"></div>
+                <p>订单</p>
+            </a>
+        </li>
+        <li>
+            <a href="userCenter.html">
+                <div class="icon icon4"></div>
+                <p>我的</p>
+            </a>
+        </li>
+    </ul>
+    <!-- 底部导航 END -->
+
+</div><!-- contain -->
+
+
+
+<script type="text/javascript">
+
+
+var testCarData =
+[
+    {id:'1',value:'兰博基尼'},
+    {
+    	id:'2',
+    	value:'劳斯莱斯',
+    	childs:[
+            {
+                id:'1',
+                value:'所有车型'
+            },
+    		{
+    			id:'2',
+    			value:'幻影',
+    			childs:[
+    				{
+    					id:'1',
+    					value:'标准版'
+    				},
+    				{ 
+    					id:'2',
+    					value:'加长版'
+    				},
+    				{ 
+    					id:'3',
+    					value:'巅峰之旅'
+    				},
+    				{ 
+    					id:'4',
+    					value:'流光熠世'
+    				},
+    				{ 
+    					id:'5',
+    					value:'都会典藏版'
+    				} 
+    			]
+    		},
+    		{
+    			id:'3',
+    			value:'古思特',
+    			childs:[
+    				{
+    					id:'1',
+    					value:'加长版'
+    				},
+    				{
+    					id:'2',
+    					value:'永恒之爱'
+    				},
+    				{ 
+    					id:'3',
+    					value:'英骥'
+    				},
+    				{ 
+    					id:'4',
+    					value:'阿尔卑斯典藏版'
+    				}
+    			]
+    		},
+    		{
+    			id:'4',
+    			value:'魅影',
+    			childs:[
+    				{
+    					id:'1',
+    					value:'标准版'
+    				},
+    				{
+    					id:'2',
+    					value:'Black Badge'
+    				}
+    			]
+    		}
+    	]
+	},
+    {
+    	id:'3',
+    	value:'宾利',
+		childs:[
+            {
+                id:'1',
+                value:'所有车型'
+            },
+			{
+				id:'2',
+				value:'慕尚',
+				childs:[
+					{
+						id:'1',
+						value:'标准版'
+					},
+					{
+						id:'2',
+						value:'极致版'
+					}
+				]
+			},
+			{ 
+				id:'3',
+				value:'欧陆',
+				childs:[
+					{
+						id:'1',
+						value:'尊贵版'
+					},
+					{
+						id:'2',
+						value:'敞篷标准版'
+					},
+					{
+						id:'3',
+						value:'敞篷尊贵版'
+					}
+				]
+			}
+		]
+    },
+    {
+    	id:'4',
+    	value:'法拉利',
+    	childs:[
+            {
+                id:'1',
+                value:'所有车型'
+            },
+    		{
+    			id:'2',
+    			value:'LaFerrari'
+    		},
+    		{
+    			id:'3',
+    			value:'法拉利488'
+    		},
+    		{
+    			id:'4',
+    			value:'GTC4Lusso'
+    		}
+    	]
+    },
+    {
+    	id:'5',
+    	value:'玛莎拉蒂',
+    	childs:[
+            {
+                id:'1',
+                value:'所有车型'
+            },
+    		{
+    			id:'2',
+    			value:'总裁'
+    		},
+    		{
+    			id:'3',
+    			value:'玛莎拉蒂GT'
+    		},
+    		{
+    			id:'4',
+    			value:'Levante'
+    		}
+    	]
+    }
+];
+
+
+//----------------------------------------------------------------
+//控件实例化
+
+    var sortType = new MobileSelect({
+        trigger: '#carType',
+        title: '车型选择',
+        cascade: true,
+        wheels: [
+                    {data : testCarData}
+                ],
+        callback:function(indexArr, data){
+            console.log(data);
+        } 
+    });
+
+
+    var sortType = new MobileSelect({
+        trigger: '#sortType',
+        title: '用车类型',
+        wheels: [
+                    {data:[
+                        {id:'1',value:'婚礼用车'},
+                        {id:'2',value:'商务用车'},
+                        {id:'3',value:'自驾游用车'},
+                        {id:'4',value:'豪车接送'}
+                    ]}
+                ],
+        position:[0],
+        callback:function(indexArr, data){
+            console.log(data);
+        } 
+    });
+
+    //pc端需要在浏览器中设置可获取定位 直接点允许是没用的
+    //或者直接用手机打开此页面查看效果
+    var addressLocation = new MobileSelect({
+        trigger: '#address',
+        title: '正在定位...',
+        cascade: true,
+        wheels: [
+                    {data:[
+                        {
+                            id:'1',
+                            value:'附近',
+                            childs:[
+                                {id:'1',value:'1000米'},
+                                {id:'2',value:'2000米'},
+                                {id:'3',value:'3000米'},
+                                {id:'4',value:'5000米'},
+                                {id:'5',value:'10000米'}
+                            ]
+                        },
+                        {id:'2',value:'上城区'},
+                        {id:'3',value:'下城区'},
+                        {id:'4',value:'江干区'},
+                        {id:'5',value:'拱墅区'},
+                        {id:'6',value:'西湖区'}
+                    ]}
+                ],
+        position:[0,1],
+        callback:function(indexArr, data){
+            console.log(data);
+        } 
+    });
+
+    var priceRange = new SliderBar({
+        trigger: '#priceRange',
+        title: '日租金范围',
+        minValue: 0,
+        maxValue: 5000,
+        callback:function(data){
+        	console.log(data);
+        }
+    });
+
+
+    var test = new MobileSelect({
+        trigger: '#test',
+        title: '用车类型',
+        wheels: [
+                    {data:[
+                        {id:'1',value:'婚礼用车'},
+                        {id:'2',value:'商务用车'},
+                        {id:'3',value:'自驾游用车'},
+                        {id:'4',value:'豪车接送'}
+                    ]}
+                ],
+        position:[0],
+        callback:function(indexArr, data){
+            console.log(data);
+        } 
+    });
+
+
+//----------------------------------------------------------------
+//获取定位
+
+$(window).load(function(){
+    function getLocation() {  
+        //获取GPS坐标  
+        if (navigator.geolocation) {  
+            navigator.geolocation.getCurrentPosition(onSuccess, onError, { enableHighAccuracy: true, maximumAge: 1000 , timeout:5000});  
+        } else {  
+            alert("您的浏览器不支持使用HTML 5来获取地理位置服务");  
+        }  
+    }  
+
+    function onSuccess(value) {  
+        var longitude = value.coords.longitude;  
+        var latitude = value.coords.latitude;  
+
+        $.ajax({
+            url: 'http://api.map.baidu.com/geocoder/v2/?ak=btsVVWf0TM1zUBEbzFz6QqWF&callback=renderReverse&location=' + latitude + ',' + longitude + '&output=json&pois=1',
+            type: "get",
+            dataType: "jsonp",
+            jsonp: "callback",
+            success: function(data) {
+                var address = {
+                    country: data.result.addressComponent.country, //国家
+                    province: data.result.addressComponent.province, //省区
+                    city: data.result.addressComponent.city, //城市
+                    district: data.result.addressComponent.district, //区县
+                    street: data.result.addressComponent.street, //街道
+                    formatted_address: data.result.formatted_address, //完整地址
+                    longitude: longitude, //经度
+                    latitude: latitude //纬度
+                };
+                addressLocation.setTitle(address.city+address.district+address.street);
+            }
+        });
+    }  
+
+    function onError(error) {  
+        switch (error.code) {  
+            case error.PERMISSION_DENIED:  
+                alert("位置服务被拒绝");  
+                break;  
+            case error.POSITION_UNAVAILABLE:  
+                alert("暂时获取不到位置信息");  
+                break;  
+            case error.TIMEOUT: 
+                alert("获取信息超时");  
+                break;  
+            case error.UNKNOWN_ERROR: 
+                alert("未知错误");  
+                break;  
+        }  
+    }  
+
+   getLocation(); //可以先注释此句  开发时刷新就不用每次都有个获取位置的弹框
+
+});
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

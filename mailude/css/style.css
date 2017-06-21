@@ -1,0 +1,494 @@
+
+    .luara-left{position:relative;padding:0;overflow: hidden;}
+    .luara-left ul{position: relative;padding: inherit;margin: 0;}
+    .luara-left ul li{float: left;padding: inherit;margin: inherit;list-style: none;}
+    .luara-left ul li img{width: inherit;height: inherit;}
+
+
+    .example2{width: 1920px;}
+    .example2 ol{position:relative;width: 80px;height: 20px;top:-110px;}
+    .example2 ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}
+    .example2 ol li.seleted{background: gray;}
+  
+    #container{
+      width: 1920px;
+      margin:0 auto;
+      font-family: Arial,'微软雅黑','黑体', sans-serif;
+      position:absolute;
+      left:50%;margin-left:-960px;
+      background: white;
+    }
+
+    #header{
+      width: 100%;
+      height: 106px;
+      background:#a0a0a0;
+    }
+
+    #head{
+      width:1200px;
+      height: 106px;
+      margin:0 auto;
+    }
+
+    #logo{
+      float: left;
+      margin-top: 20px;
+    }
+
+    #nav{
+      display: inline-block;
+      margin-left: 120px;
+    }
+
+	  #nav a{
+      display: inline-block;
+      width: 158px;
+      height: 106px;
+      text-align: center;
+      line-height: 106px;
+      font-size: 18px;
+      color: white;
+	  }
+
+    #nav a:hover{
+      background: #1e1e1e;
+    }
+
+    #sectionWelcome{
+      width: 950px;
+      height: 380px;
+      margin: 0 auto;
+      padding: 50px;
+    }
+
+    #aboutUsPage{
+      width: 1200px;
+      height: 850px;
+      margin: 0 auto;
+      padding: 50px;
+    }
+
+
+    #aboutUsPageText{
+     font-weight: bold;
+     line-height: 22px;
+     position: relative;
+     top: -35px;
+   }
+
+    #sectionWelcomeText{
+      margin: 30px 0;
+
+    }
+
+    #sectionWelcome p{
+      text-indent: 2em;
+      line-height: 28px;
+    }
+
+    #knowMore{
+      width: 160px;
+      height: 50px;  
+      border-radius: 12px;	
+      border: 1px solid #a0a0a0;
+      background: white;
+    }
+
+
+    #sectionProduct{
+      background: #f2f2f2;
+      width: 1920px;
+      height: 560px;
+    }
+
+    #sectionProductMain{
+      width: 1200px;
+      height: 560px;
+      margin: 0 auto;
+      padding: 70px 0;
+
+    }
+
+    #goods{
+    	margin:30px 22px 0 26px;
+    	line-height: 25px;
+    	font-size: 17px;
+       	display: inline-block;	
+       	text-align: left;
+    }
+
+
+	 #goods img{
+        margin-bottom: 22px;
+
+	 }
+
+    #goods p{
+    	font-size: 14px;
+       	display: inline-block;	
+    }
+
+
+   .textDelete{
+
+       text-decoration: line-through;
+    }
+
+   .textRed{
+      color: red;
+      font-weight: bold;
+   } 
+
+
+    #sectionGuide{
+      width: 1200px;
+      height: 540px;
+      margin: 0 auto;
+      padding: 70px 0;
+    }   
+
+
+    #goodsGuide{
+      width: 360px;
+      height: 310px;
+      line-height: 16px;
+      margin:50px 16px 35px 16px;
+      display: inline-block;
+    }
+
+    #goodsGuide img{
+      margin-bottom: 10px;
+      padding: 4px;
+      border: 1px solid #d2d2d2;	
+    }
+
+    .goodsGuideTitle{
+    	font-size: 15px;
+    	font-weight: bold;
+    }
+
+    .goodsGuideText{
+    	font-size: 13px;
+    }
+
+
+
+    #sectionContact{
+      background: #f2f2f2;
+      width: 1920px;
+      height: 800px;
+
+    }
+
+    #sectionContactPage{
+
+      width: 1920px;
+      height: 800px;
+
+    }
+
+    #sectionContactMain{
+      width: 1200px;
+      margin: 0 auto;
+      padding: 70px 0;
+
+    }
+
+
+
+    #lside{
+      float: left;
+    	width: 560px;
+    	height: 500px;
+    	margin-right:65px;
+      margin-top: 50px;
+    	display: inline-block;
+    }
+
+    #lsideTitle{
+
+      font-size:20px;
+      font-weight: bold;
+    }
+    #lsideText{
+
+      font-size:15px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+
+    #lside li{
+      padding-left:30px;
+      display: inline-block;
+      height: 35px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    #contact a{ 
+      margin-right: 12px;
+
+    }
+
+
+    #rside{
+      margin-top: 50px;
+      display: inline-block;
+      width: 500px;
+      float: left;
+
+    } 
+
+
+    #rside p{
+      display: inline-block;
+
+    }
+
+    input{
+      line-height: 20px;
+    }
+
+    #subButton{
+      width: 140px;
+      height: 38px;
+      background: black;
+      color: white;
+      font-weight: bold;
+
+    }
+
+    #footer{
+      clear: both;
+      height: 100px;
+      width: 1920px;
+      background: #4b4b4b;
+      color: white;
+      line-height: 30px;
+      padding-top: 20px;
+      margin: 0 auto;
+    }
+
+    #footer p{
+      color: white;
+
+    }
+
+
+   /* 新闻页*/
+
+
+
+    #dynamicNewsPages{
+      width: 1200px;
+      height: 1000px;
+      margin: 0 auto;
+      padding: 50px;      
+    }
+
+
+    #newsNav{
+      margin:20px 0;
+      height: 50px;
+
+    }
+
+    #newsNav li{
+      color: #1e1e1e;
+      margin: 0 8px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 50px;
+      display: inline-block;
+
+    }
+
+    #newsNav li:hover{
+      border-bottom: 3px solid #a0a0a0;
+      color: #a0a0a0;
+
+    }
+
+
+    #newsList{
+       width: 1150px;
+
+
+    }
+
+    #newsList li{
+       height: 55px;
+       line-height: 52px;
+       border-bottom: 1px dashed #d3d3d3;
+    }
+
+    #newsList a{
+       text-align: center;
+       padding-left:25px; 
+       color: #343434;
+    }
+
+    .newsTime{
+      color: #8d8d8d;
+      float: right;
+      margin-right: 10px;
+     }
+
+    #orangePoint{
+      position: relative;
+      top: 28px;
+      left: 15px;
+      width: 5px;
+      height: 5px;
+      border-radius:3px;
+      background:orange;
+
+    }
+
+
+
+
+    /* 新闻详情 */
+
+
+    #newsDetailPage {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 50px;     
+
+    }
+
+    #newsTitle {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+
+    #newsHeader p{
+     display: inline;
+    }
+
+
+    #newsPicture img{
+      width: 435px;
+      height: 275px;
+      margin-bottom: 10px;
+      padding: 4px;
+      border: 1px solid #d2d2d2;  
+    }
+
+    #newsText p{
+      text-indent: 2em;    
+    }
+
+    #newsDetailFooter {
+      float: right;
+      margin:40px 0 80px 0;
+      width: 220px;
+      text-align: left;
+      text-decoration: underline;
+      line-height: 25px;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+    }
+
+
+
+
+
+    /*产品详情*/
+
+    #productDetailPage{
+      width: 1200px;
+      margin: 0 auto;
+      padding: 50px;     
+
+    }
+
+    #infoRight{
+      width: 550px;
+      height: 225px;
+      padding-left: 280px;
+      display: inline-block;
+      text-align: top;
+      background: url("../images/刹车片.jpg") no-repeat;
+
+    }
+
+    #infoTitle{
+      width: 375px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 30px;
+      border-bottom: 1px solid #eee;
+
+
+    }
+
+    #abstractBar{
+
+      height: 43px;
+      line-height: 43px;
+      background: #eee;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+
+
+    #infoText{
+      padding: 10px;
+      line-height: 19px;
+    }
+
+    #infoText p{
+      text-indent: 2em;
+    }
+
+
+
+
+    #productDetailFooter {
+      float: right;
+      margin:40px 0 80px 0;
+      width: 220px;
+      text-align: left;
+      text-decoration: underline;
+      line-height: 25px;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+    }
+
+
+
+
+   /* public*/
+
+
+    #pages{
+      margin-left:20px; 
+      letter-spacing: 2px;
+
+    }
+
+    #pages a{
+      padding: 3px;
+      border: 1px solid #d5d5d5;
+      margin-right:5px;
+    }
+
+    #currentPage{
+      color: red;
+    }
+
+
+    #produceCenterPage{
+      width: 1200px;
+      height: 1000px;
+      margin: 0 auto;
+      padding: 50px;     
+
+    }

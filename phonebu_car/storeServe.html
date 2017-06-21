@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>到店取还</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="汽车租赁,豪车租赁,汽车长期租赁">  
+    <meta name="description" content="汽车租赁">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.3dflow.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.formVerify.js" type="text/javascript"></script>
+    <script src="js/jquery.rippleButton.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.3dflow.js" type="text/javascript"></script>
+    <script src="js/mobileSelect.js" type="text/javascript"></script>
+    <script src="js/sliderBar.js" type="text/javascript"></script>
+    <script src="js/vue.js" type="text/javascript"></script>
+    <script src="js/page.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+
+</head>
+<body>
+
+<style>
+    html,body{background: white;}
+</style>
+
+
+<div class="contain whiteBG">
+
+    <div class="nav">
+        <div class="fixWidth">
+            <a onClick="javascript:history.back(-1);" class="returnBtn">返回</a>
+            <h1>到店取还</h1>
+        </div>
+    </div>
+
+    <form action="comfirmOrder.html">
+        <div class="takeCar" id="takeCar">
+            <div class="tips">
+                <div class="tipsBar">
+                    <div class="fixWidth">
+                        <i class="toggleBtn"></i>
+                        <h2>温馨提示：
+                            <span>请提前4个工作小时下单，即可尊享上面送/取车服务</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="subPanel">
+                    <div class="fixWidth">
+                        <h3>请提前4个工作小时下单，即可尊享上面送/取车服务</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixWidth">
+
+                <div class="tableUI rentAddress">
+                    <div class="tr">
+                        <div class="th arrowIcon">取车城市</div>
+                        <div class="td">
+                            <div class="selectUI">
+                                <input type="text" id="getCarCity" class="arrow" value='杭州'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr">
+                        <div class="th">取车门店</div>
+                        <div class="td"><input type="text" placeholder="请选择送车地址"></div>
+                    </div>
+                </div><!-- tableUI -->
+
+                <div class="tableUI repayAddress">
+                    <div class="tr">
+                        <div class="th arrowIcon">还车城市</div>
+                        <div class="td">
+                            <div class="selectUI">
+                                <input type="text" id="repayCarCity" class="arrow" value='杭州'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr">
+                        <div class="th">还车门店</div>
+                        <div class="td"><input type="text" placeholder="请选择还车地址"></div>
+                    </div>
+                </div><!-- tableUI -->
+
+            </div>
+
+            
+            <div class="takeDetail">
+                <div class="timeBox">
+                    <h2>取车时间</h2>
+                    <h3>{{ startTime }}</h3>
+                    <h4>{{ startDateWeek }}</h4>
+                    <input type="text" id="startDateTime" value=""><!-- 用来存储选择到的日期时间 -->
+                </div>
+                <div class="days">
+                    <i>{{ days }}</i>
+                    <img src="images/icon_38.png" alt="">
+                </div>
+                <div class="timeBox">
+                    <h2>还车时间</h2>
+                    <h3>{{ endTime }}</h3>
+                    <h4>{{ endDateWeek }}</h4>
+                    <input type="text" id="endDateTime" value=""><!-- 用来存储选择到的日期时间 -->
+                </div>
+            </div><!-- timeInfo -->
+
+            <div class="fee">
+                <div class="item">
+                    租车费用：¥<i class="blue">{{ price }}</i>/天
+                </div>
+                <div class="item">
+                    费用结算：¥<i class="blue">{{ totalPrice }}</i>
+                </div>
+            </div>
+
+            <a href="javascript:;" class="payNow">立即支付</a>
+        </div><!-- takeCar -->
+    </form>
+
+
+</div><!-- contain -->
+
+
+
+<script type="text/javascript">
+
+// 温馨提示
+$(function(){
+    var toggle = true;
+    var object = $('.tips h2 span');
+    var tipsText = object.text();
+    $('.toggleBtn').click(function(){
+        $('.tips').toggleClass('on');
+        if(toggle){
+            object.text('');
+            toggle=!toggle;
+        }else{
+            object.text(tipsText);
+            toggle=!toggle;
+        }
+    });
+});
+
+
+
+//----------------------------------------------------------
+//more than 21:00  turn to the next day
+
+function init(){
+    var defaultDate = [];
+    var repayDate = [];
+    var defaultTime = [
+                        '08:30',
+                        '09:00',
+                        '09:30',
+                        '10:00',
+                        '10:30',
+                        '11:00',
+                        '11:30',
+                        '12:00',
+                        '12:30',
+                        '13:00',
+                        '13:30',
+                        '14:00',
+                        '14:30',
+                        '15:00',
+                        '15:30',
+                        '16:00',
+                        '16:30',
+                        '17:00',
+                        '17:30',
+                        '18:00',
+                        '18:30',
+                        '19:00',
+                        '19:30',
+                        '20:00',
+                        '20:30',
+                        '21:00'
+                    ];
+    var weekday=['周日','周一','周二','周三','周四','周五','周六'];
+    var currentTime = [];
+    var optionalTime = [];
+    var todayIsEnd = false;
+    var status = 0;
+    var status2 = 0;
+    var change = true;
+    var change2 = true;
+
+    function resetStatus(){
+        status = 0;
+        status2 = 0;
+        change = true;
+        change2 = true; 
+    }
+
+    function getOptionalTime(hours){
+        var thisHours;
+        if(hours>0){
+            thisHours = hours;
+        }else{
+            var thisDate = new Date();
+            thisHours = thisDate.getHours();
+        }
+        var tempIndex;
+        for(var i=0;i<defaultTime.length;i++){
+            var hours = defaultTime[i].split(':')[0];
+            if(hours == thisHours){
+                tempIndex = i;
+            }
+
+        }
+        tempIndex == null? tempIndex = -1 : '';
+        if(tempIndex >=0 && tempIndex < defaultTime.length-1){
+            return defaultTime.slice(tempIndex+1);
+        }
+        else{
+            todayIsEnd = true;
+            return [];
+        }
+    }
+
+    function createDate(thisDay,count) { //创建需要的日期格式
+        thisDay.setDate(thisDay.getDate()+count);//获取AthisDayDayCount天后的日期 
+        var m = thisDay.getMonth()+1;//获取当前月份的日期 
+        var d = thisDay.getDate(); 
+        var wd = weekday[thisDay.getDay()];//读出星期几
+        m<10 ? m='0'+m : m=m;
+        d<10 ? d='0'+d : d=d;
+        return (m+"-"+d+' '+wd);
+    }
+
+    function createRepayDate(selectDay){
+        var temp = [];
+        for(var i = 0;i<=59;i++){
+            var thisDay = new Date(selectDay);
+            temp.push(createDate(thisDay,i));
+        }
+        repayDate = temp;
+    }
+
+    function initDate(){ //初始化defaultDate日期数组
+        var temp;
+        if(todayIsEnd){
+            for(var i = 1;i<=60;i++){
+                var thisDay = new Date();
+                temp = createDate(thisDay,i);
+                defaultDate.push(temp);
+                repayDate.push(temp);
+            } 
+        }else{
+            for(var i = 0;i<=59;i++){
+                var thisDay = new Date();
+                temp = createDate(thisDay,i);
+                defaultDate.push(temp);
+                repayDate.push(temp);
+            }  
+        }
+    }
+
+    function convertToDate(string){
+        var nowDate = new Date();
+        var nowYear = nowDate.getFullYear();
+        var month = parseInt(string.split('-')[0]);
+        var day = parseInt(string.split('-')[1]);
+        return new Date(nowYear, month-1, day);
+    }
+
+    function convertToHour(string){
+        return parseInt(string.split(':')[0]);
+    }
+
+    currentTime = getOptionalTime();
+    optionalTime = currentTime;
+    initDate();
+
+
+
+    //-----------------------------------------------
+    // vue组件
+    var vm = new Vue({
+      el: '#takeCar',
+      data: {
+        startDateTime : defaultDate[1]+' '+defaultTime[2],
+        endDateTime : repayDate[2]+' '+defaultTime[2],
+        price : 800
+      },
+      computed:{
+        startDateWeek:function(){
+            return this.startDateTime.split(' ').slice(0,2).join(' ');
+        },
+        startDate:function(){
+            return this.startDateTime.split(' ').slice(0,1).join(' ');
+        },
+        startTime:function(){
+            return this.startDateTime.split(' ')[2];
+        },
+        endDateWeek:function(){
+            return this.endDateTime.split(' ').slice(0,2).join(' ');
+        },
+        endDate:function(){
+            return this.endDateTime.split(' ').slice(0,1).join(' ');
+        },
+        endTime:function(){
+            return this.endDateTime.split(' ')[2];
+        },
+        days:function(){
+            var iDays;
+            var nowDate = new Date();
+            var nowYear = nowDate.getFullYear();
+            var startDateArr = this.startDateWeek.split(' ')[0].split('-');
+            var endDateArr = this.endDateWeek.split(' ')[0].split('-');
+            var newStartDate = new Date(nowYear, startDateArr[0]-1, startDateArr[1]);
+            var newEndDate = new Date(nowYear, endDateArr[0]-1, endDateArr[1]);
+            iDays = parseInt(Math.abs(newStartDate - newEndDate)/1000/60/60/24)//把相差的毫秒数转换为天数 
+            iDays == 0 ? iDays = 1 : iDays = iDays;
+            return iDays;   
+        },
+        totalPrice:function(){ 
+            return this.price*this.days;
+        }
+      },
+      methods:{
+
+      }
+    });
+
+    //-----------------------------------------------
+    //选择控件实例化
+
+    //日期选择
+    var repayCarDate = new MobileSelect({
+        trigger: '#endDateTime',
+        title: '还车时间',
+        wheels: [
+                    {data: repayDate},
+                    {data: defaultTime}
+                ],
+        position:[2,2],
+        callback:function(){
+            vm.endDateTime = $('#endDateTime').val();
+            resetStatus();
+        }
+        ,
+        limit:function(indexArr){
+            if(indexArr[0]==0){ //当第一个轮子 选择到第一项时
+                if (status==1) {
+                    change = true;
+                };
+                status = 0;
+                if(change){
+                    this.updateWheel(1,optionalTime);
+                    this.locatePostion(1,0);
+                    change = false;
+                }
+            }else{
+                if (status==0) {
+                    change = true;
+                };
+                status = 1;
+                if(change){
+                    this.updateWheel(1,defaultTime);
+                    this.locatePostion(1,2);
+                    change = false;
+                }
+            }   
+        }
+    });
+
+    var getCarDate = new MobileSelect({
+        trigger: '#startDateTime',
+        title: '取车时间',
+        wheels: [
+                    {data: defaultDate},
+                    {data: defaultTime}
+                ],
+        position:[1,2],
+        callback:function(){
+            resetStatus();
+            vm.startDateTime = $('#startDateTime').val();
+            createRepayDate(convertToDate(vm.startDate));  
+            vm.endDateTime = repayDate[1]+' '+defaultTime[2]; 
+            repayCarDate.updateWheel(0,repayDate); //选择取车日期后、还车日期需要重新渲染
+            repayCarDate.updateWheel(1,defaultTime); //选择取车日期后、还车日期需要重新渲染
+            optionalTime = getOptionalTime(convertToHour(vm.startTime));
+            repayCarDate.updateWheel(1,optionalTime);
+            repayCarDate.locatePostion(0,1);//重新定位
+            repayCarDate.locatePostion(1,2);//重新定位
+        },
+        limit:function(indexArr){
+            if(!todayIsEnd){
+                if(indexArr[0]==0){ //如果选择到当天 进行限定
+                    if (status2==1) {
+                        change2 = true;
+                    };
+                    status2 = 0;
+                    this.updateWheel(1,currentTime);
+                    if(change2){
+                        this.locatePostion(1,0);
+                        change2 = false;
+                    }
+                }else{
+                    if (status2==0) {
+                        change2 = true;
+                    };
+                    status2 = 1;
+                    this.updateWheel(1,defaultTime);
+                    if(change2){
+                        this.locatePostion(1,2);
+                        change2 = false;
+                    }
+                }
+            }
+        }
+    });
+
+    if(todayIsEnd){
+        vm.startDateTime = defaultDate[0]+' '+defaultTime[2];
+        vm.endDateTime = repayDate[1]+' '+defaultTime[2];
+        repayCarDate.locatePostion(0,1);
+        getCarDate.locatePostion(0,0);
+    }
+
+    //城市选择
+    var getCarCity = new MobileSelect({
+        trigger: '#getCarCity',
+        title: '取车城市',
+        wheels: [
+                    {data:[
+                        {id:'1',value:'上海'},
+                        {id:'2',value:'杭州'},
+                        {id:'3',value:'北京'}
+                    ]}
+                ],
+        position:[1], //初始化定位
+        callback:function(indexArr, data){
+            console.log(indexArr); //返回选中的索引
+            console.log(data); //返回选中的json
+        } 
+    });
+
+    var repayCarCity = new MobileSelect({
+        trigger: '#repayCarCity',
+        title: '还车城市',
+        wheels: [
+                    {data:[
+                        {id:'1',value:'上海'},
+                        {id:'2',value:'杭州'},
+                        {id:'3',value:'北京'}
+                    ]}
+                ],
+        position:[1],
+        callback:function(indexArr, data){
+        } 
+    });
+}
+init();
+
+
+</script>
+</body>
+</html>

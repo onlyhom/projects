@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+/*reset code*/
+body,h1,h2,h3,h4,p,ul,ol,form,fieldset,figure {
+	margin: 0;
+	padding: 0;
+}
+body {
+	
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	font-size: .16rem;
+}
+
+input {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+
+
+ul,ol,li {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+div,figure,figcaption,li,#tit2 ,span,input{
+	box-sizing: border-box;
+}
+.none {
+	display: none;
+}
