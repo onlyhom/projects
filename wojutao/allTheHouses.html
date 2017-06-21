@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>窝居淘-房产买卖网</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/hmt.js" ></script>
+	<script src="js/global.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.js"></script>
+    <script type="text/javascript" src="js/swipe.js"></script>
+</head>
+	<body>
+		<div class="container">
+
+			<div class="header-ctent subHeader box-s" id="header">
+				<div class="header clearfix box-s">
+
+                    <a href="index.html" class="backBtn"> </a>
+                    <div class="searchBox subSearch">
+                    	<input type="text" value="" placeholder="请输入小区名称">
+                    	<input type="submit" value=" ">
+                    </div>
+
+		        	<div class="navs2">
+		        		<ul class="nav">
+				            <li><a href="index.html" ><div class="icon"><img src="images/icon2.png" alt=""></div>首页</a></li>
+				            <li><a href="" ><div class="icon"><img src="images/icon1.png" alt=""></div>新房</a></li>
+				            <li><a href="" ><div class="icon"><img src="images/icon2.png" alt=""></div>二手房</a></li>
+				            <li><a href="" ><div class="icon"><img src="images/icon3.png" alt=""></div>学区房</a></li>
+				            <li><a href="" ><div class="icon"><img src="images/icon4.png" alt=""></div>地铁房</a></li>
+				            <li><a href="" ><div class="icon"><img src="images/icon5.png" alt=""></div>租房</a></li>
+				            <li><a href="" ><div class="icon"><img src="images/icon6.png" alt=""></div>卖房</a></li>
+
+				        </ul>
+		        	</div>
+			        <div class="header-bar clearfix">
+			             <div class="tool trigger" title="菜单">
+			             	<button class="nobbo">
+			             		<img src="images/subMenu.png"/>
+			             	</button>
+			             </div>
+			        </div>
+			    </div>
+			</div>
+			<!--头部end-->
+
+			
+			<div class="clearfix" id="main">
+				<!--banner star-->
+				<div class="banenr" id="banner_box">
+			    	<ul>
+			        	<li class="dian">
+			        		<a href="#"><img class="dis_block" src="images/banner.jpg"></a>
+			        	</li>
+			            <li class="dian">
+			        		<a href="#"><img class="dis_block" src="images/banner.jpg"></a>
+			        	</li>
+			        	<li class="dian">
+			        		<a href="#"><img class="dis_block" src="images/banner.jpg"></a>
+			        	</li>
+			        </ul>
+			    	<ol>
+			            <script>
+			                $(".dian").each(function () {
+			                    document.write('<li class=""></li>')
+			                });
+			            </script>
+			        </ol>				       
+			    </div>
+				<!--banner end-->
+				
+
+				<div class="filter">
+				  <div class="fixWidth">
+				  	<ul class="select">
+				  	   <li><h1>区域<img src="images/arrow-min.png" alt=""></h1></li>
+				  	   <li><h1>价格<img src="images/arrow-min.png" alt=""></h1></li>
+				  	   <li><h1>户型<img src="images/arrow-min.png" alt=""></h1></li>
+				  	   <li><h1>更多<img src="images/arrow-min.png" alt=""></h1></li>
+				  	</ul>
+				  </div>
+
+				  	<div class="panels">
+				  	   <ul class="sorts">
+				  	   	  <li class="active">不限</li>
+				  	   	  <li>下城区</li>
+				  	   	  <li>拱墅区</li>
+				  	   	  <li>江干区</li>
+				  	   	  <li>下城区</li>
+				  	   	  <li>拱墅区</li>
+				  	   	  <li>江干区</li>
+				  	   	  <li>下城区</li>
+				  	   	  <li>拱墅区</li>
+				  	   	  <li>江干区</li>
+				  	   	</ul>
+
+				  	   <ul class="sorts">
+				  	   	  <li class="active">不限</li>
+				  	   	  <li>100万-150万</li>
+				  	   	  <li>150万-200万</li>
+				  	   	  <li>100万以下</li>
+				  	   	  <li>200万-250万</li>
+				  	   	  <li>250万-300万</li>
+				  	   	  <li>300万-400万</li>
+				  	   	  <li>400万-500万</li>
+				  	   	  <li>500万以上</li>
+				  	   	</ul>
+
+				  	   <ul class="sorts">
+				  	   	  <li class="active">不限</li>
+				  	   	  <li>一室</li>
+				  	   	  <li>二室</li>
+                          <li>三室</li>
+                          <li>四室</li>
+                          <li>五室</li>
+                          <li>五室以上</li>
+				  	   	</ul>
+
+				  	   	<ul class="sorts">
+				  	   	  <li class="active">不限</li>
+				  	   	  <li>学区房</li>
+				  	   	  <li>地铁房</li>
+				  	   	  <li>电梯房</li>
+				  	   	  <li>南北通透</li>
+				  	   	  <li>满五唯一</li>
+				  	   	</ul>
+				  	</div><!-- panels -->
+
+				</div><!-- filter -->
+
+				<div class="resultNumber"><div class="fixWidth">共找到300个楼盘</div></div>
+
+                <div class="allHouseList">
+                  <div class="fixWidth">
+                  	<ul>
+                  		<li>
+                  			<a href="houseDetail.html">
+                  			<figure><img src="images/配图.jpg" alt=""></figure>
+                  			<div class="text">
+                  			    <h1>交通晓时代</h1>
+	                  			<h2>103-135㎡|3-4室 <i>8888元/平米</i></h2>
+	                            <h3>七堡地铁站D出口向东200米</h3>
+	                            <div class="label pink">百万三房</div>
+	                            <div class="label orange">景观居所</div>
+	                            <div class="label cyan">山水资源</div>
+                  			</div>
+                  			</a>
+                  		</li>
+
+
+
+
+                  		<li>
+                  			<a href="houseDetailSale.html">
+                  			<figure><img src="images/matingMap.jpg" alt=""></figure>
+                  			<div class="text">
+                  			    <h1>交通晓时代</h1>
+	                  			<h2>103-135㎡|3-4室 <i>8888元/平米</i></h2>
+	                            <h3>七堡地铁站D出口向东200米</h3>
+	                            <div class="label pink">百万三房</div>
+	                            <div class="label orange">景观居所</div>
+	                            <div class="label cyan">山水资源</div>
+
+                  			    <div class="saleLabel"> <!-- 新房优惠信息 -->
+                  			    	<figure><img src="images/sale.png" alt=""></figure>
+                  			    	<i></i>
+                  			    	<p><span>惠</span>存2万减5万</p>
+                  			    </div>
+                  			</div>
+
+
+                  			</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="houseDetail.html">
+                  			<figure><img src="images/matingMap.jpg" alt=""></figure>
+                  			<div class="text">
+                  			    <h1>交通晓时代</h1>
+	                  			<h2>103-135㎡|3-4室 <i>8888元/平米</i></h2>
+	                            <h3>七堡地铁站D出口向东200米</h3>
+	                            <div class="label pink">百万三房</div>
+	                            <div class="label orange">景观居所</div>
+	                            <div class="label cyan">山水资源</div>
+                  			</div>
+                  			</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="houseDetailSale.html">
+                  			<figure><img src="images/配图.jpg" alt=""></figure>
+                  			<div class="text">
+                  			    <h1>交通晓时代</h1>
+	                  			<h2>103-135㎡|3-4室 <i>8888元/平米</i></h2>
+	                            <h3>七堡地铁站D出口向东200米</h3>
+	                            <div class="label pink">百万三房</div>
+	                            <div class="label orange">景观居所</div>
+	                            <div class="label cyan">山水资源</div>
+
+                  			    <div class="saleLabel"> <!-- 新房优惠信息 -->
+                  			    	<figure><img src="images/sale.png" alt=""></figure>
+                  			    	<i></i>
+                  			    	<p><span>惠</span>存2万减5万</p>
+                  			    </div>
+
+                  			</div>
+                  			</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="houseDetail.html">
+                  			<figure><img src="images/配图.jpg" alt=""></figure>
+                  			<div class="text">
+                  			    <h1>交通晓时代</h1>
+	                  			<h2>103-135㎡|3-4室 <i>8888元/平米</i></h2>
+	                            <h3>七堡地铁站D出口向东200米</h3>
+	                            <div class="label pink">百万三房</div>
+	                            <div class="label orange">景观居所</div>
+	                            <div class="label cyan">山水资源</div>
+                  			</div>
+                  			</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="houseDetail.html">
+                  			<figure><img src="images/配图.jpg" alt=""></figure>
+                  			<div class="text">
+                  			    <h1>交通晓时代</h1>
+	                  			<h2>103-135㎡|3-4室 <i>8888元/平米</i></h2>
+	                            <h3>七堡地铁站D出口向东200米</h3>
+	                            <div class="label pink">百万三房</div>
+	                            <div class="label orange">景观居所</div>
+	                            <div class="label cyan">山水资源</div>
+                  			</div>
+                  			</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="houseDetail.html">
+                  			<figure><img src="images/配图.jpg" alt=""></figure>
+                  			<div class="text">
+                  			    <h1>交通晓时代</h1>
+	                  			<h2>103-135㎡|3-4室 <i>8888元/平米</i></h2>
+	                            <h3>七堡地铁站D出口向东200米</h3>
+	                            <div class="label pink">百万三房</div>
+	                            <div class="label orange">景观居所</div>
+	                            <div class="label cyan">山水资源</div>
+                  			</div>
+                  			</a>
+                  		</li>
+
+                  	</ul>
+                  </div>
+                </div>
+
+
+
+
+			</div><!-- main -->
+		</div><!-- container -->
+		
+		
+
+		<script type="text/javascript">
+
+		      $('.filter .select li').click(function(){
+		        $(".sorts").hide();
+		        $(".sorts").eq($(this).index()).slideDown();
+		      });
+
+
+		      $('.sorts li').click(function(){
+		       $(this).siblings().each(function(index,element){
+		          $(this).removeClass('active');
+		       });
+		         $(this).addClass('active');
+		         $(".sorts").hide();
+		      });
+
+
+
+		</script>
+
+
+
+
+
+
+		<!--banner滚动-->
+		<script>
+			$(function () {
+				new Swipe(document.getElementById('banner_box'), {
+					speed: 500,
+					auto: 3000,
+					callback: function () {
+						var lis = $(this.element).next("ol").children();
+						lis.removeClass("on").eq(this.index + 1).addClass("on");
+					}
+				});
+			});
+			$(function () {
+				new Swipe(document.getElementById('expanding_box'), {
+					speed: 500,
+					auto: 3000,
+					callback: function () {
+						var lis = $(this.element).next("ol").children();
+						lis.removeClass("on").eq(this.index + 1).addClass("on");
+					}
+				});
+			});
+		</script>
+		<!--team滚动-->
+		<script type="text/javascript">
+			jQuery(".scrollBox").slide({ titCell:".list li", mainCell:".piclist", effect:"left",vis:1,scroll:1,delayTime:800,trigger:"click",easing:"easeOutCirc"});
+		</script>
+	</body>
+</html>

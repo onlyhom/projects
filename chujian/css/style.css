@@ -1,0 +1,1174 @@
+
+
+h1, h2, h3{
+  margin: 0;
+}
+
+a{text-decoration: none!important;}
+
+.textALign-r{
+    text-align: right;
+}
+
+/*缩略图*/
+.thumbnail{
+  background-color:transparent;
+  border: none;
+  border-radius: 0;
+}
+
+
+@font-face { 
+font-family: 'font1'; 
+src: url('../fonts/AvantGarde.eot'),url('../fonts/AvantGarde.ttf');
+
+ font-weight:normal;font-style:normal;
+} 
+
+@font-face { 
+font-family: 'font2';
+src: url('../fonts/BodoniBd.eot'), url('../fonts/BodoniBd.ttf'); 
+ font-weight:normal;font-style:normal;
+} 
+
+
+
+
+h1, h2, h3, h4, h5, h6, p, .h1, .h2, .h3, .h4, .h5, .h6{
+    font: 12px/1.5 "Helvetica Neue",Helvetica,tahoma,Arial,\5FAE\8F6F\96C5\9ED1;
+}
+
+body{
+    position: relative;
+    font: 12px/1.5 "Helvetica Neue",Helvetica,tahoma,Arial,\5FAE\8F6F\96C5\9ED1;
+    color: black; 
+}
+
+.container{
+    font: 12px/1.5 "Helvetica Neue",Helvetica,tahoma,Arial,\5FAE\8F6F\96C5\9ED1;
+    color: black;
+}
+
+.navbar-brand .logoXS{
+	display: none;
+}
+
+
+.navbar{
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+/*    width: 100%;*/
+}
+
+
+
+
+.navbar-default{
+	background: none;
+	border: none;
+}
+
+.navbar-default .navbar-nav{
+	margin-top:30px;
+}
+
+
+.navbar-default .navbar-nav > li > a{
+	color: white;
+	transition:background 0.3s;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a:visited{
+    color: white;
+}
+
+
+
+.navbar-default .navbar-nav > li:hover > a{
+	color: white;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background: white;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(255,255,255,0.4);
+}
+
+
+.navbar-collapse.in {
+  overflow-y: visible;
+}
+
+
+.newsEvent{
+	background: url(../images/texture.jpg) repeat ;
+	padding-top: 15px;
+}
+
+
+.newsEvent .outBorder{
+	border-top: 1px solid black;
+	padding-top: 30px;
+
+}
+
+.newsEvent .newsTitlePic{
+	position: relative;
+	top: -38px;
+	margin-bottom: -15px;
+}
+
+
+
+.newsEvent li h1{
+    font-family: "font1";
+    font-weight: bold;
+    font-size:25px;
+    padding-bottom: 5px;
+    background: url(../images/line.png) no-repeat center bottom;
+}
+
+
+.newsEvent li h2{
+    font-family: "font1";
+    font-weight: bold;
+    font-size:18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+
+.newsEvent li h3 img{
+	padding-left: 5px;
+}
+
+.eventsPic img{
+    width: 180px;
+    height: 141px;
+}
+
+
+
+.aboutUs{
+    text-align: center;
+    padding: 65px 15px;
+}
+
+.indexTitle{
+    margin:  0 auto;
+    text-align: center;
+}
+
+
+.indexTitle h1{
+    font-family: "font1";
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.indexTitle h2{
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    margin: 30px 0 45px;
+    border-top: 1px solid black;
+}
+
+
+.indexTitle h2 span{
+    position: relative;
+    display: inline-block;
+    background: white;
+    padding: 0 8px;
+    font-size: 16px;
+    top: -12px;
+}
+
+
+.aboutUs .thumbnail{
+    margin-top: 25px;
+}
+
+
+.aboutUs .seeMore{
+  display: inline-block;
+  border: 1px solid #434343;
+  padding:2px; 
+}
+
+
+.aboutUs a{
+  display: inline-block;
+  height: 28px;
+  width: 140px;
+  line-height: 29px;
+  background: #434343;
+  color: white;
+}
+
+.aboutUs a:hover{
+    text-decoration: none;
+}
+
+
+.weddingWork{
+    margin: 30px 0;
+}
+
+.weddingWork .container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.weddingWork .thumbnail{
+   padding: 0;
+}
+
+
+.goPrev span{
+    display: inline-block;
+    width: 21px;
+    height: 35px;
+    background-image: url(../images/arrow-left.png);
+    background-repeat:no-repeat;
+    cursor: pointer;
+    opacity: 0.5;
+    margin-top: 75px;
+}
+
+.goPrev span:hover{
+    opacity: 1;
+}
+
+.goPrev{
+    text-align: left; 
+}
+
+.goNext{
+    text-align: right;
+}
+
+
+.goNext span{
+    display: inline-block;
+    width: 21px;
+    height: 35px;
+    background-image: url(../images/arrow-right.png);
+    background-repeat:no-repeat;
+    cursor: pointer; 
+    opacity: 0.5;
+    margin-top: 75px;
+}
+
+.goNext span:hover{
+    opacity: 1;
+}
+
+
+/* *******鼠标点击左右滚动********  */
+
+.worksText .viewOuter{width:100%; overflow:hidden; /*background: gray;*/}
+.worksText .viewShow{width:83%;overflow:hidden;position:relative;height:170px;float:left;  /*background: pink;*/}
+.worksText .viewContent{ width:200%;position:absolute;left:0px;top:0px; padding: 0; /*background: orange;*/  }
+.worksText .viewContent ul li{width:245px;height:145px;float:left; margin-top: 25px;}
+
+/* ********鼠标点击左右滚动 END ********* */
+
+
+.worksText{
+  position: relative;
+  top: -25px;
+}
+
+
+.worksText .viewOuter li{
+    cursor: pointer;
+    background-image: url(../images/texture.jpg);
+    transition:all 0.5s;
+}
+
+.worksText .viewOuter h1{
+    text-align: center;
+    height: 35px;
+    position: relative;
+    top: -25px;
+}
+
+.worksText .viewOuter h1 b{
+    font-family: "font2";
+    font-size: 44px;
+    background: #959595;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 45px;
+    padding-left: 5px;
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    transition:all 0.4s;
+}
+
+
+.worksText .viewOuter h2{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.worksText .viewOuter p{
+    color: gray;
+    font-size: 12px;
+}
+
+
+.worksText .viewOuter li:hover{background: black;}
+.worksText .viewOuter li:hover p{color: white;}
+.worksText .viewOuter li:hover h2{color: white;}
+.worksText .viewOuter li:hover b{background: #a40000;color: white;transform:rotateY(360deg);}
+
+.worksText .viewOuter .on {background: black;}
+.worksText .viewOuter .on p{color: white;}
+.worksText .viewOuter .on h2{color: white;}
+.worksText .viewOuter .on b{background: #a40000;color: white;}
+
+
+
+
+
+
+.fullPic{
+    width: 100%;
+    margin: 0;
+}
+
+.fullPic li{
+    display: none;
+    width: 100%;
+
+    height: 0;
+    padding-bottom:32.2916666%;
+    overflow: hidden;
+}
+
+
+.fullPic li img{
+    width: 100%;
+}
+
+.indexWork .thumbnail{
+    margin-top: 60px;
+}
+
+.subWork .worksText{
+/*  background: pink;*/
+  margin-top: 30px;
+}
+
+
+.subWork .viewOuter{
+  margin-bottom: 30px;
+}
+
+
+.workList li{
+  margin-bottom: 20px;
+}
+
+.workList .thumbnail{
+  border: none;
+
+  width: 100%;
+  height: 0;
+  padding-bottom: 136.84%;
+  overflow: hidden;
+}
+
+.workList .thumbnail img{
+  width: 100%;
+}
+
+/*.workList .thumbnail figcaption{
+  height: 0;
+}*/
+
+
+
+.workList li:hover figcaption{
+  background: rgba(0,0,0,0.5);
+}
+
+
+.workList li figcaption{
+  padding: 45% 50px 50px 50px;
+  text-align: center;
+}
+
+.workList li figcaption h3{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.workList li figcaption p{
+  font-size: 13px;
+  line-height: 18px;
+  height: 54px;
+/*  background: pink;*/
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.workList li figcaption a{
+  display: block;
+  margin: 5% auto 0;
+  text-align: center;
+  width: 128px;
+  height: 36px;
+  line-height: 36px;
+  color: white;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+
+.contentDetail{
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.contentDetail img{
+  max-width: 100%;
+  margin:5px 0; 
+}
+
+.contentDetail h2{
+  font-size: 18px;
+}
+
+.contentDetail h3{
+  border-bottom: 1px solid black;
+  padding:0 8px 0 8px;
+  display: inline-block;
+  font-size: 14px;
+  margin:10px 0 20px 0;
+}
+
+.contentDetail p{
+  padding: 0 10%;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/*婚礼视频*/
+
+
+/* *******鼠标点击左右滚动********  */
+
+.weddingVideo .viewOuter{width:100%; overflow:hidden;/* background: gray;*/}
+.weddingVideo .viewShow{width:83%; overflow:hidden;position:relative;height:396px;float:left; /* background: pink*/;}
+.weddingVideo .viewContent{ width:200%;position:absolute;left:0px;top:0px; padding: 0; /*background: orange;*/  }
+.weddingVideo .viewContent ul li{width:12.5%; margin-bottom: 100px;  /*height:145px;*/float:left; }
+
+/* ********鼠标点击左右滚动 END ********* */
+
+.weddingVideo .goNext span{
+    margin-top: 150px;
+}
+.weddingVideo .goPrev span{
+    margin-top: 150px;
+}
+
+.weddingVideo ul{
+    margin: 0;
+}
+
+.weddingVideo .thumbnail{
+    padding: 0;
+}
+
+
+.weddingVideo{
+    margin-top: 70px;
+    background: url(../images/videoBG.jpg) repeat-x left bottom;
+    padding-bottom: 50px;
+}
+
+
+.weddingVideo li{
+    vertical-align: top;
+    padding: 0;
+    padding-right: 0.2%;
+}
+
+.weddingVideo li .caption{
+    background: white;
+    text-align: center;
+    padding-bottom: 13px;
+
+}
+
+.weddingVideo li .caption h2{
+    font-size: 14px;
+}
+
+.weddingVideo li .caption h3{
+    font-size: 12px;
+    color: gray;
+    margin: 2px 0 8px;
+}
+
+.weddingVideo li .caption i{
+    color: black;
+    border: 1px solid black;
+    padding: 1px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.weddingVideo .thumbnail .thumb{
+    width: 100%;
+    height: 0;
+    padding-bottom: 128%;
+    overflow: hidden;
+}
+
+.weddingVideo .thumbnail .thumb img{
+   width: 100%;
+}
+
+
+
+/* *******鼠标点击左右滚动********  */
+
+.information .viewOuter{width:100%; overflow:hidden; /*background: gray;*/}
+.information .viewShow{width:83.333%; overflow:hidden;position:relative;height:270px;float:left; /* background: pink;*/}
+.information .viewContent{ width:200%;position:absolute;left:0px;top:0px; padding: 0; /*background: orange; */ }
+.information .viewContent ul li{width:16.66%;float:left; }
+
+/* ********鼠标点击左右滚动 END ********* */
+
+.information .goNext span{
+    margin-top: 100px;
+}
+
+.information .goPrev span{
+    margin-top: 100px;
+}
+
+.information ul{
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+
+
+
+/*婚礼资讯*/
+.information{
+    margin-top: 70px;
+}
+
+.information .infomat li{
+    padding: 1.5%;
+    height: 240px;
+    overflow: hidden;
+    background-image: url(../images/texture.jpg);
+}
+
+
+.information .infomat h1{
+    font-size: 18px;
+}
+
+.information .infomat h2{
+    font-size: 12px;
+    color: gray;
+    display: inline-block;
+    padding-right: 40px;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.information .infomat p{
+    line-height: 19px;
+    padding-bottom: 5px;
+    height: 131px;
+    overflow: hidden;
+}
+
+
+
+
+/*婚礼预约*/
+.reserve{
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-image: url(../images/texture.jpg);
+
+}
+
+.reserve .indexTitle span{
+    background-image: url(../images/texture.jpg);
+}
+
+.reserve h3{
+   color: #9f0e11;
+   font-size: 16px;
+   margin-bottom: 5px;
+   margin-top: 25px;
+}
+
+.reserve h3 span{
+   color: gray;
+   font-size: 12px;
+   display: block;
+}
+
+
+.reserve input[type="text"]{
+  width: 100%;
+  background: white;
+  border: 1px solid #d2d2d2;
+  outline: none;
+  height: 35px;
+  padding-left: 2%;
+  font-size: 14px;
+}
+
+.reserve input[type="text"]:focus{
+    border: 1px solid #a40000;
+}
+
+
+.reserve input[type="submit"]{
+    width: 120px;
+    height: 35px;
+    background: #a40000;
+    color: white;
+    font-size: 14px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.reserve table{
+    width: 70%;
+}
+
+
+.reserve label{
+    color: #a40000;
+    font-weight: normal;
+    cursor: pointer;
+    padding-left: 3px;
+    position: relative;
+    top: -2px;
+}
+
+
+
+footer{
+    background: #4b4b4b;
+/*    background: #4b4b4b url(../images/logo-footer.png)no-repeat 90% 75%;*/
+    border-top: 8px solid black;
+    padding: 20px 0 10px 0;
+}
+
+footer .container p{
+    color: #d1d1d1;
+    margin-bottom: 7px;
+}
+
+
+
+.grayBG{
+ top:0; bottom:-10%; 
+}
+
+
+
+.subPage{
+  margin-bottom: 100px;
+}
+
+
+
+
+  /********* POPUP弹窗 style***********/
+
+/* ---------- publicPart ----------------*/
+
+
+.pop{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   /*display: none;*/
+}
+
+.popBG{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #eee;
+  background: rgba(0,0,0,0.7);
+  z-index: 888;
+  display: block;
+}
+
+#navBG{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #eee;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+  display: none;
+}
+
+
+
+.popUp{
+    width: 760px;
+    display: block;
+    position: fixed;
+    z-index: 889;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -380px;
+    color: black;
+}
+
+
+
+.popUp .title{
+  position: relative;
+/*  background: orange;*/
+  width:100%;
+  height: 35px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.popUp .title .closeButton{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  background: url(../images/closeBtn.png) no-repeat center;
+}
+
+.popUp .content{
+  height:450px;
+  padding: 1%;
+/*  background: pink;*/
+  line-height: 22px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+}
+
+.popUp .content .container{
+    color: white;
+}
+
+
+
+/*联系我们*/
+
+.address{
+  padding: 60px 0;
+}
+
+
+.contactIcon{
+  text-align: center;
+}
+
+.contactIcon h2{
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.contactIcon li{
+  margin-bottom: 15px;
+}
+
+
+/*活动子页*/
+
+.latest{
+  background: #f8f8f8;
+  padding-top: 30px;
+}
+
+
+
+.latest .row li{
+  padding: 0 7px;
+  cursor: pointer;
+}
+
+
+.latest .thumbnail{
+  padding: 0;
+
+  height: 0;
+  padding-bottom: 77%;
+  overflow: hidden;
+}
+
+.latest .thumbnail img{
+  width: 100%;
+  border: 2px solid transparent;
+}
+
+
+
+.latest .row li:hover img{
+  border: 2px solid #000;
+}
+
+.latest .row .latest-on img{
+  border: 2px solid #000;
+}
+
+
+
+
+
+/*活动主页*/
+
+/* *******鼠标点击左右滚动********  */
+
+.indexLatest .viewOuter{width:100%; overflow:hidden; /*background: gray;*/}
+.indexLatest .viewShow{width:83.333%; overflow:hidden;position:relative;height:270px;float:left; /* background: pink;*/}
+.indexLatest .viewContent{ width:200%;position:absolute;left:0px;top:0px; padding: 0; /*background: orange;*/  }
+.indexLatest .viewContent ul li{width:50%;float:left; }
+
+.indexLatest .goNext span{margin-top: 120px;}
+.indexLatest .goPrev span{margin-top: 120px;}
+
+/* ********鼠标点击左右滚动 END ********* */
+
+
+
+
+.indexLatest .activity{
+  margin-top: 70px;
+}
+
+
+.activitySlide{
+  margin-bottom: 25px;
+}
+
+.activitySlide li{
+  margin-bottom: 200px;
+  position: relative;
+}
+
+
+.activitySlide .text{
+  background: #2f2732;
+  color: white;
+  height: 210px;
+  padding: 20px;
+  position: relative;
+  top: 30px;
+}
+
+.activitySlide .text h2{
+  font-size: 17px;
+}
+
+.activitySlide .text p{
+  font-size: 12px;
+  height: 125px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+
+.activitySlide .text a{
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 2px 15px;
+  color: white;
+}
+
+
+.activitySlide .text a:hover{
+  opacity: 0.8;
+}
+
+
+.activitySlide .thumbnail{
+  padding: 0;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+
+  height: 0;
+  padding-bottom: 57.7%;
+  overflow: hidden;
+}
+
+.activitySlide .thumbnail img{
+  width: 100%;
+}
+
+.activitySlide .activityPic{
+  padding: 0 5px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 20px;
+}
+
+
+.indexLatest .latest{
+  margin-bottom: 50px;
+}
+
+
+/* ********* 0830悬浮窗增改***********  */
+
+/*右侧悬浮导航*/
+
+.right-fdd2{ width:70px; height:278px; position:fixed; 
+  right:0; top:40%; z-index: 99999; background-color:#34373F; 
+  background-color:rgba(52,55,63,0.4); 
+  border-top-left-radius:8px;  
+  border-bottom-left-radius:8px;
+}
+.right-fdd2 ul li{ 
+  width:100%; 
+  height:66px; 
+  overflow: hidden;  
+  border-bottom:1px solid #545760; 
+  border-bottom:1px solid rgba(84,87,96,0.6);
+  border-radius:8px 0 0 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.right-fdd2 ul li h2{
+ display:block; 
+ width:90%; 
+ height:66px; 
+ margin:0% auto; 
+ font-size:14px; 
+ font-weight:bold;  
+ color:#EDEDED;
+}
+
+
+.right-fdd2 ul li.nn1 h2{ background:url(../images/mlr1.png) no-repeat 15px center;}
+.right-fdd2 ul li.nn2 h2{ background:url(../images/mlr2.png) no-repeat 15px center;}
+.right-fdd2 ul li.nn3 h2{ background:url(../images/mlr3.png) no-repeat 15px center;}
+.right-fdd2 ul li.nn4 h2{ background:url(../images/mlr4.png) no-repeat 15px center;}
+
+
+.right-fdd2 ul li a{
+ display:block; 
+ width:90%; 
+ height:66px;
+ padding-top: 20%; 
+ margin:0% auto; 
+ font-size:15px;  
+ line-height: 18px;
+ color:white;
+ display: none;
+}
+
+.right-fdd2 ul li:hover a{
+  display: block;
+}
+
+.right-fdd2 ul li:hover h2{
+  display: none;
+}
+
+
+/* ********* 0830悬浮窗增改 END ***********  */
+
+
+
+
+@media (max-width: 1680px) {
+    .flickerplate {height: 700px;}  /*轮播图*/
+}
+
+
+@media (max-width: 1600px) {
+    .flickerplate {height: 667px;}  /*轮播图*/
+}
+
+
+@media (max-width: 1440px) {
+    .flickerplate {height: 600px;}  /*轮播图*/
+}
+
+
+@media (max-width: 1366px) {
+    .flickerplate {height: 570px;}  /*轮播图*/
+}
+
+
+
+/*小于1200px*/
+@media (max-width: 1200px) {
+    .newsEvent li{text-align: center; margin-bottom: 10px;}
+    .newsEvent .eventsPic h3{text-align: left;}
+    .newsEvent .eventsPic p{text-align: left;}
+    .activitySlide .text{top: 4px;}
+    .indexLatest .viewShow{ height: 225px;}
+    .flickerplate {height: 500px;}  /*轮播图*/
+}
+
+@media (max-width: 1100px) {
+    .flickerplate {height: 458px;}  /*轮播图*/
+}
+
+
+@media (max-width: 990px) {
+    .indexLatest .viewShow{ height: 580px;} 
+    .activitySlide .text{position: static;}
+    .activitySlide .activityPic{position: static;}
+    .activitySlide li{ left: 1%;}
+    .flickerplate {height: 412px;}  /*轮播图*/
+}
+
+@media (max-width: 850px) {
+    .flickerplate {height: 354px;}  /*轮播图*/
+}
+
+
+
+
+/*小于768px*/
+@media (max-width: 767px) {
+    .flickerplate .dot-navigation .dot{width: 8px; height: 8px;}
+    .navbar-default .navbar-nav{ /*background-color: rgba(255,255,255,0.2);*/ margin-top: 0;}
+    .navbar-brand .logoXS{display: block;}
+    .navbar-brand .logoMD{display: none;}
+    .navbar-brand{padding-top: 10px;}
+    .flickerplate {height: 320px;} /*轮播图*/
+    .indexTitle h1{ font-size: 26px;}
+    footer .container p span{display: block;}
+    .navbar{position: fixed; right: 0;left: 0;}
+    .navbar .navbar-header{background: rgba(0,0,0,0.5);}
+    .worksText .row .col-xs-1{padding: 0 5px;}
+    .goNext span {background-size: 65%; background-position:left center;}
+    .goPrev span {background-size: 65%; background-position:left center;}
+    .worksText .goPrev span {background-position:right center;}
+    .worksText .viewContent ul li{width:25%;}
+    .weddingVideo .viewContent ul li{width:25%;}
+    .weddingVideo .viewShow{height: 500px;}
+/*    .goPrev span {background-color: pink;}
+    .goNext span {background-color: pink;}*/
+    .information .viewShow{height:210px;}
+    .information .viewContent ul li{width: 50%; height:215px;}
+    .popUp{ width: 360px; margin-left:-180px; margin-top:-150px;}
+    .popUp .content{height: 220px; padding: 0;}
+
+    .workList li figcaption{padding: 25% 20px 20px 20px;}
+    .workList li figcaption p{line-height: 18px;height: 90px; -webkit-line-clamp: 5;}
+    .workList li figcaption a{width: 100px;height: 30px; line-height: 30px; font-size: 12px;}
+    .address{padding: 30px 0;}
+
+    .indexLatest .latest{display: none;}
+    .indexLatest .viewShow{ height: 560px;} 
+
+    .right-fdd2{display: none;}
+    .newsEvent .newsTitlePic{width: 45%;}
+}
+
+
+@media (max-width: 580px) {
+    .weddingVideo .viewShow{height: 400px;}
+    .viewOuter .goPrev{padding-right:0;}
+    .viewOuter .goNext{padding-left: 0;}
+    .indexLatest .viewShow{ height: 485px;} 
+    .activitySlide li{ left: 2%;}
+    .flickerplate {height: 242px;}  /*轮播图*/
+}
+
+
+
+/*小于420px*/
+@media (max-width: 420px) {
+    .worksText .viewContent ul li{width:50%;}
+    .weddingVideo .goPrev span {text-align: center;}
+    .weddingVideo .viewShow{width:79%; margin-left: 2%; margin-right:2%;}
+    .weddingVideo .viewContent ul li{width:25%;}
+    .weddingVideo .viewShow{height: 300px;}
+    .weddingVideo .goNext span{margin-top: 120px;}
+    .weddingVideo .goPrev span{margin-top: 120px;}
+    .indexLatest .viewShow{ height: 410px;} 
+    .flickerplate {height: 175px;}  /*轮播图*/
+    .indexTitle h1{ font-size: 20px;}
+    .indexTitle h2{ margin-top: 20px; width: 160px;}
+    .indexTitle h2 span{font-size: 12px;top: -10px; }
+    .newsEvent li h1{ font-size: 20px; }
+    .newsEvent li h2{ font-size: 16px; }
+}
+
+
+/*小于375px*/
+@media (max-width: 375px) {
+    .flickerplate {height: 157px;} /*轮播图*/
+}
+
+
+
+/*小于320px*/
+@media (max-width: 330px) {
+    .goNext span {background-size: 50%; }
+    .goPrev span {background-size: 50%; }
+    .weddingVideo .viewContent ul li{width:50%;}
+    .weddingVideo .viewShow{height: 410px;}
+    .workList .row li{width: 100%;}
+    .flickerplate {height: 138px;} /*轮播图*/
+    .newsEvent .newsTitlePic{width: 60%;}
+}
+
+

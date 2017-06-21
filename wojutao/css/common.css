@@ -1,0 +1,813 @@
+/*---------------------------------------------------------------------------------------
+ index
+ * */
+/* banner */
+.banenr{ width:100%; overflow:hidden;position:relative; margin-top: -49px;}
+.banenr img{ width:100%;}
+.banenr ul li{width: 100%; position: relative; display: block;}
+.banenr>ol{height:20px;position: relative;z-index:10;width:100%; bottom:10px; margin-top:-19px;text-align:center;}
+.banenr>ol>li{display:inline-block;margin:4px;width:10px;height:10px; background-color: rgba(255,255,255,0.5);  border-radius: 50%;}
+.banenr>ol>li.on{ width: 10px; height: 10px; background-color: white; }
+
+
+
+/*- iconList --------------------------------------------------------------------------------------*/
+
+.iconList{
+	width: 100%;
+	margin-top: 5px;
+}
+
+.iconList li{
+	width: 23.7%;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.iconList li a{
+	display: inline-block;
+	width: 70%;
+}
+
+/*- subTitle --------------------------------------------------------------------------------------*/
+
+.subTitle{
+   width: 100%;
+   height: 35px;
+   line-height: 35px;
+   background:#eee;
+   border-top: 1px solid #dcdcdc;
+   border-bottom: 1px solid #dcdcdc;
+}
+
+.subTitle .fixWidth{
+	background: url(../images/line.jpg) no-repeat;
+	background-position:left 45%;
+	padding-left: 10px;
+}
+
+.subTitle .fixWidth a{
+	float: right;
+}
+
+
+/*- houseList --------------------------------------------------------------------------------------*/
+
+ .houseList{
+ 	margin: 10px 0 15px 0;
+ }
+
+ .houseList li{
+ 	width: 47%;
+ 	overflow: hidden;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.25); /* 老的 Firefox */
+    box-shadow: 0 0 10px rgba(0,0,0,0.25); 
+    margin: 0 1% 10px 1.2%;
+ }
+
+ .houseList li h2{
+   position: relative;
+   font-size: 14px;
+   padding-left: 16px;
+   background:url(../images/label1.jpg)no-repeat;
+   background-position: left top;
+   line-height: 14px;
+   margin: 5px 0 5px 0;
+ }
+
+ .houseList li h2 p{
+ 	display: inline-block;
+ 	width: 65%;
+ }
+
+
+ .houseList li .info{
+ 	position: relative;
+    margin-top: 5px;
+    padding: 3% 3% 6%;
+ }
+
+
+ .houseList li i{
+ 	position: absolute;
+ 	right: 0;
+ 	top: 0;
+ 	font-size: 11px;
+ 	line-height: 11px;
+ }
+
+
+ .houseList li h3{
+ 	font-size: 11px;
+    padding-left: 16px;
+ }
+
+ .houseList li h4{
+  font-size: 11px;
+    padding-left: 16px;
+ }
+
+ .houseList li h5{
+  font-size: 11px;
+    padding-left: 16px;
+ }
+
+
+ .houseList li h3{
+   background:url(../images/label2.jpg)no-repeat;
+   background-position: left top;
+   margin-bottom: 3px;
+ }
+
+ .houseList li h4{
+   background:url(../images/label3.jpg)no-repeat;
+   background-position: left top;
+   margin-bottom: 3px;
+ }
+
+ .houseList li h5{
+   background:url(../images/label4.jpg)no-repeat;
+   background-position: left top;
+ }
+
+
+/* .houseList li .icon{
+ 	position: relative;
+ 	top: -3px;
+ }*/
+
+
+
+/*- filter --------------------------------------------------------------------------------------*/
+
+.filter{
+  height: 40px;
+  background: #f6f6f6;
+}
+
+
+.filter .select li{
+  float: left;
+  width: 24.3%;
+}
+
+.filter h1{ 
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  line-height: 40px;
+  cursor: pointer;
+/*  background: url(../images/arrow-min.png) no-repeat;
+  background-position:83% center ;*/
+}
+
+.filter h1 img{
+  margin: 0 0 4px 2px;
+}
+
+
+.resultNumber{
+  clear: both;
+  font-size: 12px;
+  line-height: 22px;
+  background: #fdf5e1;
+}
+
+.filter .panels{
+  position: relative;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  background: white;
+/*  min-height: 100px;*/
+  z-index: 30;
+}
+
+.filter .panels li{
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1% 3%;
+  margin:0 2% 2% 0;
+  cursor: pointer;
+}
+
+.filter .panels li:hover{
+  color: white;
+  background: #0143ab;
+}
+
+.filter .panels .active{
+  color: white;
+  background: #0143ab;
+  border: 1px solid #0143ab;
+}
+
+.filter .panels .sorts{
+  display: none;
+  width: 100%;
+  background: white;
+  padding: 3% 2% 3% 2%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter .panels .sorts input[type='submit']{
+  border: 1px solid #0143ab;
+}
+
+
+
+
+
+/*- allHouseList --------------------------------------------------------------------------------------*/
+
+.allHouseList{
+  clear: both;
+}
+
+.allHouseList li{
+  width: 100%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.allHouseList li figure{
+  float: left;
+  width: 35%;
+}
+
+.allHouseList li .text{
+  width: 63%;
+  float: right;
+}
+
+
+.allHouseList li h2{
+  font-size: 11px;
+}
+
+.allHouseList li h3{
+  font-size: 11px;
+  margin-bottom: 1px;
+}
+
+
+.allHouseList li h2 i{
+  float: right;
+  color: #e00000;
+  font-size: 11px;
+}
+
+.allHouseList li h2 sup{
+  font-size: 8px;
+}
+
+.label{
+  font-size: 10px;
+  line-height: 10px;
+  padding: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  float: left;
+  margin:0 1% 2% 0;
+}
+
+.pink{color:#a968fd; border: 1px solid #a968fd;  }
+.orange{color:#ffb320; border: 1px solid #ffb320; }
+.cyan{color:#13b5b1; border: 1px solid #13b5b1;  }
+.green{color:#b3d465; border: 1px solid #b3d465; }
+
+
+.saleLabel{
+  width: 100%;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.saleLabel p{
+  clear: both;
+  font-size: 12px;
+}
+
+.saleLabel p span{
+  background: #ffb321;
+  color: white;
+  padding: 0 3px;
+  border-radius: 3px;
+  margin-right: 3px;
+  font-size: 12px;
+}
+
+.saleLabel i{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 400px;
+  height: 30px;
+  border-top: 1px dashed #ffd47b;
+}
+
+
+/*- allHouseList --------------------------------------------------------------------------------------*/
+
+.subNav{
+  position: relative;
+  z-index: 998;
+  color: #797979;
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  max-width: 640px;
+  background: #f6f6f6;
+  font-size: 12px;
+}
+
+.subNav li{
+  cursor: pointer;
+  float: left;
+  width: 22.9%;
+  margin: 0 1%;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+}
+
+.subNav li:hover{
+  color: #ff6600;
+  border-bottom: 1px solid #ff6600;
+}
+
+.subNav .active{
+  color: #ff6600;
+  border-bottom: 1px solid #ff6600;
+}
+
+
+
+/*- houseDetail --------------------------------------------------------------------------------------*/
+
+
+.houseAbstract{
+  margin-bottom: 10px;
+}
+
+.houseAbstract h1{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.houseAbstract .top{
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 5px;
+}
+
+.houseAbstract .top .seeMap{
+  font-size: 12px;
+  float: right;
+  cursor: pointer;
+  padding-left: 21px;
+  line-height: 25px;
+  position: relative;
+  top: -3px;
+  background: url(../images/mapBG.jpg)no-repeat;
+  background-position: left 35%;
+  color: #c8c8c8;
+}
+
+.houseAbstract table{
+  font-size: 12px;
+  width: 100%;
+}
+
+.houseAbstract table th{
+  width: 20.5%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.houseAbstract table .tel{
+  font-size: 15px;
+  color: #ffb62c;
+  font-weight: bold;
+  line-height: 12px;
+}
+
+.houseAbstract table .price{
+  color: #df0000;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.houseAbstract table .houseType{
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: 2%;
+}
+
+
+
+
+.photoAlbum{
+  width: 100%;
+  margin: 8px 0;
+}
+
+
+.photoAlbum li{
+  vertical-align: top;
+  position: relative;
+  width: 47%;
+  margin-right: 2.2%;
+  margin-bottom: 10px;
+}
+
+.photoAlbum li h2{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 13px;
+  color: white;
+  padding: 2% 5% 2% 5%;
+  background: rgba(0,0,0,0.6);
+} 
+
+
+.houseDetail{
+  font-size: 12px;
+  padding: 10px 5px 60px;
+}
+
+.houseDetail p{
+  margin-bottom: 5px;
+}
+
+.houseDetail h3{
+  margin-bottom: 3px;
+}
+
+
+.houseDetail table *{
+  font-weight: normal;
+  vertical-align:top;
+  text-align: left;
+}
+
+.houseDetail table th{
+  width: 16%;
+  font-size: 12px;
+}
+
+.houseDetail table td{
+  width: 27%;
+}
+
+.typePics{
+ width: 100%;
+ font-size: 12px;
+}
+
+.typePics h2{
+  width: 57%;
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.typePics li{
+  width: 100%;
+}
+
+.typePics li figure{
+  width: 40%;
+  float: left;
+}
+
+.typePics li table{
+  float: right;
+  width: 57%;
+}
+
+
+.houseDetail .typePics table th{
+  width: 14%;
+}
+
+.houseDetail .typePics table td{
+  width: 30%;
+}
+
+
+@media (max-width: 374px) {
+.houseDetail table th{width: 20%;}
+.houseDetail table td{width: 27%;}
+
+.houseDetail .typePics table th{width: 17%;}
+.houseDetail .typePics table td{width: 29%;}
+
+}
+
+.icoList{
+  width: 100%;
+  background: pink;
+}
+
+.icoList li{
+  font-size: 12px;
+ cursor: pointer;
+ float: left;
+ width: 17%;
+ margin: 10px 1.4%;
+  text-align: center;
+}
+
+.icoList li img{
+  width: 80%;
+}
+
+.icoList li:nth-child(1) {color: #73b52c;}
+.icoList li:nth-child(2) {color: #70aed4;}
+.icoList li:nth-child(3) {color: #dfa3e0;}
+.icoList li:nth-child(4) {color: #ff6600;}
+.icoList li:nth-child(5) {color: #ff6666;}
+
+
+
+.icoList li i{
+  display: block;
+  filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
+  -webkit-filter: grayscale(100%); 
+  -moz-filter: grayscale(100%); 
+  -ms-filter: grayscale(100%); 
+  -o-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+  filter: gray; 
+}
+
+.icoList li:hover i{
+  filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=0); 
+  -webkit-filter: grayscale(0); 
+  -moz-filter: grayscale(0); 
+  -ms-filter: grayscale(0); 
+  -o-filter: grayscale(0); 
+  filter: grayscale(0); 
+  filter: 0; 
+}
+
+.icoList li .active{
+  filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=0); 
+  -webkit-filter: grayscale(0); 
+  -moz-filter: grayscale(0); 
+  -ms-filter: grayscale(0); 
+  -o-filter: grayscale(0); 
+  filter: grayscale(0); 
+  filter: 0; 
+}
+
+
+.matingFrame{
+  clear: both;
+  background: #fefcf8;
+  border: 1px solid #d2d2d2;
+  padding: 3% 3% 1.5% 3%;
+}
+
+/*.matingFrame{
+  display: none;
+}
+*/
+
+/*.matingFrame .on{
+  display: block;
+}
+*/
+
+
+.matingFrame li{
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  clear: both;
+  line-height: 16px;
+}
+
+.matingFrame li i{
+  float: left;
+  padding-left:3px;
+  margin: 2px 5px 0 0;
+  line-height: 13px;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border: 2px solid #fd8e03;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fd8e03;
+}
+
+.matingFrame li .text{
+  float: left;
+}
+
+
+.map{
+  width: 100%;
+  margin: 0 auto;
+  height: 300px; 
+}
+
+
+
+
+
+
+
+
+/*- 城市选择 --------------------------------------------------------------------------------------*/
+
+/*城市弹层*/
+.cityLayer{width:100%;position:absolute;top:55px;left:0;background-color:#ffffff;z-index:999;display:none;}
+.letter{width:3%;overflow:hidden;line-height:16px; position:fixed;top:14.2%;right:20px;text-align:center;background:}
+.letter ul{list-style-type:none;}
+.letter ul li a{text-decoration:none; color:gray; font-size: 11px; }
+.city{width:90%;overflow:hidden;padding:0 20px 20px 20px;}
+.city-list{width:100%;overflow:hidden;}
+.city-list .city-letter{color:#6e6e6e;font-size:16px;display:inline-block;padding-top:15px;padding-bottom:5px;border-bottom:1px solid #e8ecf1;width:100%;}
+.city-list p{color:#afafaf;width:95%;height:50px;line-height:50px;border-bottom:1px solid #e8ecf1;cursor:pointer;}
+.UISelect{margin-top:5px}
+
+
+/*- bottom 预约看房 --------------------------------------------------------------------------------------*/
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  height: 50px;
+  width: 100%;
+  max-width: 640px;
+  background: white;
+  border-top:1px solid #eee;
+  text-align: center;
+}
+
+
+#bottom .btn{ 
+  float: left;
+  width: 25%;
+  padding: 0 3%;
+  font-size: 12px;
+  border-right:1px solid #eee; 
+}
+
+.bottom .btn figure img{
+ width: 35%;
+} 
+
+
+.bottom .btnW{
+  cursor: pointer;
+  color: white;
+  float: right; 
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  background: #ff9c3b;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+
+/*-  独家优惠 --------------------------------------------------------------------------------------*/
+
+
+.gray{
+  background: #f5f5f5;
+}
+
+.subPageTitle{
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.favor{
+  min-height: 400px;
+}
+
+.favor .code{
+  width: 60%;
+  float: right;
+  margin-right: 8%;
+}
+
+
+.favor .info{
+  background: white;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 10px;
+  padding:  0 3%;
+  min-height: 50px;
+}
+
+.favor .info h2{float: left; line-height: 50px; font-weight: bold;}
+.favor .info h3{float: right; line-height: 50px; font-size:16px; font-weight: bold; color:#f35826;}
+.favor .info h4{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 10px;
+}
+
+.favor .info h5{
+   color: gray;
+   font-size: 13px;
+}
+
+.favor .info h5 span{
+  background: #ffb321;
+  color: white;
+  padding: 0 3px;
+  border-radius: 3px;
+  margin-right: 3px;
+  font-size: 12px;
+}
+
+.favor .info .tips{
+  color: #dd712b;
+  line-height: 35px;
+}
+
+.favor .promise{
+  color: #9f9f9e;
+  padding-left:3%; 
+}
+
+.favor .promise i{
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  width: 5%;
+  margin-right: 5px;
+}
+
+.favor .promise i img{
+  width: 100%;
+}
+
+
+.favor table{
+  background: white;
+  width: 100%;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 10px;
+}
+
+
+.favor table tr{
+  width: 100%;
+  border-bottom: 1px solid #dedede; 
+}
+
+.favor table th{
+  width: 23%;
+  font-size: 14px;
+  padding-left: 3%;
+  text-align: left;
+}
+
+.favor table td{
+/*  border-right: 1px solid red;*/
+}
+
+.favor table input{
+  width: 70%;
+  margin: 5% 0;
+  line-height: 20px;
+  border: none;
+}
+
+.favor input[type="submit"] {
+  width: 85%;
+  max-width: 640px;
+  border-radius: 5px;
+  background: #ec6438;
+  color: white;
+  font-size: 17px;
+  line-height: 50px;
+  border: none;
+  margin-top: 50%;
+/*  position: fixed;
+  bottom: 10px;*/
+  left: 7%;
+  cursor: pointer;
+}
