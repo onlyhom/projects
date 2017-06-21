@@ -1,0 +1,881 @@
+
+
+@font-face { 
+font-family: 'font1';
+src: url('../fonts/tt0142m.eot'), url('../fonts/tt0142m.ttf'); 
+ font-weight:normal;font-style:normal;
+} 
+
+
+.main{
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+
+.fullPage{
+	height: 100%;
+}
+
+
+.fixWidth{
+  height: 100%;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.indexBG{
+	position: absolute;
+	width: 100%;
+    top: 0;
+    bottom: 0;
+	background: black;
+}
+
+.indexBG li{
+	position: absolute;
+	width: 100%;
+	display: none;
+	z-index: 0;
+}
+
+.indexBG li img{
+	width: 100%;
+}
+
+
+.indexBG .show{
+	display: block;
+}
+
+
+
+.indexLogo{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 240px;
+	text-align: center;
+	padding-top: 40px;
+    z-index: 99;
+}
+
+.indexLogo img{
+	width: 180px;
+}
+
+
+
+
+
+
+
+
+.indexNav{
+	width: 100%;
+/*	height: 1080px;*/
+	height: 100%;
+	position: relative;
+	z-index: 99;
+}
+
+.indexNav li{
+	width: 24.895%;
+	height: 100%;
+	border-right: 1px solid white;
+	border-right: 1px solid rgba(255,255,255,0.5);
+	opacity: 0.7;
+	float: left;
+}
+
+
+.indexNav li:nth-child(1){
+	border-left: 1px solid white;
+	border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+
+
+.indexNav li .content{
+	position: relative;
+	top: 50%;
+	padding: 230px 25px 150px;
+	color: white;
+    /*cursor: pointer;*/
+}
+
+.indexNav li h1{
+	font-size: 40px;
+	font-family: 'font1';
+}
+
+.indexNav li .line{
+    width: 90px;
+    border-top: 1px solid white;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    margin-bottom: 12px;
+}
+
+.indexNav li h2{
+	font-family: 'font1';
+	font-size: 15px;
+	font-weight: bold;
+	color: #61b7f3;
+	margin-bottom: 15px;
+}
+
+.indexNav li td{
+	padding-right: 20px;
+}
+
+.indexNav li td a{
+	color: #d5d5d5;
+}
+
+.indexNav li td a:hover{
+	color: white;
+}
+
+
+@media (max-width:1400px) {
+  .indexNav li .content{top: 35%;}
+  .indexLogo img{ width: 130px;}
+
+}
+
+
+/*注册页面*/
+
+.register .logo{
+  padding-top: 40px;
+}
+
+.register .logo img{
+	width: 85px;
+}
+
+
+.registerBox{
+	 margin-top: 100px;
+	 margin-bottom: 50px;
+	 text-align: center;
+}
+
+.registerBox h1{
+	text-align: center;
+	color: #56cef0;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.registerBox h1 span{
+	color: white;
+	font-size: 12px;
+	padding-left: 5px;
+}
+
+.registerBG{
+	text-align: center;
+}
+
+
+.registerBox input{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   margin-bottom: 4px;
+}
+
+
+
+.register input[type="text"]{
+	width: 243px;
+	height: 40px;
+	line-height: 40px;
+	background: url(../images/input.png) no-repeat;
+	border: none;
+	padding-left: 50px;
+	font-size: 14px;
+	color: white;
+}
+
+
+.register input[type="password"]{
+	width: 243px;
+	height: 40px;
+	line-height: 40px;
+	background: url(../images/input.png) no-repeat;
+	border: none;
+	padding-left: 50px;
+	font-size: 14px;
+	color: white;
+}
+
+
+.register .registerBox .inputBG1{ background: url(../images/input1.png) no-repeat;}
+.register .registerBox .inputBG2{ background: url(../images/input2.png) no-repeat;}
+.register .registerBox .inputBG3{ background: url(../images/input3.png) no-repeat;}
+
+
+.register input[type="submit"]{
+	width: 180px;
+	height: 51px;
+	color: #56cef0;
+	cursor: pointer;
+	background: url(../images/submitBtn.png)no-repeat;
+	border: none;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+
+/*公共子页面*/
+
+.subPage .logo{
+  padding: 20px 0 15px;
+  background: black;
+}
+
+.subPage .logo img{
+	width: 110px;
+}
+
+.subPage .nav{
+	background: #192026;
+	height: 40px;
+	line-height: 40px;
+}
+
+.subPage .nav a{
+	display: inline-block;
+	padding: 0 30px;
+	color: white;
+}
+
+.subPage .nav a:hover{
+	background: black;
+}
+
+
+.subPage .banner{
+	background: url(../images/banner.jpg) no-repeat;
+	width: 100%;
+	height: 201px;
+}
+
+.subPage .banner h1{
+	color: white;
+	font-family: 'font1';
+	font-style: italic;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+
+.subPage .banner h1 span{
+	font-size: 55px;
+}
+
+.subPage .banner h2{
+	background: white;
+	color: #102138;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0 10px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 15px;
+	margin-top: 35px;
+	position: relative;
+	left: 84px;
+	top: 22px;
+}
+
+.subTitle {
+	text-align: center;
+	margin: 70px 0 40px;
+}
+.subTitle h1{
+   font-size: 21px;
+   color: #404040;
+   letter-spacing: 1px;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+.subTitle h2{
+	font-size: 14px;
+	color: #747474;
+   text-transform: uppercase;
+}
+
+.subTitle .blackLine{
+	display: inline-block;
+	width: 340px;
+	border-top: 1px solid black;
+}
+
+.subTitle .blueBlock{
+	width: 54px;
+	height: 7px;
+	background: #1e8cda;
+	margin: 0 auto;
+	position: relative;
+	top: -7px;
+}
+
+
+
+
+.pageBottom{
+	background: #192025;
+	color: white;
+	padding: 20px 0;
+}
+
+.pageBottom td{
+   width: 33%;
+   vertical-align: top;
+}
+
+
+.pageBottom h1{
+	color: white;
+	font-size: 20px;
+}
+
+.pageBottom h1 span{
+	font-size: 14px;
+	padding-left: 5px;
+}
+
+.pageBottom li{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 35px;
+}
+
+
+.footerNav{
+	margin-top: 10px;
+	opacity: 0.8;
+	color: white;
+}
+
+.footerNav a{
+	color: white;
+	display: inline-block;
+	margin-right: 20px;
+	line-height: 30px;
+}
+
+
+.contactList{
+	margin-top: 10px;
+	opacity: 0.8;
+}
+
+.contactList li:nth-child(1){background: url(../images/ico1.png) no-repeat;}
+.contactList li:nth-child(2){background: url(../images/ico2.png) no-repeat;}
+.contactList li:nth-child(3){background: url(../images/ico3.png) no-repeat;}
+.contactList li:nth-child(4){background: url(../images/ico4.png) no-repeat;}
+
+
+
+.pageBottom .code{
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.pageBottom .code img{
+	width: 90px;
+	height: 90px;
+}
+
+
+
+.bottomBar{
+	background: black;
+	text-align: center;
+	padding:10px;
+	color: #b5b7b6;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+
+/*关于我们*/
+.aboutUs{
+	background: url(../images/aboutBG.jpg) no-repeat;
+	width: 1200px;
+	height: 592px;
+}
+
+
+.aboutUs .text{
+	color: white;
+	width: 600px;
+	position: relative;
+	left: 440px;
+	top: 150px;
+}
+
+.aboutUs .text h2{
+	font-size: 21px;
+	margin-bottom: 20px;
+}
+
+.aboutUs .text p{
+	line-height: 27px;
+	text-indent: 2em;
+	font-size: 13px;
+}
+
+
+.culture{
+   width: 100%;
+   margin-bottom: 120px;
+   height: 400px;
+}
+
+
+.culture li{
+   width: 270px;
+   background: #1e8cda;
+   float: left;
+   color:white;
+   padding: 10px;
+   margin-right: 10px;
+}
+
+
+.culture li:nth-child(2n){
+	background: #05192f;
+}
+
+
+.culture li .border{
+   border: 1px solid white;
+   padding: 30px;
+   padding-bottom: 50px;
+   height: 110px;
+   overflow: hidden;
+   -moz-transition:all 0.5s;
+   -o-transition:all 0.5s;
+   -webkit-transition:all 0.5s;
+   transition:all 0.5s;
+}
+
+
+.culture li:hover .border{
+	height: 350px;
+}
+
+
+
+
+
+.culture li .line{
+	border-top: 2px solid white;
+	margin: 55px 0 30px 0;
+
+}
+
+
+.culture li h1{
+	font-size: 23px;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+
+.culture li h2{
+	font-size: 16px;
+}
+
+.culture li p{
+	line-height: 25px;
+}
+
+
+/*平台优势*/
+
+.table{
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+.table table{
+	width: 1100px;
+	margin: 0 auto;
+	background: #051a2f;
+	color: white;
+	border-radius: 10px;
+}
+
+.table table tr a:hover{
+	color: #1e8cda!important;
+}
+
+
+.table table tr{
+	height: 50px;
+}
+
+
+
+.table tr a{
+   color: white;
+}
+
+
+.table table th{
+	font-size: 16px;
+	text-align: center;
+}
+
+.table table i{
+	display: inline-block;
+	width: 20px;
+}
+
+.table tr:nth-child(2n){
+   background: #eee;
+   color: #051a2f;
+}
+
+.table tr:nth-child(2n) a{
+   color: #051a2f;
+}
+
+
+
+.abstract{
+	background: url(../images/bannerBG.jpg) no-repeat;
+	width: 1920px;
+	height: 333px;
+	padding-top: 100px;
+}
+
+.abstract .whiteBG{
+	width: 540px;
+	margin: 0 auto;
+	padding: 56px 100px;
+	color: black;
+	background: white;
+    background: rgba(255,255,255,0.6);
+    line-height: 25px;
+}
+
+
+.prospect .content{
+	background: #eee;
+	color: black;
+	text-align: center;
+	padding: 50px 0 150px;
+}
+
+.prospect .content .text{
+	display: block;
+	width: 430px;
+	line-height: 25px;
+	margin: 20px auto;
+	text-align: left;
+}
+
+.prospect .content img{
+	margin: 15px 0;
+}
+
+
+/*组织架构*/
+
+.structure{
+	padding: 0 0 100px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+/*联系我们*/
+
+
+.contact{
+  
+}
+
+.contact li{
+  display: block;
+  line-height: 25px;
+}
+
+#dituContent{
+	margin: 50px 0 150px;
+	border:#ccc solid 1px;
+}
+
+
+
+/*新闻页*/
+
+
+    .newsList{
+       width: 100%;
+       margin-top: 20px;
+    }
+
+    .newsList li{
+       display: block;
+       height: 55px;
+       line-height: 52px;
+       border-bottom: 1px dashed #d3d3d3;
+    }
+
+    .newsList a{
+       text-align: center;
+       padding-left:25px; 
+       color: #343434;
+    }
+
+
+    .newsList a:hover{
+    	color: gray;
+    }
+
+    .newsTime{
+      color: #8d8d8d;
+      float: right;
+      margin-right: 10px;
+     }
+
+    .orangePoint{
+      position: relative;
+      top: 28px;
+      left: 15px;
+      width: 5px;
+      height: 5px;
+      border-radius:3px;
+      background:orange;
+
+    }
+
+
+
+
+    /* 新闻详情 */
+
+    .newsHeader h1{
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+
+    .newsHeader i{
+    	padding-right: 10px;
+    }
+
+    .newsPicture {
+    	width: 100%;
+    	text-align: center;
+    	margin: 20px 0;
+    }
+
+    .newsPicture img{
+      max-width: 100%;
+      margin-bottom: 10px;
+      padding: 4px;
+      border: 1px solid #d2d2d2;  
+    }
+
+    .newsText p{
+      text-indent: 2em;  
+      line-height: 23px;  
+    }
+
+
+    .newsDetailFooter {
+      float: right;
+      margin:40px 0 80px 0;
+      width: 220px;
+      text-align: left;
+      text-decoration: underline;
+      line-height: 25px;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+    }
+
+
+
+   .abstractBar{
+      height: 43px;
+      line-height: 43px;
+      background: #eee;
+      font-weight: bold;
+      padding-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+
+
+
+/*页码*/
+
+    .pages{
+      margin-left:20px; 
+      letter-spacing: 2px;
+      margin: 40px 0 100px;
+    }
+
+    .pages a{
+      padding: 3px;
+      border: 1px solid #d5d5d5;
+      margin-right:5px;
+    }
+
+    .currentPage{
+      color: red;
+    }
+
+
+
+/*产品展示*/
+
+.menu{
+	text-align: center;
+
+}
+
+.menu li{
+	border-bottom: 2px solid transparent;
+    margin-right: 10px;
+    padding-bottom: 5px;  
+    opacity: 0.5;
+}
+
+.menu li:hover{
+	border-bottom: 2px solid black;
+    opacity: 1;
+}
+
+
+.menu .on{
+	border-bottom: 2px solid black;
+    opacity: 1;
+}
+
+
+
+.menu a{
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+.productList{
+	margin-top: 50px;
+}
+
+.productList li{
+	float: left;
+	width:280px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+.productList .figrue{
+	display: block;
+	width: 278px;
+	height: 320px;
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+
+	-o-background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	background-size:cover;
+	border: 1px solid #eee;
+}
+
+
+.productList li h1{
+	margin: 5px 0;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+.productShow{
+	text-align: center;
+}
+
+.productShow .abstractBar{
+background: url(../images/texture.jpg);
+}
+
+
+.productShow h1{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.productShow img{
+	max-width: 100%;
+}
+
+
+/*关于加盟*/
+
+
+
+/*人才招聘*/
+
+.joinUsDetail{
+	padding: 50px 200px 100px;
+}
+
+
+.joinUsDetail h1{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.joinUsDetail img{
+	max-width: 100%;
+}
+
+
+.joinUsDetail h2{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+
+.contacts{
+    margin-top: 30px;
+	line-height: 22px;
+    font-size: 14px;
+    font-weight: bold;
+}
