@@ -1,0 +1,546 @@
+@media (max-width:1400px) {
+  body{zoom:0.8;}
+}
+
+ html { 
+   overflow-x: hidden; 
+   overflow-y: auto; 
+} 
+
+ .container{
+   width: 1920px;
+   margin:0 auto;
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   position:relative;
+   left:50%;
+   margin-left:-960px;
+}
+
+
+.pageTop{
+   width: 100%;
+   height: 130px;
+   background: white url("../images/顶部.jpg") no-repeat;
+   background-position: left center;
+   position: relative;
+   animation:pageTopInto 2s;
+   -webkit-animation:pageTopInto 2s;
+   -moz-animation:pageTopInto 2s;
+   -o-animation:pageTopInto 2s;
+
+}
+
+@keyframes pageTopInto{
+  from{opacity: 0; top: -100px;}
+  to{opacity: 1; top: 0;}
+}
+
+@-webkit-keyframes pageTopInto{
+  from{opacity: 0; top: -100px;}
+  to{opacity: 1; top: 0;}
+}
+
+@-moz-keyframes pageTopInto{
+  from{opacity: 0; top: -100px;}
+  to{opacity: 1; top: 0;}
+}
+
+@-o-keyframes pageTopInto{
+  from{opacity: 0; top: -100px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+nav{
+  width: 100%;
+  height: 68px;
+  background: #1b477d;
+  position: relative;
+
+  animation:navInto 1.6s;
+  -webkit-animation:navInto 1.6s;
+  -moz-animation:navInto 1.6s;
+  -o-animation:navInto 1.6s;
+}
+
+@keyframes navInto{
+  from{opacity: 0; top: 80px;}
+  to{opacity: 1; top: 0;}
+}
+
+@-webkit-keyframes navInto{
+  from{opacity: 0; top: 80px;}
+  to{opacity: 1; top: 0;}
+}
+
+@-moz-keyframes navInto{
+  from{opacity: 0; top: 80px;}
+  to{opacity: 1; top: 0;}
+}
+
+@-o-keyframes navInto{
+  from{opacity: 0; top: 80px;}
+  to{opacity: 1; top: 0;}
+}
+
+nav ul{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav li{
+  color: white;
+  width: 70px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 68px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+nav li:hover{
+  border-bottom: 1px solid white;
+}
+
+.active{
+  border-bottom: 1px solid white;
+}
+
+.banner{
+  height: 735px;
+  width: 100%;
+  position: relative;
+  background: url("../images/banner.jpg") no-repeat;
+}
+
+.headerIMG{
+  z-index:1; 
+/*  position: absolute;*/
+}
+
+
+.bannerBox{
+  width: 1200px;
+  height: 180px;
+  float: right;
+  padding-top: 555px;
+  position: relative;
+  z-index: 999;
+}
+
+
+.banner .box{
+  position: relative;
+  width: 1200px;
+  height: 180px;
+  background: #313131;
+  animation:BoxFLoatInto 2s;
+  -webkit-animation:BoxFLoatInto 2s;
+  -moz-animation:BoxFLoatInto 2s;
+  -o-animation:BoxFLoatInto 2s;
+}
+
+@keyframes BoxFLoatInto{
+  from{opacity: 0; left: 100px;}
+  to{opacity: 1; left: 0;}
+}
+
+@-webkit-keyframes BoxFLoatInto{
+  from{opacity: 0; left: 100px;}
+  to{opacity: 1; left: 0;}
+}
+
+@-moz-keyframes BoxFLoatInto{
+  from{opacity: 0; left: 100px;}
+  to{opacity: 1; left: 0;}
+}
+
+@-o-keyframes BoxFLoatInto{
+  from{opacity: 0; left: 100px;}
+  to{opacity: 1; left: 0;}
+}
+
+
+.bannerLogo{
+  float:left;
+}
+
+.bannerText{
+  float: left;
+  width: 800px;
+  padding: 30px 0 0 30px;
+  line-height: 24px;
+  color: white;
+}
+
+
+
+
+.companyProfile{
+  width: 970px;
+  height: 290px;
+  margin:0 auto; 
+  padding: 50px 0 20px;
+
+}
+
+.companyProfile figure{
+  margin: 10px 0 20px;
+}
+
+.profileText p{
+  font-size: 16px;
+  line-height: 22px;
+  text-indent: 2em;
+
+}
+
+
+.learnMore{
+  width: 105px;
+  height: 32px;
+  font-size: 14px;
+  color: #1b477d;
+  background: none;
+  border: 1px solid #1b477d;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.learnMore:hover{
+  border: 1px solid #2a72cb;
+  color: #2a72cb;
+  cursor:pointer;
+
+}
+
+
+
+
+.productDisplay{
+  width: 1000px;
+  margin:0 auto; 
+  padding: 20px 0;
+/*  background: pink;*/
+}
+
+
+.displayText p{
+  font-size: 16px;
+  line-height: 22px;
+  text-indent: 2em;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.productList li{
+  float: left;
+}
+
+
+.productBox{
+  width: 240px;
+  height: 455px;
+  background: #1c477c;
+  margin-right: 0.6%;
+  border: 1px solid gray;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/*.productIMG{
+  background: white;
+}
+
+.productIMG img{
+  height: 307px;
+  position: relative;
+  overflow: hidden;
+  transition:height 0.8s;
+  -webkit-transition:height 0.8s;
+  -moz-transition:height 0.8s;
+  -o-transition:height 0.8s;
+}
+
+
+.productBox:hover .productIMG img{
+  height: 160px;
+}*/
+
+
+
+
+.productIMG{
+ position: relative;
+ left: -50%;
+ width: 480px;
+ background: white;
+ text-align: center;
+}
+
+.productIMG img{
+  height: 307px;
+  transition:height 0.8s;
+  -webkit-transition:height 0.8s;
+  -moz-transition:height 0.8s;
+  -o-transition:height 0.8s;
+}
+
+
+.productBox:hover .productIMG img{
+  height: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.productInfo{ 
+  margin: 0;
+  height: 60%;
+  padding: 20px 8px;
+  background: white;
+  position: relative;
+  top: -3px;
+  transition:background 0.5s;
+  -webkit-transition:background 0.5s;
+  -moz-transition:background 0.5s;
+  -o-transition:background 0.5s;
+}
+
+
+
+.productBox:hover .productInfo{
+  background: #1c477c;
+  color: white;
+}
+
+
+.learnMoreBtn{
+  width: 105px;
+  height: 32px;
+  font-size: 14px;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.learnMoreBtn:hover{
+  cursor:pointer;
+}
+
+
+
+.productInfo h2{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.productInfo p{
+  font-size: 15px;
+  line-height: 22px;
+}
+
+
+
+
+.brands{
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+
+.stepcarousel {
+  MARGIN: 0px auto; OVERFLOW: scroll; WIDTH: 1020px; POSITION: relative; HEIGHT: 140px; left:-10px;
+}
+.stepcarousel .belt {
+  LEFT: 0px; POSITION: absolute; TOP: 0px;
+}
+#displaycssbelt {
+  VISIBILITY: hidden
+}
+#stocklevels {
+  VISIBILITY: hidden
+}
+
+.stepcarousel .panel {
+  FLOAT: left; MARGIN: 0px 15px ; OVERFLOW: hidden; WIDTH: 234px; height: 134px; border:2px solid #e5e5e5; }
+
+.stepcarousel .panel:hover {
+  border:2px solid #1b477d; }
+
+.stock {
+  CLEAR: both; font-size: 10px; PADDING-BOTTOM: 5px; MARGIN: 0px auto; WIDTH: 1100px; COLOR: #000; BORDER-BOTTOM: #000 1px dashed; FONT-FAMILY: arial, verdana, sans-serif; HEIGHT: 10px; TEXT-ALIGN: right
+}
+.subfeature {
+  DISPLAY: block; MARGIN: 0px; OVERFLOW: hidden; width: 230px;height: 130px; border: 2px solid #f0f0f0;}
+
+.subfeature img {width: 230px; height: 130px;}
+
+
+
+
+.technicalSupport{
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  padding-top: 130px;
+  background: url(../images/技术支持BG.jpg) no-repeat;
+}
+
+
+.technicalTitleBox{
+  width: 900px;
+  height: 235px;
+  margin: 0 auto;
+  padding: 50px;
+  background: white;
+  color: black;
+}
+
+.technicalTitleBox h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.technicalTitleBox p{
+  margin-top: 30px;
+}
+
+
+
+.classicCase{
+  width: 1000px;
+  height: 900px;
+  margin:  0 auto;
+}
+
+.ClassicTitleBox{
+  padding: 30px 0 60px 0;
+  color: black;
+}
+
+.ClassicTitleBox h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.ClassicTitleBox p{
+  margin-top: 30px;
+}
+
+
+.case{
+  width: 480px;
+  height: 330px;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin: 0 10px 20px 0;
+}
+
+
+
+.case h2{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.case p{
+  line-height: 18px;
+}
+
+.caseInfo{
+  margin-left:10px; 
+  position: relative;
+  width: 470px;
+  height: 310px;
+  z-index: 11;
+}
+
+
+.caseBoxBG{
+  height: 310px;
+  width: 420px;
+  background: white;
+  position: absolute;
+  top: 0;
+  border-left: 8px solid #1b477d;
+  z-index: 10;
+}
+
+.caseLeft{
+  width: 200px;
+  height: 310px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.caseRight{
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  float: left;
+}
+
+.caseLeft .top{
+  width: 100%;
+  height: 240px;
+  text-overflow:ellipsis;
+  overflow: hidden;
+}
+
+
+.case button{
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  background: #1b477d;
+  color: white;
+  padding: 6%;
+  cursor: pointer;
+}
+
+
+#main{
+  height: 2838px;
+  background: #f1f1f1 url(../images/主页底纹.jpg) no-repeat;
+}
+
+
+footer{
+  height: 100px;
+  width: 100%;
+  background: #4b4b4b;
+  color: white;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+footer a{
+  color: white;
+}

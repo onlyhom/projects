@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>WiFi数据统计</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="中国安全WIFI地图">  
+    <meta name="description" content="中国安全WIFI地图">
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/layer/layer.js" type="text/javascript"></script>
+    <script src="js/jquery.formVerify.js" type="text/javascript"></script>
+    <script src="js/echarts.min.js" type="text/javascript"></script>
+    <script src="js/shine.js" type="text/javascript"></script>
+    <script src="js/china.js" type="text/javascript" ></script>
+    <script src="js/draw_charts.js" type="text/javascript" ></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <div class="tag">
+                <a class="cell icon-house" href="index.html">首页</a>
+                <a class="cell icon-wifi" href="rank.html">数据</a>
+                <a class="cell icon-people" href="about.html">关于</a>
+            </div>
+            <a class="login-status" href="login.html">登 录</a>
+        </div>
+    </div>
+
+    <div class="sub-banner">
+        <img src="images/sub_banner.png">
+    </div>
+
+    <div class="section-title">
+        <div class="title">中国安全WIFI数据统计</div>
+        <div class="sub-title">Ranking</div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="fix-width">
+        <div class="rank">
+            <div class="charts-list">
+               <div class="chart-container large-container">
+                    <div class="title">中国公共WIFI布局一览图</div>
+                    <div class="other-tips">
+                        <p class="date"></p>
+                        <p class="sum"></p>
+                    </div>
+                    <div id="china_wifi_layout" class="chart chart-border"></div>
+                </div>
+
+                <div class="chart-container min-container">
+                    <div class="title">
+                        公共WiFi排名前15的城市情况
+                        <div class="sub-title">公共WiFi数量排名前15的城市以及其在该省占比</div>
+                    </div>
+                    <div id="city_wifi_rank" class="chart"></div>
+                </div>
+
+                <div class="chart-container min-container">
+                    <div class="title">
+                        前十的场景公共WiFi占比情况
+                        <div class="sub-title">WiFi数量排名前10的场景在WiFi数量前10的省份占比</div>
+                    </div>
+                    <div id="province_scene_occupy" class="chart"></div>
+                </div>
+
+                <div class="chart-container min-container">
+                    <div class="title">
+                        公共WiFi排名前15的场景情况
+                        <div class="sub-title">公共WiFi数量前15的场景在整体公共WiFi数量占比</div>
+                    </div>
+                    <div id="scene_wifi_occupy" class="chart"></div>
+                </div>
+
+                <div class="chart-container min-container">
+                    <div class="title">
+                        公共WiFi排名前15的运营商情况
+                        <div class="sub-title">公共WiFi数量前15的运营商以及其在整体公共WiFi数量的占比</div>
+                    </div>
+                    <div id="operator_wifi_occupy" class="chart"></div>
+                </div>
+
+                <div class="chart-container min-container">
+                    <div class="title">
+                        前十的场景公共WiFi占比情况
+                        <div class="sub-title">WiFi数量前10的运营商部署的前10大场景的比重</div>
+                    </div> 
+                    <div id="operator_scene_occupy" class="chart"></div>
+                </div>
+
+                <div class="chart-container min-container">
+                    <div class="title">
+                        公共WiFi反馈排名前15的城市情况
+                        <div class="sub-title">WiFi收到反馈数量前15的城市占WiFi收到反馈总数的比例</div>
+                    </div>
+                    <div id="city_feedback_occupy" class="chart"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+
+
+    //生成一个随机数
+    function randomValue() {
+        return Math.round(Math.random()*1000);
+    }
+
+    //生成随机数据 方便预览效果
+    function createRandomData(type, srting_name, scence_name){
+        var tempArr = [];
+        if(type == 'barAndLine'){
+            for(var i=0; i<15; i++){
+                tempArr.push({
+                    name:srting_name+(i+1),
+                    value:randomValue(),
+                    occupy:Math.random().toFixed(3)
+                });
+            }
+        }else if(type == 'pie'){
+            for(var i=0; i<16; i++){
+                if(i==15){
+                    tempArr.push({
+                        name:'其他',
+                        value:randomValue()
+                    });
+                }else{
+                    tempArr.push({
+                        name:srting_name+(i+1),
+                        value:randomValue()
+                    });
+                }
+
+            }
+        }else if(type == 'stack'){
+            for(var i=0; i<10; i++){
+                var tempScenceArr = [];
+                for(var j=0; j<10; j++){
+                    var temp = ((Math.random())*0.133).toFixed(3);
+                    tempScenceArr.push({
+                        name:scence_name+(j+1),
+                        value: (temp*1000+50).toString(),
+                        occupy: temp
+                    });
+                }
+
+                tempArr.push({
+                    partNameArr: srting_name+(i+1),
+                    sence:tempScenceArr
+                });
+            }
+        }
+        return tempArr;
+    }
+
+    var data_china_wifi_layou;      //图1 中国公共WIFI布局一览图
+    var data_city_wifi_rank;        //图2 前15的城市公共WiFi数量以及其在该省占比
+    var data_province_scene_occupy; //图3 前10的省份的前10的公共场景WiFi占比情况
+    var data_scene_wifi_occupy;     //图4 前15的场景公共WiFi数量在整体公共WiFi数量占比
+    var data_operator_wifi_occupy;  //图5 前15的运营商公共WiFi数量以及其在整体公共WiFi数量的占比
+    var data_operator_scene_occupy; //图6 前10的运营商在前10的场景公共WiFi布局占比情况
+    var data_city_feedback_occupy;  //图7 收集到反馈前15的城市 占反馈总数的比例
+
+
+    // =================== 图1数据 中国公共WIFI布局一览图 ===================
+    data_china_wifi_layout = [
+        {name: '北京', value: randomValue()},
+        {name: '天津', value: randomValue()},
+        {name: '上海', value: randomValue()},
+        {name: '重庆', value: randomValue()},
+        {name: '河北', value: randomValue()},
+        {name: '河南', value: randomValue()},
+        {name: '云南', value: randomValue()},
+        {name: '辽宁', value: randomValue()},
+        {name: '黑龙江', value: randomValue()},
+        {name: '湖南', value: randomValue()},
+        {name: '安徽', value: randomValue()},
+        {name: '山东', value: randomValue()},
+        {name: '新疆', value: randomValue()},
+        {name: '江苏', value: randomValue()},
+        {name: '浙江', value: randomValue()},
+        {name: '江西', value: randomValue()},
+        {name: '湖北', value: randomValue()},
+        {name: '广西', value: randomValue()},
+        {name: '甘肃', value: randomValue()},
+        {name: '山西', value: randomValue()},
+        {name: '内蒙古', value: randomValue()},
+        {name: '陕西', value: randomValue()},
+        {name: '吉林', value: randomValue()},
+        {name: '福建', value: randomValue()},
+        {name: '贵州', value: randomValue()},
+        {name: '广东', value: randomValue()},
+        {name: '青海', value: randomValue()},
+        {name: '西藏', value: randomValue()},
+        {name: '四川', value: randomValue()},
+        {name: '宁夏', value: randomValue()},
+        {name: '海南', value: randomValue()},
+        {name: '台湾', value: randomValue()},
+        {name: '香港', value: randomValue()},
+        {name: '澳门', value: randomValue()}
+    ];
+
+    // ============== 图2数据 前15的城市公共WiFi数量以及其在该省占比 ===================
+
+    data_city_wifi_rank = createRandomData('barAndLine','城市'); //使用随机数据预览
+
+
+    // =================== 图3数据 前10的省份的前10的公共场景WiFi占比情况 ===================
+    data_province_scene_occupy = createRandomData('stack','省份','场景'); //使用随机数据预览
+
+
+    // =================== 图4数据 前15的场景公共WiFi数量在整体公共WiFi数量占比 ===================
+    data_scene_wifi_occupy = createRandomData('pie','场景'); //使用随机数据预览
+
+
+    // =================== 图5数据 前15的运营商公共WiFi数量以及其在整体公共WiFi数量的占比 ===================
+    data_operator_wifi_occupy = createRandomData('pie','运营商'); //使用随机数据预览
+
+
+    // =================== 图6数据 前10的运营商在前10的场景公共WiFi布局占比情况 ===================
+    data_operator_scene_occupy = createRandomData('stack','运营商','场景'); //使用随机数据预览
+
+
+    // =================== 图7数据 收集到反馈前15的城市 占反馈总数的比例 ===================
+    data_city_feedback_occupy = createRandomData('pie','城市'); //使用随机数据预览
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{position:relative}.btn-blue,.btn-line{display:inline-block;line-height:1;color:#fff;text-align:center}.btn-blue{border:1px solid #54c0d5;background:#54c0d5}.btn-blue:hover{border:1px solid #42b6cc;background:#42b6cc}.btn-line{border:1px solid #fff}.btn-line:active{filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#19FFFFFF, endColorStr=#19FFFFFF);background:rgba(255,255,255,.1)}.header{position:absolute;top:0;left:0;z-index:1000;width:100%}.header .top{position:relative;z-index:999;height:41px;background:#fff;border-bottom:1px solid #e0e0e0}
+.header .logo{position:relative;top:8px;display:block;text-align: center;}
+.header .logo img{height:26px;}
+.header .nav-toggle{position:absolute;top:0;right:0;width:40px;height:40px;-webkit-transform:translateZ(0) rotate(0deg);-ms-transform:translateZ(0) rotate(0deg);transform:translateZ(0) rotate(0deg);-webkit-transition:-webkit-transform .4s cubic-bezier(0.4,.01,.165,.99);transition:transform .4s cubic-bezier(0.4,.01,.165,.99);-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent}.header .nav-toggle-svg{position:absolute;left:0;top:0;-webkit-transform:translateZ(0) rotate(0deg);-ms-transform:translateZ(0) rotate(0deg);transform:translateZ(0) rotate(0deg);fill:#8c8c8c;-webkit-transition:-webkit-transform .25s cubic-bezier(0.4,.01,.165,.99);transition:transform .25s cubic-bezier(0.4,.01,.165,.99);font-size:18px}.header .nav-toggle-rect{left:0;top:0;-webkit-transition:-webkit-transform .1s .1s;transition:transform .1s .1s}.header .nav-toggle-rect-top{-webkit-transform:translate3d(0,-8px,0);-ms-transform:translate3d(0,-8px,0);transform:translate3d(0,-8px,0)}.header .nav-toggle-rect-bottom{-webkit-transform:translate3d(0,8px,0);-ms-transform:translate3d(0,8px,0);transform:translate3d(0,8px,0)}.header.nav-menu-show .nav-toggle{-webkit-transform:translateZ(0) rotate(90deg);-ms-transform:translateZ(0) rotate(90deg);transform:translateZ(0) rotate(90deg);-webkit-transition:-webkit-transform .4s cubic-bezier(0.4,.01,.165,.99);transition:transform .4s cubic-bezier(0.4,.01,.165,.99)}.header.nav-menu-show .nav-toggle-svg{-webkit-transition:-webkit-transform .25s .2s cubic-bezier(0.4,.01,.165,.99);transition:transform .25s .2s cubic-bezier(0.4,.01,.165,.99);-webkit-transform:translateZ(0) rotate(45deg);-ms-transform:translateZ(0) rotate(45deg);transform:translateZ(0) rotate(45deg)}.header.nav-menu-show .nav-toggle-svg-top{-webkit-transform:translateZ(0) rotate(45deg);-ms-transform:translateZ(0) rotate(45deg);transform:translateZ(0) rotate(45deg)}.header.nav-menu-show .nav-toggle-rect-top{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.header.nav-menu-show .nav-toggle-svg-bottom{-webkit-transform:translateZ(0) rotate(-45deg);-ms-transform:translateZ(0) rotate(-45deg);transform:translateZ(0) rotate(-45deg)}.header.nav-menu-show .nav-toggle-rect-bottom{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.header .nav-menu{position:absolute;top:0;left:0;width:100%;height:0;background:#ecebeb;border-bottom:1px solid #d4d3d3;overflow-x:auto;-webkit-transition:height .4s;transition:height .4s}.header .nav-menu ul{width:280px;height:32px;min-width:100%;overflow:hidden}.header .nav-menu ul li{float:left}.header .nav-menu ul li a{display:block;margin:0 18px;font-size:12px;color:#666;line-height:32px}.header.nav-menu-show .nav-menu{top:41px;height:33px}
+body{background:#f5f5f5}.download{padding:40px 15px}.download .warn{display:block;width:80%;margin:80px auto 40px}.download .info{text-align:center;line-height:1}.download .info p{padding-bottom:5px;font-size:14px;color:#b5b5b5;line-height:1.6}.download .info i{font-size:12px;color:#ddd;word-break:break-all}
+.aboutus{}
+.aboutus .top{position:relative;padding-top:41px;font-size:16px;font-weight:700;color:#fff}
+.aboutus .top .bg{position:absolute;bottom:0;left:0;z-index:-1;width:100%;height:100px}
+.aboutus .top .title{height:100px;padding:10px 15px;background:rgba(0,0,0,.1)}
+.aboutus .top .intro{position:absolute;bottom:8px;left:15px;height:45px}
+.aboutus .info{padding:15px}
+.aboutus .info li{position:relative;margin-bottom:15px;font-size:12px;color:#b5b5b5;line-height:1.8}
+.aboutus .info img{position:absolute;top:3px;left:0;height:18px}
+.aboutus .info li.a img{top:2px;left:3px}
+.aboutus .info li.c img{}
+.aboutus .info p{padding-left:28px;font-size:14px;color:#666}
+
+
+.moreBtn{
+	display: inline-block;
+	border: 1px solid #b7b7b8;
+	padding: 3px 15px;
+	color: #8d8d8f;
+	margin-left: 15px;
+	font-size: 12px;
+	border-radius: 3px; 
+}
+
+.moreDetail{
+	padding: 15px;
+	text-align: center;
+	padding-top: 41px;
+	font-size: 13px;
+}
+
+.moreDetail img{
+	max-width: 80%;
+}
+
+.moreDetail p{
+	margin-bottom: 5px;
+}

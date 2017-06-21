@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>申请入驻 - 菲比教育</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="keywords" content="菲比教育官网">
+<meta name="description" content="菲比教育官网">
+<meta name="baidu-site-verification" content="v3r4JDDzPy">
+<link type="text/css" rel="stylesheet" href="./statics/css/m_ui.css">
+<link type="text/css" rel="stylesheet" href="./statics/css/m_apply.css">
+
+
+</head>
+<body>
+  <div id="header" class="header clearfix">
+  <div class="top">
+    <a class="logo" href="m_index.html"><img src="./statics/images/header-logo.png" alt="菲比"></a>
+    <div id="nav-toggle" class="nav-toggle">
+      <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="nav-toggle-svg nav-toggle-svg-top" enable-background="new 0 0 96 96">
+        <rect width="32" height="4" x="32" y="46" class="nav-toggle-rect nav-toggle-rect-top"></rect>
+      </svg>
+      <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="nav-toggle-svg nav-toggle-svg-bottom" enable-background="new 0 0 96 96">
+        <rect width="32" height="4" x="32" y="46" class="nav-toggle-rect nav-toggle-rect-bottom"></rect>
+      </svg>
+    </div>
+  </div>
+  <div id="nav-menu" class="nav-menu">
+    <ul>
+      <li><a href="m_aboutus.html">关于菲比</a></li>
+      <li><a href="m_apply.html">申请入驻</a></li>
+    </ul>
+  </div>
+</div>
+  <div class="apply">
+    <div class="top">
+      <img class="bg" src="./statics/images/apply-bg.jpg" alt="">
+      <div class="title">申请入驻</div>
+    </div>
+
+    <div class="cont">
+      <div id="cont-inner" class="cont-inner bdr4">
+        <form id="form" class="formVerify" action="">
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input id="name" class="form-control bdr4" value="" type="text" msgError="请输入您的真实姓名">
+          </div>
+          <div class="form-group">
+            <label for="phone">手机号</label>
+            <input id="phone" class="form-control bdr4" value="" type="text" msgError="请输入正确的手机号码"> 
+          </div>
+          <div class="form-group">
+            <label for="code">验证码</label>
+            <input id="code" class="form-control bdr4" value="" type="text" msgError="请输入正确的验证码">
+            <div id="getCode" class="getCode">获取验证码</div> <!-- disabled -->
+          </div>
+          <div class="form-group">
+            <label for="organName">机构名称</label>
+            <input id="organName" class="form-control bdr4" value="" type="text" msgError="请输入您的机构名称">
+          </div>
+          <div class="form-group">
+            <label for="address">机构地址</label>
+            <input id="address" class="form-control bdr4" value="" type="text" msgError="请输入您的机构地址">
+          </div>
+          <div class="form-group">
+            <label for="course">主营课程</label>
+            <input id="course" class="form-control bdr4" value="" type="text" msgError="请输入您的主营课程">
+          </div>
+          <div class="form-group form-group-submit">
+            <input id="submit" class="form-submit bdr4" value="提交申请" type="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript" charset="utf-8" src="./statics/js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./statics/js/apply.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="statics/js/formVerify.js"></script>
+<link type="text/css" rel="stylesheet" href="statics/css/formVerify.css">
+<script type="text/javascript">
+//获取短信验证码定时器
+$('#getCode').click(function(){
+    if($(this).hasClass('disabled')){
+        return;
+    }else{
+        $(this).addClass('disabled');
+        var t = 59;
+        $('#getCode').text('重新获取('+t+'s)');
+        var clock = setInterval(function(){
+            if(t <= 1){
+                $('#getCode').text('获取验证码');
+                $('#getCode').removeClass('disabled');
+                clearInterval(clock);
+                // console.log('clearClock');
+                return; 
+            }else{
+                t=t-1;
+                $('#getCode').text('重新获取('+t+'s)');
+            }
+         },1000);  
+    }
+});
+
+</script>
+  
+
+</body></html>

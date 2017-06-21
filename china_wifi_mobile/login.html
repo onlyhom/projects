@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>登录WiFi圈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="中国安全WIFI地图">  
+    <meta name="description" content="中国安全WIFI地图">
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/layer/layer.js" type="text/javascript"></script>
+    <script src="js/jquery.formVerify.js" type="text/javascript"></script>
+</head>
+<body class="color-bg">
+
+
+
+    <div class="fix-short-width">
+        <div class="form-box">
+            <form class="login-verify" method="" action="">
+                <a href="">
+                    <div class="title">登录WiFi圈</div>
+                </a>
+                <div class="line user">
+                    <input type="text" id="account" name="" placeholder="手机号/用户名" msgError="请输入正确的手机号/用户名">
+                </div>
+                <div class="line lock">
+                    <input type="password" id="password" name="" placeholder="请输入密码" msgError="请输入正确的密码">
+                </div>
+
+                <div class="links">
+                    <div class="label-ui">
+                        <input type="checkbox" name="" id="autoLogin" checked="checked">
+                        <label for="autoLogin">下次自动登录</label> 
+                    </div>
+                    <a href="register.html">立即注册</a>
+                </div>
+
+                <input type="submit" value="登 录">
+            </form>
+            <div class="other-login">
+                <div class="tips">
+                    <span></span>第三方账号登录<span></span>
+                </div>
+                <div class="icons">
+                    <a href="" title="微信登录">
+                        <img src="images/login_wechat.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    //表单验证-登录
+    $('.login-verify').formVerify({
+        data:[
+            {id:"account", check:"checkString"},
+            {id:"password", check:"checkString"}
+        ],
+        callback:function(){
+            //验证通过后执行的回调函数
+            //return false;
+
+            // $.ajax({
+            //     type:"POST",
+            //     url:"__URL__/checkNameAndPass",
+            //     async:false,
+            //     data:{"name":name,"pass":pass},
+            //     dataType:"JSON",
+            //     success:function(data){
+            //         switch(data.statue){
+            //             case "success":
+            //                 break;
+
+            //             default:
+            //                 layer.msg(data.msg);
+            //                 return false;
+            //         }
+            //     },
+            //     error:function(){
+            //         layer.msg("发生未知错误，请联系网站管理员");
+            //         return false;
+            //     }
+            // });
+            
+        }
+    });
+
+</script>
+
+
+</body>
+</html>

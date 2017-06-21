@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>中国安全WIFI地图</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="中国安全WIFI地图">  
+    <meta name="description" content="中国安全WIFI地图">
+    
+    <script src="js/skip_mobile.js" type="text/javascript"></script>
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/layer/layer.js" type="text/javascript"></script>
+    <script src="js/jquery.formVerify.js" type="text/javascript"></script>
+    <script src="js/zepto.min.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+
+    <style>
+        html,body{
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <div class="tag">
+                <a class="cell icon-house" href="index.html">首页</a>
+                <a class="cell icon-wifi" href="rank.html">数据</a>
+                <a class="cell icon-people" href="about.html">关于</a>
+            </div>
+            <!-- <a class="login-status" href="login.html">登 录</a> -->
+            <!-- <a class="login-status" href="login.html">退 出</a> --> 
+            <a class="login-status pop-trigger" href="javascript:;">管 理</a>
+        </div>
+    </div>
+    <div class="search-bar">
+        <div class="input-box">
+            <input type="text" id="tip_input" name=""  value="输入地址搜索wifi" onfocus='this.value=""'>
+        </div>
+        <div id="city-picker-trigger" class="city-picker-trigger">城市列表</div>
+    </div>
+
+    <div id="map-contain" class="map-contain">
+    	<!-- 2017-05-24 新增定位锚点 -->
+    	<a id="icon-feedback" class="icon-btn icon-feedback" href="wifi_detail.html#feedback">上报</a>
+        <div id="map" style="width: 100%;height: 100%;"></div>
+        <div id="pop-window" class="pop-window">
+            <div class="close-btn" id="close-btn"></div>
+            <div class="window-top">
+                <div class="wifi-name">武林广场公共WiFi</div>
+                <div class="wifi-score">
+                    <div class="icon-love"></div><div class="icon-love"></div><div class="icon-love"></div>
+                </div>
+            </div>
+            <table class="window-middle">
+                <tr>
+                    <th>运营商：</th>
+                    <td>
+                        <div class="wifi-operator">中国移动</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>地&nbsp;&nbsp;&nbsp;址：</th>
+                    <td>
+                        <div class="wifi-addr">杭州武林广场</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="window-bottom">
+                <a href="wifi_detail.html" class="wifi-link">查看详情</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 管理窗口 -->
+    <div class="pop pop-form">
+        <div class="popBG">
+             <div class="popUp">
+                <i class="closeButton"></i>
+                <div class="content">
+                    <div class="form-box banner-box">
+                        <div class="zoom-image avatar" style="background-image: url(images/default_avatar.jpg);"></div>
+                        <div class="welcome">oulihong888，你好！</div>
+                        <div class="operate">
+                            <a class="btn-gray btn-left" href="" >退出登录</a>
+                            <a class="btn-color btn-right" href="operator.html" >管理WIFI</a>
+                        </div>
+                    </div>
+                </div><!-- content -->
+            </div>
+        </div>
+    </div>
+    <!-- 管理窗口 END-->
+
+
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=bab3e750d525f725d4cbb247d5a96643"></script>
+<script type="text/javascript" src="https://webapi.amap.com/ui/1.0/main.js"></script>
+<script type="text/javascript" src="testData/test_data.js"></script>
+<script type="text/javascript" src="js/wifi_map.js"></script>
+
+<script type="text/javascript">
+
+    $('#map-contain').height(window.innerHeight - $('.header').height() - $('.search-bar').outerHeight() );
+    $('#close-btn').on('click',function(){
+        $('#pop-window').removeClass('pop-show');
+		$('#icon-feedback').removeClass('btn-show');//2017-05-24 新增
+    });
+
+    $('#icon-feedback').on('click',function(){
+        if(!$(this).hasClass('btn-show')){
+            layer.msg('请先选择一个wifi');
+            return false;
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>

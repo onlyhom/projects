@@ -1,0 +1,460 @@
+@media (max-width:1400px) {
+.container{zoom:0.8;}
+}
+
+
+html { 
+   overflow-x: hidden; 
+   overflow-y: auto; 
+} 
+
+
+.container{
+   width: 1920px;
+   margin:0 auto;
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   position:relative;
+   left:50%;margin-left:-960px;
+   background: white;
+    animation:containerInto 1s;
+   -webkit-animation:containerInto 1s;
+   -moz-animation:containerInto 1s;
+   -o-animation:containerInto 1s; 
+}
+
+@keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-webkit-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-moz-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-o-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+.container a,button{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+ }
+
+button{
+  cursor: pointer;
+  outline: none;
+}
+
+
+.banner{
+  width: 100%;
+  height: 575px;
+  background: url("../images/banner.jpg")no-repeat;
+  padding-top: 125px;
+}
+
+
+.banner nav{
+  width: 100%;
+  height: 105px;
+  background:rgba(0,0,0,0.1);
+}
+
+.banner .nav{
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+  background: url("../images/首页logo.png") no-repeat;
+  background-position: left center;
+}
+
+.banner .nav div{
+  float: right;
+  padding-top: 40px;
+}
+
+
+.nav a{
+  color: white;
+  font-size: 17px;
+}
+
+.nav li{
+  width: 80px;
+  height: 35px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  text-align: center;
+  transition:all 0.3s;
+}
+
+.nav li:hover{
+  border-bottom: 2px solid white;
+}
+
+.nav .active{
+  border-bottom: 2px solid white;
+}
+
+
+
+.indextSection{
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.indexCase{
+  background: white;
+}
+
+
+.indexProduct{
+  background: #f9f9f9;
+}
+
+.indextSection h2{
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.indextSection p{
+  margin: 10px 0 30px 0;
+}
+
+
+.indextSection .section{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.pic{
+  width: 310px;
+  height: 190px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.pic img{
+  width: 310px;
+  -webkit-transform:scale(1); 
+  -moz-transform:scale(1); 
+  -o-transform:scale(1); 
+  transform:scale(1); 
+
+  -webkit-transition:all .8s;
+  -moz-transition:all .8s;
+  -o-transition:all .8s;
+  transition:all .8s;
+}
+
+.pic:hover img{
+  -webkit-transform:scale(1.1); 
+  -moz-transform:scale(1.1); 
+  -0-transform:scale(1.1); 
+  transform:scale(1.1); 
+}
+
+
+
+
+.indexProduct .text{
+  width: 230px;
+  padding: 30px 40px;
+  margin: 0 20px;
+}
+
+
+.indextSection .information{
+/*  background: pink;*/
+  width: 500px;
+  margin:  30px auto 0;
+}
+
+
+
+
+
+.indextSection .information figure{
+  width: 222px;
+  float: left;
+  overflow: hidden;
+}
+
+.indextSection .information figure img{
+  width: 100%;
+}
+
+
+.indextSection .infoBox{
+   float: left;
+   width:175px;
+/*   background: orange;*/
+   text-align: left;
+   padding: 30px 20px 0 60px;
+}
+
+.indextSection .infoBox h3{
+  font-size: 16px;
+  color: black;
+  line-height: 35px;
+}
+
+.indextSection .infoBox h4{
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.address{
+  background: #f9f9f9;
+}
+
+.address h3{
+  font-size: 15px;
+  line-height: 30px;
+}
+
+footer{
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+
+
+/* 子页 */
+
+.subBanner{
+  width: 100%;
+  height: 229px;
+  background: #23a6ff;
+}
+
+.subTop {
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+  background: url(../images/子页logo.jpg) no-repeat;
+  background-position: left 80%;
+}
+
+.subTop .nav div{
+  float: right;
+  margin-top: 145px;
+}
+
+.main{
+  width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0 50px 0;
+}
+
+.subTitle{
+  width: 1050px;
+  height: 68px;
+  color: black;
+  font-size: 18px;
+  line-height: 68px;
+  border-bottom: 1px solid #dcdcdc;
+  margin: 30px 0;
+  letter-spacing: 1px;
+}
+
+.caseList .pic{
+  margin-bottom: 40px;
+}
+
+.pages{
+  height: 19px;
+  width: 160px;
+  margin:  0 auto 100px;
+  vertical-align: top;
+}
+
+
+.pages .pre{
+  float: left;
+}
+
+.pages .pre{
+  width: 19px;
+  height: 19px;
+  border: none;
+  background: url('../images/pre.png')no-repeat;
+}
+
+
+.pages .next{
+  float: right;
+}
+
+.pages .next{
+  width: 19px;
+  height: 19px;
+  border: none;
+  background: url('../images/next.png')no-repeat;
+}
+
+
+
+.pages a{
+  float: left;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  width: 20px;
+  text-align: center;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.pages .currentPage{
+  color: #128bfa;
+}
+
+
+.memberList{
+  padding-bottom: 200px;
+}
+
+
+.memberList li{
+  display: block;
+ margin-bottom: 30px;
+}
+
+.memberList h2{
+  font-size: 22px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.memberList h3{
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.memberList p{
+  line-height: 22px;
+}
+
+
+
+.detailText{
+  width: 1050px;
+  clear: both;
+  padding: 20px 50px;
+}
+
+
+.detailText p{
+  font-size: 15px;
+  line-height: 24px;
+  text-indent: 2em;
+}
+
+
+.label{
+  display: inline-block;
+  padding: 0 35px;
+  height: 35px;
+  background: #eee;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+}
+
+
+.detailPage{
+  margin: 20px 0 50px 0; 
+}
+
+.detailPage a{
+  line-height: 28px;
+}
+
+.detailPage a:hover{
+  border-bottom: 1px solid gray;
+}
+
+
+
+/* 轮播 */
+
+.slideBox{
+  width:880px;
+  margin:20px auto;
+  overflow:hidden;
+}
+
+.slideShow{
+  width:750px;
+  overflow:hidden;
+  position:relative;
+  height:320px;
+  float:left
+}
+
+.slideContent{ 
+  width:7500px;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+.slideContent ul{
+  float:left;
+  text-align:center;
+  line-height:50px;
+}
+
+.slideContent ul li{
+  width:750px;
+  height:320px;
+  /*background:#f8f8f8;*/
+  float:left;
+  margin-top:3px; 
+  overflow: hidden;
+}
+
+.slideContent ul li img{
+  width: 100%;
+}
+
+
+/*---切换---*/
+.prev,.next{ 
+  float:left;  
+  padding:140px 20px 0; 
+}
+
+.prev a{ 
+  background:url("../images/pre2.png") no-repeat;
+}
+
+.next a{
+  background:url("../images/next2.png") no-repeat;
+}
+
+.prev,.prev a,.next,.next a{
+  width:24px;
+  height:24px; 
+  display:block;
+}

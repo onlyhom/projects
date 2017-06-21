@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>注册WiFi圈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="中国安全WIFI地图">  
+    <meta name="description" content="中国安全WIFI地图">
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/layer/layer.js" type="text/javascript"></script>
+    <script src="js/jquery.formVerify.js" type="text/javascript"></script>
+</head>
+<body class="color-bg">
+
+
+
+    <div class="fix-short-width">
+        <div class="form-box">
+            <form class="reg-verify" method="" action="">
+                
+                <a href="index.html">
+                    <div class="title">注册WiFi圈</div>
+                </a>
+
+                <div class="line user">
+                    <input type="text" id="userName" name="" placeholder="用户名 由6-20位字符组成" msgError="用户名由6-20位位字符组成">
+                </div>
+
+                <div class="line lock">
+                    <input type="password" id="rPassword" name="" placeholder="设置密码 由6-20位字符组成" msgError="密码由6-20位字符组成">
+                </div><!-- 注意id是 rPassword 避免和登录里的password同id名 -->
+
+                <div class="line lock">
+                    <input type="password" id="comfirmPassword" name="" placeholder="再次输入密码" msgError="两次输入的密码不一致">
+                </div>
+
+                
+                <div class="line phone">
+                    <input type="text" id="phone" name="" placeholder="手机号" msgError="请输入正确的手机号">
+                </div>
+
+                <div class="line safe">
+                    <input type="text" id="code" name="" placeholder="输入验证码" msgError="请输入验证码">
+                    <i class="acquireCode" id="acquireCode">获取验证码</i>
+                </div>
+
+                <div class="links">
+                    <div class="label-ui">
+                        <input type="checkbox" name="" id="rOperate">
+                        <label for="rOperate">申请注册WiFi运营商</label> 
+                    </div>
+                    <a href="login.html">已有账号</a>
+                </div>
+                <input type="submit" value="注 册">
+            </form>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    //表单验证-注册
+    $('.reg-verify').formVerify({
+        data:[
+            {id:"userName", check:"checkString"},
+            {id:"rPassword", check:"checkString"},
+            {id:"comfirmPassword", check:"checkConfirm", compareObject:"rPassword"},
+            {id:"phone", check:"checkPhone"},
+            {id:"code", check:"checkNull"}
+        ],
+        callback:function(){
+            //验证通过后执行的回调函数
+            //return false;
+
+            // $.ajax({
+            //     type:"POST",
+            //     url:"__URL__/checkNameAndPass",
+            //     async:false,
+            //     data:{"name":name,"pass":pass},
+            //     dataType:"JSON",
+            //     success:function(data){
+            //         switch(data.statue){
+            //             case "success":
+            //                 break;
+
+            //             default:
+            //                 layer.msg(data.msg);
+            //                 return false;
+            //         }
+            //     },
+            //     error:function(){
+            //         layer.msg("发生未知错误，请联系网站管理员");
+            //         return false;
+            //     }
+            // });
+            
+        }
+    });
+
+
+    //获取短信验证码定时器
+    $('#acquireCode').click(function(){
+       if($(this).hasClass('disabled')){
+           return;
+       }else{
+           $(this).addClass('disabled');
+           var t = 59;
+           $('#acquireCode').text('已发送('+t+'s)');
+           var clock = setInterval(function(){
+               if(t <= 1){
+                   $('#acquireCode').text('获取验证码');
+                   $('#acquireCode').removeClass('disabled');
+                   clearInterval(clock);
+                   return; 
+               }else{
+                   t=t-1;
+                   $('#acquireCode').text('已发送('+t+'s)');
+               }
+            },1000);  
+       }
+    });
+
+
+
+
+</script>
+
+
+</body>
+</html>

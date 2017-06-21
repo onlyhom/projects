@@ -1,0 +1,313 @@
+@media (max-width:1400px) {
+  body{zoom:0.8;}
+}
+
+ html { 
+   overflow-x: hidden; 
+   overflow-y: auto; 
+} 
+
+ .container{
+   width: 1920px;
+   margin:0 auto;
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   position:absolute;
+   left:50%;margin-left:-960px;
+   background: white;
+   animation:containerInto 1s;
+   -webkit-animation:containerInto 1s;
+   -moz-animation:containerInto 1s;
+   -o-animation:containerInto 1s;
+}
+
+@keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-webkit-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-moz-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-o-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+
+
+
+ .container a,button,input,textarea{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+ }
+
+button{
+  cursor: pointer;
+  outline: none;
+}
+
+
+.pageTop{
+  height: 30px;
+  background:#eee;
+  width: 100%;
+}
+
+.pageTop section{
+  width: 1200px;
+  margin:  0 auto;
+}
+
+
+.pageTop a{
+  float: right;
+  line-height: 30px;
+  color: #8b8b8b;
+}
+
+.navigate{
+  height: 100px;
+  background: #fff;
+}
+
+nav{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav figure{
+  float: left;
+  padding-top: 15px;
+  width: 420px;
+/*  background: pink;*/
+}
+
+
+nav a{
+  color: black;
+  font-size: 16px;
+}
+
+nav a:hover{
+  color: #012468;
+}
+
+nav .active{
+  color: #0338a1;
+}
+
+
+nav li{
+  margin-right: 20px;
+}
+
+nav ul{
+  float: right;
+  padding-top: 40px;
+}
+
+
+
+/*------public------*/
+
+
+
+
+footer{
+  position: relative;
+  width: 100%;
+/*  height: 150px;*/
+  background: #262626;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+footer p{
+  font-size: 16px;
+}
+
+/*footer button{
+  color: white;
+  padding-left: 30px;
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  background: #f4b007 url(../images/客服BG.jpg) no-repeat;
+  background-position: 20% center ;
+}*/
+
+.footerBar{
+/*  position: absolute;
+  top: 0;*/
+  width: 100%;
+  height: 60px;
+  background: black;
+  line-height: 60px;
+}
+
+.footerNav{
+  width: 1000px;
+  margin:  0 auto;
+}
+
+.footerNav .nav{
+ float: left;
+}
+
+.footerNav .nav a{
+  color: white;
+  font-size: 16px;
+  margin: 0 8px;
+}
+
+.footerNav .nav a:hover{
+  color: #ddd;
+}
+
+#returnTop{
+  float: right;
+  color: white;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.links{
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+.links a{
+  color: white;
+}
+
+.links p{
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.linkBox{
+  display: inline-block;
+  width: 90px;
+/*  border-right: 1px solid white;*/
+/*  background: pink;*/
+}
+
+.links .detail{
+  display: inline-block;
+  padding-left: 20px;
+  width: 740px;
+  border-left: 1px solid white;
+}
+
+.links .codeBox{
+  display: inline-block;
+  float: right;
+}
+
+
+
+
+/* 产品介绍 */
+
+
+.productDetailList{
+  margin: 100px 0;
+}
+
+
+
+.proIntroduction{
+  padding-top: 30px;
+}
+.proIntroduction li{
+  width: 228px;
+  height: 300px;
+/*  background: orange;*/
+  vertical-align: top;
+  margin: 0 5px;
+  padding-top: 160px;
+}
+
+.proIntroduction h2{
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-top: 10px;
+  color: black;
+}
+
+.proIntroduction p{
+  display: inline-block;
+  height: 170px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.proIntroduction button{
+  width: 187px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.proIntroduction .buttonBG1{
+  background: #f58322;
+}
+
+
+.proIntroduction .buttonBG2{
+  background: #56abe4;
+}
+
+.proIntroduction .buttonBG3{
+  background: #b1d13a;
+}
+
+.proIntroduction .buttonBG4{
+  background: #f35672;
+}
+
+.proIntroduction .intro1{
+  background:url("../images/1.png") no-repeat;
+  background-position: 60% top;
+}
+
+.proIntroduction .intro2{
+  background:url("../images/2.png") no-repeat;
+  background-position: 60% top;
+}
+
+.proIntroduction .intro3{
+  background:url("../images/3.png") no-repeat;
+  background-position: 60% top;
+}
+
+.proIntroduction .intro4{
+  background:url("../images/4.png") no-repeat;
+  background-position: 60% top;
+}
+
+

@@ -1,0 +1,642 @@
+@media (max-width:1400px) {
+  body{zoom:0.8;}
+}
+
+ html { 
+   overflow-x: hidden; 
+   overflow-y: auto; 
+} 
+
+ .container{
+   width: 1920px;
+   margin:0 auto;
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   position:absolute;
+   left:50%;margin-left:-960px;
+   animation:containerInto 1s;
+   -webkit-animation:containerInto 1s;
+   -moz-animation:containerInto 1s;
+   -o-animation:containerInto 1s;
+}
+
+
+@keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-webkit-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-moz-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-o-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+.pageTop{
+   width: 100%;
+   height: 130px;
+   background: white url("../images/顶部.jpg") no-repeat;
+   background-position: left center;
+}
+
+
+
+nav{
+  width: 100%;
+  height: 68px;
+  background: #1b477d;
+}
+
+
+
+nav ul{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav li{
+  color: white;
+  width: 70px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 68px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+nav li:hover{
+  border-bottom: 1px solid white;
+}
+
+.active{
+  border-bottom: 1px solid white;
+}
+
+
+.banner{
+  height: 160px;
+  width: 1920px;
+  padding-top: 80px;
+  background: url("../images/子页banner.jpg") no-repeat;
+}
+
+
+.banner figure{
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+
+.currentPosition{
+  height: 64px;
+}
+.currentPosition p{
+  height: 64px;
+  line-height: 64px;
+  float: right;
+  color: black;
+}
+
+
+.pageTitle{
+  height: 100px;
+  padding-top: 30px;
+
+}
+
+
+    #pages{
+      margin-top: 50px;
+      margin-left:20px; 
+      letter-spacing: 2px;
+
+    }
+
+    #pages a{
+      padding: 3px;
+      border: 1px solid #d5d5d5;
+      margin-right:5px;
+    }
+
+    #currentPage{
+      color: red;
+    }
+
+
+
+
+
+
+
+/*公司简介*/
+
+.companyProfileBox{
+  height: 300px;
+  margin-top: 30px;
+  border-bottom: 1px dashed #959595;
+}
+
+
+.profileLeft{
+  float: left;
+  width: 55%;
+  font-size: 16px;
+  text-indent: 2em;
+}
+
+.profileRight{
+  width: 40%;
+  float: right;
+}
+
+.companyProfileIMG{
+   height: 460px;
+   padding-top: 100px;
+}
+
+
+
+/*经典案例*/
+
+
+
+
+
+.case{
+  width: 480px;
+  height: 330px;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin: 0 10px 20px 0;
+}
+
+
+
+.case h2{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.case p{
+  line-height: 18px;
+}
+
+.caseInfo{
+  margin-left:10px; 
+  position: relative;
+  width: 470px;
+  height: 310px;
+  z-index: 11;
+}
+
+
+.caseBoxBG{
+  height: 310px;
+  width: 420px;
+  background: white;
+  position: absolute;
+  top: 0;
+  border-left: 8px solid #1b477d;
+  z-index: 10;
+}
+
+.caseLeft{
+  width: 200px;
+  height: 310px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.caseRight{
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  float: left;
+}
+
+.caseLeft .top{
+  width: 100%;
+  height: 240px;
+  text-overflow:ellipsis;
+  overflow: hidden;
+}
+
+
+.case button{
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  background: #1b477d;
+  color: white;
+  padding: 6%;
+  cursor: pointer;
+}
+
+
+
+/*案例详情*/
+
+    .caseTitle {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+    }
+
+
+    .caseHeader p{
+     display: inline;
+    }
+
+
+    .casePicture img{
+      width: 435px;
+      height: 275px;
+      margin-bottom: 10px;
+      padding: 4px;
+      border: 1px solid #d2d2d2;  
+    }
+
+    .caseText p{
+      text-indent: 2em;    
+    }
+
+    .DetailFooter {
+      float: right;
+      margin:40px 0 80px 0;
+      width: 220px;
+      text-align: left;
+      text-decoration: underline;
+      line-height: 25px;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+    }
+
+    .abstractBar{
+
+      height: 43px;
+      line-height: 43px;
+      background: white;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+
+
+
+/*产品中心*/
+
+.productNav{
+  margin-bottom:70px;
+  height: 40px;
+}
+
+.productNav li{
+  color: #1e1e1e;
+  margin: 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  display: inline-block;
+
+}
+
+.productNav li:hover{
+  border-bottom: 3px solid #a0a0a0;
+  color: #a0a0a0;
+
+}
+
+
+
+.productList li{
+  float: left;
+}
+
+
+.productBox{
+  width: 240px;
+  height: 455px;
+  background: #1c477c;
+  margin: 0 0.6% 0.6% 0;
+/*  border: 1px solid gray;*/
+  overflow: hidden;
+}
+
+
+
+.productIMG{
+ position: relative;
+ left: -50%;
+ width: 480px;
+ background: white;
+ text-align: center;
+}
+
+.productIMG img{
+  height: 307px;
+  transition:height 0.8s;
+  -webkit-transition:height 0.8s;
+  -moz-transition:height 0.8s;
+  -o-transition:height 0.8s;
+}
+
+
+.productBox:hover .productIMG img{
+  height: 160px;
+}
+
+
+
+.productInfo{ 
+  margin: 0;
+  height: 60%;
+  padding: 20px 8px;
+  background: white;
+  position: relative;
+  top: -3px;
+  transition:background 0.5s;
+  -webkit-transition:background 0.5s;
+  -moz-transition:background 0.5s;
+  -o-transition:background 0.5s;
+}
+
+
+
+.productBox:hover .productInfo{
+  background: #1c477c;
+  color: white;
+}
+
+
+.learnMoreBtn{
+  width: 105px;
+  height: 32px;
+  font-size: 14px;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.learnMoreBtn:hover{
+  cursor:pointer;
+}
+
+
+
+.productInfo h2{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.productInfo p{
+  font-size: 15px;
+  line-height: 22px;
+}
+
+
+/*产品详情*/
+
+
+    .infoRight{
+      width: 550px;
+      height: 225px;
+      padding-left: 280px;
+      display: inline-block;
+      text-align: top;
+      background: url("../images/刹车片.jpg") no-repeat;
+
+    }
+
+    .infoTitle{
+      width: 375px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 30px;
+      border-bottom: 1px solid #bcbcbc;
+    }
+
+
+    .infoText{
+      padding: 10px;
+      line-height: 19px;
+    }
+
+    .infoText p{
+      text-indent: 2em;
+    }
+
+
+
+/*合作厂家*/
+
+
+.partnerList li{
+   width: 234px;
+   height: 122px;
+   background: #f1f1f1;
+   border: 2px solid #e5e5e5;
+   padding: 3px;
+   margin-right: 0.2%;
+   margin-bottom: 0.8%;
+
+}
+
+.partnerList li:hover{
+
+   border: 2px solid #1a477e;
+
+
+}
+
+
+.partnerList li figure{
+   width: 236px;
+   height: 126px;
+   overflow: hidden;
+}
+
+
+
+
+/*购买流程*/
+
+.purchaseIMG{
+  padding-bottom: 120px;
+}
+
+
+/*技术支持*/
+
+.technicalPic img{
+  padding: 4px;
+  border: 1px solid #d2d2d2;  
+
+}
+
+.technicalText{
+  padding-bottom: 100px;
+}
+
+.technicalText p{
+  font-size: 15px;
+  text-indent: 2em;
+}
+
+
+
+
+/*联系我们*/
+
+    #sectionContactMain{
+      width: 1000px;
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
+
+
+
+    #lside{
+      float: left;
+      width: 45%;
+      height: 500px;
+      margin-right:65px;
+      margin-top: 50px;
+      display: inline-block;
+    }
+
+    #lsideTitle{
+
+      font-size:20px;
+      font-weight: bold;
+    }
+    #lsideText{
+
+      font-size:15px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+
+    #lside li{
+      display: inline-block;
+      height: 30px;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: bold;
+    }
+
+    #contact a{ 
+      margin-right: 12px;
+
+    }
+
+
+    #rside{
+      margin-top: 50px;
+      display: inline-block;
+      width: 48%;
+      float: left;
+
+    } 
+
+
+    #rside p{
+      display: inline-block;
+
+    }
+
+    input{
+      line-height: 20px;
+    }
+
+    #subButton{
+      width: 140px;
+      height: 38px;
+      background: #da251e;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+
+    }
+
+
+
+
+
+
+
+
+
+.learnMore{
+  width: 105px;
+  height: 32px;
+  font-size: 14px;
+  color: #1b477d;
+  background: none;
+  border: 1px solid #1b477d;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.learnMore:hover{
+  border: 1px solid #2a72cb;
+  color: #2a72cb;
+  cursor:pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main{
+/*  height: 1600px;*/
+  background: #f1f1f1 url(../images/子页底纹.jpg) repeat;
+}
+
+
+.childPage{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+footer{
+  height: 100px;
+  width: 100%;
+  background: #4b4b4b;
+  color: white;
+  padding: 20px 0;
+
+}
+
+footer a{
+  color: white;
+}

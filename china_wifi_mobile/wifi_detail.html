@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>WiFi详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="中国安全WIFI地图">  
+    <meta name="description" content="中国安全WIFI地图">
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/style_mobile.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/layer/layer.js" type="text/javascript"></script>
+    <script src="js/jquery.formVerify.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <div class="fix-width">
+                <a onClick="javascript:history.back(-1);" class="btn-return">返回</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-banner">
+        <img src="images/sub_banner.png">
+    </div>
+
+    <div class="section-title">
+        <div class="title">WIFI 热点</div>
+        <div class="sub-title">WiFi Hot Spot</div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="fix-width">
+        <div class="wifi-detail">
+            <div class="top-info">
+                <div class="min-cell">
+                    <img src="images/test1.png">
+                </div>
+                <div class="max-cell">
+                    <div class="title">运营商介绍：</div>
+                    <p>介绍运营商介绍运营商介绍商介绍运营商介绍运营商介绍商介绍运营商介绍运营商介绍商介绍运营商介绍运营商介绍商介绍运营商介绍运营商介绍商</p>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>热点名称</th>
+                    <td>浙江大学热点08</td>
+                </tr>
+                <tr>
+                    <th>信誉评级</th>
+                    <td>
+                        <div class="icon-love"></div>
+                        <div class="icon-love"></div>
+                        <div class="icon-love"></div>
+                        <div class="icon-love"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>热点地址</th>
+                    <td>杭州市西湖区余杭塘路866号杭州市西</td>
+                </tr>
+                <tr>
+                    <th>运营公司</th>
+                    <td>中国移动</td>
+                </tr>
+                <tr>
+                    <th>经度</th>
+                    <td>37.845466</td>
+                </tr>
+                <tr>
+                    <th>纬度</th>
+                    <td>123.945956</td>
+                </tr>
+            </table>
+
+            <div class="section-tag">
+                <div class="title">评论区</div>
+            </div>
+
+            <div class="comment-list">
+                <div class="list">
+                    <div class="cell">
+                        <div class="zoom-image" style="background-image: url(images/default_avatar.jpg);"></div>
+                        <div class="comment">
+                            <div class="name">用户昵称</div>
+                            <div class="text">
+                                这个WiFi在我们学校里的，覆盖面积还挺广的。这个WiFi在我们学校里的，覆盖面积还挺广的。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="zoom-image" style="background-image: url(images/default_avatar.jpg);"></div>
+                        <div class="comment">
+                            <div class="name">用户昵称</div>
+                            <div class="text">
+                                这个WiFi在我们学校里的，覆盖面积还挺广的。这个WiFi在我们学校里的，覆盖面积还挺广的。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="zoom-image" style="background-image: url(images/default_avatar.jpg);"></div>
+                        <div class="comment">
+                            <div class="name">用户昵称</div>
+                            <div class="text">
+                                这个WiFi在我们学校里的，覆盖面积还挺广的。这个WiFi在我们学校里的，覆盖面积还挺广的。这个WiFi在我们学校里的，覆盖面积还挺广的。这个WiFi在我们学校里的，覆盖面积还挺广的。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- loading -->
+                <div class="load-more" id="load-more">加载更多</div>
+                <div class="line-scale" id="loading" style="display: none;">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- loading END -->
+            </div>
+
+            <div class="section-tag">
+                <div class="title">留言区</div>
+                <a class="title tel" href="tel:4001009103" >4001009103</a>
+            </div>
+
+            <form class="message-form" method="" action="">
+                <a name="feedback" id="feedback"></a><!-- 2017-05-24 新增定位锚点 -->
+                <textarea id="message" name="" msgError="留言不能为空"></textarea>
+                <input type="submit" value="发表评论"> <!-- 如果没登录 这里需要调用showLoginPop() 跳转登录页面 -->
+            </form>
+
+
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+
+    //点击发表评论 如果未登录 跳转登录页面
+    function showLoginPop(){
+        window.location.href = 'login.html'; //跳转到登录界面
+        $('.message-form').find(':submit').addClass('disabled'); //不进行表单验证
+        return false; //不让submit跳转页面    
+    }
+
+    //表单验证-评论
+    $('.message-form').formVerify({
+        data:[
+            {id:"message", check:"checkNull"}
+        ],
+        callback:function(){
+            //验证通过后执行的回调函数
+            // return false;
+
+            // $.ajax({
+            //     type:"POST",
+            //     url:"__URL__/checkNameAndPass",
+            //     async:false,
+            //     data:{"name":name,"pass":pass},
+            //     dataType:"JSON",
+            //     success:function(data){
+            //         switch(data.statue){
+            //             case "success":
+            //                 break;
+
+            //             default:
+            //                 layer.msg(data.msg);
+            //                 return false;
+            //         }
+            //     },
+            //     error:function(){
+            //         layer.msg("发生未知错误，请联系网站管理员");
+            //         return false;
+            //     }
+            // });
+            
+        }
+    });
+
+
+    //加载更多评论
+    $('#load-more').on('click',function(){
+        var num = $('.comment-list .cell').size();
+
+        $.ajax({ 
+            type:"GET", 
+            url:"testData/comments.js", 
+            dataType:"json",
+            //data:{"num":num}, 
+            timeout:15000, 
+            beforeSend:function(XMLHttpRequest){ 
+                $('#load-more').hide();
+                $('#loading').show();
+            }, 
+            success:function(data){
+            //switch(data.statue){
+                //case "success":
+                    //var msg = data.msg;
+                    var html=""; 
+                    $.each(data,function(index,item){
+                        html += '<div class="cell offset-in">'+
+                            '<div class="zoom-image" style="background-image: url('+ item.avatarUrl +');"></div>'+
+                            '<div class="comment">'+
+                                '<div class="name">'+
+                                    item.name+
+                                '</div>'+
+                                '<div class="text">'+
+                                    item.comment+
+                                '</div>'+
+                            '</div>'+
+                        '</div>';
+                    }); 
+                    $('.comment-list .list').append(html);
+                    //break;
+                //default:
+                    //layer.msg(data.msg);
+                    //break;  
+            //}
+
+            },
+            complete:function(XMLHttpRequest,textStatus){ 
+                $('#load-more').show();
+                $('#loading').hide();
+                setTimeout(function(){ //淡入特效
+                    $('.comment-list .cell').removeClass('offset-in');
+                },300);
+            }, 
+            error:function(XMLHttpRequest,textStatus,errorThrown){
+                $('#load-more').show();
+                $('#loading').hide();
+                console.log(errorThrown);
+            } 
+        }); 
+    });
+
+
+</script>
+
+
+</body>
+</html>
