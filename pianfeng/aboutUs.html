@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>上海偏锋投资有限公司</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+
+<div class="pageTop">
+  <div class="contents">
+     <div class="logo"><img src="images/logo.jpg" alt=""></div>
+     <ul class="nav">
+       <a href="index.html"><li><p><span>公司首页</span></br>Home</p> <img src="images/nav-hover.png" alt="" class="navBG" ></li></a>
+       <a href="aboutUs.html"><li><p class="hover"><span>走进偏锋</span></br>About Us</p> <img src="images/nav-hover.png" alt="" class="navBG active"></li></a>
+       <a href="itsProduct.html"><li><p><span>旗下产品</span></br>Its Products</p> <img src="images/nav-hover.png" alt="" class="navBG"></li></a>
+       <a href="news.html"><li><p><span>最新公告</span></br>Latest News</p> <img src="images/nav-hover.png" alt="" class="navBG"></li></a>
+       <a href="contactUs.html"><li><p><span>联系我们</span></br>Contact Us</p> <img src="images/nav-hover.png" alt="" class="navBG"></li></a>
+       <a href="recruit.html"><li><p><span>人才招聘</span></br>Recruitment</p> <img src="images/nav-hover.png" alt="" class="navBG"></li></a>
+     </ul>
+  </div>
+</div>
+
+
+
+<section class="content aboutUs">
+   <figure><img src="images/简介.jpg" alt=""></figure>
+
+   <div class="contents">
+     <h2 class="subTitile">走进偏锋 <span>ABOUT US</span></h2>
+
+     <ul class="subNav">
+       <li>
+        <h1 class="active">公司简介</h1>
+          <div class="text">
+            <p>
+            上海偏锋投资有限公司成立于2015年1月8日，注册资本1000万元人民币，专业从事资产管理业务和投资顾问业务，已在中国
+            证券投资基金业协会登记注册备案，获得私募投资基金管理人资格。公司已发行多只私募产品，盈利能力和风控水平已得到市场验
+            证。公司秉承“成功源于专业，实力铸就辉煌”的理念，致力于提升自身投资管理水平，争取为信赖我们的投资者创造稳定且优异
+            的回报。
+            </p>
+            <p>公司投研团队都来自于国内知名证券公司或投资研究机构，从业时间均在10年以上，已经历市场多轮牛熊转换考验，具有较强
+            的研究能力和丰富的市场经验，操作风格稳健，盈利模式成熟。
+            </p>
+          </div>
+       </li>
+
+       <li>
+        <h1>投资理念</h1>
+          <div class="text">
+            <p>
+             投资理念：尊重市场，顺势而为，注重与市场强度、风格保持同步，在对的时间，采用对的操作模式，配置对的仓位与品种。
+            </p>
+
+          </div>
+       </li>
+
+       <li>
+        <h1>投资策略</h1>
+          <div class="text">
+            <p>
+              投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略
+              投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略投资策略
+            </p>
+
+          </div>
+       </li>
+
+       <li>
+        <h1>公司核心</h1>
+        <div class="text">
+          <p>
+            公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心
+            公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心公司核心
+          </p>
+        </div>
+       </li>
+
+       <li>
+        <h1>企业文化</h1>
+        <div class="text">
+          <p>
+            企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化
+            企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化企业文化
+          </p>
+        </div>
+      </li>
+     </ul>
+   </div>
+</section>
+
+
+
+
+
+
+<footer>
+   <div class="footer">
+      <figure><img src="images/电话.png" alt=""> </figure>
+      <h2>电话：0571-87386759</h2>
+      <h3>Copyright © 深圳市德恩资本投资管理有限公司  All Rights Reserved  技术支持： 易百讯 - 深圳网站建设 粤ICP备15115201号</h3>
+   </div>
+</footer>
+
+
+
+        
+</div><!-- container END -->
+
+
+
+
+<script type="text/javascript">
+   $(function(){ 
+
+      $($('.subNav li .active').next()).show();
+
+      $('.subNav li h1').click(function(){
+       $('.subNav li h1').each(function(index,element){
+          $(this).removeClass('active');
+          $($(this).next()).hide();
+       });
+         $(this).addClass('active');
+          $($(this).next()).fadeIn();
+
+      });
+
+   });
+</script>
+
+</body>
+</html>

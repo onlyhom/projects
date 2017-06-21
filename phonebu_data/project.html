@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>风步 项目详情</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="风步项目">  
+    <meta name="description" content="风步项目">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/vue.js" ></script>
+    <script type="text/javascript" src="js/page.js" ></script>
+
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="index.html">公司项目</a></li>
+            <li>项目名称</li>
+        </ol>
+
+        <div id="main" class="main">
+            
+            <div class="projectInfo">
+                <div class="text">
+                    <div class="name">项目名称</div>
+                    <div class="info">项目详情 项目详情</div> 
+                </div>
+
+                <div class="teamEdit"><!-- 0324 新增 -->
+                    <form action="">
+                        <h2>
+                            编辑团队<div class="arrow"></div> 
+                        </h2>
+                        <div class="groupList" id="selectTeam" msgError="团队里至少选择一个成员">
+                            <div class="group">
+                                <input type="checkbox" class="team" name="team[]" id="people1" value="陈明天">
+                                <label for="people1">陈明天</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" class="team" name="team[]" id="people2" value="马本全">
+                                <label for="people2">马本全</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" class="team" name="team[]" id="people3" value="欧丽红">
+                                <label for="people3">欧丽红</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" class="team" name="team[]" id="people4" value="宋丽琴">
+                                <label for="people4">宋丽琴</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" class="team" name="team[]" id="people5" value="徐雪青">
+                                <label for="people5">徐雪青</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" class="team" name="team[]" id="people6" value="杨超">
+                                <label for="people6">杨超</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" class="team" name="team[]" id="people7" value="虞希">
+                                <label for="people7">虞希</label>
+                            </div>
+                            <div class="clearfix"></div>
+                            <input type="submit" value="确认保存">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--  *************** 文件 *************** -->
+            <div class="section">
+                <div class="menuTitle">
+                    <i>文件</i>
+                    <div class="addBtn" v-on:click="showCreate()">创建文件夹</div>
+                </div>
+                <div class="folderList row">
+
+                    <!-- ********** 无文件夹时显示此div *********** -->
+                    <div class="noData" v-show="folderData.length==0 && !isCreate">创建文件夹，开始协作</div>
+
+                    <!-- ********** 循环数据 显示所有文件夹 *********** -->
+                    <div class="col-lg-2 col-md-2 folder" v-for="(item,index) in folderData">
+                        <a v-bind:href="item.url">
+                            <div class="cell">
+                                <img src="images/folder.png" alt="">
+                                <h2>{{item.name}}</h2>
+                            </div>
+                        </a>
+                        <div class="menu">
+                            <a class="download" v-bind:href="item.downloadURL">下载</a>
+                            <i class="delete" v-on:click="deleteFolder(index)">删除</i>
+                        </div>
+                    </div>
+
+
+                    <!-- ********** 创建文件夹 默认隐藏 *********** -->
+                    <div class="col-lg-2 col-md-2 folder" v-show="isCreate">
+
+                        <div class="cell">
+                            <img src="images/folder.png" alt="">
+                            <input type="text" v-model="folderName" id="newFolderName">
+                        </div>
+                        <div class="menu menuShow">
+                            <i class="create" v-on:click="createFolder()">创建</i>
+                            <i class="cancel" v-on:click="cancel()">取消</i>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!--  *************** 文档 *************** -->
+            <div class="section">
+                <div class="menuTitle">
+                    <i>文档</i>
+                    <a href="createEssay.html">
+                        <div class="addBtn">创建文档</div>
+                    </a>
+                </div>
+                <div class="essayList row">
+
+                    <!-- ********** 无文档时显示此div *********** -->
+                    <div class="noData" v-show="essayData.length==0">创建新文档，和小伙伴协同编辑</div>
+
+                    <!-- ********** 循环数据 显示所有文档 *********** -->
+                    <div class="col-lg-4 col-md-4 essay" v-for="(item,index) in essayData">
+                        <a v-bind:href="item.url">
+                            <div class="cell">
+                                <div class="title">{{item.title}}</div>
+                                {{item.content}}
+                            </div>
+                        </a>
+                        <p>{{item.time}}</p>
+                        <i class="delete" v-on:click="deleteEssay(index)">删除</i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+// 文件夹测试数据
+var testFolderData = [
+    { 
+        id:'0',
+        url:'folder.html', 
+        name:'设计图',
+        downloadURL:'1.jpg'
+    },
+    { 
+        id:'1',
+        url:'folder.html', 
+        name:'名称2',
+        downloadURL:'1.jpg'
+    },
+    {   
+        id:'2',
+        url:'folder.html', 
+        name:'名称3',
+        downloadURL:'1.jpg'
+    }
+];
+
+
+// 文档测试数据
+var testEssayData = [
+    { 
+        id:'0',
+        url:'essayDetail.html',
+        title:'文章1标题标题',
+        content:'一棵松手机端  网址 ：http://m.yikesong66.com/一棵松 后台网址：http://m.yikesong66.com/index.php?g=admin&m=public&a=login默认账号/密码    admin   123456服务器信息：ip：119.10.51.114:33899用户名:root 密码: Mc%k4zTs*h9x 端口号:22数据库密码 root   fengbu2009文件位置：/var/www一棵松  PC端网站域名：www.yikesong66.com一棵松 后台网址：http://www.yikesong66.com/index.php?g=admin&m=public&a=login115.159.103.21   root     nirvana2009 nginx 配置文件/usr/local/nginx/conf/vhost/ FTP：115.159.103.21账号phonebu密码nirvana2009上传至www.yikesong66.com文件夹css  js  image   存放目录/www.yikesong66.com/themes/yikesong/Public/assetsPHPmyadmin数据库地址：http://115.159.103.21/YaphetS/账号root密码nirvana2009数据库名yikesong', 
+        time:'2017/03/15'
+    },
+    { 
+        id:'1',
+        title:'文章2标题标题',
+        url:'essayDetail.html',
+        content:'文档内容内容文档内容内容2222', 
+        time:'2017/03/16'
+    },
+    {   
+        id:'2',
+        title:'文章3标题标题',
+        url:'essayDetail.html',
+        content:'文档内容内容文档内容内容文档内容内容33333333', 
+        time:'2017/03/17'
+    }
+];
+
+
+//-----------------------------------------------
+// vue组件
+var vm = new Vue({
+    el: '#main',
+    data: {
+        folderData : testFolderData,
+        essayData  : testEssayData,
+        isCreate   : false,
+        folderName : '新的文件夹'
+    },
+    computed:{
+
+    },
+    methods:{
+        showCreate:function(){
+            this.isCreate = true; //显示创建页面
+            setTimeout(function(){
+                document.getElementById('newFolderName').focus();
+                $('#newFolderName').select();
+            },1);
+
+        },
+        createFolder:function(){
+            this.folderData.push({
+                id: this.folderData.length,
+                url:'folder.html', 
+                name: this.folderName,
+                downloadURL:'1.jpg'
+            });
+            this.isCreate = false; //隐藏创建页面
+        },
+        cancel:function(){
+            this.isCreate = false;
+        },
+        deleteFolder:function(index){
+            swal({
+                title: "删除文件夹",
+                text: "文件夹和里面的文件将一同被删除，确认删除吗？",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "删除",
+                cancelButtonText: "取消",
+                closeOnConfirm: false
+            },
+            function(){
+                vm.folderData.splice(index,1);  //从数组中删除数据
+                swal({
+                    title: "删除成功",
+                    type: "success",
+                    confirmButtonColor: "#4daef5",
+                    confirmButtonText: "完成"
+                });
+            });
+        },
+        deleteEssay:function(index){
+            swal({
+                title: "删除文档",
+                text: "删除文档后不可恢复,确认删除？",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "删除",
+                cancelButtonText: "取消",
+                closeOnConfirm: false
+            },
+            function(){
+                vm.essayData.splice(index,1);  //从数组中删除数据
+                swal({
+                    title: "删除成功",
+                    type: "success",
+                    confirmButtonColor: "#4daef5",
+                    confirmButtonText: "完成"
+                });
+            });
+        }
+    }
+});
+
+// 0324 新增 一定要放在vue代码的后面
+$('.teamEdit h2').on('click',function(){
+    $(this).find('.arrow').toggleClass('on');
+    $('.groupList').slideToggle();
+});
+
+</script>
+
+
+</body>
+</html>

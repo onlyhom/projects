@@ -1,0 +1,1067 @@
+
+body{
+  position: relative;
+}
+
+
+.popBG{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 888;
+  display: block;
+}
+
+.popUp {
+    width: 950px;
+    height: 525px;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    margin-top: -270px;
+    margin-left: -470px;
+    border: 0px solid #ccc;
+    background: #fff;
+    box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.3);
+    color: black;
+}
+
+.popUp .top{
+  height: 80px;
+  background: #e5f5fb;
+  padding-left: 20px;
+}
+
+.popUp .top img{
+  float: left;
+  margin-top: 5px;
+}
+
+.popUp .top h2{
+  float: left;
+  font-size: 28px;
+  color: #bb2820;
+  line-height: 80px;
+  margin-left: 5px;
+}
+
+.popUp .top h3{
+  float: left;
+  font-size: 20px;
+  line-height: 80px;
+  margin-left: 20px;
+}
+
+
+.popUp .left{
+  float: left;
+  width: 520px;
+  height: 400px;
+/*  background: pink;*/
+  margin:30px 0 0 20px;
+}
+
+.popUp .left p{
+  text-indent: 2em;
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.popUp .left .yellow{
+ color: #ff9c00;
+}
+
+
+
+.popUp .right{
+  float: right;
+  width: 360px;
+  height:400px;
+  margin:30px 20px 0 0;
+}
+
+.popUp .right .confirmText{
+  width: 310px;
+  background: #e5e5e5;
+  padding: 25px;
+}
+
+.popUp .right .confirmBox{
+  margin-top: 40px;
+}
+
+.popUp .right .confirmBox button{
+  height: 65px;
+  width: 175px;
+  background: #bb2820;
+  border: none;
+  color: white;
+  margin:15px 0 15px 20px;
+}
+
+.popUp .right .confirmBox .closeBtn{
+  background: #e5e5e5;
+  color: black;
+}
+
+
+
+.popUp .right .confirmBox span{
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+.popUp .right input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+}
+
+
+
+/* 页头 */
+
+.pageTop{
+  width: 100%;
+  height: 120px;
+  background: url(../images/导航BG.jpg);
+}
+
+.pageTop .contents{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+/*  background: #eee;*/
+}
+
+.pageTop .contents .logo{
+  padding-top: 10px;
+  float: left;
+}
+
+
+.pageTop .nav{
+  display: inline-block;
+  float: left;
+/*  background: rgba(100,0,0,0.4);*/
+  padding-left: 160px;
+}
+
+.pageTop .nav li{
+  position: relative;
+  height: 80px;
+  width: 110px;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  line-height: 23px;
+  cursor: pointer;
+  transition:all 0.5s;
+}
+
+.pageTop .nav li p{
+  position: relative;
+  z-index: 10;
+}
+
+.pageTop .nav li span{
+  font-size: 16px;
+}
+
+.navBG{
+  position: absolute;
+  top: 0;
+  left: -20px;
+  z-index: 1;
+  display: none;
+}
+
+.pageTop .nav li:hover {
+ color: #bb2820;
+}
+
+.pageTop .nav li:hover .navBG{
+ display: inline-block;
+ transition:all 0.5s;
+}
+
+.nav li .active{
+  display: inline-block;
+}
+
+.nav li .hover{
+ color: #bb2820;
+}
+
+
+.banner{
+  position: relative;
+  width: 100%;
+  height: 522px;
+  background: url(../images/banner.jpg);
+}
+
+.banner .contents{
+ width: 1200px;
+ height: 100%;
+ margin: 0 auto;
+ position: relative;
+}
+
+.banner .todayNews{
+  width: 440px;
+  height: 145px;
+  background: #bb2820;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 15px 20px;
+}
+
+
+.banner .todayNews h2{
+ color: #e9c100;
+ font-size: 19px;
+ margin-bottom: 5px;
+}
+
+.banner .todayNews h3{
+  display: inline-block;
+  line-height: 25px;
+  width: 415px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+.banner .todayNews .news1{
+  border-bottom: 1px dashed white;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.todayNews a{
+  display: inline-block;
+  color: white;
+  float: right;
+}
+
+.appointment{
+  text-align: center;
+}
+
+.appointment .contents{
+ background: #bb2820;
+ height: 240px;
+ color: white;
+ font-size: 20px;
+}
+
+
+.appointment h2{
+  color: white;
+  font-size: 28px;
+  line-height: 90px;
+}
+
+
+.appointment .contents input[type="text"]{
+  border: none;
+  outline: none;
+  width: 270px;
+  height: 40px;
+  margin: 0 30px 0 10px;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+
+.appointment .contents input[type="submit"]{
+  width: 235px;
+  height: 50px;
+  background: #e9c100;
+  color: white;
+  border-radius: 5px;
+  border:none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  cursor: pointer;
+
+
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: all .5s;
+   transition: all .5s;
+   border: 1px solid transparent;
+}
+
+
+.appointment .contents input[type="submit"]:hover{
+    background: #bb2820;
+    border: 1px solid white;
+}
+
+
+
+
+
+.appointment img{
+  position: relative;
+  top: 5px;
+}
+
+
+
+.abstract{
+  width: 1200px;
+  margin: 70px auto;
+/*  background: #eee;*/
+}
+
+
+.abstract li{
+  width: 375px;
+/*  background: pink;*/
+  vertical-align: top;
+  margin: 0 10px;
+  color: black;
+}
+
+
+.abstract li h2{
+  font-size: 20px;
+  font-weight:bold;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.abstract button{
+  background: #bb2820;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 13px;
+  width: 67px;
+  height: 27px;
+  float: right;
+  margin-right: 10px;
+}
+
+
+.abstract p{
+/*  background: orange;*/
+  line-height: 20px;
+  height: 60px;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+
+
+footer{
+  width: 100%;
+  height: 67px;
+  background: black;
+  color: white;
+
+}
+
+.footer{
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 67px;
+}
+
+.footer figure{
+  float: left;
+  padding-top: 3px;
+  margin-right: 10px;
+  height: 30px;
+}
+
+.footer h2{
+  float: left;
+}
+
+.footer h3{
+  float: right;
+}
+
+
+
+
+
+/* ********子页**********  */
+
+
+.content{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  min-height: 760px;
+}
+
+
+
+.aboutUs .contents{
+ width: 800px;
+}
+
+
+.aboutUs figure{
+  width: 350px;
+  float: left;
+  margin-top: 90px;
+  padding-left: 20px;
+} 
+
+.aboutUs .contents{
+  float: left;
+  margin-top: 70px;
+}
+
+
+
+
+.subTitile{
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.subTitile span{
+  font-size: 18px;
+  color: #bb2820;
+}
+
+.subNav{
+  width: 100%;
+  border-bottom: 2px solid #bb2820;
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.subNav li{
+  color: black;
+  margin-right: 10px;
+}
+
+.subNav li h1{
+  background: #000;
+  width: 140px;
+  height: 36px;
+  background: #dcdcdc;
+  color: black;
+  text-align: center;
+  line-height: 36px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.subNav li .text{
+  width: 750px;
+  position: absolute;
+  margin-top: 50px;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.subNav li .text p{
+  text-indent: 2em;
+  line-height: 30px;
+  margin: 10px 0; 
+}
+
+.subNav li .active{
+  background: #bb2820;
+  color: white;
+}
+
+
+
+.ItsProduct .contents{
+  width: 1000px;
+  margin: 0 auto;
+/*  background: pink;*/
+  margin-top: 80px;
+}
+
+
+.ItsProduct .subTitile{
+  padding-bottom: 10px;
+  border-bottom: 2px solid #bb2820;
+  margin-bottom: 25px;
+}
+
+.ItsProduct .contents p{
+  text-indent: 2em;
+  color: black;
+  line-height: 25px;
+}
+
+
+.itsProduct {
+  width: 100%;
+  color: black;
+  background: #f8f8f8;
+  margin: 50px 0;
+}
+
+.itsProduct i{
+  font-style: normal;
+  color: #f50000;
+}
+
+.itsProduct th{
+  height: 75px;
+  font-size: 23px;
+  border: 1px solid white;
+}
+
+
+.itsProduct td{
+  border: 1px solid white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.itsProduct input[type="text"]{
+  color: #f50000;
+  width: 75px;
+  text-align: right;
+  padding-right: 5px;
+  border: none;
+  background: transparent;
+}
+
+.itsProduct input[type="submit"]{
+  width: 177px;
+  height: 44px;
+  border-radius: 5px;
+  border: none;
+  background: #bb2820;
+  color: white;
+  cursor: pointer;
+  transition:all 0.5s;
+}
+
+.itsProduct input[type="submit"]:hover{
+  background: #d55467;
+}
+
+
+.productTitle{
+  height: 44px;
+  background: #bb2820;
+  color: white;
+  line-height: 44px;
+  font-size: 20px;
+  padding-left: 20px; 
+}
+
+.productTitle span{
+  font-size: 23px;
+}
+
+
+.productDetail{
+  width: 100%;
+  text-align: left;
+  line-height: 23px;
+  font-size: 18px;
+  color: black;
+  margin: 20px 0 100px ;
+}
+
+
+
+
+.productDetail .direction{
+  width: 460px;
+  padding: 20px;
+}
+
+
+
+
+.productDetail td{
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.productDetail th{
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.productDetail h1{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.blueBG{
+  background: #f3fbfe;
+}
+
+
+
+/* 数据 */
+
+
+.dataSection{
+  padding: 30px;
+/*  background: #eee;*/
+}
+
+
+.dataSection .left{
+  float: left;
+}
+
+.dataSection .right{
+  float: right;
+}
+
+
+
+
+#chart{
+  width: 400px;
+  height: 320px;
+}
+
+
+.data{
+  margin-top: 32px;
+  width: 400px;
+  text-align: center;
+  color: black;
+}
+
+
+.data tr{
+  height: 40px;
+}
+
+.data td{
+  border:1px solid #e5e5e5;
+}
+
+.data th{
+  border:1px solid #e5e5e5;
+}
+
+
+
+
+.dataDetail{
+  width: 400px;
+  height: 480px;
+  text-align: center;
+  color: black;
+}
+
+.dataDetail tr{
+  height: 40px;
+}
+
+
+.dataDetail td{
+  border:1px solid #e5e5e5;
+}
+
+.dataDetail th{
+  border:1px solid #e5e5e5;
+
+}
+
+
+
+.dataPages{
+  font-size: 18px;
+  color: gray;
+  margin: 30px 0 0 140px;
+}
+
+.dataPages a{
+ text-align: center;
+ width: 20px;
+ float: left;
+/* background: pink;*/
+ margin: 0 3px;
+ cursor: pointer;
+}
+
+.dataPages .current{
+  color: #bb2820;
+}
+
+
+.red{
+  color:#e90000;
+}
+
+.green{
+  color:#17a500;
+}
+
+
+
+
+
+
+
+/*新闻*/
+
+
+.news .contents{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.news .subNav li .text{
+  width: 100%;
+}
+
+
+.dynamicList{
+/*  display: none;*/
+  margin-bottom: 50px;
+/*  background: pink;*/
+  width: 100%;
+}
+
+/*.activeList{
+  display: block;
+}
+*/
+
+
+.dynamicList li{
+  height: 50px;
+  border-bottom: 1px dashed #dcdcdc;
+  line-height: 50px;
+  width: 100%;
+}
+
+.dynamicList h2{
+  float: left;
+  width: 680px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+.dynamicList p{
+  float: right;
+  margin-left: 10px;
+}
+
+.dynamicList a{
+  color: black;
+}
+
+.dynamicList a:hover{
+  color: gray;
+}
+
+
+
+
+
+
+
+
+/* 页码  */
+
+
+ .pages{
+   margin-left:20px; 
+   letter-spacing: 2px;
+}
+
+ .pages a{
+    padding: 5px;
+    border: 1px solid #d5d5d5;
+    margin-right:5px;
+    }
+
+#currentPage{
+    background: #f4b007;
+    color: white;
+    border: none;
+}
+
+
+
+
+/* 新闻文章 */
+
+
+
+.artTitle h1{
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.artTitle p{
+  display: inline-block;
+}
+
+.artAbstract{
+  background: #eee;
+  padding: 10px 15px;
+  margin: 30px 0;
+} 
+
+
+.studyPicBorder{
+  width: 446px;
+  height: 286px;
+  background: white;
+  border: 1px solid #d2d2d2; 
+  margin-bottom: 30px;
+}
+
+.studyPic{
+  width: 433px;
+  height: 274px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+
+.studyPic img{
+  width: 433px;
+}
+
+.essay{
+  border-bottom: 1px dashed #d2d2d2;
+}
+
+
+.essay p{
+  text-indent: 2em;
+  margin-bottom: 15px;
+  text-align: left;
+  line-height: 22px;
+}
+
+
+
+
+
+
+
+/*文章页码*/
+
+.essayPages{
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+
+.essayPages a{
+  text-decoration: underline;
+  line-height: 22px;
+  display: inline-block;
+  width: 220px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+
+
+
+/* 联系我们 */
+
+
+    .sectionContact{
+      width: 1000px;
+      margin: 0 auto;
+/*      padding-bottom: 80px;*/
+    }
+
+
+    .sectionContact .lside{
+      float: left;
+      width: 45%;
+      height: 500px;
+      margin-right:65px;
+      margin-top: 50px;
+      display: inline-block;
+    }
+
+
+    .sectionContact .lside figure{
+      margin-bottom: 20px;
+    }
+
+    .sectionContact .lside figure img{ 
+      width: 249px;
+    }
+
+    .sectionContact .lsideTitle{
+
+      font-size:20px;
+      font-weight: bold;
+    }
+
+    .sectionContact .lsideText{
+      font-size:15px;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+
+    .sectionContact .lside ul{
+      margin-top: 30px;
+      background: url("../images/信息.jpg") no-repeat;
+      height: 130px;
+    }
+
+    .sectionContact .lside li{
+      display: inline-block;
+      height: 32px;
+      font-size: 15px;
+      line-height: 32px;
+      color: black;
+      margin-bottom: 2px;
+      padding-left: 35px;
+
+    }
+
+    .sectionContact .contact a{ 
+      margin-right: 12px;
+
+    }
+
+
+    .sectionContact .rside{
+      margin-top: 50px;
+      display: inline-block;
+      width: 48%;
+      float: left;
+    } 
+
+    .sectionContact .rside img{
+      margin-bottom: 30px;
+    }
+
+
+
+    .sectionContact .subButton{
+      width: 140px;
+      height: 38px;
+      background: #bb2820;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .sectionContact .red{
+      color: red;
+      margin-right: 5px;
+    }
+
+
+    .sectionContact .rside input[type='text']{
+      background:#fcfcfc; 
+      border:1px solid black;
+      margin-bottom: 20px;
+      height: 30px;
+      padding-left: 10px;
+      color: #373737;
+      letter-spacing: 1px;
+    }
+
+    .sectionContact .rside textarea{
+      background:#fcfcfc; 
+      border:1px solid black;
+      margin-bottom: 20px;
+      padding-left: 5px;
+      color: #373737;
+      letter-spacing: 1px;
+    }
+
+
+
+
+
+
+/*合作伙伴*/
+    .partners{
+      margin: 40px 0 ;
+    }
+
+
+/*招聘*/
+
+
+.recruitInfo{
+ padding-bottom: 50px;
+ border-bottom: 2px solid #bb2820;
+}
+
+.recruitInfo h2{
+  color: #fe9a04;
+  font-weight: bold;
+  font-size: 18px;
+  margin:40px 0 5px;
+}
+
+
+.recruitInfo h3{
+  color: gray;
+  font-weight: bold;
+  font-size: 17px;
+  margin:10px 0 15px;
+}
+
+
+.recruitInfo p{
+  font-size: 15px;
+}
+
+
+.emailBox{
+  background: #bb2820;
+  width: 270px;
+  height: 45px;
+  color: white;
+  line-height: 45px;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 40px 0 100px;
+}
+
+

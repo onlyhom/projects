@@ -1,0 +1,530 @@
+@import "common.less";
+
+html,body{
+	background: #f4f7ed;
+}
+
+
+@color:#4daef5;
+
+a,a:visited{
+	color:#666;
+}
+a:hover{
+	text-decoration: none;
+	color: @color;	
+}
+
+
+h1, .h1, h2, .h2, h3, .h3 , p{
+	margin: 0;
+}
+
+
+.breadcrumb{
+
+	margin-top: 40px;
+	background: #f2f2f2;
+	background: transparent;
+	padding: 12px 30px; 
+	margin: 40px 0 0 0;
+	border-bottom: 1px solid #e6e6e6;
+	a{
+		color:@color;
+	}
+}
+
+.main{
+	//background: #fafafa;
+	background: white;
+	border: 1px solid #dbdfd6;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+	padding: 30px; 
+	min-height: 600px;
+
+	.projectList{
+		.clearfix();
+		.project{
+			margin: 15px 0;
+			&:hover{
+				.cell{
+					border-color: @color;
+					.icon{
+						i{
+							left:-42px;
+						}
+					}
+					h1,h2{
+						color:@color;
+					}
+				}
+				p{
+					.delete{
+						display:block;
+					}
+				}
+			}
+			.cell{
+				border-radius: 8px;
+				background: white;
+				border:1px solid #d9d9d9;
+				height: 150px;
+				padding: 30px;
+				text-align: center;
+				transition:all 0.2s;
+				h1,h2{
+					transition:color 0.3s;
+				}
+				h1{
+					font-size: 15px; 
+					margin-top: 30px;
+					line-height: 20px;
+					height:40px;
+					.nowrap2(2);
+				}
+				h2{
+					font-size: 14px;
+					padding-top: 10px;
+				}
+				.icon{
+					margin: 10px auto 0;
+					width:42px;
+					height:42px;
+					overflow:hidden;
+					i{
+						position:relative;
+						left:0;
+						display:block;
+						width:84px;
+						height:42px;
+						background: url(../images/icon_add.png) repeat left top;
+						transition: all 0.3s;
+					}
+				}
+			}
+			p{
+				padding-top: 4px;
+				color:#999;
+				position:relative;
+				.delete{
+					display:none;
+					position:absolute;
+					right:5px;
+					bottom:0;
+					color:@color;
+					cursor:pointer;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	.section{
+		margin-bottom: 30px;
+	}
+	.menuTitle{
+		margin-bottom: 20px;
+		font-size: 17px;
+		color:#666;
+		font-weight: bold;
+		.addBtn{
+			position:relative;
+			font-size: 14px;
+			font-weight: normal;
+			cursor:pointer;
+			color:white;
+			display:inline-block;
+			padding:5px 30px 5px 20px;
+			text-align: center;
+			border-radius: 5px;
+			margin-left: 18px;
+			background: @color url(../images/add.png) no-repeat 88% center;
+			background-size: 11px;
+			.select{
+				display:none;
+				position:absolute;
+				top:30px;
+				left:0;
+				z-index:10;
+				width:100%;
+				border:1px solid #ccc;
+				border-radius: 5px;
+				color:#666;
+				background: white;
+				box-shadow: 2px 2px 8px rgba(0,0,0,0.3); 
+				a{
+					color:#666;
+				}
+				.option{
+					padding:6px 0;
+					&:hover{
+						background: #eee;
+					}
+				}
+			}
+		}
+	}
+	.folderList{
+		.folder{
+			// background: pink;
+			margin: 10px 0;
+			input[type="text"]{
+				height:23px;
+				margin-bottom: 3px;
+				display:block;
+				width:100%;
+				text-align: center;
+				border:none;
+				border-bottom: 1px dashed #ccc;
+				outline:none;
+				background: transparent;
+			}
+			&:hover{
+				.menu{
+					visibility: visible;
+				}
+			}
+		}
+		.cell{
+			text-align: center;
+			h2{
+				color:#666;
+				font-size: 15px;
+				padding:5px 0;
+				text-decoration: none;
+			}
+		}
+		.menu{
+			visibility:hidden;
+			padding:0 25px;
+			position:relative;
+			.clearfix();
+			.delete,.cancel{
+				float: right;
+			}
+			.download,.delete,.create,.cancel{
+				cursor:pointer;
+				color:@color;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			.cancel{
+				color:#999;
+			}
+		}
+		.menuShow{
+			visibility: visible;
+		}
+	}
+	.essayList{
+		.essay{
+			margin: 10px 0;
+			position:relative;
+			p{
+				color:#999;
+				padding:5px 0;
+			}
+			&:hover{
+				.delete{
+					display:inline-block;
+				}
+			}
+		}
+		.title{
+			font-size: 18px;
+			padding:5px 0 10px;
+			.nowrap();
+			color:#333;
+			font-weight: bold;
+		}
+		.cell{
+			color:#999;
+			background: white;
+			height:350px;
+			overflow:hidden;
+			padding:20px;
+			border:1px solid #d9d9d9;
+			position:relative;
+			&:after{
+				content:'';
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background: -webkit-linear-gradient(transparent, transparent, transparent, rgba(255, 255, 255, 0.8));
+				background: -o-linear-gradient(transparent, transparent, transparent, rgba(255, 255, 255, 0.8));
+				background: linear-gradient(transparent, transparent, transparent, rgba(255, 255, 255, 0.8));
+			}
+			&:hover{
+				box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			}
+		}
+		.delete{
+			position:absolute;
+			right: 20px;
+			bottom: 3px;
+			color:@color;
+			cursor:pointer;
+			display:none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.essayEdit{
+		padding-bottom: 10px;
+		a{
+			color:@color;
+			font-size: 15px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.essayDetail{
+	    display: block;
+	    padding: 20px;
+	    margin: 0 auto;
+	    font-size: 13px;
+	    line-height: 20px;
+	    color: #333;
+	    word-break: break-all;
+	    word-wrap: break-word;
+	    background-color: white;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	}
+	.noData{
+		margin-left: 15px;
+		height:75px;
+		padding-left: 70px;
+		line-height: 75px;
+		font-size: 17px;
+		color:#999;
+		background: url(../images/fileBG.png) no-repeat left center;
+		background-size: 50px;
+	}
+}
+
+
+.projectInfo{
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	.clearfix();
+	.text{
+		width: 80%;
+		float: left;
+		.name{
+			font-size: 25px;
+			color:#666;
+		}
+		.info{
+			margin-top: 2px;
+			font-size: 15px;
+			color:#999;
+		}
+	}
+	.teamEdit{
+		width:20%;
+		float: right;
+		h2{
+			font-size: 15px;
+			// text-align: right;
+			color:@color;
+			cursor:pointer;
+			.arrow{
+				vertical-align: top;
+				display:inline-block;
+				width:15px;
+				height:15px;
+				background: url(../images/arrow-line.png) no-repeat center;
+				background-size: 15px;
+				transition:transform 0.3s;
+			}
+			.arrow.on{
+				transform: rotate(180deg);
+			}
+		}
+		.groupList{
+			display:none;
+			padding:20px 0 10px 0;
+			.clearfix();
+			.group{
+				margin-bottom: 5px;
+				padding-right: 10px;
+				float: left;
+				width:50%;
+				label,input{
+					cursor: pointer;
+					vertical-align: top;
+					color:#333;
+					font-weight: normal;
+				}
+				label{
+					min-width: 60px;
+				}
+			}
+		}
+		input[type="submit"]{
+			clear:both;
+			background: @color;
+			color:white;
+			border:none;
+			width:50%;
+			height:35px;
+			border-radius: 5px;
+			margin-top: 10px;
+			outline:none;
+		}
+	}
+}
+
+
+
+.createProject{
+	width: 500px;
+	margin: 150px auto 0;
+	.title{
+		font-size: 16px;
+		padding: 13px 40px;
+		background: #f2f2f2;
+		color:@color;
+	}
+	.content{
+		padding:40px;
+		background: #fafafa;
+		input[type="text"],input[type="password"],textarea{
+			outline: none;
+			padding:5px;
+			border:1px solid #ccc;
+			border-radius: 5px;
+			display:block;
+			width:100%;
+			margin-bottom: 15px;
+			resize:none;
+			&:focus{
+				border-color:@color;
+			}
+		}
+		textarea{
+			height:180px;
+		}
+		input[type="text"],input[type="password"]{
+			height:40px;
+		}
+		input[type="submit"]{
+			width:100%;
+			height:40px;
+			display:block;
+			border:none;
+			border-radius: 5px;
+			background: @color;
+			color:white;
+
+		}
+		.team{
+			margin-bottom: 20px;
+			h2{
+				font-size: 15px;
+				color:@color;
+				cursor:pointer;
+				.arrow{
+					vertical-align: top;
+					display:inline-block;
+					width:15px;
+					height:15px;
+					background: url(../images/arrow-line.png) no-repeat center;
+					background-size: 15px;
+					transition:transform 0.3s;
+				}
+				.arrow.on{
+					transform: rotate(180deg);
+				}
+			}
+			.groupList{
+				display:none;
+				padding:20px 0 10px 30px;
+				.group{
+					margin-bottom: 5px;
+					label,input{
+						cursor: pointer;
+						vertical-align: top;
+						color:#333;
+						font-weight: normal;
+					}
+				}
+			}
+		}
+	}
+}
+
+.createEssay{
+	.clearfix();
+	input[type="text"]{
+		border:1px solid #ccc;
+		width:50%;
+		height:40px;
+		border-radius: 5px;
+		outline:none;
+		padding: 0 10px;
+		margin-bottom: 10px;
+		&:focus{
+			border-color: @color;
+		}
+	}
+
+	input[type="submit"]{
+		margin-top: 10px;
+		width:200px;
+		height:40px;
+		border:none;
+		border-radius: 5px;
+		outline:none;
+		background: @color;
+		color:white;
+	}
+
+}
+
+.login{
+	width: 400px;
+	margin: 200px auto 0;
+	.title{
+		font-size: 16px;
+		padding: 13px 40px;
+		background: #f2f2f2;
+		color:@color;
+	}
+	.content{
+		padding:40px;
+		background: #fafafa;
+		input[type="text"],input[type="password"]{
+			height:40px;
+			outline: none;
+			padding:5px;
+			border:1px solid #ccc;
+			border-radius: 5px;
+			display:block;
+			width:100%;
+			margin-bottom: 15px;
+			resize:none;
+			&:focus{
+				border-color:@color;
+			}
+		}
+		input[type="submit"]{
+			width:100%;
+			height:40px;
+			display:block;
+			border:none;
+			border-radius: 5px;
+			background: @color;
+			color:white;
+			margin-top: 20px;
+		}
+	}
+}
