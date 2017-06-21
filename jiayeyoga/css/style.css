@@ -1,0 +1,852 @@
+
+
+#container{
+      width: 1350px;
+      margin:0 auto;
+      font-family: Arial,'微软雅黑','黑体', sans-serif;
+      position:absolute;
+      left:50%;margin-left:-675px;
+      background: url(../images/背景底纹.png);
+      padding: 0;
+    }
+
+
+   #container{
+     position:absolute; 
+     animation:containerInto 0.8s;
+     -webkit-animation:containerInto 0.8s;
+     -moz-animation:containerInto 0.8s;
+     -o-animation:containerInto 0.8s;
+
+     animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+   }
+
+    @keyframes containerInto 
+    {
+    from {opacity: 0.5; top: -20px;}
+    to {opacity: 1; top: 0;}
+    }
+
+    @-webkit-keyframes containerInto 
+    {
+    from {opacity: 0.5; top: -20px;}
+    to {opacity: 1; top: 0;}
+    }
+
+    @-moz-keyframes containerInto 
+    {
+    from {opacity: 0.5; top: -20px;}
+    to {opacity: 1; top: 0;}
+    }
+
+    @-o-keyframes containerInto 
+    {
+    from {opacity: 0.5; top: -20px;}
+    to {opacity: 1; top: 0;}
+    }
+
+
+
+.stickNav{
+    width: 1350px;
+    height: 70px;
+    background: white;
+    padding: 5px 0;
+    border-bottom: 1px solid gray;
+    z-index: 9999;
+
+}
+
+.stickNav figure{
+    float: left;
+    margin-top: 5px;
+    margin-right: 30px;
+
+}
+
+
+.stickNav ul{
+    width: 1100px;
+
+
+}
+
+.stickNav li{
+    float: left;
+    margin-left: 5px;
+    margin-top: 18px;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.stickNav li a{
+    display: inline-block;
+    width: 130px;
+    height: 70px;
+    position: relative;
+    top: 0;
+    transition: top 0.3s;
+    -moz-transition:top 0.3s; /* Firefox 4 */
+    -webkit-transition:top 0.3s; /* Safari and Chrome */
+    -o-transition:top 0.3s; /* Opera */
+}
+
+
+
+.stickNav li a:hover{
+     color: #3e9bf3;
+     top: -70px;
+}
+
+
+.active a{
+    color: #3e9bf3;  
+}
+
+
+
+footer{
+    margin-top: 20px;
+    height: 320px;
+}
+
+footer img{
+    margin-bottom: 20px;
+}
+
+footer p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+
+
+/*行业前景*/
+
+.industryInfo{
+    width: 1350px;
+    height: 786px;
+    background: url(../images/行业前景banner.jpg);
+    padding-top: 15%;
+    padding-left: 10%;
+    margin-bottom: 100px;
+}
+
+
+.industryInfoText{
+    width: 630px;
+    height: 350px;
+    background: rgba(117,197,171,0.6);
+    padding: 50px 30px 0;
+    transition:background 0.8s;
+    -webkit-transition:background 0.8s;
+    -o-transition:background 0.8s;
+    -moz-transition:background 0.8s;
+}
+
+.industryInfoText:hover{
+
+    background: rgba(117,197,171,1);
+
+}
+
+
+.industryInfoText p{
+    color: white;
+    font-size: 27px;
+    text-indent: 2em;
+    letter-spacing: 2px;
+}
+
+
+.industryInfoDetail {
+    width: 100%;
+    height: 350px;
+    margin: 100px 0;
+    background: rgba(164,107,130,0.8);
+    padding: 50px 30px 0;
+    transition:background 0.8s;
+    -webkit-transition:background 0.8s;
+    -o-transition:background 0.8s;
+    -moz-transition:background 0.8s;
+
+}
+
+.industryInfoDetail:hover {
+    background: rgba(164,107,130,1);
+}
+
+.industryInfoDetail {
+    color: white;
+    font-size: 27px;
+    text-indent: 2em;
+    letter-spacing: 2px;
+}
+
+
+/*加盟与合作*/
+
+.bannerType1{
+    width: 1350px;
+    height: 786px;
+    background: url(../images/banner.jpg);
+    margin-bottom: 100px;
+}
+
+.joinUsIntro li{
+   margin:0 3%;
+}
+
+.joinUsAdv{
+    margin: 80px 0;
+    padding:50px; 
+    width: 1100px;
+    height: 1350px;
+    background: #454054;
+}
+
+.joinUsAdv p{
+    color: white;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.advPart{
+    padding:50px 0; 
+    transition:background 0.5s;
+    -webkit-transition:background 0.5s;
+    -o-transition:background 0.5s;
+    -moz-transition:background 0.5s;
+}
+
+.advPart:hover{
+    background: #262135;
+}
+
+
+/*证书查询*/
+
+.certificateText{
+    margin: 50px 0;
+}
+
+.certificateText p{
+    font-size: 26px;
+    line-height: 53px; 
+}
+
+
+.inquiry li{
+   margin:2% 3% 8%;
+}
+
+
+.clickInquiry img{
+    width: 206px;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s; /* Firefox 4 */
+    -webkit-transition: width 0.5s; /* Safari and Chrome */
+    -o-transition: width 0.5s; /* Opera */
+}
+
+.clickInquiry img:hover{
+    width:240px;
+}
+
+
+/*学院简介*/
+
+.bannerType2{
+    width: 1350px;
+    height: 786px;
+    background: url(../images/学院简介banner.jpg);
+    margin-bottom: 100px;
+}
+
+
+
+
+.adv{
+    zoom:0.9;
+    padding-top: 470px;
+}
+
+.adv li{
+    width: 280px;
+    height: 280px;
+    transform: rotateY(0deg);
+    transition: transform 0.8s;
+    -moz-transition: transform 0.8s; /* Firefox 4 */
+    -webkit-transition: transform 0.8s; /* Safari and Chrome */
+    -o-transition: transform 0.8s; /* Opera */
+
+}
+
+
+.adv li:hover{
+    transform: rotateY(180deg);
+
+}
+
+.adv li figure{
+   float: left;
+   width: 280px;
+   height: 240px;
+   margin: 40px auto 0;
+}
+
+
+.adv li:hover figure{
+    margin: 0;  
+}
+
+.adv li .enNormal{
+    display: block;
+}
+
+.adv li .enLarge{
+    display: none;
+    position: relative;
+    top: -20px;
+}
+
+.adv li:hover .enNormal{
+   display: none;
+}
+
+.adv li:hover .enLarge{
+   display: block;
+
+
+}
+
+
+.schoolIntro{
+    width: 1100px;
+    height: 1300px;
+    margin: 0 auto;
+}
+
+.textBox1{
+    float: left;
+    width: 50%;
+    height:600px;
+    padding: 3%;
+    padding-top: 0;
+    text-indent: 2em;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.imgBox1{
+    float: right;
+    width: 49%;
+    height:600px;
+    overflow: hidden;
+}
+
+.textBox2{
+    float: right;
+    width: 35%;
+    height:600px;
+    padding: 3%;
+    text-indent: 2em;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.imgBox2{
+    float: left;
+    width: 65%;
+    height:600px;
+    overflow: hidden;
+}
+
+
+/*课程介绍*/
+
+.bannerType3{
+    width: 1350px;
+    height: 786px;
+    background: url(../images/培训课程banner.jpg);
+    margin-bottom: 100px;
+    padding-top: 450px;
+}
+
+
+
+
+.courseNav li{
+   margin:2% 2% 8%;
+}
+
+
+.courseNav img{
+    width: 200px;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s; /* Firefox 4 */
+    -webkit-transition: width 0.5s; /* Safari and Chrome */
+    -o-transition: width 0.5s; /* Opera */
+}
+
+.courseNav img:hover{
+    width:220px;
+}
+
+
+#courseBox{
+   margin: 50px 0;
+}
+#courseBox p{
+   color: white;
+   font-size: 32px;
+   line-height: 55px;
+   text-align: left;
+}
+
+#courseBox .textBoxBorder1{
+   padding: 3%;
+   width: 400px;
+
+}
+
+#courseBox .textBoxBorder2{
+   padding: 3%;
+   width: 700px;
+
+}
+
+#courseBox .textBoxBorder3{
+   padding: 3%;
+   width: 700px;
+
+}
+
+
+
+.courseBox1{
+    width: 810px;
+    height: 450px;
+    background: #454054;
+}
+
+.courseBox2{
+    width: 810px;
+    height: 500px;
+    background: #d77295;
+}
+
+.courseBox3{
+    width: 810px;
+    height: 420px;
+    background: #75c5ac;
+}
+
+
+
+/*其他课程*/
+
+.otherCourse .banner{
+    width: 1350px;
+    height: 1098px;
+    padding-top: 14%;
+    background: url(../images/其他特色课程BG.jpg);
+    margin-bottom: 100px;
+}
+
+
+.courseText1{
+    width: 750px;
+    height: 700px;
+    margin: 0 auto;
+    background: rgba(117,197,171,0.6);
+    padding: 8% 50px 0;
+}
+
+
+
+.courseText1 h1{
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.courseText1 p{
+    color: white;
+    font-size: 20px;
+    text-indent: 2em;
+    letter-spacing: 2px;
+}
+
+
+
+.courseText2{
+   position: relative;
+}
+
+
+.courseText2bg{
+   z-index: 2;
+   background: #7b2826;
+   width: 30px;
+   height: 380px;
+   position: absolute;
+   top: 0;
+   transition:width 0.8s;
+   -webkit-transition:width 0.8s;
+   -moz-transition:width 0.8s;
+   -o-transition:width 0.8s;
+}
+
+.courseText2 .text{
+    position: relative;
+    z-index: 10;
+    padding: 50px;
+}
+
+
+.courseText2:hover .courseText2bg{
+
+   width: 100%;
+}
+
+
+.courseText2 h2{
+    color: #989898;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.courseText2 p{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.courseText3{
+   position: relative;
+}
+
+
+.courseText3bg{
+   z-index: 2;
+   background: #454054; 
+   width: 30px;
+   height: 343px;
+   position: absolute;
+   top: 0;
+   transition:width 0.8s;
+   -webkit-transition:width 0.8s;
+   -moz-transition:width 0.8s;
+   -o-transition:width 0.8s;
+}
+
+.courseText3 .text{
+    position: relative;
+    z-index: 10;
+    padding: 50px;
+}
+
+
+.courseText3:hover .courseText3bg{
+
+   width: 100%;
+}
+
+
+.courseText3 h2{
+    color: #989898;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.courseText3 p{
+    color: white;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+#teacherImg{
+   display: inline-block;
+   float: left;
+}
+
+
+.teacherText1{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    float: left;
+    width: 35.25%;
+    height: 625px;
+    padding: 3%;
+   background: rgba(117,197,172,1);
+
+}
+
+
+
+
+.teacherText1 h2{
+   font-weight: bold;
+   font-size: 22px;
+}
+
+.teacherText1 p{
+   font-size: 18px;
+}
+
+
+
+.teacherText2{
+    letter-spacing: 1px;
+    float: left;
+    font-weight: bold;
+    color: white;
+    width: 35%;
+    height: 625px;
+    padding: 3%;
+    background: rgba(215,114,149,1);
+
+}
+
+
+
+.teacherText2 h2{
+   font-weight: bold;
+   font-size: 22px;
+}
+
+.teacherText2 p{
+   font-size: 18px;
+}
+
+
+
+.teacherText3 {
+    clear: both;
+    height: 350px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5%;
+    background: rgba(164,107,130,0.5);
+    transition:background 0.8s;
+    margin-bottom: 10%;
+}
+
+.teacherText3:hover{
+    background: rgba(164,107,130,0.9);
+}
+
+
+
+.teacherText3 h2{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+
+
+/*招生简章*/
+
+.enrollStudent .banner{
+    width: 1350px;
+    height: 782px;
+    padding-top: 3%;
+    background: url(../images/招生简章banner.jpg);
+    margin-bottom: 100px;
+
+
+}
+
+
+.enrollText1{
+    width: 630px;
+    height: 400px;
+    margin: 0 auto;
+    background: rgba(117,197,171,0.6);
+    padding: 4% 50px 0;
+    color:white;
+
+}
+
+.enrollText1 h1{
+  font-size: 32px;
+}
+
+.enrollText1 a{
+    line-height: 40px;
+    font-size: 26px;
+    color: white;
+    transition:color 0.5s;
+    -webkit-transition:color 0.5s;
+    -moz-transition:color 0.5s;
+    -o-transition:color 0.5s;
+}
+
+.enrollText1 a:hover{
+   color: #006aff;
+}
+
+
+.targetStudent{
+    clear: both;
+    padding-top:30px; 
+    height: 400px;
+
+}
+
+.targetStudent li{
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    float: left;
+    margin-top:50px;
+    padding: 0;
+}
+
+
+.targetStudent li .enNormalBox{
+    width: 220px;
+    height: 220px;
+    padding-top: 30px;
+    padding-left: 20px;
+    float: left;
+    display: block;
+}
+
+.targetStudent li .enLargeBox{
+        z-index: 30;
+}
+
+.targetStudent li:hover .enNormalBox{
+
+}
+
+.targetStudent li:hover .enLargeBox{
+    display: block;
+    position: relative;
+    top: -220px;
+}
+
+
+
+
+
+.downloadWord img{
+    width: 206px;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s; /* Firefox 4 */
+    -webkit-transition: width 0.5s; /* Safari and Chrome */
+    -o-transition: width 0.5s; /* Opera */
+}
+
+.downloadWord img:hover{
+    width:235px;
+}
+
+#tips1{
+   font-size: 20px;
+   letter-spacing: 2px;
+}
+
+
+.testMethod{
+    margin: 50px;
+}
+
+.testMethod li{
+    width: 400px;
+}
+
+.conditions li{
+    width: 100%;
+    height: 330px;
+    margin:3% 0; 
+}
+
+.conditions li p{
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+#primary{
+    padding: 70px 0 0 50px;
+    background: #a46b82 url(../images/初级瑜伽师.jpg) no-repeat;
+    background-position: 98% 10%;
+}
+
+#middle{
+    padding: 110px 0 0 50px;
+    background: #695e74 url(../images/中级瑜伽师.jpg) no-repeat;
+    background-position: 98% 10%;
+}
+
+#advanced{
+    padding: 110px 0 0 50px;
+    background: #25a767 url(../images/高级瑜伽师.jpg) no-repeat;
+    background-position: 98% 10%;
+}
+
+.tips2{
+    font-size: 23px;
+    color: black;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.notice{
+    width: 100%;
+    height: 750px;
+    margin: 5% auto;  
+    color: white;
+    text-align: left;
+}
+
+.notice li{
+    float: left;
+    margin-left: 2.5%;
+    width: 622px;
+    height: 709px;
+    padding: 4%;
+}
+
+.notice h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.notice h2{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.notice p{
+    font-size: 23px;
+}
+
+#notice1{
+    background: url(../images/报名须知配图1.jpg) no-repeat;
+}
+
+#notice2{
+    background: url(../images/报名须知配图2.jpg) no-repeat;
+}

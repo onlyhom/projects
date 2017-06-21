@@ -1,0 +1,807 @@
+
+header{
+	width: 1150px;
+	margin:  0 auto;
+/*	background: pink;*/
+}
+
+header .top{
+	position: relative;
+	padding-top: 20px;
+}
+
+header .top figure{
+  float: left;
+}
+
+header .top .flash{
+  float: left;
+}
+
+
+
+
+header .top .time{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+
+header nav{
+	width: 100%;
+	border-top: 7px solid #6489b2;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+header nav li{
+	margin: 0 20px;
+	line-height: 50px;
+}
+
+
+header nav li:hover{
+	color: #6489b2;
+}
+
+header nav .active{
+	color: #6489b2;
+}
+
+
+
+.banner{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.subBanner{
+	margin-bottom: 20px;
+	width: 100%;
+	height: 245px;
+	overflow: hidden;
+	background: url(../images/banner.jpg);
+	background-position: 50% 20%;
+}
+
+
+
+.main{
+	width: 1150px;
+	margin: 0 auto;
+	min-height: 300px;
+	margin-bottom: 200px;
+}
+
+
+
+
+.indexTitle{
+	border-bottom: 2px solid #6489b2;
+	padding-bottom: 10px;
+	font-size: 23px;
+	color: #6489b2;
+	font-weight: bold;
+	vertical-align: bottom;
+	margin-bottom: 30px;
+}
+
+.indexTitle span{
+    position: relative;
+    top: 10px;
+	font-size: 14px;
+	float: right;
+}
+
+
+
+.indexBox li{
+   background: url(../images/spot.jpg) no-repeat;
+   background-position: left center;
+   padding-left: 10px; 
+   height: 40px;
+   border-bottom: 1px dashed #dcdcdc;
+   line-height: 40px;
+   color: black;
+}
+
+
+
+
+
+.LargeBox{
+	width: 100%;
+/*	background: #eee;*/
+	margin-bottom: 30px;
+}
+
+.LargeBox li{
+	width: 690px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+
+
+
+.LargeBox figure{
+	float: left;
+}
+
+.LargeBox ul{
+	width: 700px;
+	float: right;
+}
+
+.indexBox li a{
+  color: black;
+  font-size: 16px;
+}
+
+.indexBox li a:hover{
+	color: gray;
+}
+
+.middleBox{
+	float: left;
+	width: 700px;
+	display: inline-block;
+}
+
+
+.middleBox li{
+/*	height: 38px;
+	line-height: 38px;*/
+/*	margin-bottom: 3px;*/
+	width: 700px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+
+.smallBox{
+	float: right;
+	width: 400px;
+	display: inline-block;
+}
+
+.smallBox li{
+	width: 380px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+.brandPromotion{
+	margin-top: 50px;
+}
+
+.brandPromotion figure{
+	display: inline-block;
+/*	min-width: 30%;*/
+/*	background: pink;*/
+	margin: 15px 10px;
+}
+
+footer{
+	padding: 25px 0;
+	background: #aaaaaa;
+}
+
+.footer{
+	width: 1150px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer p{
+	line-height: 25px;
+	color: white;
+}
+
+.footer a{
+	display: inline-block;
+	color: white;
+	margin-bottom: 8px;
+}
+
+.footer a:hover{
+	color: #eee;
+}
+
+/*子页*/
+
+.subTitle{
+	border-bottom: 2px solid #6489b2;
+	padding-bottom: 10px;
+	font-size: 23px;
+	color: #6489b2;
+	font-weight: bold;
+	vertical-align: top;
+	margin-bottom: 30px;
+}
+
+.subTitle div{
+   position:relative;
+   top: 5px; 
+   display: inline-block;
+   width: 4px;
+   height: 24px;
+   background: #6489b2;
+   margin-right: 27px;
+}
+
+
+.aboutUs figure{
+	width: 100%;
+	height: 255px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+
+.aboutUs figure img{
+/*	width: 100%;*/
+}
+
+.aboutUs p{
+	text-indent: 2em;
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+
+/*news*/
+
+.articleList{
+	width: 700px;
+/*	background:pink;*/
+}
+
+.articleList h2{
+  font-size: 22px;
+  margin: 15px 0 10px;
+}
+
+.articleList h2:hover{
+	text-decoration: underline;
+}
+
+
+.articleList p{
+	font-size: 16px;
+	line-height: 21px;
+	height: 63px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	color: black;
+}
+
+
+.articleList p:hover{
+	color: gray;
+}
+
+
+
+.articleList .info{
+	margin-top: 20px;
+}
+
+.articleList .info i{
+	display: inline-block;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #a3a3a3;
+}
+
+.articleList .info a{
+	display: inline-block;
+	float: right;
+	color: #6489b2;
+}
+
+.articleList .info a:hover{
+	color: gray;
+}
+
+.articleList li{
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 10px;
+	margin-top: 25px;
+}
+
+.articleList li figure{
+	width: 700px;
+}
+
+
+.articleList li figure img{
+	width: 100%;
+}
+
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+
+.latestList{
+	width: 400px;
+/*	background: #eee;*/
+}
+
+.latestList .title{
+	margin-top: 25px;
+	border-bottom: 1px solid #6489b2;
+}
+
+.latestList .title h2{
+	color: white;
+	font-size: 16px;
+	width: 105px;
+	height: 35px;
+	line-height: 35px;
+	background: #6489b2;
+	text-align: center;
+}
+
+.latestList li{
+   width: 380px;
+   overflow: hidden;
+   white-space:nowrap;
+   text-overflow:ellipsis;
+   background: url(../images/spot.jpg) no-repeat;
+   background-position: left center;
+   padding-left: 10px; 
+   height: 40px;
+   border-bottom: 1px dashed #dcdcdc;
+   line-height: 40px;
+   color: black;
+}
+
+.latestList li a{
+  color: black;
+}
+
+.latestList li a:hover{
+	color: gray;
+}
+
+
+.articleList .pages{
+	color: black;
+	text-align: center;
+	font-size: 16px;
+	margin: 30px 0;
+}
+
+.articleList .pages i{
+	font-style: normal;
+}
+
+
+.articleList .pages a{
+	display: inline-block;
+	color: black;
+	margin:  0 5px;
+}
+.articleList .pages a:hover{
+	color: gray;
+}
+
+
+
+.red{
+	color: #f00000;
+}
+
+
+.articleList .pages input[type="text"]{
+	color: #f5a842;
+	width: 40px;
+	text-align: center;
+	border: 1px solid black;
+	margin-right: 3px;
+}
+
+.articleList .pages p{
+	display: inline;
+	margin:  0 5px;
+}
+
+
+
+/* *******************newsDetail*****************  */
+
+/*文章列表*/
+
+.article{
+  width: 700px;
+  margin-top: 25px;
+}
+
+
+.artTitle h1{
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.artTitle p{
+  display: inline-block;
+}
+
+.artAbstract{
+  background: #eee;
+  padding: 10px 15px;
+  margin: 30px 0;
+} 
+
+
+.studyPicBorder{
+  width: 446px;
+  height: 286px;
+  background: white;
+  border: 1px solid #d2d2d2; 
+  margin-bottom: 30px;
+}
+
+.studyPic{
+  width: 433px;
+  height: 274px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+
+.studyPic img{
+  width: 100%;
+}
+
+.essay{
+  border-bottom: 1px dashed #d2d2d2;
+}
+
+
+.essay p{
+  text-indent: 2em;
+  margin-bottom: 15px;
+  text-align: left;
+  line-height: 22px;
+}
+
+.essayPages{
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+
+.essayPages a{
+  text-decoration: underline;
+  line-height: 22px;
+  display: inline-block;
+  width: 220px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+
+
+/* ****************members****************** */
+/*会员专区*/
+
+.members{
+
+
+}
+
+
+.members{
+  width: 100%;
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.members li{
+  color: black;
+  margin-right: 10px;
+}
+
+.members li h1{
+  background: #000;
+  width: 140px;
+  height: 36px;
+  background: #dcdcdc;
+  color: black;
+  text-align: center;
+  line-height: 36px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.members li .contens{
+  width: 100%;
+  position: absolute;
+  margin-top: 50px;
+  top: 0;
+  left: 0;
+  display: none;
+/*  background: pink;*/
+}
+
+.members li .contens p{
+  text-indent: 2em;
+  line-height: 30px;
+  margin: 10px 0; 
+}
+
+.members li .active{
+  background: #6489b2;
+  color: white;
+}
+
+.members li .contens table{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.members li .contens table tr{
+	height: 48px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+
+}
+
+.members li .contens table th{
+	background: #f8f8f8;
+}
+
+
+
+
+/* ****************recruits****************** */
+/*人才招聘*/
+
+
+.recruits{
+	width: 700px;
+	padding-bottom: 100px;
+	margin-top: 10px;
+
+}
+
+.recruits li{
+	width: 100%;
+/*	background: pink;*/
+	color: black;
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+
+.recruits li h2{
+	font-size: 23px;
+	cursor: pointer;
+}
+
+.recruits li h2:hover{
+	text-decoration: underline;
+}
+
+.recruits li h3{
+	font-size: 19px;
+	margin: 10px 0 20px;
+}
+
+
+
+.recruits .info{
+	margin-top: 20px;
+}
+
+.recruits .info i{
+	display: inline-block;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #a3a3a3;
+}
+
+.recruits .info a{
+	display: inline-block;
+	float: right;
+	color: #6489b2;
+}
+
+.recruits .info a:hover{
+	color: gray;
+}
+
+
+/* ****************recruitsDetail****************** */
+/*人才招聘内容*/
+
+
+
+
+.recruitsDetail{
+	width: 700px;
+/*	background: pink;*/
+	padding-bottom: 100px;
+}
+
+.recruitsDetail .title{
+	padding: 20px 0 10px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px;
+	color: black;
+}
+
+.recruitsDetail .title h2{
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.recruitsDetail .title i{
+	font-style: normal;
+	letter-spacing: 1px;
+}
+
+.recruitsDetail h3{
+	margin: 20px 0 10px;
+	font-size: 18px;
+	color: black;
+	line-height: 28px;
+}
+
+.recruitsDetail p{
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.recruitsDetail a{
+	display: inline-block;
+	margin-top: 30px;
+	color: #6489b2;
+/*	font-weight: bold;*/
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+
+
+
+/* ****************contactUs****************** */
+/* 联系我们 */
+
+
+    .contactUs{
+/*    	background: #eee;*/
+    }
+
+
+    .sectionContact{
+/*      width: 1000px;
+      margin: 0 auto;*/
+/*      padding-bottom: 80px;*/
+    }
+
+
+    .sectionContact .lside{
+/*      float: left;*/
+/*      width: 45%;*/
+      height: 300px;
+/*      margin-right:65px;*/
+      margin-top: 50px;
+/*      display: inline-block;*/
+/*      background: pink;*/
+    }
+
+
+    .sectionContact .lside figure{
+      margin-bottom: 20px;
+    }
+
+    .sectionContact .lside figure img{ 
+      width: 249px;
+    }
+
+    .sectionContact .lsideTitle{
+
+      font-size:20px;
+      font-weight: bold;
+    }
+
+    .sectionContact .lsideText{
+      font-size:15px;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+
+    .sectionContact .lside ul{
+      margin-top: 30px;
+      background: url("../images/信息.jpg") no-repeat;
+      height: 130px;
+    }
+
+    .sectionContact .lside li{
+      display: inline-block;
+      height: 32px;
+      font-size: 15px;
+      line-height: 32px;
+      color: black;
+      margin-bottom: 2px;
+      padding-left: 35px;
+
+    }
+
+    .sectionContact .contact a{ 
+      margin-right: 12px;
+
+    }
+
+
+    .sectionContact .rside{
+/*      margin-top: 50px;*/
+      display: inline-block;
+      width: 48%;
+      float: left;
+/*      background: orange;*/
+    } 
+
+    .sectionContact .rside img{
+      margin-bottom: 30px;
+    }
+
+
+
+    .sectionContact .subButton{
+      width: 140px;
+      height: 38px;
+      background: #6489b2;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .sectionContact .red{
+      color: red;
+      margin-right: 5px;
+    }
+
+
+    .sectionContact .rside input[type='text']{
+      background:#fcfcfc; 
+      border:1px solid black;
+      margin-bottom: 20px;
+      height: 30px;
+      padding-left: 10px;
+      color: #373737;
+      letter-spacing: 1px;
+    }
+
+    .sectionContact .rside textarea{
+      background:#fcfcfc; 
+      border:1px solid black;
+      margin-bottom: 20px;
+      padding-left: 5px;
+      color: #373737;
+      letter-spacing: 1px;
+    }
+
+
+

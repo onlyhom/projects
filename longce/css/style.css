@@ -1,0 +1,1011 @@
+
+body{
+	background: #47443f;
+}
+
+
+h1, h2, h3, h4, h5, h6 ,ul,.row{
+  margin: 0;
+  font-size: 13px;
+}
+
+
+a{
+  color: #333; 
+  transition:all 0.3s;
+}
+
+a:hover{
+  color: #ffcc4a!important;
+  text-decoration: none;
+}
+
+
+.image{
+	display: block;
+	width: 234px;
+	height: 156px;
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+
+
+.contain{
+	min-height: 200px;
+}
+
+
+.fullContain{
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+.fixShortWidth{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.fixWidth{
+	height: 100%;
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.fixWidth:after{
+	content: "."; 
+	display: block; 
+	height:0; 
+	clear:both; 
+	visibility: hidden;
+}
+
+
+
+.content:after{
+	content: "."; 
+	display: block; 
+	height:0; 
+	clear:both; 
+	visibility: hidden;
+}
+
+
+.header{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 150px;
+	background: #645f53;
+	background: rgba(100,95,83,0.7);
+	overflow: hidden;
+	z-index: 99;
+}
+
+.header .logo{
+	width: 210px;
+	height: 150px;
+	display: inline-block;
+}
+
+.header .logo img{
+	width: 100%;
+	height: 100%;
+} 
+
+.header .headerNav{
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+
+.header .headerNav a{
+	color: white;
+	font-size: 14px;
+}
+
+.header .headerNav li{
+	margin-left: 25px;
+}
+
+.header .headerNav .on a{
+	color: #ffcc4a;
+}
+
+.header .languageShift{
+	position: absolute;
+	right: 0;
+	top:0;
+	color: #d8d5ce;
+	line-height: 40px; 
+}
+
+.header .languageShift a{
+	color: #d8d5ce; 
+	font-size: 12px;
+}
+
+
+.indexBanner{
+	display: block;
+	border-bottom: 4px solid #373025;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	height: 654px;
+	margin-top: 40px;
+/*	background: #000;*/
+}
+
+.indexBanner li{
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	top:0;
+	display: none;
+}
+
+
+.indexBanner img{
+	display: block;
+	width: 100%;
+}
+
+.footer{
+	color: #928c7c;
+	min-height: 150px;
+}
+
+.footer a{
+	color: #928c7c;	
+}
+
+.footer .top{
+	padding: 12px 0;
+}
+
+
+.footer .footerNav{
+	float: left;	
+}
+
+.footer .footerNav li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+.footer .links{
+	float: right;
+}
+
+.footer .links li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.footer .links i{
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+
+.footer .bottom{
+	padding-top: 10px;
+	border-top: 1px solid #928c7c;
+}
+
+
+.footer .bottom h2{
+	float: left;
+}
+
+.footer .bottom h3{
+	float: right;
+}
+
+
+
+/*引导页*/
+
+
+
+.guideView{
+	position: absolute;
+	z-index: 997;
+	width: 100%;
+	height: 100%;
+	transition:all 1.1s;
+	opacity: 1;
+	top:0;
+	transform: scale(1); 
+}
+
+.guideView-Animate{
+	opacity: 0;
+	z-index: -1;
+/*	top: -120%;*/
+	transform: scale(1.3); 
+}
+
+
+
+
+
+.guideBG:before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	position: absolute;z-index: 998;
+	top: 0;
+	left: 0;
+}
+
+
+.guideBG{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0; 
+/*    top: -40px;*/
+	overflow: hidden;
+	transition:all 1s;
+	opacity: 0.95;
+	transform: scale(1.2); 
+}
+
+
+.guideBG-animate{
+/*    top: 0;*/
+    opacity: 1;
+	transform: scale(1); 
+}
+
+
+
+
+
+.guideBG li{
+	position: absolute;
+	width: 100%;
+	display: none;
+	z-index: 0;
+}
+
+.guideBG li img{
+	width: 100%;
+}
+
+
+.guideNav{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	z-index: 999;
+	background: rgba(0,0,0,0.6);
+	bottom: 20%;
+	opacity: 0;
+	transition:all 1.1s;
+}
+
+.guideNav-animate{
+	opacity: 1;
+	bottom: 25%;
+}
+
+
+
+.guideNav .logo{
+	display: inline-block;
+	width: 212px;
+	height: 80px;
+	text-align: center;
+}
+
+
+.guideNav .logo img{
+	height: 80px;
+}
+
+
+.guideNav ul{
+	float: right;
+}
+
+
+.guideNav ul li{
+	float: left;
+	width: 100px;
+	height: 80px;
+	margin-left: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.guideNav ul li div{
+	width: 96px;
+	height: 76px;
+	display: inline-block;
+	border: 2px solid transparent;
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+.guideNav ul li:hover div{
+    border: 2px solid #e3c68e;
+}
+
+.guideNav ul .on div{
+    border: 2px solid #e3c68e;
+}
+
+
+.guideNav .textAnimate{
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+	cursor: pointer;
+	color: #ecc473;
+	height: 20px;
+	line-height: 22px;
+	overflow: hidden;
+}
+
+
+
+.guideNav .textAnimate h2{
+	font-size: 17px;
+	line-height: 22px;
+	position: relative;
+	top: 0;
+	transition:all 0.4s;
+}
+
+.guideNav .textAnimate:hover h2{
+	top: -20px;
+}
+
+
+.guideNav .textAnimate i{
+	color: white;
+	display:block;
+	line-height: 20px;
+}
+
+
+/*子页公共部分*/
+
+
+.main{
+	margin-top: 40px;
+/*	min-height: 650px;*/
+	background: white;
+	border-top: 110px solid #867e67;
+	padding: 35px 0;
+}
+
+.main:after{
+	content: "."; 
+	display: block; 
+	height:0; 
+	clear:both; 
+	visibility: hidden;
+}
+
+
+.leftInfo{
+	width: 210px;
+	background: #6a6660;
+	float: left;
+	color: white;
+	padding: 15px;
+}
+
+
+.leftInfo ul{
+/*	background: orange;*/
+	display: block;
+}
+
+.leftInfo li{
+	background: url(../images/contactIcon1.png) no-repeat top left;
+	display: block;
+	margin-bottom: 10px;
+	padding-top: 25px;
+}
+
+
+.leftInfo .leftIcon1{background-image: url(../images/contactIcon1.png);}
+.leftInfo .leftIcon2{background-image: url(../images/contactIcon2.png);}
+.leftInfo .leftIcon3{background-image: url(../images/contactIcon3.png);}
+
+
+
+.leftInfo .contactBox{
+	background: #bcbab6;
+	padding: 25px 15px;
+	margin-top: 20px;
+	color: #6a6660;
+
+}
+
+
+.leftInfo .contactBox i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/subIcon.png);
+	vertical-align: middle;
+	margin: 0 3px;
+}
+
+
+.leftInfo .contactBox .weibo{background-position: 0 0px}
+.leftInfo .contactBox .qq{background-position: -20px 0px}
+.leftInfo .contactBox .weixin{background-position: -40px 0px}
+
+
+
+
+
+.rightContent{
+	float: right;
+	width: 960px;
+	min-height: 450px;
+/*	background: #d7d7d7;*/
+}
+
+
+.rightContent .rightMenu{
+	display: block;
+	margin-bottom: 35px;
+}
+
+.rightContent .rightMenu a{
+	transition:none;
+}
+
+
+.rightContent .rightMenu li{
+	display: inline-block;
+	width: 106px;
+	height: 35px;
+	line-height: 35px;
+	background: url(../images/subNavBG.jpg) no-repeat left -35px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 10px;
+}
+
+
+.rightContent .rightMenu li:hover{
+	background-position: left top;
+	color: white;
+}
+
+
+.rightContent .rightMenu .on{
+	background-position: left top;
+	color: white;
+}
+
+.caseList{
+	width: 100%;
+	display: block;
+}
+
+.caseList:after{
+	content: "."; 
+	display: block; 
+	height:0; 
+	clear:both; 
+	visibility: hidden;
+}
+
+
+.caseList li{
+	width: 23%;
+	height: 165px;
+	float: left;
+	margin-right: 2.6%;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.caseList li:nth-child(4n){
+	margin-right: 0;
+}
+
+
+.caseList li:hover a{
+	color: white!important;
+}
+
+
+
+
+.caseList li img{
+	width: 100%;
+}
+
+.caseList li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+.caseList li .image{
+	width: 100%;
+	height: 100%;
+
+}
+
+.caseList li .text{
+	display: block;
+	background: #a98745;
+	background: transparent;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+	padding: 20px;
+	transition:all 0.3s;
+}
+
+.caseList li:hover .text{
+	background: rgba(196,143,41,0.92);	
+}
+
+
+.caseList li .text h2{
+	font-size: 15px;
+	line-height: 20px;
+	margin: 40px 0 20px;
+	max-height: 40px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	position: relative;
+	transition:all 0.3s;
+	top: -100%;
+}
+
+.caseList li:hover h2{
+	top: 0;
+}
+
+.caseList li .text h3{
+	position: relative;
+	transition:all 0.4s;
+	top: 100%;
+}
+
+.caseList li:hover h3{
+	top: 0;
+}
+
+.more{
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin:0 auto;
+	color: #4d4d4d;
+	border: 1px solid #bcbab6;
+	border-radius: 5px;
+	line-height: 35px;
+	cursor: pointer;
+	margin-top: 30px;
+	background: #eee;
+}
+
+.more:hover{
+	background: #fff;	
+}
+
+
+/*主创团队*/
+
+
+.team .leftImage{
+	float: left;
+	width: 380px;
+}
+
+.team .leftImage img{
+	width: 100%;
+}
+
+.team .text{
+	float: right;
+	width: 540px;
+	padding-top: 70px;
+}
+
+.team .teamDetail{
+	font-size: 15px;
+	color: #7a7a7a;
+}
+
+.team .text h2{
+	color: #063e55;
+	font-size: 19px;
+	margin-bottom: 15px;
+}
+
+
+.team .text h2 i{
+	font-size: 23px;
+	color: #cc9829;
+	margin-right: 5px;
+}
+
+
+/*新闻*/
+
+.newsList{
+	display: block;
+}
+
+
+.newsList li{
+	display: block;
+	margin-bottom: 35px;
+}
+
+
+.newsList li:after{
+	content: "."; 
+	display: block; 
+	height:0; 
+	clear:both; 
+	visibility: hidden;
+}
+
+
+.newsList .left{
+	width: 100px;
+	float: left;
+	color: #727272;
+	text-align: center;
+}
+
+.newsList .date{
+	border: 1px solid #c9af7b;
+	width: 100px;
+	height: 100px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.newsList .date h3{
+	font-size: 33px;
+	font-weight: bold;
+	color: #b47c05;
+	margin-bottom: 5px;
+}
+
+
+
+
+.newsList .right{
+	float: right;
+	width: 820px;
+}
+
+
+
+
+
+
+.newsList .right h1{
+	font-size: 18px;
+	color: #454545;
+}
+
+.newsList .right .author{
+	color: #787878;
+	margin: 5px 0;
+}
+
+.newsList .right h2{
+	color: #787878;
+	line-height: 16px;
+	height: 32px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.newsList .right a{
+	font-size: 12px;
+	color: white;
+	background: #b47c05;
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.newsList .right a:hover{
+	background: #c68b0d;
+	color: white!important;
+}
+
+
+/* 新闻详情 */
+
+.newsDetail{
+	color: #454545;
+}
+
+.newsDetail .top{
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	padding:0 20px 10px 20px;
+}
+
+.newsDetail .top h1{
+	font-size: 20px;	
+	margin-bottom: 10px;
+	color: #454545;
+}
+
+.newsDetail .info{
+	color: #787878;
+	font-size: 12px;
+}
+
+
+
+.newsDetail .newsContent{
+	padding: 20px;
+}
+.newsDetail .newsContent img{
+	max-width: 100%;
+}
+
+
+.newsDetail .bottom{
+	border-top: 1px solid #eee;
+	padding: 20px;
+}
+
+.newsDetail .bottom a{
+	display: inline-block;
+	width: 260px;
+	overflow: hidden;
+  	white-space:nowrap;
+  	text-overflow:ellipsis;
+  	transition:none;
+}
+
+
+.newsDetail .bottom a:hover{
+	color: #ac8218!important;
+}
+
+
+.newsDetail .bottom .prePage{
+	float: left;
+}
+
+.newsDetail .bottom .nextPage{
+	float: right;
+}
+
+
+
+/*公司简介*/
+
+
+.about .leftImage{
+	float: left;
+	width: 500px;
+}
+
+.about .leftImage img{
+	width: 100%;
+}
+
+.about .text{
+	float: right;
+	width: 410px;
+	padding-top: 70px;
+}
+
+.about .teamDetail{
+	font-size: 15px;
+	color: #7a7a7a;
+}
+
+.about .text h2{
+	color: #063e55;
+	font-size: 19px;
+	margin-bottom: 15px;
+}
+
+
+.about .text h2 i{
+	font-size: 23px;
+	color: #cc9829;
+	margin-right: 5px;
+}
+
+
+
+
+
+/* *******鼠标点击左右滚动********  */
+
+
+.goPrev{
+    text-align: left;
+    float: left; 
+}
+
+.goNext{
+    text-align: right;
+    float: right;
+}
+
+
+
+.goPrev span{
+    display: inline-block;
+    width: 21px;
+    height: 35px;
+    background-image: url(../images/arrow-left.png);
+    background-repeat:no-repeat;
+    cursor: pointer;
+    opacity: 0.5;
+    margin-top: 30px;
+}
+
+.goPrev span:hover{
+    opacity: 1;
+}
+
+
+.goNext span{
+    display: inline-block;
+    width: 21px;
+    height: 35px;
+    background-image: url(../images/arrow-right.png);
+    background-repeat:no-repeat;
+    cursor: pointer; 
+    opacity: 0.5;
+    margin-top: 30px;
+}
+
+.goNext span:hover{
+    opacity: 1;
+}
+
+
+ .viewOuter{width:100%; overflow:hidden; margin: 15px 0; /*background: #eee;*/}
+ .viewShow{width:435px; overflow:hidden;position:relative;height:92px; margin-left: 12px; float: left; /*background: pink;*/}
+ .viewContent{ width:200%;position:absolute;left:0px;top:0px; padding: 0; /*background: orange; */  }
+ .viewContent ul li{ float:left; }
+
+
+
+
+.picList li{
+  width: 135px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.picList li .image{
+	width: 100%;
+	height: 90px;
+	overflow: hidden;
+	background-image: url(images/guideBG5.jpg);
+	border: 2px solid transparent;
+}
+
+.picList .on .image{
+	border: 2px solid #eaaa10;
+}
+
+
+.about .largePic{
+	width: 100%;
+	height: 320px;
+	position: relative;
+}
+
+.about .largePic .image{
+	width: 100%;
+	height: 320px;
+	position: absolute;
+	top: 0;
+}
+
+
+.caseDetail{
+	border: 50px solid #191819;
+	background: #545253;
+	min-height: 500px;
+	color: #fffeff;
+	padding: 50px;
+	margin: 50px 0;
+}
+
+.caseDetail .images{
+	/*margin-top: 20px;*/
+}
+
+.caseDetail .images img{
+	max-width: 100%;
+	margin: 10px 0;
+}
+
+.caseDetail .pageBtn{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: #191819 url(../images/arrow-left-white.png) no-repeat;
+	background-size: 15px;
+	background-position: 42% 50%;
+	position: fixed;
+	top: 45%;
+	cursor: pointer;
+}
+
+.caseDetail .pageBtn:hover{
+	background-color: #2b2928;
+}
+
+.caseDetail .pageBtn a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+.caseDetail .preCase{
+	background-image:url(../images/arrow-left-white.png);
+	background-position: 42% 50%;
+	margin-left: -200px;
+}
+
+.caseDetail .nextCase{
+	background-image:url(../images/arrow-right-white.png);
+	background-position: 55% 50%;
+	margin-left: 950px;
+}
