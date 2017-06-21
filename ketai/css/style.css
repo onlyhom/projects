@@ -1,0 +1,780 @@
+
+/*@media only screen and (min-width:1400px){
+  body{zoom:0.85;}
+}
+*/
+
+@media (max-width:1400px) {
+  body{zoom:0.8;}
+}
+
+    html { 
+      overflow-x: hidden; 
+      overflow-y: auto; 
+} 
+
+    #container{
+      width: 1920px;
+      margin:0 auto;
+      font-family: Arial,'微软雅黑','黑体', sans-serif;
+      position:absolute;
+      left:50%;margin-left:-960px;
+
+    }
+
+
+    #header{
+      width: 1920px;
+      height: 88px;
+      border-top: 6px solid #1e8cda;
+      box-shadow: #666 0px 0px 10px;
+      background: white;
+      position:fixed;
+      z-index: 1000;
+
+    }
+    #headerBox{
+      width: 1920px;
+      height: 88px;
+/*      margin-bottom: 88px;*/
+    }
+
+    #head{
+      width:1200px;
+      height: 88px;
+      margin:0 auto;
+    }
+
+    #logo{
+      float: left;
+      margin-top: 20px;
+    }
+
+    #nav{
+      display: inline-block;
+      margin-left: 50px;
+
+    }
+
+	  #nav a{
+      display: inline-block;
+      width: 120px;
+      height: 88px;
+      text-align: center;
+      line-height: 88px;
+      font-size: 16px;
+      color: black;
+	  }
+
+    #nav a:hover{
+      background: #1e8cda;
+      color: white;
+    }
+
+
+
+    #banner{
+      width: 1920px;
+      height: 260px;
+      background: url("../images/publicBanner.jpg");
+    }
+
+    #banner p{
+      position: absolute;
+      top: 180px;
+      left: 360px;
+      font-size: 35px;
+      font-weight: bold;
+      color: white;
+    }
+
+    #banner span{
+      font-size: 14px;
+      color: #1f8cde;
+    }
+
+
+/*pageFooeter*/
+
+    #pageFooter{
+     clear: both;
+     position: relative;
+    }
+
+    #sectionContact{
+      background: #192025;
+      width: 1920px;
+      height: 350px;
+      color: white;
+
+    }
+
+
+    #sectionContactMain{
+      width: 1200px;
+      margin: 0 auto;
+      padding: 35px 0;
+
+    }
+
+
+
+    #lside{
+      float: left;
+    	width: 560px;
+    	height: 300px;
+    	margin-right:250px;
+    	display: inline-block;
+    }
+
+
+
+
+    #lside li{
+      padding-left:30px;
+      display: inline-block;
+      height: 35px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    #contact a{ 
+      margin-right: 12px;
+
+    }
+
+
+    #rside{
+      display: inline-block;
+      width: 300px;
+      float: left;
+
+    } 
+
+    #rside a{
+      position: relative;
+      top: -40px;
+      display: inline-block;
+      margin:0 20px 20px 0;
+      color: white;
+    }
+
+
+
+    #footer{
+      clear: both;
+      height: 77px;
+      width: 1920px;
+      background: black;
+      color: white;
+      line-height: 30px;
+      padding-top: 20px;
+      margin: 0 auto;
+      z-index: 999;
+    }
+
+    #footer p{
+      color: white;
+
+    }
+
+
+
+  /*关于我们*/
+
+    #aboutUsPage{
+      width: 1200px;
+      height: 1000px;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+
+    #topLeft{
+      width: 580px;
+      display: inline-block;
+    }
+
+    #topTitle{
+      background: url("../images/aboutUs.jpg") no-repeat;
+      padding-left: 200px;
+      padding-top: 40px;
+      height: 134px;
+      width: 380px;
+      font-size: 22px;
+
+    }
+
+    #topLeft p{
+      line-height: 20px;
+      font-weight: bold;
+    }
+
+
+    #topRight{
+      width: 500px;
+      margin-left: 85px;
+      display: inline-block;
+    }
+
+    #enterpriseCulture{
+      padding-top: 50px;
+
+    }
+
+
+    #enterpriseCulture img {
+      display: inline-block;
+      margin-right: 78px;
+
+    }
+
+    #noneMarginRight{
+       display: inline-block;
+
+    }
+
+    #noneMarginRight img{
+        margin: 0;
+    }
+
+
+
+  /*产品展示*/
+
+     #productShowPage{
+      width: 1200px;
+      height: 1500px;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+
+    #productShowPic img{
+      margin-bottom: 30px;
+      border: 1px solid #e1e1e1;
+      width: 1200px;
+    }
+
+
+
+     #productNav{
+      margin:20px 0;
+      height: 50px;
+
+    }
+
+     #productNav li{
+      color: #1e1e1e;
+      margin: 0 12px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 50px;
+      display: inline-block;
+
+    }
+
+     #productNav li:hover{
+      border-bottom: 3px solid #a0a0a0;
+      color: #a0a0a0;
+
+    }
+
+
+      /*产品详情*/
+
+    #productDetailPage{
+      width: 1200px;
+      margin: 0 auto;
+      padding: 50px;     
+
+    }
+
+    #infoRight{
+      width: 550px;
+      height: 225px;
+      padding-left: 280px;
+      display: inline-block;
+      text-align: top;
+      background: url("../images/产品详情.jpg") no-repeat;
+
+    }
+
+    #infoTitle{
+      width: 375px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 30px;
+      border-bottom: 1px solid #eee;
+
+
+    }
+
+    #abstractBar{
+
+      height: 43px;
+      line-height: 43px;
+      background: #eee;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+
+
+    #infoText{
+      padding: 10px;
+      line-height: 19px;
+    }
+
+    #infoText p{
+      text-indent: 2em;
+    }
+
+
+    #productDetailFooter {
+      display: block;
+      float: right;
+      margin:40px 50px 50px 0;
+      height: 100px;
+      width: 220px;
+      text-align: left;
+      text-decoration: underline;
+      line-height: 25px;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+    }
+
+
+   .textDelete{
+
+       text-decoration: line-through;
+    }
+
+   .textRed{
+      color: red;
+      font-weight: bold;
+   } 
+
+
+      /*解决方案*/
+
+    #solutionPage{
+      width: 1200px;
+      height: 1320px;
+      margin: 0 auto;
+      padding: 50px;     
+
+    }
+
+    #solutionPic {
+      display: inline-block;
+      width: 390px;
+      height: 450px;
+      font-size: 18px;
+      margin: 20px 5px 20px 0;
+
+    }
+
+    #solutionPic img{
+      border:1px solid #e5e5e5; 
+      width: 390px;
+      height: 412px;
+
+    }
+
+
+    #pages{
+      margin-left:20px; 
+      letter-spacing: 2px;
+
+    }
+
+    #pages a{
+      padding: 3px;
+      border: 1px solid #d5d5d5;
+      margin-right:5px;
+    }
+
+    #currentPage{
+      color: red;
+    }
+
+
+    /*工程案例*/
+
+    #projectCasePage{
+
+      width: 1200px;
+      height: 1350px;
+      margin: 0 auto;
+      padding: 50px; 
+
+    }
+
+    .case{
+      display: inline-block;
+      width: 380px;
+      height: 352px;
+      margin: 30px 7px 10px 5px;
+
+    }
+
+    #caseInfo{
+      width: 380px;
+      height: 70px;
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    #caseInfo p{
+     display: inline-block;
+     padding-left: 10px;
+
+    }
+
+    #cName{
+      padding-top: 8px;
+      display: inline-block;
+      height: 30px;
+      width: 370px;
+      border-bottom: 2px dashed #eee;
+      margin-bottom: 4px;
+    }
+
+
+
+
+      /*案例详情*/
+
+    #projectCasesDetailPage{
+
+      width: 1200px;
+/*      height: 1000px;*/
+      margin: 0 auto;
+      padding-top: 50px; 
+
+    }
+
+
+    #caseDetailTitle {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #caseDetailHeader {
+     margin-top: 40px;
+    }
+
+
+    #caseDetailHeader p{
+     display: inline;
+    }
+
+
+    #caseDetailPicture img{
+      width: 435px;
+      height: 275px;
+      margin-bottom: 10px;
+      padding: 4px;
+      border: 1px solid #d2d2d2;  
+    }
+
+    #caseDetailText p{
+      text-indent: 2em;    
+    }
+
+    #caseDetailFooter {
+
+      display: block;
+      float: right;
+      margin:40px 50px 50px 0;
+      height: 100px;
+      width: 220px;
+      text-align: left;
+      text-decoration: underline;
+      line-height: 25px;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+    }
+
+
+
+
+      /*新闻中心*/
+
+    #newsPage{
+
+      width: 1200px;
+/*    height: 1000px;*/
+      margin: 0 auto;
+      padding-top: 50px; 
+
+    }
+
+
+    #newsList{
+       width: 1150px;
+
+
+    }
+
+    #newsList li{
+       height: 55px;
+       line-height: 52px;
+       border-bottom: 1px dashed #d3d3d3;
+    }
+
+    #newsList a{
+       text-align: center;
+       padding-left:25px; 
+       color: #343434;
+    }
+
+    .newsTime{
+      color: #8d8d8d;
+      float: right;
+      margin-right: 10px;
+     }
+
+    #orangePoint{
+      position: relative;
+      top: 28px;
+      left: 15px;
+      width: 5px;
+      height: 5px;
+      border-radius:3px;
+      background:orange;
+
+    }
+
+
+
+
+
+
+      /*新闻详情*/
+
+    #newsDetailPage{
+
+      width: 1200px;
+/*      height: 1000px;*/
+      margin: 0 auto;
+      padding-top: 50px; 
+
+    }
+
+
+    #newsDetailTitle {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #newsDetailHeader {
+     margin-top: 40px;
+    }
+
+
+    #newsDetailHeader p{
+     display: inline;
+    }
+
+
+    #newsDetailPicture img{
+      width: 435px;
+      height: 275px;
+      margin-bottom: 10px;
+      padding: 4px;
+      border: 1px solid #d2d2d2;  
+    }
+
+    #newsDetailText p{
+      text-indent: 2em;    
+    }
+
+    #newsDetailFooter {
+      display: block;
+      float: right;
+      margin:40px 50px 50px 0;
+      height: 100px;
+      width: 220px;
+      text-align: left;
+      text-decoration: underline;
+      line-height: 25px;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      overflow: hidden;
+    }
+
+
+
+   /*人才招聘*/
+   #recruitmentPage{
+
+      width: 1200px;
+/*      height: 1000px;*/
+      margin: 0 auto;
+      padding-top: 50px; 
+   }
+
+    #artCenter{
+      width: 1000px;
+      margin:0 auto; 
+    }
+
+    #art_intro{
+      display: inline;
+      float: left;
+      padding-left: 20px;
+    }
+    
+    #art_position{
+      float: right;
+      padding-right: 15px;
+      color: #8b8b8b;
+    }
+         
+    #art_text{
+      width: 860px;
+      padding: 30px 8px;
+      line-height: 25px;
+      font-weight: bold;
+      letter-spacing:1px;
+    }
+
+    .font_orange{
+    
+      color: orange;
+      font-size: 18px;
+    }
+
+    .font_orange2{
+    
+      color: orange;
+      font-size: 15px;
+    }
+
+
+
+
+/* 首页-产品展示*/
+    #productDisplay{
+      clear: both;
+      height: 880px;
+      width: 1920px;
+      background: #eee url("../images/产品展示BG.jpg") no-repeat ;
+      color: black;
+      line-height: 30px;
+      padding-top: 80px;
+      background-position:50% 66%;
+      position: relative;
+
+    }
+ 
+
+
+    #intro{
+      position: relative;
+      top:160px;
+      left: 1200px; 
+      color: white;
+      width: 365px;
+      height: 508px;
+    }
+
+    #intro button{
+      background: #6e4f3b;
+      color: white;
+      width: 90px;
+      height: 30px;
+      border: 1px solid #6e4f3b;
+    }
+
+
+    #intro h2{
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    #shortBar{
+      height: 7px;
+      width: 122px;
+      background: #6d4f3a;
+    }
+
+
+
+
+
+
+/* public*/
+
+    .publicTitle{
+      font-size: 38px;
+      text-align: center;
+      font-weight: bold;
+
+    }
+    .publicTitle span{
+      font-size: 16px;
+      color: #1e8cda;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .blackText{
+      color: black;
+    }
+
+    .whiteText{
+      color: white;
+    }
+
+
+
+/*solutionDetail*/
+
+    #videoBox{
+      margin: 30px 0 30px 0;
+    }
+
+
+    .qqBox{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+
+
+
+/*QQ客服*/
+
+/*在线客服*/
+.OnlineService_Bg {/*width:139px;height:356px;overflow:hidden;*/z-index:1000;/*background:url(../images/kefubac.png) no-repeat;*/}
+.OnlineService_Box {width:100%;overflow:hidden;}
+.OnlineService_QQBox {width:125px;overflow:hidden;margin-bottom:10px;/*margin-top:40px;*/}
+.OnlineService_QQBox li {width:auto;/*height:35px;overflow:hidden;line-height:35px;*/color:#666;margin-top:20px;margin-left:20px;}
+.nlineService_QQBox li:hover {filter:alpha(opacity=50); /*IE滤镜，透明度50%*/-moz-opacity:0.5; /*Firefox私有，透明度50%*/opacity:0.5;/*其他，透明度50%*/}
+.OnlineService_QQBox li a {text-decoration: none;color: #666;}
+/*在线客服*/
+
+
+#online_service_bar {
+  font-size:12px;
+  color:#555;
+  font-family:"Microsoft YaHei", Verdana, "BitStream vera Sans", Tahoma, Helvetica, Sans-serif;
+}
+
+
+#online_service_bar {
+  position:absolute;
+  top:200px;
+  right:10px;
+  overflow:hidden;
+  z-index:1001;
+}
+
+
+
+

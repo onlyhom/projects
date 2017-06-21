@@ -1,0 +1,153 @@
+
+   /*banner上的css3属性*/
+
+   .titleBuleBar{
+     position:absolute; 
+     top: 205px;
+     background: #1e8cda;
+     width: 975px;
+     height: 85px;
+     line-height: 85px;
+     float: left;
+     font-weight: bold;
+     font-size: 35px;
+     text-align: right;
+     padding-right: 50px;
+     color: white;
+     animation:buleFloatInto 1.8s;
+     -webkit-animation:buleFloatInto 1.8s;
+     -moz-animation:buleFloatInto 1.8s;
+     -o-animation:buleFloatInto 1.8s;
+     animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -webkit-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -moz-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -o-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+   }
+
+    @keyframes buleFloatInto 
+    {
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0;}
+    }
+
+
+    @-webkit-keyframes buleFloatInto 
+    {
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0;}
+    }
+
+
+    @-moz-keyframes buleFloatInto 
+    {
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0;}
+    }
+
+
+    @-o-keyframes buleFloatInto 
+    {
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0;}
+    }
+
+
+
+
+   .titleDarkBar{
+     position:absolute; 
+     top: 310px;
+     left: 480px;
+     background: #1d2c36;
+     width: 605px;
+     height: 70px;
+     line-height: 70px;
+     float: left;
+     font-weight: bold;
+     font-size: 35px;
+     padding-left: 40px;
+     color: white;
+     animation:darkFloatInto 1.5s;
+     -webkit-animation:darkFloatInto 1.5s;
+     -moz-animation:darkFloatInto 1.5s;
+     -o-animation:darkFloatInto 1.5s;
+     animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -webkit-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -moz-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -o-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+   }
+
+    @keyframes darkFloatInto 
+    {
+    from {opacity: 0; left: 680px;}
+    to {opacity: 1; left: 480px;}
+    }
+
+    @-webkit-keyframes darkFloatInto 
+    {
+    from {opacity: 0; left: 680px;}
+    to {opacity: 1; left: 480px;}
+    }
+
+    @-moz-keyframes darkFloatInto 
+    {
+    from {opacity: 0; left: 680px;}
+    to {opacity: 1; left: 480px;}
+    }
+
+    @-o-keyframes darkFloatInto 
+    {
+    from {opacity: 0; left: 680px;}
+    to {opacity: 1; left: 480px;}
+    }
+
+
+
+   .titleReadMore{
+     position:absolute; 
+     top: 410px;
+     left: 480px;
+     background: #f86c0f;
+     width: 215px;
+     height: 55px;
+     line-height: 55px;
+     float: left;
+     font-weight: bold;
+     font-size: 30px;
+     padding-left: 40px;
+     color: white;
+     animation:readMoreInto 2s;
+     -webkit-animation:readMoreInto 2s;
+     -moz-animation:readMoreInto 2s;
+     -o-animation:readMoreInto 2s;
+     animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -webkit-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -moz-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+     -o-animation-timing-function:cubic-bezier(0.42,0,0.58,1);
+   }
+
+
+    @keyframes readMoreInto 
+    {
+    from {opacity: 0; top: 500px;}
+    to {opacity: 1; top: 410px;}
+    }
+
+    @-webkit-keyframes readMoreInto 
+    {
+    from {opacity: 0; top: 500px;}
+    to {opacity: 1; top: 410px;}
+    }
+
+    @-moz-keyframes readMoreInto 
+    {
+    from {opacity: 0; top: 500px;}
+    to {opacity: 1; top: 410px;}
+    }
+
+    @-o-keyframes readMoreInto 
+    {
+    from {opacity: 0; top: 500px;}
+    to {opacity: 1; top: 410px;}
+    }
+
