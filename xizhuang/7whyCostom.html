@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>西装定制</title>
+  <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/UI.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <header>
+     <a href="1index.html"><figure class="headerLogo"><img src="images/logo.jpg" alt=""></figure></a>
+     <div class="headerTop">     
+      <a href="18inviteFriends.html" class="left">GET YOUR FREE SHIRT</a>
+      <a href="30FAQ.html" class="right">FAQ</a>
+      <a href="7whyCostom.html" class="right">WHY CUSTOM</a>
+      <a href="8howItWork.html" class="right">HOW IT WORKS</a>
+       <div class="clearfix"></div>
+     </div>
+     <div class="headerBottom">
+      <ul class="nav">
+        <li><a href="2designNow.html">SUITS</a><span>|</span></li>
+        <li><a href="2designNow.html">SHIRTS</a><span>|</span></li>
+        <li><a href="2designNow.html">BLAZERS</a><span>|</span></li>
+        <li><a href="2designNow.html">PANTS</a><span>|</span></li>
+        <li><a href="2designNow.html">OUTERWEAR</a><span>|</span></li>
+        <li><a href="2designNow.html">POLO SHIRTS</a><span>|</span></li>
+        <li><a href="2designNow.html">WEDDING</a><span>|</span></li>
+        <li><a href="2designNow.html">OTHER</a></li>
+      </ul>
+
+      <ul class="loginBar">
+        <li><a href="9orderRecords.html"><figure><img src="images/myAccount.png" alt=""></figure><p>MY ACCOUNT</p></a></li>
+        <li><a href="27shoppingBag.html"><figure><img src="images/shoppingBag.png" alt=""></figure><p>SHOPPING BAG</p></a></li>
+      </ul>
+     </div>
+  </header>
+
+
+  <div class="main">
+       <div class="subBanner">
+          <img src="images/whyCostomBanner.jpg" alt="">
+       </div>
+    <div class="whyCostom">
+       <center>
+         <i>The reason of custom</i>
+         <h2>All START FROM IT</h2>
+        </center>
+
+        <ul>
+          <li class="left1">
+            <h3>made to measure</h3>
+            <p>Custom clothing biggest advantage lies in the size was just right. You don't need to worry about size problem, only need to measure a dimension.If your suit is just fit, the next thing in making can directly use the ready-made hem and sleeves, don't have to do modification.</p>
+          </li>
+
+
+          <li class="right">
+            <h3>Personal style</h3>
+            <p>Custom clothing, you can choose individuation is not only the fabric, lining, buttons, styling details and overall outline.In fact, all garments are according to your specific preferences as well as the selection of fabrics and design and making.</p>
+          </li>
+
+
+
+          <li class="left2">
+            <h3>High quality standards</h3>
+            <p>Sewn products depending on its skilled tailors professional techniques, which ensure the high quality products.At the same time, the introduction of laser cutting technology in sewing equipment makes the measurement precision and garment fit degree can reach a higher level.</p>
+          </li>
+        </ul>
+
+
+
+    </div>
+
+ 
+
+
+
+
+
+
+
+
+
+  <div class="clearfix"></div>
+  </div><!-- main END -->
+   
+
+
+
+
+  <footer>	
+
+   <section class="sectionFooter">
+     	<ul style="width:38%;">
+     		<li class="title">QUESTIONS</li>
+        <li><a href="30FAQ.html">HELP&CONTACT</a></li>
+     		<li><a href="">DELIVERY & RETURNS</a></li>
+     		<li><a href="">ORDER FABRIC SAMPLES</a></li>
+     		<li><a href="">TRACK ORDER</a></li>
+     		<li><a href="">TERMS AND CONDITIONS</a></li>
+     	</ul>
+
+     	<ul style="width:30%;">
+     		<li class="title">Men's store</li>
+     		<li><a href="">COLLECTIONS</a></li>
+     		<li><a href="">CUSTOM SUITS</a></li>
+     		<li><a href="">CUSTOM SHIRTS</a></li>
+     		<li><a href="">CUSTOM JACKETS</a></li>
+     		<li><a href="">CUSTOM PANTS</a></li>
+     		<li><a href="">GIFT CARD</a></li>
+     		<li><a href="">OTHER PRODUCTS</a></li>
+     	</ul>
+
+      <ul style="width:31%;">
+        <li class="title black">RECEIVE OUR NEWSLETTER</li>
+        <form action="">
+          <input type="text" placeholder="Email Address"> 
+          <input type="submit" value="" class="gotoBtn">
+        </form>
+            <div class="clearfix"></div>
+            <p>FOLLOW TAILOR4LESS</p>
+
+            <ul class="brandsList">
+              <figure><img src="images/bottom_Icon1.jpg" alt=""></figure>
+              <figure><img src="images/bottom_Icon2.jpg" alt=""></figure>
+              <figure><img src="images/bottom_Icon3.jpg" alt=""></figure>
+              <figure><img src="images/bottom_Icon4.jpg" alt=""></figure>
+              <figure><img src="images/bottom_Icon5.jpg" alt=""></figure>
+            </ul>
+      </ul>
+
+
+   </section>
+  
+  </footer>
+
+
+</div><!-- container END -->
+
+
+
+
+
+
+
+<script type="text/javascript">
+   $(function(){ 
+
+
+      $('.evaluateList .active').next().show();
+
+      $('.evaluateList .pic').click(function(){
+       $('.evaluateList .pic').each(function(index,element){
+          $(this).removeClass('active');
+          $(this).next().hide();
+       });
+
+         $(this).addClass('active');
+         $(this).next().show();
+      });
+
+
+
+   });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,512 @@
+/*@media (max-width:1400px) {
+  body{zoom:0.8;}
+}*/
+
+
+@font-face { 
+font-family: 'AGaramondLT-Titling'; 
+src: url('../fonts/AGaramondLT-Titling.otf'); 
+} 
+
+@font-face { 
+font-family: 'SourceHanSansCN-Regular'; 
+src: url('../fonts/SourceHanSansCN-Regular.TTF'); 
+} 
+
+@font-face { 
+font-family: 'gabriola'; 
+src: url('../fonts/gabriola.ttf'); 
+} 
+
+/* ##### 个性化绣字字体 ##### */
+
+@font-face { 
+font-family: 'Font1'; 
+src: url('../clothes/accents/fonts/arial.ttf'); 
+} 
+
+@font-face { 
+font-family: 'Font2'; 
+src: url('../clothes/accents/fonts/cygnetRound.ttf'); 
+} 
+
+
+@font-face { 
+font-family: 'Font3'; 
+src: url('../clothes/accents/fonts/constani.ttf'); 
+} 
+
+@font-face { 
+font-family: 'Font4'; 
+src: url('../clothes/accents/fonts/BodoniBDBT.ttf'); 
+} 
+
+
+
+ html { 
+   overflow-x: hidden; 
+   overflow-y: auto; 
+} 
+
+
+
+ .container{
+   width: 1920px;
+   margin:0 auto;
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   position:absolute;
+   left:50%;margin-left:-960px;
+/*   animation:containerInto 1s;
+   -webkit-animation:containerInto 1s;
+   -moz-animation:containerInto 1s;
+   -o-animation:containerInto 1s;*/
+}
+
+
+header{
+  margin: 0 auto;
+  width: 1200px;
+  height: 105px;
+  background: white;
+}
+
+
+header .headerLogo{
+  display: inline-block;
+  height: 90px;
+  width: 135px;
+  padding-top: 15px;
+  float: left;
+}
+
+
+.headerTop{
+  padding-top: 25px;
+  height: 45px;
+}
+
+.headerTop .left{
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #b80200;
+
+}
+
+.headerTop .right{
+  float: right;
+  margin-left: 20px;
+  color: #8c8c8c;
+}
+
+.headerTop .right:hover{
+  color: black;
+}
+
+.nav>li>a{
+  display: inline-block;
+  color: black;
+  margin: 0 10px;
+}
+
+.nav span{
+   color:#e6e6e6;
+}
+
+.nav{
+  float: left;
+}
+
+.headerBottom .nav li:hover{
+/*  background: pink;*/
+}
+
+
+
+
+.arrowBottom{
+  width: 0;
+  height: 0;
+  border-top: 5px solid black;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  right: -16px;
+  top: 35%;
+}
+
+.loginBar{
+  float: right;
+}
+
+.loginBar li{
+  position: relative;
+  height: 22px;
+  line-height: 22px;
+  margin-left: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+  transition:all 0.2s;
+}
+
+.loginBar li:hover{
+  opacity: 1;
+}
+
+.loginBar a{
+  color: black;
+/*  opacity: 0.3;
+  transition:all 0.5s;*/
+}
+
+/*.loginBar a:hover{
+  opacity: 1;
+}*/
+
+.loginBar figure{
+  display: inline-block;
+  float: left;
+  padding: 2px 5px 0;
+}
+
+
+.loginBar p{
+  display: inline-block;
+  float: left;
+}
+
+
+
+.main{
+}
+
+.banner{
+  position: relative;
+}
+
+
+/*----   价格标签   -----*/
+
+.picInfo{
+  position: relative;
+  width: 241px;
+  height: 293px;
+  background: url(../images/priceBorder.png);
+}
+
+.picPosition1{
+  position: absolute;
+  top: 90px;
+  left: 820px;
+}
+
+.picPosition2{
+  position: absolute;
+  top: 50px;
+  left: 1040px;
+}
+
+
+.picInfo h1{
+  font-size: 31px;
+  color: black;
+  margin: 57px 0 26px 37px;
+}
+
+
+
+.picInfo h2{
+  font-size: 18px;
+  color: black;
+  margin-bottom: 18px;
+  margin-left: 37px;
+}
+
+.picInfo p{
+  display: inline-block;
+  margin-left: 37px;
+}
+
+.picInfo .priceOld{
+  font-size: 19px;
+  text-decoration: line-through;
+}
+
+.picInfo .price{
+  color: #db0000;
+  font-size: 21px;
+  margin-left: 10px;
+}
+
+
+.picInfo button{
+ width: 160px;
+ height: 44px;
+ border: none;
+ background: #dc0000;
+ color: white;
+ cursor: pointer;
+ outline: none;
+ border: 1px solid #db0000;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+}
+
+/* pricePic 拓展*/
+
+.picInfo .from{
+  color: #db0000;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.picInfo h3{
+  margin-left: 37px;
+  color: black;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.picInfo h4{
+  margin-left: 37px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/*  ---------------------- 顾客评价部分 ---------------------- */
+
+
+.cusEvaluate{
+ width: 100%;
+ height: 800px;
+ padding-top: 105px;
+}
+
+
+
+.evaluateList{
+  margin-top: 50px;
+  width: 1735px;
+  position: relative;
+}
+
+
+.evaluateList>li{
+  display: inline-block;
+  cursor: pointer;
+  height: 295px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+
+.pic{
+ display: inline-block;
+ width: 175px;
+ height: 231px;
+ overflow: hidden;
+ text-align: center;
+ vertical-align: middle;
+ margin-top: 30px;
+ transition:all 0.4s;
+}
+
+.pic img{
+  width: 100%;
+}
+
+.evaluateList .active{
+  width: 295px;
+  height: 295px;
+  margin-top: 0;
+  border: 2px solid #d50007;
+}
+
+
+.comments{
+  width: 600px;
+  position: absolute;
+  padding-top: 80px;
+  display: none;
+   top: 250px;
+   left: 33%;
+   animation:commentsInto .8s;
+   -webkit-animation:commentsInto .8s;
+   -moz-animation:commentsInto .8s;
+   -o-animation:commentsInto .8s;
+}
+
+@keyframes commentsInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-webkit-keyframes commentsInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-moz-keyframes commentsInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-o-keyframes commentsInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+
+.comments h2{
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.comments ul{
+  width: 85px;
+}
+.comments li{
+  float: left;
+  margin-right: 2px;
+}
+
+
+
+
+.comments .info{
+  display: inline-block;
+  width: 500px;
+  height: 37px;
+  color: black;
+  font-size: 15px;
+  overflow: hidden;
+  line-height: 16px;
+  position: relative;
+  top: 9px;
+}
+
+
+
+.comments h3{
+  display: inline-block;
+  font-size: 35px;
+  color: black;
+}
+
+.evaluationSection{
+  margin-top: 170px;
+}
+
+.evaluationSection a{
+  text-decoration: underline;
+  color: #b90000;
+}
+
+
+.evaluationSection button{
+  margin-top: 20px;
+  font-size: 16px;
+  width: 240px;
+  height: 45px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #e60012;
+  color: #e60012;
+}
+
+
+
+/*-----------footer----------*/
+
+footer{
+  border-top: 1px solid #dcdcdc;
+  padding: 40px 0;
+}
+
+.sectionFooter{
+  width: 1000px;
+  margin: 0 auto;
+
+}
+
+.sectionFooter>ul{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sectionFooter>ul>li{
+  display: block;
+  color: #8c8c8c;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.sectionFooter .title{
+ font-size: 16px;
+ font-weight: bold;
+ margin-bottom: 10px;
+}
+
+.sectionFooter a{
+  color: #8c8c8c;
+}
+
+.sectionFooter a:hover{
+  color: black;
+}
+
+.sectionFooter .black{
+  color: black;
+}
+
+.sectionFooter input{
+  float: left;
+  outline: none;
+  width: 160px;
+  height: 33px;
+  padding-left: 5px;
+  font-size: 15px;
+  color: #555;
+  border: 1px solid #bfbfbf;
+}
+
+.sectionFooter .gotoBtn{
+  float: left;
+  width: 33px;
+  height: 33px;
+  margin-left: 5px;
+  background: url(../images/goto.png) no-repeat;
+  border:none;
+  cursor: pointer;
+
+}
+
+.sectionFooter p{
+  margin-top: 20px;
+  color: #8c8c8c;
+}
+
+.sectionFooter .brandsList figure{
+  margin-top: 16px;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+
+
+.Left{
+  float: left;
+}
+
+.Right{
+  float: right;
+}

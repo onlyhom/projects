@@ -1,0 +1,5262 @@
+    
+    /* ********** index style *************/
+/*  ----------- index Measure Part ----------- */
+
+.measureList{
+  margin-top: 90px;
+}
+
+.measureList li{
+  width: 400px;
+  margin: 0 18px;
+}
+
+.measureList li figure{
+  width: 400px;
+  overflow: hidden;
+}
+
+.measureList li img{
+   width: 400px;
+}
+
+.measureList h2{
+  font-size: 19px;
+  line-height: 40px;
+  color: black;
+}
+
+.measureList p{
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  color: #8c8c8c;
+}
+
+.measureList .measureText{
+  width: 80%;
+}
+
+.measureList button{
+  background: #db0000;
+  width: 175px;
+  height: 38px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  margin-top: 50px;
+  border: 1px solid #db0000;
+}
+
+
+
+/*  -----  index operatProcess Part ------- */
+
+.operatProcess{
+  margin-top:90px;
+  width: 100%;
+  height: 606px;
+  background: url(../images/operationProcess.jpg) no-repeat;
+/*  padding-top: 485px;*/
+}
+
+
+.operatProcess button{
+  margin-top: 485px;
+  width: 200px;
+  height: 60px;
+  border: 1px solid #e60012;
+  border-radius: 5px;
+  background: white;
+  color: #e60012;
+  font-size: 16px;
+}
+
+
+
+/*------- index about us Part --------*/
+
+
+.aboutUsSection{
+  padding: 50px 0 120px 0;
+  width: 100%;
+/*  height: 340px;*/
+  background: #f5f5f5;
+}
+
+.aboutUsText{
+  margin: 30px 0 1px 0;
+  width: 950px;
+  font-size: 16px;
+}
+
+
+
+    /********* design now style ***********/
+/*--------------  design now  -------------------*/
+
+
+.designNow{
+  position: relative;
+}
+
+.designNow .top{
+   height: 400px;
+   background: white;
+}
+
+.designNow .middle{
+   height: 488px;
+   background: #f6f6f6;
+}
+
+
+.advComputer{
+  padding-top: 50px;
+  width: 500px;
+/*  background: pink;*/
+  position: relative;
+  left: 920px;
+}
+
+.advComputer h2{
+  font-size: 15px;
+  color: #27353e;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.advComputer p{
+  color: black;
+}
+
+
+.advComputer button{
+  width: 235px;
+  height: 35px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+.designNow .bottom{
+   height: 360px;
+   padding-top: 50px;
+   position: relative;
+}
+
+.designNow .bottom section{
+   width: 550px;
+   position: absolute;
+   left: 890px;
+}
+
+.designNow .bottom li{
+  width: 180px;
+}
+
+
+.designNow .bottom h2{
+  color: #323f47;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.designNow .bottom a{
+  display: inline-block;
+  color: #da251e;
+  font-size: 14px;
+  text-decoration: underline;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+
+
+.designNow .bottom figure{
+  width: 130px;
+  height: 175px;
+  overflow: hidden;
+}
+
+.designNow .bottom img{
+  width: 130px;
+}
+
+.designNow .bottom h4{
+  margin-top: 10px;
+  width: 180px;
+  color: black;
+  font-weight: bold;
+  line-height: 18px;
+  height: 36px;
+  overflow: hidden;
+}
+
+.designNow .bottom p{
+  color: #b90000;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+.bannerModel{
+  position: absolute;
+  left: 460px;
+  top: 25px;
+   animation:modelInto 1.5s;
+   -webkit-animation:modelInto 1.5s;
+   -moz-animation:modelInto 1.5s;
+   -o-animation:modelInto 1.5s;
+}
+
+
+@keyframes modelInto{
+  from{left: 530px; opacity: 0;}
+  to{left: 460px; opacity: 1;}
+}
+
+
+
+
+.aboutCoats{
+  background: #eeeeee;
+  color: black;
+  padding: 70px 460px;
+
+}
+
+.aboutCoats h2{
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.aboutCoats p{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+
+.cusEvaluate h1{
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  color: black;
+}
+
+
+ /********* buyNow style ***********/
+/*--------- buyNow -------------*/
+
+.relatedSuit{
+  color: black;
+  padding: 60px 0;
+/*  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;*/
+}
+
+.relatedSuit li{
+  margin: 0 3px;
+}
+
+.relatedSuit figure{
+  width: 295px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.relatedSuit img{
+  width: 295px;
+}
+
+.relatedSuit h3{
+  font-size: 16px;
+  margin-top: 10px;
+  width: 265px;
+  height: 25px;
+  font-weight: bold;
+  line-height: 18px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis
+}
+
+.relatedSuit p{
+  color: #b90000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.relatedSuit h2{
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+
+.buyNow{
+  background: #f6f6f6;
+}
+
+.buyNow section{
+  width: 1200px;
+  margin: 0 auto;
+/*  background: #eee; */
+  padding: 55px 0;
+}
+
+.positionBar{
+/*  background: orange;*/
+  height: 38px;
+}
+
+.positionBar a{
+  color: black;
+  font-weight: bold;
+}
+
+.positionBar a:hover{
+  color: gray;
+}
+
+/*左边缩略图*/
+
+.picPreview{
+  float: left;
+  width: 635px;
+  position: relative;
+}
+
+.picShow{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 489px;
+  height: 713px;
+  overflow: hidden;
+  display: none;
+  background: white;
+   animation:picInto .8s;
+   -webkit-animation:picInto .8s;
+   -moz-animation:picInto .8s;
+   -o-animation:picInto .8s;
+}
+
+@keyframes picInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-webkit-keyframes picInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-moz-keyframes picInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-o-keyframes picInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+
+
+.picShow img{
+  width: 489px;
+}
+
+.picSelect{
+  float: left;
+  width: 125px;
+}
+
+.picSelect li{
+
+}
+
+
+.picSelect .select{
+  position: relative;
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.picSelect .selected{
+  border: 2px solid gray;
+}
+
+
+
+.picSelect .select img{
+  position: relative;
+  top: -30%;
+  width: 125px;
+}
+
+
+/*右边商品明细*/
+
+.suitDeatil{
+  float: right;
+  width: 533px;
+/*  background: white;*/
+}
+
+.suitDeatil h1{
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.suitDeatil h1 span{
+  color: #b90000;
+  float: right;
+}
+
+.suitDeatil p{
+  color: #8c8c8c;
+  line-height: 20px;
+}
+
+.suitDeatil button{
+  float: right;
+  width:160px;
+  height: 50px; 
+  margin: 23px 0;
+  color: white;
+  font-size: 14px;
+}
+
+.suitDeatil .redBtn{
+  background: #da251e;
+  border: 1px solid #da251e;
+}
+
+
+.suitDeatil .blueBtn{
+  background: #54abee;
+  border: 1px solid #54abee;
+}
+
+
+.suitDeatil h2{
+  clear: both;
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.red{
+  color: #b90000;
+/*  color: #da251e;*/
+}
+
+.suitDeatil b{
+  display: inline-block;
+  cursor: pointer;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.labels li{
+  width: 72px;
+  text-align: center;
+/*  background: pink;*/
+ vertical-align: top;
+}
+
+.labels figure{
+  width:  65px;
+  height: 65px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.labels img{
+  width: 65px;
+}
+
+.customFit{
+  clear: both;
+  border-top: 1px solid #bfbfbf;
+  padding-top: 22px;
+}
+
+.customFit li{
+  width: 32%;
+  text-align:center;
+  vertical-align: top;
+}
+
+.customFit h3{
+  color: black;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.customFit li p{
+  font-size: 12px;
+}
+
+
+
+  /********* whyCostom style***********/
+/* ---------- whyCostom ----------------*/
+
+.whyCostom{
+  padding: 30px 0 100px 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+.whyCostom h2{
+  font-size: 18px;
+  color: #db0000;
+  font-family: AGaramondLT-Titling, serif;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.whyCostom li{
+  width: 810px;
+  height: 140px;
+  padding-top: 60px;
+}
+
+.whyCostom .left1{
+  padding-left: 190px;
+  background: url(../images/fitPicture1.jpg) no-repeat;
+}
+
+.whyCostom .right{
+  text-align: right;
+  width: 750px;
+  padding-right: 250px;
+  background: url(../images/fitPicture2.jpg) no-repeat;
+  background-position: right center;
+}
+
+.whyCostom .left2{
+  padding-left: 190px;
+  background: url(../images/fitPicture3.jpg) no-repeat;
+}
+
+.whyCostom h3{
+  font-size: 16px;
+  color: #db0000;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.whyCostom p{
+  color: black;
+  font-size: 15px;
+}
+
+
+
+
+
+  /********* howItWork style***********/
+/* ---------- howItWork ----------------*/
+
+
+
+.howItWork{
+  padding: 30px 0 100px 0;
+  width: 1000px;
+  margin: 0 auto;
+  color: black;
+}
+.howItWork h2{
+  font-size: 25px;
+  color: #db0000;
+  font-family:'AGaramondLT-Titling',serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.howItWork h3{
+  color: black;
+  font-size: 14px;
+  font-family:'SourceHanSansCN-Regular',serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.howItWorkAdv{
+ margin-top: 40px;
+}
+
+.howItWorkAdv h3{
+  line-height: 35px;
+}
+
+.howItWorkAdv li{
+  width: 300px;
+  vertical-align: top;
+}
+
+.howItWorkList{
+  margin-top: 30px;
+}
+
+.howItWorkList li{
+  height: 180px;
+  width: 790px;
+  margin: 10px 0;
+}
+
+
+
+.howItWorkList .title{
+  color: #db0000;
+  border: 3px solid black;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.howItWorkList .left{
+  padding-left: 210px;
+  padding-top: 14px;
+  background: url(../images/sizeAtHome.jpg) no-repeat;
+}
+
+.howItWorkList .left .title{
+  float: left;
+}
+
+
+.howItWorkList p{
+  margin:10px 0;
+}
+
+.howItWorkList .right{
+  padding-right: 210px;
+  padding-top: 20px;
+  text-align: right;
+  background: url(../images/theFasted.jpg) no-repeat;
+  background-position: right top;
+}
+
+.howItWorkList .right .title{
+  float: right;
+}
+
+
+
+.howItWorkBottom{
+  width: 100%;
+  background: #f6f6f6;
+  padding: 40px 0;
+}
+
+
+.howItWorkBottom div{
+  width: 500px;
+}
+
+
+
+.howItWorkBottom h2{
+  font-size: 20px;
+  color: #db0000;
+  font-family:'AGaramondLT-Titling',serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.howItWorkBottom button{
+  margin-top: 30px;
+  background: #db0000;
+  width: 160px;
+  height: 45px;
+  color: white;
+  border: 1px solid #db0000;
+}
+
+
+  /********* login style***********/
+/* ---------- login ----------------*/
+
+.login{
+  background: #f6f6f6;
+  padding: 60px 0;
+}
+
+
+.login .topPart{
+  height: 60px;
+  width: 870px;
+  border-bottom: 1px solid #dcdcdc;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+
+.login .bottomPart{
+  width: 870px;
+  margin: auto;
+}
+
+
+
+.login .topPart button{
+  width: 115px;
+  height: 35px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 35px;
+  background-position: 6% center;
+  margin-right: 25px;
+}
+
+.faceBookBtn{
+  background: #1a497d url(../images/icon1_bg.jpg) no-repeat;
+
+}
+
+.googleBtn{
+  background: #d34836 url(../images/icon2_bg.jpg) no-repeat;
+}
+
+.linkedinBtn{
+ background: #007bb6 url(../images/icon3_bg.jpg) no-repeat;
+}
+
+
+
+.loginBox{
+  float: left;
+  display: inline-block;
+  width: 430px;
+  border-right: 1px solid #dcdcdc;
+  padding: 20px 0;
+}
+
+.loginBox p{
+  position: relative;
+  top: -20px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.newCustomerBox{
+  float: right;
+  display: inline-block;
+  width: 430px;
+  padding: 20px 0;
+}
+
+
+.login h2{
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+
+.login .inputBox{
+  width: 260px;
+  height: 37px;
+  border: 1px solid #dcdcdc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  color: #787878;
+  display: block;
+}
+
+
+.loginBottomBtn{
+  display: block;
+  background: #e60012;
+  color: white;
+  padding: 11px 17px;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid #bc0211;
+  outline: none;
+  cursor: pointer;
+  transition:background 0.35s;
+}
+
+.loginBottomBtn:hover{
+  background: #bc0211;
+}
+
+
+
+
+.login a{
+ display: inline-block;
+  color: #bc0211;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+  /********* register style***********/
+/* ---------- register ----------------*/
+
+.register{
+  width: 900px;
+}
+
+.register input{
+  margin-bottom: 0;
+  outline: none;
+}
+
+.register .lside{
+   float: left;
+   width: 500px;
+/*   background: pink;*/
+}
+
+.register .rside{
+   float: right;
+   width: 350px;
+   padding: 25px 10px 0;
+}
+
+
+.register table{
+  width: 490px;
+}
+
+.register td{
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   height: 55px;
+}
+
+.register .titles{
+    width: 32%;
+    text-align: left;
+}
+
+#registerBox .tick{
+    width: 10%;
+/*    display: none;*/
+}
+
+
+.register .tick input{
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+#registSubmit{
+  width: 150px;
+  height: 33px;
+  background: #3d90d7;
+  border: none;
+  border-bottom: 2px solid #0063b8;
+  color: white;
+  font-size: 14px;
+  padding-left: 0;
+  cursor: pointer;
+  outline: none;
+  transition:background 0.5s;
+}
+
+#registSubmit:hover{
+  background: #0063b8;
+}
+
+.registSubmitTd input{
+  float: left;
+}
+
+
+.register h3{
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.register p{
+  color: black;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+
+
+  /********* inviteFriends style***********/
+/* ---------- inviteFriends ----------------*/
+
+.invFriendBG{
+  width: 100%;
+  background: #f6f6f6;
+}
+
+.inviteFriends{
+/*  background: pink;*/
+  width: 1000px;
+/*  height: 1000px;*/
+  margin: 0 auto;
+  padding: 50px 0;
+  color: black;
+}
+
+.inviteFriends h1{
+  font-size: 18px;
+}
+
+.inviteFriends .steps{
+  display: inline-block;
+  height: 36px;
+  background: #b90000;
+  color: white;
+  line-height: 36px;
+  padding: 0 80px 0 20px;
+  font-size: 17px;
+  margin: 20px 0;
+}
+
+.forFreeTitle{
+  background: white;
+  height: 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #b90000;
+  line-height: 32px;
+  text-align: center;
+  padding: 0 30px;
+  margin: 20px 0;
+}
+
+.forFreeList{
+  width: 750px;
+  margin: 0 auto; 
+  margin-bottom: 50px;
+/*  background: pink;*/
+}
+
+.forFreeList>li{
+  width: 195px;
+/*  background: orange;*/
+  margin:0 25px;
+}
+
+
+.friendsBox{
+  width: 136px;
+  height: 58px;
+}
+
+
+.friendsBG1{
+  width: 136px;
+  background: #d2d2d2;
+}
+
+
+.friendsBG2{
+  display: inline-block;
+  width: 66px;
+  height: 58px;
+  background: #d2d2d2;
+}
+
+.friendsBG3{
+  display: inline-block;
+  width: 40px;
+  height: 58px;
+  background: #d2d2d2;
+}
+
+
+.friendOne{
+  width: 40px;
+  height: 58px;
+  display: inline-block;
+}
+
+
+.friendTwo{
+  width: 40px;
+  height: 58px;
+  display: inline-block;
+}
+
+.friendThree{
+  width: 40px;
+  height: 58px;
+  display: inline-block;
+}
+
+
+
+.forFreeBottom{
+  width: 151px;
+  height: 30px;
+  border: 1px solid #d2d2d2;
+  line-height: 30px;
+  color: #b90000;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.addFriendsBox{
+  width: 344px;
+  margin: 0 auto;
+/*  background: orange;*/
+  vertical-align: bottom;
+}
+
+
+
+.addFriendsBox h3{
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.addFriendsBox .inputBox{
+  background: white;
+  height: 35px;
+  border: 1px solid #dcdcdc;
+  width: 280px;
+  margin-bottom: 10px; 
+  padding-left: 10px;
+  color: #8c8c8c;
+  outline: none;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+.addFriendsBox label{
+  position: relative;
+  top: 3px;
+}
+
+.addFriendsBox a{
+  float: right;
+  display: inline-block;
+  color: #b90312;
+  font-size: 16px;
+/*  background: pink;*/
+  margin: 15px 0; 
+}
+
+.recommendBtn{
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  background: #3d8fd8;
+  border: none;
+  border-bottom: 2px solid #0063b8;
+  color: white;
+  margin-left:100px; 
+  cursor: pointer;
+  transition:all 0.5s;
+}
+
+.recommendBtn:hover{
+  background: #0063b8; 
+}
+
+.seeInvitation{
+/*  width: 120px;*/
+  height: 30px;
+  margin:  0 auto;
+  display: inline-block;
+  color: #b90000;
+  margin-top: 30px;
+  transition:all 0.5s;
+}
+
+.seeInvitation:hover{
+  color: #e10101;
+}
+
+.seeInvitation .arrow{
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-left: 4px solid #b90000;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+
+.conditions{
+  width: 800px;
+  padding: 60px 50px;
+  background: white;
+  margin:  50px auto 20px;
+  color: black;
+}
+
+.conditions h2{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-bottom:30px; 
+  font-weight: bold;
+}
+
+.conditions p{
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.conditionsBottom{
+  width: 870px;
+  margin: 0 auto 100px;
+  line-height: 22px;
+}
+
+
+
+  /********* reviewDetail style***********/
+/* ---------- reviewsDetail ----------------*/
+
+.reviews{
+  background: #f6f6f6;
+  padding: 60px 0;
+}
+
+
+.reviewsDetail{
+  width: 1000px;
+  min-height: 450px;
+  margin: 0 auto; 
+  color: black;
+  position: relative;
+/*  background: #eee;*/
+}
+
+
+.reviewsDetail .top h2{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.reviewsDetail .top h3{
+  font-size: 25px;
+  font-family: "gabriola";
+}
+
+
+.commentDetail{
+  margin-top: 30px;
+}
+
+
+.reviewsDetail .info{
+  float: left;
+  width: 185px;
+/*  background: orange;*/
+  text-align: center;
+}
+
+.reviewsDetail .info h4{
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.reviewsDetail .figure{
+  width: 184px;
+  height: 210px;
+  overflow: hidden;
+  background: url("../images/defaultFigure.png") no-repeat;  /* 设置默认头像 */
+  background-size:100% auto;
+}
+
+.reviewsDetail .figure img{
+  height: 100%;
+}
+
+
+
+
+.reviewsBox{
+  width: 780px;
+  float: left;
+/*  background: pink;*/
+  padding-left: 30px;
+}
+
+.reviewsBox h2{
+  font-size: 15px;
+  margin: 25px 0 20px ;
+  font-weight: bold;
+}
+
+.reviewsBox p{
+  font-family: "gabriola";
+  font-size: 25px;
+}
+
+.reviewsBox i{
+  margin: 20px 0; 
+  display: inline-block;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.reviewsDetail .link{
+  display: inline-block;
+  background: #b90000;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  transition:all 0.6s;
+  border: 1px solid #b90000;
+}
+
+
+.reviewsDetail .link:hover{
+  background: white;
+  color: #b90000;
+}
+
+
+.reviewsDetail .links{
+  text-align: right;
+ position: absolute;
+ top: 0;
+ right: 0;
+}
+
+
+.writeReview{
+  margin-top: 20px;
+}
+
+
+
+  /********* reviews style***********/
+/* ---------- reviews ----------------*/
+
+.commentsList{
+  margin-top: 30px;
+}
+
+
+
+
+.commentsBox{
+  width: 470px;
+  height: 150px;
+  background: white;
+  box-shadow:gray 0px 0px 2px;
+  padding: 10px;
+  color: black;
+  margin: 6px 3px;
+}
+
+.commentsBox figure{
+  float: left;
+  width: 107px;
+  height: 150px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.commentsBox figure img{
+  height: 100%;
+}
+
+
+.commentsBox .starsMiddle{
+  float: left;
+}
+
+.starsMiddle{
+  height: 17px;
+  width: 105px;
+}
+
+.starsMiddle li{
+  width: 15px;
+  height: 15px;
+}
+
+.starsMiddle li img{
+  width: 100%;
+}
+
+.commentsBox h2{
+  font-size: 18px;
+}
+
+.commentsBox h3{
+  font-size: 14px;
+  margin:3px 0;
+}
+
+.commentsBox p{
+ margin-top: 15px;
+ line-height: 20px;
+ font-family: "gabriola";
+ font-size: 19px;
+}
+
+.commentsBox .text{
+  float: left;
+  width: 335px;
+  height: 113px;
+  overflow: hidden;
+  margin-top: 8px;
+/*  background: orange;*/
+}
+
+
+
+/* 右上角所有评论 */
+
+.overallRating{
+  position: absolute;
+  right: 5px;
+  top: 0;
+  display: inline-block;
+}
+
+
+.overallRating section{
+  float: right;
+  height: 120px;
+}
+
+.overallRating h2{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.overallRating p{
+  height: 20px;
+  float: left;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+
+
+.overallRating img{
+  float: left;
+  margin:0 0 0 5px;
+}
+
+.overallRating .based{
+  padding-top: 10px;
+  height: 20px;
+  display: inline-block;
+}
+
+.filterBy{
+  clear: both;
+  display: block;
+  width: 350px;
+  font-size: 16px;
+  line-height: 30px;
+/*  background: orange;*/
+  text-align: right;
+}
+
+.filterBy select{
+  font-size: 14px;
+  margin-left: 5px;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #d2d2d2;
+/*  outline: none;*/
+} 
+
+.filterBy option{
+  font-size: 14px;
+  line-height: 25px;
+}
+
+
+  /********* FAQsection style***********/
+/* ---------- contactUSsection ----------------*/
+
+
+.FAQsectionBG{
+  width: 100%;
+  background:#f6f6f6; 
+}
+
+.FAQsection{
+  width: 1000px;
+  margin:  0 auto;
+  padding: 50px 0;
+  min-height:600px;
+  color: black;
+}
+
+.FAQsection .FAQnav{
+  float: left;
+  width: 295px;
+  margin-top: 30px;
+}
+
+.FAQsection .FAQnav a{
+    color: black;
+}
+
+
+.FAQsection .FAQnav li{
+  width: 100%;
+  font-size: 17px;
+  height: 48px;
+  border-bottom: 1px dashed #7d0022;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.FAQsection .FAQnav li:hover{
+  color: gray;
+}
+
+
+.FAQsection .contents{
+ width: 600px;
+ padding-right: 40px;
+ min-height: 600px;
+ float: right;
+}
+
+.FAQsection .contactUs h2{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.FAQsection .contactUs p{
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.FAQsection .contactUs h3{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.FAQsection .contactUs i{
+  font-weight: bold;
+  display: block;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.FAQsection .contactUs input[type="text"]{
+  display: block;
+  height: 37px;
+  width: 450px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.FAQsection .contactUs textarea{
+  outline: none;
+  padding: 5px 10px;
+  width: 442px;
+  height: 105px;
+  max-width:442px;
+  max-height: 105px;
+  font-size: 15px;
+}
+
+.FAQsection .contactUs input[type="submit"]{
+  display: block;
+  width: 143px;
+  height: 34px;
+  background: #3d90d7;
+  border: none;
+  border-bottom:2px solid #0063b8; 
+  color: white;
+  margin-top: 25px;
+  cursor: pointer;
+  transition:all 0.5s;
+}
+
+.FAQsection .contactUs input[type="submit"]:hover{
+  background: #0063b8;
+}
+
+
+
+/* ---------- FAQsection ----------------*/
+
+
+.FAQsection .FAQ{
+/*  background: pink;*/
+}
+
+
+.FAQsection .FAQ h2{
+  font-size: 19px;
+/*  font-weight: bold;*/
+  margin-bottom: 20px;
+}
+
+.FAQsection .FAQ h3{
+  margin-bottom: 15px;
+}
+
+.questionList{
+  margin-top: 30px;
+}
+
+.FAQsection .FAQ h4{
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.FAQsection .question i{
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.rotate90deg{
+  -webkit-transform:rotate(90deg); 
+  -moz-transform:rotate(90deg); 
+  -o-transform:rotate(90deg); 
+  transform:rotate(90deg); 
+}
+
+
+.FAQsection .question{
+  margin-bottom: 20px;
+}
+
+.FAQsection .question .text{
+ display: none;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+  /********* step style***********/
+/* ---------- payment ----------------*/
+
+
+
+.publicGrayBG{
+  width: 100%;
+  background:#f6f6f6; 
+}
+
+.publicBlock{ /*有最小高度*/
+  width: 1000px;
+  margin:  0 auto;
+  padding: 50px 0;
+  min-height:600px;
+  color: black;
+}
+
+
+.publicBlock2{ /*无最小高度*/
+  width: 1000px;
+  margin:  0 auto;
+  padding: 50px 0 10px;
+/*  min-height:600px;*/
+  color: black;
+}
+
+.publicBlockWider{/*有最小高度 且宽为1200*/
+  width: 1200px;
+  margin:  0 auto;
+  padding: 50px 0;
+  min-height:600px;
+  color: black;
+}
+
+
+
+.step .processBar{
+  width: 670px;
+  height: 38px;
+  display: block;
+/*  background: pink;*/
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+.step .processBar li{ 
+  height: 34px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 10px;
+/*  cursor: pointer;*/
+  border-bottom: 2px solid transparent;
+  transition:all 0.5s;
+}
+
+/*.step .processBar li:hover{
+  color: black;
+  border-bottom: 2px solid #b90000;
+} */
+
+.step .processBar .active{
+  color: black;
+  border-bottom: 2px solid #b90000;
+}
+
+
+.paymentOptions h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.paymentOptions p{
+  font-size: 16px;
+  font-weight: bold;
+  height: 26px;
+  line-height: 26px;
+/*  background: pink;*/
+}
+
+
+.step .info{
+  margin-left: 20px;
+  width: 500px;
+  height: 500px;
+}
+
+
+.step .creditCard{
+/* background: orange;*/
+ margin-top: 30px;
+}
+
+
+.step .creditCard img{
+ float: left;
+/* background: red;*/
+}
+
+.step .creditCard h2{
+  float: left;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 44px;
+  margin-left: 10px;
+}
+
+
+.step .info table{
+  clear: both;
+}
+
+.step .info th{
+  height: 38px;
+  width: 153px;
+  text-align: left;
+}
+
+.step .info ul{
+}
+
+.step .info li{
+  display: inline-block;
+}
+
+
+.paymentTable input[type="text"]{
+  display: block;
+  height: 37px;
+  width: 280px;
+  padding-left: 10px;
+  outline: none;
+  font-size: 15px;
+  border: 1px solid #dcdcdc;
+}
+
+
+.paymentTable input[type="submit"]{
+  display: block;
+  width: 143px;
+  height: 34px;
+  background: #3d90d7;
+  border: none;
+  border-bottom:2px solid #0063b8; 
+  color: white;
+  margin-top: 25px;
+  cursor: pointer;
+  transition:all 0.5s;
+}
+
+.paymentTable input[type="submit"]:hover{
+  background: #0063b8;
+}
+
+
+.paymentTable select{
+  float: left;
+  font-size: 14px;
+  width: 120px;
+  height: 37px;
+  border: 1px solid #d2d2d2;
+  margin-top: 5px;
+} 
+
+.paymentTable option{
+  font-size: 14px;
+  line-height: 25px;
+}
+
+
+.paymentTable tr{
+  height: 55px;
+}
+
+
+
+.paymentTable span{
+  float: left;
+  font-size: 30px;
+  padding-top: 10px;
+/*  background: orange;*/
+  margin: 0 6px;
+}
+
+.paymentTable th{
+  font-size: 15px;
+}
+
+
+  /********* ProFiles style***********/
+/* ---------- ProFiles ----------------*/
+
+
+
+.measureTitle h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.measureTitle h3{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.measureTitle p{
+ color: #8c8c8c;
+} 
+
+
+.existingTitle{
+  position: relative;
+  border-bottom: 1px solid #b9b9b9;
+  height: 10px;
+}
+
+.existingTitle h2{
+  font-size: 17px;
+  color: #b9b9b9;
+  position: absolute;
+  top: 0;
+  left: 33%;
+  background: #f6f6f6;
+  width:320px;
+  text-align: center;
+}
+
+
+
+.profiles{
+  width: 900px;
+  margin: 0 auto;
+}
+
+.profiles li{
+  width: 100%;
+  height: 160px;
+/*  background: pink;*/
+  border-bottom: 1px solid #b9b9b9;
+  margin-top: 40px;
+}
+
+.profiles figure{
+  float: left;
+  margin: 0 15px;
+}
+
+.profiles .MyProfile{
+  float: left;
+  width: 115px;
+  text-align: center;
+/*  background: orange;*/
+  margin: 25px 0 0 20px;
+}
+
+.profiles .MyProfile h2{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.profiles .MyProfile h3{
+  font-size: 15px;
+  line-height: 23px;
+/*  letter-spacing: 1px;*/
+}
+
+.profiles .MyProfile input{
+  display: inline-block;
+  border:none;
+  background: #f6f6f6;
+  width: 35px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.profiles .operation{
+  float: left;
+  width: 115px;
+  margin: 30px 0 0 20px;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 30px;
+}
+
+
+.BlueBtn{
+
+  padding: 10px 20px;
+  background: #3d90d7;
+  border: none;
+  border-bottom:2px solid #0063b8; 
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition:all 0.5s;
+  outline: none;
+
+}
+
+.BlueBtn:hover{
+  background: #0063b8;
+}
+
+
+.GrayBtn{
+
+  padding: 10px 20px;
+  background: #b5b5b5;
+  border: none;
+  border-bottom:2px solid #797878; 
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition:all 0.5s;
+  outline: none;
+
+}
+
+.GrayBtn:hover{
+  background: #797878;
+}
+
+
+
+
+
+
+
+
+
+.profiles .BlueBtn{
+  float: right;
+  margin-top: 40px;
+}
+
+.step .creatPro{
+  margin: 50px 0 30px 40%;
+}
+
+
+.step .personalInfo{
+   margin-top: 40px;
+}
+
+.step .personalInfo .top input[type="text"]{
+    width: 140px;
+    height: 30px;
+    border: 1px solid #8c8c8c;
+    background: #f6f6f6;
+    text-align: center;
+    outline: none;
+    border: 1px solid #d2d2d2;
+    font-size: 15px;
+}
+
+.step .personalInfo span{
+  font-weight: bold;
+  padding: 0 40px 0 10px;
+}
+
+.step .personalInfo a{
+  text-decoration: underline;
+}
+
+.step .personalInfo .top{
+    width: 780px;
+    margin:  0 auto;
+}
+
+.step .personalInfo .box{
+  width: 110px;
+  height: 100px;
+  padding-left: 110px;
+}
+
+
+.step .personalInfo .middle{
+  width: 950px;
+  margin: 70px auto;
+}
+
+
+.step .personalInfo .middle h2{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.step .personalInfo .middle label{
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 27px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.step .personalInfo .shoulders{
+  background: url("../images/measureFigure4.jpg") no-repeat;
+}
+
+.step .personalInfo .abdomen{
+  background: url("../images/measureFigure3.jpg") no-repeat;
+}
+
+.step .personalInfo .chest{
+  background: url("../images/measureFigure2.jpg") no-repeat;
+}
+
+.step .personalInfo .stance{
+  background: url("../images/measureFigure1.jpg") no-repeat;
+}
+
+.step .personalInfo .bottom{
+  width: 480px;
+  height: 40px;
+  margin: 40px auto;
+}
+
+
+.step .personalInfo .text{
+ float: left;
+ text-align: center;
+ color: #3d90d7;
+ line-height: 20px;
+ font-weight: bold;
+}
+
+.step .personalInfo .text h3{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.step .personalInfo .bottom input{
+  float: right;
+}
+
+.goodReputation{
+  height: 270px;
+  padding-top: 50px;
+}
+
+.goodReputation section{
+  width: 850px;
+  margin: 0 auto;
+} 
+
+.goodReputation section .left{
+  float: left;
+  width: 300px;
+  text-align: center;
+  padding: 0 60px;
+}
+
+.goodReputation section .right{
+  float: right; 
+  width: 300px;
+  text-align: center;
+  padding: 0 60px;
+  border-left: 1px solid #d2d2d2;
+}
+
+.goodReputation section .right figure{
+ margin-bottom: 10px;
+}
+
+.goodReputation h2{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.goodReputation h3{
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+  /********* userAccount style***********/
+/* ---------- userAccount ----------------*/
+
+
+
+.userAccount{
+  float: left;
+  width: 290px;
+  border: 1px solid #dcdcdc;
+  margin-top: 50px;
+}
+
+
+.logState{
+ background: #f8f8f8;
+}
+
+.userAccount h1{
+  display: inline-block;
+  width: 90%;
+  text-align: center;
+  margin-left: 15px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.logState{
+  margin-top: 10px;
+  position: relative;
+  padding-left: 15px;
+  height: 45px;
+}
+
+.logState span{
+   color: #8c8c8c;
+}
+
+.logState input[type="text"]{
+   border: none;
+   background: #f8f8f8;
+   max-width: 190px;
+   color: #8c8c8c;
+   font-size: 13px;
+}
+
+
+.logState input[type="submit"]{
+  position: absolute;
+  right: 12px;
+  top: 2px;
+  background: #d2d2d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.accountNav{
+  background: white;
+}
+
+.accountNav li{
+  width: 90%;
+  height: 38px;
+  line-height: 38px;
+  margin-left: 5%;
+  border-bottom: 1px solid #dcdcdc;
+  text-transform: uppercase;
+  color: #8c8c8c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.accountNav li a{
+  display: inline-block;
+  color: #8c8c8c;
+  width: 100%;
+}
+
+
+.accountNav li a:hover{
+  color: black;
+}
+
+.accountNav .active a{
+  color: black;
+}
+
+
+.publicBlockWider .contents{
+  width:905px;
+  float: right;
+  position: relative;
+}
+
+
+
+.publicBlockWider .contents .title{
+  font-size: 20px;
+/*  background: pink;*/
+  padding-left: 47px;
+  text-align: left;
+}
+
+.publicBlockWider .contents .title span{
+  color: red;
+  padding: 0 7px 0 4px;
+  color: #b90000;
+  font-size: 23px;
+}
+
+.publicBlockWider .contents .title i{
+ font-style: normal;
+}
+
+
+.publicBlockWider .contents .paddingContents{
+  margin-left: 47px;
+}
+
+.OrderRecords .top{
+  background: #e0e5e7;
+  text-align: center;
+  padding: 35px 40px;
+}
+
+.OrderRecords .top h3{
+  font-size: 19px;
+  text-transform: uppercase;
+/*  font-weight: bold;*/
+}
+
+.OrderRecords .top p{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.OrderRecords .middle{
+  margin-top: 30px;
+}
+
+.OrderRecords .middle a{
+  color: #8b8b8b;
+  text-transform: uppercase;
+}
+
+.OrderRecords .bottom{
+  margin-top: 30px;
+}
+
+.OrderRecords .bottom table{
+  text-align: left;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.OrderRecords .bottom table input[type="text"]{
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+
+.OrderRecords .bottom table input[type="submit"]{
+  color: white;
+  width: 110px;
+  height: 34px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: #3d90d6;
+  margin-right: 20px;
+  transition:background 0.35s;
+}
+
+.OrderRecords .bottom table input[type="submit"]:hover{
+  background: #1c6eb4;
+}
+
+
+
+
+.OrderRecords .bottom table th{
+  background: white;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+}
+
+.OrderRecords .bottom table td{
+  background: #eee;
+  height: 40px;
+  color: #8c8c8c;
+  border-bottom: 1px solid white;
+}
+
+.OrderRecords .bottom table td a{
+  text-decoration: underline;
+  margin: 0 10px;
+}
+
+
+.OrderRecords .bottom .date{
+/*  background: pink;*/
+  padding-left: 30px;
+  width: 50px;
+
+}
+
+
+
+
+  /********* userAccount style***********/
+/* ---------- OrderRecordsRef ----------------*/
+
+
+
+
+.publicBlockWider .contents .back{
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.publicBlockWider .contents .top h4{
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+
+.publicBlockWider .contents .top .pay{
+  width: 110px;
+}
+
+
+.publicBlockWider .contents .goodList{
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+
+
+.publicBlockWider .contents .goodList li{
+  width: 155px;
+  text-align: center;
+  margin:  0 5px;
+  vertical-align: top;
+}
+
+.publicBlockWider .contents .goodList figure{
+  display: inline-block;
+  width: 140px;
+  height: 200px;
+  overflow: hidden;
+/*  border: 1px solid red;*/
+  margin-bottom: 5px;
+}
+
+
+.publicBlockWider .contents .goodList figure img{
+  width: 100%;
+}
+
+
+.publicBlockWider .contents .goodList h2{
+  min-height: 36px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.publicBlockWider .contents .goodList input{
+  font-family: Arial,'微软雅黑','黑体', sans-serif;
+  width: 100%;
+  color: #b90000;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+
+
+.publicBlockWider .contents .goodList h3{
+  color: #b90000;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+
+.publicBlockWider .contents .goodList a{
+  color: #4090d7;
+  font-weight: bold;
+}
+
+
+.publicBlockWider .contents .totalBox{
+   margin:50px 0  50px 150px;
+   width: 515px;
+   border-top: 1px solid #d2d2d2;
+   text-align: center;
+   padding-top: 30px;
+}
+
+.publicBlockWider .contents .totalBox h2{
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.publicBlockWider .contents .totalBox h2 input{
+  text-align: right;
+  width: 70px;
+  border: none;
+  background: transparent;
+}
+
+.publicBlockWider .contents .totalBox h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.publicBlockWider .contents .totalBox h3 input{
+  text-align: right;
+  width: 100px;
+  color: #bd2525;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+/*  background: pink;*/
+
+}
+
+.publicBlockWider .contents .totalBox h3 i{
+  color: #bd2525;
+}
+
+
+  /********* userAccount style***********/
+/* ---------- profilesOperate 档案修改----------------*/
+
+
+
+.profilesOperate{
+
+}
+
+
+.profilesOperate>a{
+  display: inline-block;
+/*  background: pink;*/
+  font-weight: bold;
+  color: #b90000;
+  margin: 5px 0 20px;
+  float: right;
+}
+
+
+.profilesOperate table th{
+  background: white;
+  height: 40px;
+}
+
+.profilesOperate td{
+/*  border: 1px solid orange;*/
+  height: 40px;
+  border-bottom: 1px solid white;
+}
+
+
+.profilesOperate table{
+  text-align: left;
+  width: 100%;
+  border-top: 2px solid #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+}
+
+
+
+
+.profilesOperate .paddingLeft{
+  padding-left: 50px;
+}
+
+.profilesOperate table a{
+  text-decoration: underline;
+  font-weight: bold;
+/*  margin-right: 10px;*/
+  margin: 0 5px;
+}
+
+.profilesOperate .disable{
+  border: none;
+}
+
+.profilesOperate select{
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+}
+
+.profilesOperate option{
+  background: #eee;
+  font-size: 15px;
+}
+
+.profilesOperate table input[type="text"]{
+  max-width: 58px;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  outline: none;
+/*  background: pink;*/
+}
+
+.profilesOperate table .paddingLeft input{
+    max-width: 130px;
+}
+
+
+.profilesOperate table .red{
+  color: #cd0202;
+}
+
+
+
+  /********* userAccount style***********/
+/* ---------- CustomerData 顾客数据----------------*/
+
+
+
+.CustomerData .disable{
+  background: #8b8b8b;
+  border-bottom: 2px solid #797878;
+}
+
+.CustomerData select{
+  outline: none;
+}
+
+.dataBox{
+  margin-bottom: 50px;
+}
+
+
+.dataBox .titleBar{
+  width: 70%;
+  font-size: 16px;
+  color: #a8a8a8;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 5px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+
+.dataBox1{
+  text-align: left;
+  color: #8b8b8b;
+  margin-bottom: 20px;
+}
+
+.dataBox2{
+  text-align: left;
+  color: #8b8b8b;
+  margin-bottom: 20px;
+
+}
+
+
+.dataBox1 th{
+   font-weight: bold; 
+}
+
+.dataBox2 th{
+   font-weight: bold; 
+}
+
+.dataBox1 .input{
+  color: black;
+  line-height: 25px;
+  border:none;
+  background: transparent;
+  outline: none;
+}
+.dataBox1 input{
+  outline: none;
+}
+
+.dataBox2 input[type="text"]{
+  height: 40px;
+  border: 1px solid #d2d2d2;
+  outline:none;
+  margin-bottom: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.dataBox2 select{
+  height: 40px;
+  width: 70px;
+  padding-left: 10px;
+}
+
+
+  /********* userAccount style***********/
+/* ---------- Address 收货地址----------------*/
+
+
+.Address {}
+
+.Address .details{
+  background: #fbf0c4;
+  padding: 40px 40px;
+  font-size: 16px;
+}
+
+.Address .details span{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Address h2{
+  display: inline-block;
+  color: #8b8b8b;
+  font-size: 16px;
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+.Address table{
+  width: 100%;
+  text-align: left;
+  border-top: 2px solid #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+  margin-bottom: 20px;
+}
+.Address tr{
+  height: 40px;
+/*  background: pink;*/
+  border-bottom: 1px solid white;
+}
+
+.Address th{
+  background: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.Address td{
+  background: #eee;
+/*  border: 1px solid gray;*/
+}
+
+.Address .address {
+ padding-left: 10px;
+}
+
+.Address .address input{
+ width: 220px;
+}
+
+.Address .street input{
+ width: 190px;
+}
+
+.Address .city input{
+ width: 100px;
+}
+
+.Address .country input{
+ width: 80px;
+}
+
+.Address table input{
+/*  width: 170px;*/
+  font-size: 15px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.Address table a{
+/*  font-weight: bold;*/
+  text-decoration: underline;
+}
+
+
+  /********* userAccount style***********/
+/* ---------- supportTicket ----------------*/
+
+.supportTicket div{
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+
+.supportTicket a{
+  color: #b90000;
+  text-align: right;
+  font-weight: bold;
+}
+
+.supportTicket p{
+  padding: 30px 40px;
+  background: #fbf0c4;
+  margin-bottom: 20px;
+}
+
+
+  /********* userAccount style***********/
+/* ---------- Credit ----------------*/
+
+
+.Credit .availables{
+ height: 80px;
+}
+
+.Credit .availables h4{
+ float: left;
+ font-size: 16px;
+ margin-top: 16px;
+ margin-right: 20px;
+ font-weight: bold;
+}
+
+.Credit .availables h3{
+ float: left;
+ padding: 12px 27px;
+ background: #e60012;
+ color: white;
+ font-size: 20px;
+}
+
+.Credit p{
+  padding: 30px 40px;
+  background: #fbf0c4;
+ font-size: 15px;
+}
+
+.Credit .BlueBtn{
+  margin-bottom: 20px;
+}
+
+
+
+
+  /********* step style***********/
+/* ---------- shippingAddress ----------------*/
+
+
+.shippingAddress{
+  padding-bottom: 50px;
+}
+
+.shippingAddress .inputs{
+  width: 455px;
+/*  background: pink;*/
+}
+
+.shippingAddress .inputs input[type="text"]{
+  height: 36px;
+  padding-left: 10px;
+  color: #393939;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+}
+
+
+.shippingAddress .inputs select{
+  height: 36px;
+  padding-left: 10px;
+  color: #393939;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  width: 346px;
+}
+
+.shippingAddress .inputs .normal{
+    width: 335px;
+}
+
+.shippingAddress .inputs .full{
+  width: 455px;
+}
+
+.shippingAddress .inputs p{
+  margin:13px 0 3px;
+  font-weight: bold;
+}
+
+.shippingAddress .inputs h3{
+  font-size: 14px;
+  margin:5px 0 30px;
+  color: #8c8c8c;
+}
+
+
+.shippingAddress .inputs i{
+  position: relative;
+  top: -6px;
+  font-style: normal;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.shippingAddress .infomat{
+  width: 385px;
+}
+
+.shippingAddress .infomat ul{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d2d2d2;
+  margin-bottom: 10px;
+}
+
+.shippingAddress .infomat li{
+  clear: both;
+  margin-bottom: 15px;
+}
+
+.shippingAddress .infomat li figure{
+  width: 80px;
+  height: 138px;
+}
+
+.shippingAddress .infomat li figure img{
+  height: 100%;
+}
+
+
+.shippingAddress .infomat li .text{
+  position: relative;
+  width: 289px;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+
+.shippingAddress .infomat li h2{
+  display: inline-block;
+  width: 230px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+.shippingAddress .infomat li input[type="text"]{
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  text-align: right;
+  width:100px;
+  border: none;
+  color: #b90000;
+  font-size: 14px;
+  font-weight: bold;
+  background:transparent;
+  font-family: Arial,'微软雅黑','黑体', sans-serif;  
+}
+
+
+
+.shippingAddress .infomat p{
+  color: #8c8c8c;
+}
+
+.shippingAddress .infomat h3{
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.shippingAddress .infomat h4{
+  font-weight: bold;
+  float: right;
+  line-height: 28px;
+}
+
+.shippingAddress .infomat input[type="submit"]{
+  display: block;
+  clear:both;
+  width: 260px;
+  text-transform: uppercase;
+  margin: 60px 0 0 65px;
+}
+
+.shippingAddress .infomat .express{
+  width: 330px;
+  height: 127px;
+  background: url(../images/expressLable.jpg) no-repeat;
+  text-align: center;
+  padding-top: 15px;
+  margin: 30px 0 0 30px;
+}
+
+.shippingAddress .infomat .express h2{
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+
+.shippingAddress .infomat .express h3{
+  color: white;
+  font-weight: bold;
+}
+
+.shippingAddress .infomat .express img{
+  margin: 8px 0 5px;
+}
+
+
+.shippingAddress .infomat .total input[type="text"]{
+  float: right;
+  text-align: right;
+  width:100px;
+  border: none;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: bold;
+  background:transparent;
+  font-family: Arial,'微软雅黑','黑体', sans-serif;
+}
+
+
+
+/* *********measurement Detail******** */
+
+
+
+.measurementData{
+  padding-bottom: 80px;
+}
+
+.measurementData .top{
+  border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.measurementData .top h2{
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.measurementData .top p{
+  display: inline-block;
+  font-size: 17px;
+  margin-right: 15px;
+  color: #939393;
+}
+
+.measurementData .top p span{
+  color: black;
+}
+
+.measurementData .top section{
+/*  background: pink;*/
+  width: 120px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+}
+
+.measurementData .top section a{
+  display: inline-block;
+  text-align: right;
+  color: #1576c9;
+  border-bottom: 2px solid #1576c9;
+  margin-bottom: 5px;
+  transition:all 0.5s;
+}
+
+.measurementData .top section a:hover{
+  color: #55a9f1;
+  border-bottom: 2px solid #55a9f1;
+}
+
+.measurementData .top section i{
+  display: block;
+  font-style: normal;
+   text-align: right;
+   font-size: 13px;
+   color: #8c8c8c;
+   background: url(../images/add.png) no-repeat;
+   cursor: pointer;
+}
+
+.measurementData .top section i:hover{
+  text-decoration: underline;
+}
+
+.measurementData .middle{
+  margin: 30px 0 20px;
+}
+
+
+.measurementData .middle li{
+/*  background: pink;*/
+  font-weight: bold;
+  margin: 0 90px;
+  position: relative;
+  cursor: pointer;
+}
+
+.measurementData .middle li img{  
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.measurementData .middle .bubble{
+  display: none;
+  position: absolute;
+  bottom: 35px;
+  left: -55%;
+  background: #1e1e1e;
+  min-height: 35px;
+  width: 300px;
+  color: white;
+  font-weight:normal;
+  border-radius: 8px;
+  padding: 10px;
+
+   animation:bubbleInto 1s;
+   -webkit-animation:bubbleInto 1s;
+   -moz-animation:bubbleInto 1s;
+   -o-animation:bubbleInto 1s;
+}
+
+
+@keyframes bubbleInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+-webkit-@keyframes bubbleInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+-moz-@keyframes bubbleInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+-o-@keyframes bubbleInto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.measurementData .middle li:hover .bubble{
+ display: block;
+}
+
+
+.measurementData .middle .bubble .arrow{
+  position: absolute;
+  bottom: -8px;
+  left: 45%;
+  width:0;
+  height: 0;
+  border-top: 8px solid #1e1e1e;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+
+.measurementData table{
+/*  width: 340px;*/
+/*  background: pink;*/
+}
+
+
+.measurementData table th{
+  text-align: left;
+  color: black;
+  font-size: 17px;
+/*  font-weight: bold;*/
+}
+
+.measurementData table td{
+  text-align: left;
+  color: black;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.measurementData table input{
+  width: 72px;
+  height: 36px;
+  padding-left: 10px;
+  border: 1px solid #d2d2d2;
+/*  text-align: center;*/
+  outline:none;
+  font-size: 15px;
+  margin: 7px 0 7px 20px;
+}
+
+.measurementData table .tips{
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.measurementData .diagramma{
+  width: 570px;
+/*  background: pink;*/
+}
+
+.measurementData .diagramma p{
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+
+.measurementData .bottom{
+  clear: both;
+  width: 450px;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 50px;
+/*  background: pink;*/
+}
+
+.measurementData .bottom a{
+  color: #3d90d7;
+  text-decoration: underline;
+  line-height: 40px;
+  font-weight: bold;
+  transition:all 0.5s;
+}
+
+.measurementData .bottom a:hover{
+  color: #0969ba;
+}
+
+
+
+
+  /********* shoppingBag style***********/
+/* ---------- shoppingBag ----------------*/
+
+
+.shoppingBag{
+
+}
+
+.shoppingBag .title{
+  color: black;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.shoppingBag .leftPart{
+/*  background: pink;*/
+  float: left;
+  width: 780px;
+}
+
+
+.shoppingBag .bagList{
+  width: 760px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d2d2d2;
+
+}
+
+.shoppingBag .bagList li{
+  width: 100%;
+  position: relative;
+}
+
+.shoppingBag .bagList figure{
+  width: 141px;
+  height: 198px;
+}
+
+.shoppingBag .bagList figure img{
+  width: 100%;
+}
+
+.shoppingBag .bagList .info{
+  width: 400px;
+  margin-left: 20px;
+}
+
+
+
+.shoppingBag .bagList .info h2{
+  font-size: 22px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+
+.shoppingBag .bagList .info .line{
+  margin:15px 0; 
+  padding-left: 20px;
+}
+
+.shoppingBag .bagList .info .p1{background: url(../images/line1.png) no-repeat;}
+.shoppingBag .bagList .info .p2{background: url(../images/line2.png) no-repeat;}
+.shoppingBag .bagList .info .p3{background: url(../images/line3.png) no-repeat;}
+
+.shoppingBag .bagList .info p{
+  display: inline-block;
+  color: #8c8c8c;
+}
+
+.shoppingBag .bagList .info i{
+  color: black;
+  font-style: normal;
+}
+
+
+.shoppingBag .bagList .info .delete{
+  color: #3d90d7;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+.shoppingBag .bagList .operation{
+ clear: both;
+ text-align: right;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+}
+
+.shoppingBag .bagList .operation .operate{
+  display: block;
+  color: #3d90d7;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.shoppingBag .bagList .operation .change{
+  margin: 0 3px;
+}
+
+.shoppingBag .bagList .operation .number{
+  width: 44px;
+  height: 24px;
+  border: 1px solid #a0a0a0;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.shoppingBag .bagList .operation .unitPrice{
+  font-size: 20px;
+  color: #b90000;
+  text-align: right;
+  border: none;
+  margin-top: 25px;
+  background: transparent;
+  width: 170px;
+}
+
+.shoppingBag .label{
+  width: 469px;
+  height: 129px;
+  background: url(../images/labelBG2.jpg) no-repeat;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.shoppingBag h1{
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  margin: 30px 0 20px;
+}
+
+.shoppingBag .label h2{
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+.shoppingBag .label h4{
+  font-size: 18px;
+}
+
+
+.shoppingBag .offers{
+  margin:10px 0 60px;
+}
+
+.shoppingBag .rightPart{
+  float: right;
+  width: 280px;
+  position: relative;
+}
+
+.shoppingBag .rightPart p{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.shoppingBag .rightPart h2{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.shoppingBag .rightPart i{
+  font-style: normal;
+  float: right;
+}
+
+.shoppingBag .rightPart .top{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.shoppingBag .rightPart .totalPrice{
+  float: right;
+  text-align: right;
+  border: none;
+  width: 150px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial,'微软雅黑','黑体', sans-serif;
+  background: transparent;
+}
+
+
+.shoppingBag .rightPart h2 .totalPrice{
+  color: #b90000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+.shoppingBag .rightPart>input[type="submit"]{
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.shoppingBag .rightPart .continue{
+  background: #3d90d7 url(../images/submitBg1.jpg) no-repeat;
+  background-position: center;
+
+  height: 55px;
+  border: none;
+}
+
+.shoppingBag .rightPart .payInOne{
+  background: #3d90d7 url(../images/submitBg2.jpg) no-repeat;
+  background-position: center;
+  height: 42px;
+  border: none;
+}
+
+.shoppingBag .rightPart .Line{
+  border-top:1px solid #d2d2d2;
+  margin: 20px 0;
+  position: relative;
+}
+
+.shoppingBag .rightPart .Line i{
+  color: black;
+  position: absolute;
+  top: -10px;
+  left: 44%;
+  background: #f6f6f6;
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.shoppingBag .rightPart h1{
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #8c8c8c;
+  font-weight: normal;
+}
+
+.shoppingBag .rightPart h3{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.shoppingBag .rightPart h3 b{
+  font-style: normal;
+  font-size: 18px;
+}
+
+.shoppingBag .rightPart a{
+  color: #3d90d7;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.shoppingBag .rightPart h4{
+  margin-top: 30px;
+  color: #9d9d9d;
+  font-weight: bold;
+}
+
+.shoppingBag .rightPart h4 span{
+  color: black;
+}
+
+.shoppingBag .rightPart .code{
+  vertical-align: top;
+}
+.shoppingBag .rightPart .code input[type="text"]{
+  width: 180px;
+  height: 33px;
+  border: 1px solid #bfbfbf;
+  padding-left: 10px;
+  outline:none;
+}
+
+.shoppingBag .rightPart .code input[type="submit"]{
+  position: relative;
+  top: 10px;
+  width: 33px;
+  height: 33px;
+  background: url(../images/goto.png) no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+  /********* allProducts style***********/
+/* ---------- allProducts ----------------*/
+
+
+.allProducts .position{
+  margin-bottom: 10px;
+
+}
+
+.allProducts .position a{
+ font-size: 13px;
+/* color: red;*/
+}
+
+
+
+.sortNav{
+  background: white;
+  border: 1px solid #dcdcdc;
+  width: 290px;
+}
+
+.sortNav .sortTitle{
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-left: 5%;
+  font-weight: bold;
+  position: relative;
+}
+
+.sortNav .sortTitle .spreadBtn{
+  background: url(../images/spread.png) no-repeat;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 5%;
+  top: 15px;
+  cursor: pointer;
+  vertical-align: top;
+  line-height: 23px;
+}
+
+.sortNav .sortTitle .spreadBtn:hover{
+  background: #f4f4f4 url(../images/spread.png) no-repeat;
+}
+
+
+.sortNav .sortTitle .spreadBtnRotate{
+  transform:rotate(180deg); 
+  -webkit-transform:rotate(180deg); 
+  -o-transform:rotate(180deg); 
+  -moz-transform:rotate(180deg); 
+
+}
+
+
+
+.sortNav .classify{}
+
+
+.sortNav .classify button{
+  display: inline-block;
+  margin: 5% 0 0 5%;
+  font-size: 13px;
+  background: #f7f7f7;
+  padding: 10px 10px 10px 25px;
+  background: #f7f7f7 url(../images/close.png)no-repeat;
+  background-position: 8px center;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.sortNav .classify button:hover{
+  background: #eee url(../images/close.png)no-repeat;
+  background-position: 8px center;
+}
+
+
+
+.sortNav .classify li{
+  margin: 0 auto;
+/*  width: 90%;*/
+  padding: 0 5%;
+  display: block;
+  height: 39px;
+  line-height: 39px;
+  border-bottom: 1px solid #f1f1f1;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+
+.sortNav .classify li:hover{
+  color: black;
+  background: #fafafa;
+}
+
+
+
+
+.allProducts .products{
+ width: 880px;
+/* background: #eee;*/
+}
+
+.allProducts .products .title{
+  text-align: center;
+  padding: 0 70px;
+
+}
+  
+.allProducts .products .title h2{
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.allProducts .products .title button{
+  padding: 13px 20px;
+  background: #fdfdfd;
+  border: none;
+  border-radius: 5px;
+  color: #8c8c8c;
+  font-size: 13px;
+  margin: 20px 20px 0;
+}
+
+.allProducts .products .title button:hover{
+  background: #eee;
+}
+
+
+
+
+.allProducts .products .infoBar{
+  margin:20px 0; 
+}
+
+.allProducts .products .infoBar p{
+  color: #8b8b8b;
+  line-height: 30px;
+}
+
+.allProducts .products .infoBar span{
+  color: black;
+}
+
+.allProducts .products .infoBar select{
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+
+.allProducts .products .infoBar select option{
+  line-height: 30px;
+  height: 30px;
+  margin: 10px;
+  border: 0;
+}
+
+.allProducts .productList{
+  clear: both;
+}
+
+.allProducts .productList li{
+  position: relative;
+  width: 275px;
+  height: 375px;
+  margin:10px  7px;
+  vertical-align: top;
+}
+
+.allProducts .productList li figure{
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.graybox{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition:all 0.6s;
+  -webkit-transition:all 0.6s;
+  -moz-transition:all 0.6s;
+  -o-transition:all 0.6s;
+}
+.allProducts .productList li figure:hover .graybox{
+  background: rgba(0,0,0,0.12);
+}
+
+
+.allProducts .productList li figure img{
+  width: 100%;
+}
+
+.allProducts .productList li h2{
+  color: black;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.allProducts .productList li p{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  color: #b90000;
+  font-weight: bold;
+}
+
+
+
+  /********* POPUP弹窗 style***********/
+/* ---------- public ----------------*/
+
+
+
+
+.pop{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   display: none;
+}
+
+.popBG{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 888;
+  display: block;
+}
+
+
+/* ---------- changePassword ----------------*/
+
+.changePassword .popUp {
+    width: 430px;
+    height: 215px;
+    padding: 0 80px;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    margin-top: -120px;
+    margin-left: -290px;
+    background: #fff;
+    color: black;
+}
+
+
+.popUp .title{
+  margin-top: 25px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid #dfdfdf;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+/*  font-weight: bold;*/
+}
+
+.changePassword .popUp table th{
+  text-align: left;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.changePassword .popUp table input[type="text"]{
+  padding-left: 5px;
+  height: 30px;
+  width: 230px;
+  outline: none;
+  border: 1px solid #b5b5b5;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.changePassword .popUp table .GrayBtn{
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+/* ---------- profileView ----------------*/
+
+.profileView .popUp {
+    width: 410px;
+    height: 585px;
+    padding: 0 80px;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    margin-top: -290px;
+    margin-left: -275px;
+    background: #fff;
+    color: black;
+    text-align: center;
+}
+
+.profileView .popUp img{
+  margin-top: 20px;
+}
+
+
+.profileView .popUp table{
+  margin: 20px 0 0 30px;
+  margin-bottom: 20px;
+}
+
+.profileView .popUp table tr{
+  height: 20px;
+}
+
+
+.profileView .popUp table th{
+  text-align: right;
+  font-weight: bold;
+}
+
+.profileView .popUp table td{
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+
+/* ---------- addressEdit ----------------*/
+
+.addressEdit .popUp {
+    width: 450px;
+    height: 585px;
+    padding: 0 80px;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    margin-top: -290px;
+    margin-left: -275px;
+    background: #fff;
+    color: black;
+}
+
+
+.addressEdit .popUp table{
+  margin: 20px 0 0 0;
+  margin-bottom: 20px;
+}
+
+.addressEdit .popUp table tr{
+  height: 20px;
+}
+
+.addressEdit .popUp table th{
+  text-align: left;
+  font-weight: bold;
+  font-size: 15px;
+  width: 30%;
+}
+
+.addressEdit .popUp table td{
+  font-weight: bold;
+  padding-left: 5px;
+  width: 60%;
+}
+
+.addressEdit .popUp table input[type="text"]{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #dcdcdc;
+  outline: none;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #5f5f5f;
+  padding-left: 10px;
+}
+
+.addressEdit .popUp table i{
+  position: relative;
+  top: -5px;
+  display: inline-block;
+  font-style: normal;
+  color: #5f5f5f;
+  margin: 30px 0 0 15px;
+}
+
+.addressEdit .popUp table .GrayBtn{
+  margin: 20px 30px 0 0;
+}
+
+
+  /********* suitCustom style***********/
+/* ---------- suitCustom ----------------*/
+
+.suitCustom .processBar{
+  width: 420px;
+  height: 38px;
+  display: block;
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.suitCustom .processBar li{ 
+  height: 34px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 30px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition:all 0.5s;
+}
+
+.suitCustom .processBar a{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #8c8c8c;
+}
+
+.suitCustom .processBar li:hover{
+  border-bottom: 2px solid #b90000;
+} 
+
+.suitCustom .processBar a:hover {
+  color: black;
+} 
+
+.suitCustom .processBar .active{
+  color: black;
+  border-bottom: 2px solid #b90000;
+}
+
+
+.suitCustom .processBar .active a{
+  color: black;
+}
+
+
+.suitCustom .content{
+  position: relative;
+}
+
+
+.suitCustom .customNav{
+  width: 360px;
+}
+
+.suitCustom .title{
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.customNav .category{
+  position: relative;
+}
+
+.customNav .category>li{
+  display: block;
+  height: 66px;
+  margin-top: 5px;
+  border-bottom: 1px dashed #959595;
+}
+
+.customNav .category .type{
+  display: block;
+  height: 66px;
+  width: 100%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.customNav .category .type:hover{
+  opacity: 1;
+  }
+
+
+.customNav .category .type figure{
+  float: left;
+  margin: 10px 10px 0 0;
+}
+
+.customNav .category .type p{
+  float: left;
+  line-height: 66px;
+  font-size: 16px;
+}
+
+.customNav .category .type h4{
+  float: left;
+  font-size: 14px;
+  width: 185px;
+  margin-top: 21px;
+}
+
+.customNav .category .type h5{
+  float: right;
+  line-height: 66px;
+}
+
+
+.suitCustom .content .info{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #eee;
+  height: 40px;
+  padding: 10px;
+}
+
+.customNav .category .typeBoxList{
+  display: none;
+  position: absolute;
+  left: 60px;
+/*  left: 150px;*/
+  top: 0;
+  background: #f6f6f6;
+/*  min-height: 300px;*/
+  min-height: 100%;
+  padding-bottom: 30px;
+  width: 100%;
+  z-index: 100;
+  border-left: 1px solid #bcbcbc;
+  padding-left: 25px;
+  box-shadow: -8px 0px 0px 0px #f6f6f6;
+  overflow: hidden;
+
+  -webkit-animation:typeBoxListInto 0.7s;
+  -moz-animation:typeBoxListInto 0.7s;
+  -o-animation:typeBoxListInto 0.7s;
+  animation:typeBoxListInto 0.7s;
+}
+
+
+-webkit-@keyframes typeBoxListInto{
+  from{left:150px;  opacity: 0;}
+  to{left: 60px;  opacity: 1;}
+}
+
+-moz-@keyframes typeBoxListInto{
+  from{left:150px;  opacity: 0;}
+  to{left: 60px;  opacity: 1;}
+}
+
+-o-@keyframes typeBoxListInto{
+  from{left:150px;  opacity: 0;}
+  to{left: 60px;  opacity: 1;}
+}
+
+@keyframes typeBoxListInto{
+  from{left:150px;  opacity: 0;}
+  to{left: 60px;  opacity: 1;}
+}
+
+
+
+.customNav .category .typeBox{
+  position: relative;
+  z-index: 188px;
+  margin-bottom: 35px;
+  font-size: 15px;
+  z-index: 10;
+  -webkit-animation:typeBox 0.6s;
+  -moz-animation:typeBox 0.6s;
+  -o-animation:typeBox 0.6s;
+  animation:typeBox 0.6s;
+
+  -webkit-animation-delay:0.05s;
+  -moz-animation-delay:0.05s;
+  -o-animation-delay:0.05s;
+  animation-delay:0.05s;
+}
+
+
+-webkit-@keyframes typeBox{
+  from{ left: -150px;}
+  to{ left: 0; }
+}
+
+-moz-@keyframes typeBox{
+  from{ left: -150px;}
+  to{ left: 0;}
+}
+
+-o-@keyframes typeBox{
+  from{ left: -150px;}
+  to{ left: 0;}
+}
+
+@keyframes typeBox{
+  from{ left: -150px; }
+  to{ left: 0;}
+}
+
+.customNav .category .typeBox label{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.customNav .category .typeBoxList h2{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.customNav .category .typeBoxList h3{
+  clear: both;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.customNav .category .typeBoxList ul{
+  width: 100%;
+}
+
+.customNav .category .typeBoxList li{
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  margin-bottom:8px; 
+  vertical-align: top;
+  opacity: 0.6;
+}
+
+.customNav .category .typeBoxList li:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.customNav .category .typeBoxList li img{
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+
+.customNav .category .typeBoxList li h3{
+  margin: 0;
+  font-size: 12px;
+  padding: 0 5px;
+  line-height: 16px;
+}
+
+.customNav .category .typeBoxList .active{
+  opacity: 1;
+  background: url(../images/selected.jpg) no-repeat;
+}
+
+.customNav .category .closeButton{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  background: url(../images/arrow.png) no-repeat;
+  z-index: 30;
+}
+
+
+
+.suitCustom .content .info .freeship{
+  background: url(../images/redCar.png) no-repeat;
+  display: inline-block;
+  padding-right: 15px;
+  margin-right: 5px;
+  border-right:1px solid #bfbfbf;
+}
+
+.suitCustom .content .info .freeship h2{
+  position: relative;
+  top: 3px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+.suitCustom .content .info .freeship p{
+  font-size: 13px;
+}
+
+.suitCustom .content .info .price{
+  display: inline-block;
+}
+
+.suitCustom .content .info .price h3{
+  font-weight: bold;
+  color: #bd1010;
+  font-size: 18px;
+}
+
+.suitCustom .content .info .price h4{
+  text-decoration: line-through;
+}
+
+
+.suitCustom .proInfo{
+  position: absolute;
+  right: 0;
+  top: 200px;
+  display: inline-block;
+  color: black;
+  text-align: right;
+  line-height: 32px;
+}
+
+.suitCustom .proInfo h2{
+  font-size: 18px;
+}
+
+.suitCustom .proInfo h1{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.suitCustom .proInfo h3{
+  color: #b90000;
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.suitCustom .content .next{
+  text-align: center;
+  display: inline-block;
+  width: 118px;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  background: #cb0000;
+  font-size: 18px;
+  transition:all 0.5s;
+}
+
+.suitCustom .content .next:hover{
+  background: #ad0000;
+}
+
+.suitCustom .content .back{
+  text-align: center;
+  display: inline-block;
+  width: 118px;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  background: #bfbfbf;
+  font-size: 18px;
+  transition:all 0.5s;
+}
+
+.suitCustom .content .back:hover{
+  background: #b4b4b4;
+}
+
+/* ########### 0704新增个性化样式 ########### */
+
+#accents .category .typeBoxList{
+  min-height: 800px;
+/*  min-height: 770;*/
+}
+
+.customNav .category .typeBoxList .popPanel{
+  position: relative;
+  margin-top: 20px;
+  left: -380px;
+}
+
+.customNav .category .typeBoxList .popPanel ul{
+  margin-bottom: 20px;
+}
+
+
+/* --------- 二级颜色板块 ---------- */
+
+
+.customNav .category .typeBoxList .colorList{
+  padding-top: 10px;
+}
+
+.customNav .category .typeBoxList .colorList input{
+   display: none;
+}
+
+
+.customNav .category .typeBoxList .colorList li{
+   opacity: 1;
+   width: 36px;
+   margin-right: 15px;
+   border-bottom: 3px solid transparent;
+   overflow: hidden;
+}
+
+.customNav .category .typeBoxList .colorList li img{
+  width: 100%;
+  margin: 0;
+}
+
+
+.customNav .category .typeBoxList .colorList li:hover{
+   border-bottom: 3px solid #c2272d;
+   background: none;
+}
+
+.customNav .category .typeBoxList .colorList .active{
+   border-bottom: 3px solid #c2272d;
+   background: none;
+}
+
+
+
+/* --------- 二级图片板块 ---------- */
+
+
+.customNav .category .typeBoxList .picTypeList{
+  padding-top: 10px;
+}
+
+
+.customNav .category .typeBoxList .picTypeList li{
+   opacity: 1;
+   width: 45%;
+   margin-right: 15px;
+   background: none;
+   overflow: hidden;
+}
+
+
+.customNav .category .typeBoxList .picTypeList li img{
+   border-bottom: 3px solid transparent;
+   max-width: 100%;
+}
+
+
+.customNav .category .typeBoxList .picTypeList li:hover{
+   background: none;
+}
+
+.customNav .category .typeBoxList .picTypeList li:hover img{
+   border-bottom: 3px solid #c2272d;
+}
+
+
+.customNav .category .typeBoxList .picTypeList .active img{
+   border-bottom: 3px solid #c2272d;
+   background: none;
+}
+
+.customNav .category .typeBoxList .picTypeList li p{
+  font-size: 12px;
+}
+
+/* --------- 二级布料板块 ---------- */
+
+.customNav .category .typeBoxList .materialPanel{
+  position: absolute;
+  top:0;
+  left: -400px;
+  width: 360px;
+  background: #f6f6f6;
+  z-index: 999;
+}
+
+.customNav .category .typeBoxList .closePanelButton{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  display: block;
+  width: 31px;
+  height: 31px;
+  background-image:url(../images/closeBtn.png);
+  cursor: pointer;
+}
+
+
+.customNav .category .typeBoxList .materialPanel .line{
+  width: 315px;
+  border-top: 1px solid #bcbcbc;
+  margin: 25px 0 20px 0;
+}
+
+.customNav .category .typeBoxList .materialList{
+  padding-top: 10px;
+  height: 760px;
+  overflow-y :auto;
+  position: relative;
+}
+
+.customNav .category .typeBoxList .materialList li{
+   opacity: 1;
+   width: 40%;
+   margin-right: 25px;
+   background: none;
+   overflow: hidden;
+   background: none;
+}
+
+
+.customNav .category .typeBoxList .materialList li img{
+   border-bottom: 3px solid transparent;
+   width: 100%;
+   height: 102px;
+   margin-bottom: 3px;
+
+}
+
+
+
+.customNav .category .typeBoxList .materialList li:hover img{
+   border-bottom: 3px solid #c2272d;
+}
+
+
+
+.customNav .category .typeBoxList .materialList .active img{
+   border-bottom: 3px solid #c2272d;
+}
+
+
+.customNav .category .typeBoxList .materialList li p{
+  font-size: 12px;
+  text-align: left;
+  float: left;
+  display: block;
+  width: 90px;
+  margin-bottom: 7px;
+  word-wrap:break-word;
+}
+
+.customNav .category .typeBoxList .materialList li h4{
+  float: right;
+  display: block;
+  width: 19px;
+  height: 14px;
+  background: url(../images/diamond.jpg);
+  background-repeat: no-repeat;
+} 
+
+.customNav .category .typeBoxList .materialList li h5{
+  float: right;
+  font-size: 12px;
+  display: none;
+}
+
+.customNav .category .typeBoxList .materialList li:hover h4{
+  display: none;
+}
+
+.customNav .category .typeBoxList .materialList li:hover h5{
+  display: block;
+}
+
+
+
+
+/* --------- 二级个性化字体模块 ---------- */
+
+
+.customNav .category .typeBoxList .minPanel{
+  margin-top: 30px;
+}
+
+.customNav .category .typeBoxList .fontsList{
+  margin-bottom: 30px;
+}
+
+.customNav .category .typeBoxList .fontsList label{
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 30%;
+}
+
+
+
+.suitCustom .content .controlList #suitText{
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  top: 75px;
+  left: 470px;
+  width: 515px;
+}
+
+#suitText img{
+  width: 100%;
+  border: 3px solid #eee;
+}
+
+.typeIn{
+  height: 32px;
+  width: 190px;
+  border: 1px solid gray;
+  line-height: 32px;
+  padding-left: 10px;
+  float: left;
+  margin-bottom: 40px;
+}
+
+/* 绣字上的样式 */
+.typeInCopy{
+  font-family: 'Font1';  /*默认字体*/
+  color: #eeb937; /*默认颜色*/
+  font-size: 14px;
+  border: none;
+  background-color:transparent; ;
+  text-align: center;
+  outline: none;
+}
+
+#suitTypeInCopy{
+  position: absolute;
+  left: 170px;
+  top: 158px;
+  -webkit-transform:rotate(-18deg); 
+  -moz-transform:rotate(-18deg); 
+  -o-transform:rotate(-18deg); 
+  transform:rotate(-18deg); 
+  width: 220px;
+}
+
+
+
+/* --------- 二级个性化字体位置模块（衬衫独有） ---------- */
+
+.customNav .category .typeBoxList .positionList{
+  margin-top: 15px;
+
+}
+
+.customNav .category .typeBoxList .positionList label{
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+
+.customNav .category .typeBoxList .positionList .anchor{
+/*  background: pink;*/
+  display: inline-block;
+  width: 43%;
+}
+
+
+.customNav .category .typeBoxList .positionList input[type="text"]{
+  display: none;
+}
+
+
+#shirtTypeInCopy{
+  position: absolute;
+  width: 105px;
+  font-size: 12px;
+  left: 790px;
+  top: 400px;
+}
+
+/* --------- 二级个性化字体位置模块（衬衫独有） END---------- */
+
+
+.clearInput{
+  float: left;
+  margin-left: 5px;
+  background-image:url(../images/closeBtn.png); 
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+}
+
+/* ########## 0704新增个性化样式 END ############# */
+
+
+
+
+
+/* ---------- productBox ----------------*/
+
+.suitCustom{
+  min-height: 1500px;
+}
+
+.suitCustom .productBox{
+ position: absolute;
+ z-index: 30;
+ width: 450px;
+ top:75px;
+ left: 550px;
+}
+
+.suitCustom .productBox .top{
+  text-align: right;
+}
+
+.suitCustom .productBox .top a{
+  color: black;
+  margin:  0 40px 10px 50px;
+  height: 19px;
+  font-weight: bold;
+  padding-left: 25px;
+  border-bottom:1px solid black; 
+  display: inline-block;
+  background: #eee;
+  text-align: left;
+}
+
+.suitCustom .productBox .top .rotate{background: url(../images/rotateIcon.png) no-repeat;}
+.suitCustom .productBox .top .canNotSee{background: url(../images/disableSee.png) no-repeat;}
+.suitCustom .productBox .top .canSee{background: url(../images/ableSee.png) no-repeat;}
+
+
+
+.drawing{
+  position: relative;
+  width: 95%;
+  height: 1200px;
+  margin:  0 auto;
+}
+
+.drawing img{
+  width: 100%;
+}
+
+
+.drawing .layer{
+ position: relative;
+}
+
+.drawing .layer li{
+  position: absolute;
+  display: none;
+}
+
+.drawing .sort{
+  display: none;
+}
+
+.layer .on{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+.drawing .level1{z-index:101;}
+.drawing .level2{z-index:102;}
+.drawing .level3{z-index:103;}
+.drawing .level4{z-index:104;}
+.drawing .level5{z-index:105;}
+.drawing .level6{z-index:106;}
+.drawing .level7{z-index:107;}
+.drawing .level8{z-index:108;}
+.drawing .level9{z-index:109;}
+.drawing .level10{z-index:110;}
+
+.drawing .level11{z-index:111;}
+.drawing .level12{z-index:112;}
+.drawing .level13{z-index:113;}
+.drawing .level14{z-index:114;}
+.drawing .level15{z-index:115;}
+.drawing .level16{z-index:116;}
+.drawing .level17{z-index:117;}
+.drawing .level18{z-index:118;}
+.drawing .level19{z-index:119;}
+.drawing .level20{z-index:120;}
+
+.drawing .level21{z-index:121;}
+.drawing .level22{z-index:122;}
+.drawing .level23{z-index:123;}
+.drawing .level24{z-index:124;}
+.drawing .level25{z-index:125;}
+.drawing .level26{z-index:126;}
+.drawing .level27{z-index:127;}
+.drawing .level28{z-index:128;}
+.drawing .level29{z-index:129;}
+.drawing .level30{z-index:130;}
+
+.drawing .level31{z-index:131;}
+.drawing .level32{z-index:132;}
+.drawing .level33{z-index:133;}
+.drawing .level34{z-index:134;}
+.drawing .level35{z-index:135;}
+.drawing .level36{z-index:136;}
+.drawing .level37{z-index:137;}
+.drawing .level38{z-index:138;}
+.drawing .level39{z-index:139;}
+.drawing .level40{z-index:140;}
+
+.drawing .level41{z-index:141;}
+.drawing .level42{z-index:142;}
+.drawing .level43{z-index:143;}
+.drawing .level44{z-index:144;}
+.drawing .level45{z-index:145;}
+.drawing .level46{z-index:146;}
+.drawing .level47{z-index:147;}
+.drawing .level48{z-index:148;}
+.drawing .level49{z-index:149;}
+.drawing .level50{z-index:150;}
+
+.drawing .level51{z-index:151;}
+.drawing .level52{z-index:152;}
+.drawing .level53{z-index:153;}
+.drawing .level54{z-index:154;}
+.drawing .level55{z-index:155;}
+.drawing .level56{z-index:156;}
+.drawing .level57{z-index:157;}
+.drawing .level58{z-index:158;}
+.drawing .level59{z-index:159;}
+.drawing .level60{z-index:160;}
+
+.drawing .level61{z-index:161;}
+.drawing .level62{z-index:162;}
+.drawing .level63{z-index:163;}
+.drawing .level64{z-index:164;}
+.drawing .level65{z-index:165;}
+.drawing .level66{z-index:166;}
+.drawing .level67{z-index:167;}
+.drawing .level68{z-index:168;}
+.drawing .level69{z-index:169;}
+.drawing .level70{z-index:170;}
+
+
+.drawing .level71{z-index:171;}
+.drawing .level72{z-index:172;}
+.drawing .level73{z-index:173;}
+.drawing .level74{z-index:174;}
+.drawing .level75{z-index:175;}
+.drawing .level76{z-index:176;}
+.drawing .level77{z-index:177;}
+.drawing .level78{z-index:178;}
+.drawing .level79{z-index:179;}
+.drawing .level80{z-index:180;}
+
+
+.drawing .level81{z-index:181;}
+.drawing .level82{z-index:182;}
+.drawing .level83{z-index:183;}
+.drawing .level84{z-index:184;}
+.drawing .level85{z-index:185;}
+.drawing .level86{z-index:186;}
+.drawing .level87{z-index:187;}
+.drawing .level88{z-index:188;}
+.drawing .level89{z-index:189;}
+.drawing .level90{z-index:190;}
+
+
+.drawing .level91{z-index:191;}
+.drawing .level92{z-index:192;}
+.drawing .level93{z-index:193;}
+.drawing .level94{z-index:194;}
+.drawing .level95{z-index:195;}
+.drawing .level96{z-index:196;}
+.drawing .level97{z-index:197;}
+.drawing .level98{z-index:198;}
+.drawing .level99{z-index:199;}
+.drawing .level100{z-index:200;}
+
+
+
+
+.drawing .backSide{z-index: 200;}
+.drawing .base{z-index: 100;}
+.drawing .level0{z-index: 100;}
+
+
+
+
+.drawing .level-1{z-index:99;}
+.drawing .level-2{z-index:98;}
+.drawing .level-3{z-index:97;}
+.drawing .level-4{z-index:96;}
+.drawing .level-5{z-index:95;}
+.drawing .level-6{z-index:94;}
+.drawing .level-7{z-index:93;}
+.drawing .level-8{z-index:92;}
+.drawing .level-9{z-index:91;}
+.drawing .level-10{z-index:90;}
+
+.drawing .level-11{z-index:89;}
+.drawing .level-12{z-index:88;}
+.drawing .level-13{z-index:87;}
+.drawing .level-14{z-index:86;}
+.drawing .level-15{z-index:85;}
+.drawing .level-16{z-index:84;}
+.drawing .level-17{z-index:83;}
+.drawing .level-18{z-index:82;}
+.drawing .level-19{z-index:81;}
+.drawing .level-20{z-index:80;}
+
+
+.drawing .level-21{z-index:79;}
+.drawing .level-22{z-index:78;}
+.drawing .level-23{z-index:77;}
+.drawing .level-24{z-index:76;}
+.drawing .level-25{z-index:75;}
+.drawing .level-26{z-index:74;}
+.drawing .level-27{z-index:73;}
+.drawing .level-28{z-index:72;}
+.drawing .level-29{z-index:71;}
+.drawing .level-30{z-index:70;}
+
+.drawing .level-31{z-index:69;}
+.drawing .level-32{z-index:68;}
+.drawing .level-33{z-index:67;}
+.drawing .level-34{z-index:66;}
+.drawing .level-35{z-index:65;}
+.drawing .level-36{z-index:64;}
+.drawing .level-37{z-index:63;}
+.drawing .level-38{z-index:62;}
+.drawing .level-39{z-index:61;}
+.drawing .level-40{z-index:60;}
+
+.drawing .level-41{z-index:59;}
+.drawing .level-42{z-index:58;}
+.drawing .level-43{z-index:57;}
+.drawing .level-44{z-index:56;}
+.drawing .level-45{z-index:55;}
+.drawing .level-46{z-index:54;}
+.drawing .level-47{z-index:53;}
+.drawing .level-48{z-index:52;}
+.drawing .level-49{z-index:51;}
+.drawing .level-50{z-index:50;}
+
+.drawing .level-51{z-index:49;}
+.drawing .level-52{z-index:48;}
+.drawing .level-53{z-index:47;}
+.drawing .level-54{z-index:46;}
+.drawing .level-55{z-index:45;}
+.drawing .level-56{z-index:44;}
+.drawing .level-57{z-index:43;}
+.drawing .level-58{z-index:42;}
+.drawing .level-59{z-index:41;}
+.drawing .level-60{z-index:40;}
+
+.drawing .level-61{z-index:39;}
+.drawing .level-62{z-index:38;}
+.drawing .level-63{z-index:37;}
+.drawing .level-64{z-index:36;}
+.drawing .level-65{z-index:35;}
+.drawing .level-66{z-index:34;}
+.drawing .level-67{z-index:33;}
+.drawing .level-68{z-index:32;}
+.drawing .level-69{z-index:31;}
+.drawing .level-70{z-index:30;}
+
+.drawing .level-71{z-index:29;}
+.drawing .level-72{z-index:28;}
+.drawing .level-73{z-index:27;}
+.drawing .level-74{z-index:26;}
+.drawing .level-75{z-index:25;}
+.drawing .level-76{z-index:24;}
+.drawing .level-77{z-index:23;}
+.drawing .level-78{z-index:22;}
+.drawing .level-79{z-index:21;}
+.drawing .level-80{z-index:20;}
+
+.drawing .level-81{z-index:19;}
+.drawing .level-82{z-index:18;}
+.drawing .level-83{z-index:17;}
+.drawing .level-84{z-index:16;}
+.drawing .level-85{z-index:15;}
+.drawing .level-86{z-index:14;}
+.drawing .level-87{z-index:13;}
+.drawing .level-88{z-index:12;}
+.drawing .level-89{z-index:11;}
+.drawing .level-90{z-index:10;}
+
+.drawing .level-91{z-index:9;}
+.drawing .level-92{z-index:8;}
+.drawing .level-93{z-index:7;}
+.drawing .level-94{z-index:6;}
+.drawing .level-95{z-index:5;}
+.drawing .level-96{z-index:4;}
+.drawing .level-97{z-index:3;}
+.drawing .level-98{z-index:2;}
+.drawing .level-99{z-index:1;}
+.drawing .level-100{z-index:0;}
+
+
+
+
+
+
+.drawing .pantsClothingPart{
+  width: 100%;
+  position: absolute;
+  top: 440px;
+  left: 0;
+}
+
+.drawing .pantsPart{
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 655px;
+  left: 0;
+}
+
+
+
+.drawing .jacketPart{
+  width: 100%;
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
+
+
+
+.drawing .vestPart{
+/*  display: none;*/
+  width: 100%;
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+/* ---------- Fabric布料 ----------------*/
+
+
+.customFabric .productBox{
+ left: 590px;
+}
+
+.suitCustom .fabric{
+  width: 540px;
+  min-height: 700px;
+  margin-top: 75px;
+}
+
+.fabric .top {
+  text-align: right;
+  font-weight: bold;
+}
+
+.fabric .top label{
+  cursor: pointer;
+}
+
+.fabric .classifyNav{
+  margin-top: 20px;
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  border: 1px solid black;
+  background: white;
+  overflow: hidden;
+}
+
+.fabric .classifyNav li{
+  width: 48.8%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.fabric .classifyNav li:hover{
+  color: white;
+}
+
+.fabric .classifyNav .active{
+  color: white;
+}
+
+.fabric .classifyNav .active:before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: -9px;
+  width: 107%;
+  height: 100%;
+  background-color: black;
+  -webkit-transform: skew(-30deg, 0);
+          transform: skew(-30deg, 0);  
+}
+
+
+.fabric .classifyNav li:before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: -9px;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  -webkit-transform: skew(-30deg, 0);
+          transform: skew(-30deg, 0);   
+
+}
+
+.fabric .classifyNav li:hover:before {
+  width: 107%;
+}
+
+
+
+
+
+.fabric .dashedLine{
+  width: 100%;
+  border-bottom: 1px dashed #959595;
+  margin: 20px 0 10px 0;
+}
+
+
+.fabric .fullView{
+  width: 100%;
+  height: 245px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fabric .fullView .label{
+  position: absolute;
+  top: -27px;
+  left: -20px;
+}
+
+
+.fabric .fullView figure img{
+  width: 100%;
+}
+
+.fabric .fullView .fabricInfo{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: white;
+}
+
+.fabric .fullView .fabricInfo h2{
+  font-size: 17px;
+  text-transform: uppercase;
+margin-top: 7px;
+  margin-left: 10px;
+}
+.fabric .fullView .fabricInfo h3{
+  margin-left: 10px;
+}
+.fabric .fullView .fabricInfo h4{
+  position:absolute;
+  text-transform: uppercase;
+  right: 10px;
+  top: 35%;
+  font-size: 15px;
+/*  font-weight: bold;*/
+}
+
+
+
+
+/* ***筛选器****  */
+
+
+.filter{
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.filter li{
+  background: pink;
+  float: left;
+
+}
+
+.filter li h2{
+ position: relative;
+ z-index: 10;
+ float: left;
+ text-align: center;
+ width: 106px;
+ height: 40px;
+ line-height: 40px;
+ color: black;
+ background: #fafafa;
+ border:1px solid #bfbfbf;
+ cursor: pointer;
+}
+
+.filter li:hover h2{
+  background: #eee;
+  border-bottom: none;
+}
+
+
+.filter li .panel{
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  margin-top: 40px;
+  background: #eee;
+  border:1px solid #bfbfbf;
+  border-top: none;
+  width: 488px;
+  padding: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: none;
+}
+
+.filter li .panel label{
+  cursor: pointer;
+
+}
+
+.filter li .panel input{
+  width: 30px;
+  font-size: 22px;
+}
+
+.filter li .panel .sort{
+  min-width: 31%;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.filter li:hover .panel{
+  display: block;
+}
+
+.fabricList{
+  clear: both;
+  width: 560px;
+  display: block;
+  margin-top:60px; 
+  height: 650px;
+  overflow-y :auto;
+}
+
+.fabricList li{
+  width: 122px;
+  margin: 9px 5px ;
+}
+
+.fabricList li figure{
+  width: 100%;
+  height: 92px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
+.fabricList li figure:hover{
+  border-bottom: 3px solid #b90000;
+}
+
+.fabricList .active figure{
+  border-bottom: 3px solid #b90000;
+}
+
+
+.fabricList li figure img{
+  width: 100%;
+}
+
+.fabricList h2{
+  display: inline-block;
+  float: left;
+}
+
+.fabricList h3{
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.fabricList h4{
+  clear: both;
+  color: #8b8b8b;
+}
+
+
+/*  ——————————other———————————— */
+.other h2{
+  color: white;
+  background: black;
+  font-size: 19px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.other .content{
+  margin-top: 30px;
+  background: white;
+  width: 1000px;
+  padding: 25px;
+  padding-bottom: 100px;
+  min-height: 250px;
+}
+
+.other .content h3{
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.other .content h4{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.other .content ul{
+  vertical-align: top;
+  width: 235px;
+  display: inline-block;
+  margin: 0 10px 30px 0;
+}
+
+.other .content ul li{
+  display: block;
+/*  background:pink;*/
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.other .content ul li a{
+  color: black;
+  padding: 2px;
+}
+
+.other .content ul li a:hover{
+  color: white;
+  background: black;
+}
+
+
+.controlList{
+  position: relative;
+  width: 500px;
+  background: orange;
+  z-index: 100;
+}
+
+.controlList .control{
+  position: absolute;
+  display: none;
+
+}
+
+.controlList>.active{
+  display: block;
+}
+
+
+
+.suitCustom .controlList .bottom{
+  width: 350px;
+  position: absolute;
+  top: 1350px;
+  left: 610px;
+  background: orange;
+
+}
+
+.suitCustom .controlList .bottom .back{
+  position: absolute;
+  left: 0;
+}
+
+.suitCustom .controlList .bottom .next{
+  position: absolute;
+  right: 0;
+}
+
+.suitCustom .controlList .rightNext{
+  position: absolute;
+  left: 1085px;
+  top: 370px;
+}
+
+
+
+/*0722新增loading*/
+.loading{
+  background-image: url(../images/loadingBG.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: 9999;
+}
+
+
+
+.drawing .loading img{
+  width: 45px;
+  height: 45px;
+  position:absolute;
+/*  margin:auto;*/
+  left:46.5%;
+  top:25%;
+}
