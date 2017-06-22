@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+	 a:hover, a:active, a:focus { color:#008707;}
+	.banner_gywm {width: 1100px; height: 260px; background: url(../images/banner-gywm.jpg) no-repeat; margin: 0 auto;}
+	.content {width: 1100px; height: 600px; margin:20px auto; margin-bottom: 80px;}
+	.title-right {width: 198px;  background-color:#fff; float: left; border: 1px solid #dcdcdc;}
+	.title-right ul {margin-top: 10px;}
+	.title-right ul li { /* text-align: center;*/ padding-left: 55px; height: 51px; line-height: 45px; font-size: 16px; font-family: "Microsoft YaHei";  background: url(../images/zy_07.png) no-repeat 35px center; }
+	.title-right ul li:hover {background: url(../images/title-yugjq.png) no-repeat;width: 206px; height:51px; color: #008707;}
+	.title-right ul li:hover a{color: #fff;}
+	.title-right ul li.cur{background: url(../images/title-yugj.png) no-repeat; width: 206px; height: 51px; }
+	.title-right ul li.cur a{color: #fff;}
+	.title-right ul li a {text-decoration: none; display: inline-block;width: 206px; height: 51px;}
+	.left-ny {width: 868px; height: 600px; float: right;}
+	.title-top {width: 868px; height: 42px; border-bottom: 1px solid #a0a0a0;}
+	.title-top h2 {line-height: 42px; font-size: 25px;}
+	.left-ny ul li {height: 45px; line-height: 45px;background: url(../images/dian.jpg) no-repeat 40px center; font-size: 14px;}
+	.left-ny ul li a {float: left; padding-left: 15px; margin-left: 40px; text-decoration: none;} 
+	.left-ny ul li a:hover {color: #008707;}
+	.left-ny ul li:hover a{color: #008707;}
+	.left-ny ul li:hover {color: #008707; background: url(../images/h-dian.jpg) no-repeat 40px center;}
+	.left-ny ul li span {float: right; margin-right: 20px;}
+	.left-ny p{ text-align:center; width:358px; margin:28px auto;}
+        .bottom {width: 1100px; margin:0 auto; background-color: #282828;padding-left: 33px; padding-top: 30px; padding-right: 28px; padding-bottom: 25px;  position: relative;}
+	.bottom-left {/*width: 180px;*/ height: 190px; float: left; }
+	.bottom-left p{color: #fff;padding-top: 15px; font-size: 16px; line-height: 25px;}
+	.bottom-left p span {font-size: 24px; font-family: "Microsoft YaHei"; display: block; color: #f5b723;}
+	.bottom-middle {width: 422px; height: 188px; background: url(../images/bottom-middle.png) no-repeat;float: right; margin-left: 70px; position: absolute; top: 30px; right: 0px;}
+	.bottom-middle a {width: 91px;height: 26px; background: url(../images/zy_22.png) no-repeat; display: block; position: absolute;bottom: 40px; right: 105px;}
+	.xi {margin-left: 20px; padding-top: 20px;}
+	/*.bottom-right {width: 253px; height: 109px; background: url(../images/bottom-right.png) no-repeat; float: left; margin-left: 70px;  margin-top: 50px;}*/
+	.banq{ width: 100%; height: 49px; text-align: center; background-color: #414141; color:#fff; padding-top: 15px;}
+	.da-bottom {width: 100%; height:250px; background-color: #282828;}
+
+
+	.banner-xzzx {width: 100%; background: url(../images/xzzx1.jpg) no-repeat center center; }
+	.banner-xzzx .diannao {background:url(../images/xzzx2.png) center center no-repeat; width:1168px; height:565px; position: relative; margin:0 auto;}
+	.banner-xzzx .diannao a {width: 365px; height:53px; display: block; }
+	/*.yue-jy {background: url(../images/xzzx3.png) no-repeat center center; position: absolute; top:325px; left: 625px; }*/
+	.yue-fx {background: url(../images/xzzx4.png) no-repeat center center; position: absolute; top:354px; left: 587px;}
+	/*.yue-mn {background: url(../images/xzzx5.png) no-repeat center center; position: absolute; top:460px; left: 90px;}*/
+
+
+	/*活动*/
+	.hud {width: 1098px; height: 440px; border: 1px solid #e5e5e5; margin: 0 auto; margin-top: 30px; margin-bottom: 40px;}
+	.hud .huodong-nr {width: 1090px; height: 84px; border-bottom: 1px solid #e5e5e5; padding-top: 15px; padding-left:10px; position: relative;}
+	.hud .huodong-nr p{ font-size: 14px; line-height: 25px; height: 50px; overflow: hidden; margin-top: 10px;letter-spacing:1px;padding-right: 10px; color: #616161;}
+	.hud .huodong-nr a {position: absolute;bottom: 6px; right: 2px;  font-size: 14px; background-color: #fff; width: 113px; text-align: center;}
+	.hud .huodong-nr span{position: absolute; bottom: -30px; right: 10px; font-size: 14px; color: #777;}
+	.fanye {margin: 0 auto; width: 500px; padding-bottom: 50px; text-align: center;}
+
+	 .company img{ max-width: 100%;}

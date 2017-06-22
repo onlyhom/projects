@@ -1,0 +1,16 @@
+ @charset "utf-8";
+ 	body {margin: 0 ;padding: 0;}
+ 	img {display: block; margin: 0 auto; width:100%;} 
+ 	ul{ text-decoration: none; padding: 0; margin: 0; }
+	ul li { padding: 0; margin: 0; line-height: 0; }
+
+	.dihg {width: 100%; height: 45px; background-color:#fff; border-bottom: 1px solid #b6b6b6; position: fixed; top: 0; left: 0; z-index: 90}
+		.brand_nav {width: 1000px; height: 45px; margin: 0 auto;}
+		.wraper{ float: right;}
+		.logo {float: left; line-height: 45px; padding-top: 5px;}
+		.nav{ position:relative; width:100%; height:45px; background:#fff; overflow:hidden}
+		.nav li a{color: #4f4d4d; font-size: 14px; font-family: "Microsoft YaHei"; font-weight: bold;}
+		.nav-item{ position:relative; float:left; width:90px; height:45px; line-height:45px; text-align:center; font-size:14px; z-index:100;}
+		.nav-item a{ display:block; height:45px; color:#fff; }
+		.nav-item a:hover{ color:#fff; background-color:#b6b6b6 ;text-decoration: none;}
+	
