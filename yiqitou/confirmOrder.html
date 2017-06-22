@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>艺起投商城</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="人民艺投">  
+    <meta name="description" content="人民艺投">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/page.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+
+</head>
+<body>
+
+
+<div class="contain noBottom">
+    <div class="nav">
+        <div class="fixWidth">
+            <a onClick="javascript:history.back(-1);" class="returnBtn">返回</a>
+            <h1>确认订单</h1>
+        </div>
+    </div>
+
+    <div class="fixWidth">
+        <form action="">
+            <div class="confirmOrder">
+                <div class="takeDetail">
+                    <h2>收货人：
+                        <i class="name">韩梅梅</i> 
+                        <i class="phone">18600000000</i>
+                    </h2>
+                    <h3>
+                        <a href="editAddr.html">
+                            收货地址：
+                            <i class="addr">浙江省杭州市江干区下沙经济开发区保利湾天地3栋908地址</i>
+                        </a>
+                    </h3>
+                </div>
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    艺起投商城
+                </div>
+                <div class="productInfo">
+                    <div class="pic" style="background-image:url(images/banner3.png)"></div>
+                    <div class="right">
+                        <div class="name">云泉湖（空心刀）</div>
+                        <div class="type">尺寸：100*80</div>
+                        <div class="priceBox">
+                            <i class="price">1299.00</i>
+                            <i class="count">1</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">配送方式
+                    <span>
+                        <div class="selectUI">
+                            <h3></h3>
+                            <select name="" id="">
+                                <option value="">快递1</option>
+                                <option value="">快递2</option>
+                            </select>
+                        </div>
+                    </span>
+                </div>
+                <div class="line">买家留言
+                    <span>
+                        <textarea id="" placeholder="（选填）备注留言"></textarea>
+                    </span>
+                </div>
+                <div class="sum">
+                    合计：<i class="price">1299.00</i>
+                    <input type="submit" value="提交订单">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+</div><!-- contain -->
+
+
+
+<script type="text/javascript">
+// 虚拟selectUI与select显示内容同步
+$(function(){
+    for(var i=0; i<$('.selectUI').length; i++ ){
+        var defaultVal=$('.selectUI').eq(i).find('option:selected').text();
+        $('.selectUI').eq(i).find('h3').text(defaultVal);
+    }
+});
+$('.selectUI select').change(function(){
+    var selectVal = $(this).find('option:selected').text();
+    $(this).prev('h3').text(selectVal);
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>

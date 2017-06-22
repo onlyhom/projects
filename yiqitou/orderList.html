@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>艺起投商城</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="人民艺投">  
+    <meta name="description" content="人民艺投">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/page.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>  
+        <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if (IE 8)|(IE 7)|(IE 6)]>
+    <link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+    <div id="ieTips"><p>您的浏览器版本过低，请升级到 IE10以上或更换Chrome,firefox等浏览器获得流畅的浏览效果！</p></div>
+    <![endif]-->
+
+</head>
+<body>
+
+
+<div class="contain noBottom">
+    <div class="nav">
+        <div class="fixWidth">
+            <a onClick="javascript:history.back(-1);" class="returnBtn">返回</a>
+            <h1>我的订单</h1>
+        </div>
+    </div>
+
+    <div class="fixWidth order">
+        <ul class="orderNav">
+            <li class="on">全部</li>
+            <li>待付款</li>
+            <li>待发货</li>
+            <li>待收货</li>
+            <li>已完成</li>
+        </ul>
+
+        <!-- 无订单样式 -->
+        <div class="noOrderTips" style="display:none;">
+            <img src="images/lamp.png" alt="">
+            <h1>暂时没有相关订单</h1>
+            <a href="classifyDetail.html">到处逛逛</a>
+        </div>
+
+        <!-- 订单样式 -->
+        <div class="orderList">
+            <!-- 待付款样式 （先注释掉 为了展示无订单的效果）-->
+
+<!--             <li class="unPay">
+                <div class="title">
+                    下单日期：2017-2-2 13:14
+                    <i class="state">等待买家付款</i>
+                </div>
+                <div class="middle">
+                    <div class="pic" style="background-image:url(images/banner3.png)"></div>
+                    <div class="name">云泉湖（空心刀）</div>
+                    <div class="priceBox">
+                        <h2>1299.00</h2>
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="sum">
+                    共计<i class="count">1</i>件商品 合计：<i class="pink">1299.00</i>
+                </div>
+                <div class="bottom">
+                    <a href="tel:057112341234">联系客服</a>
+                    <a href="">取消订单</a>
+                    <a href="" class="pinkBtn">付款</a>
+                </div>
+            </li> -->
+
+            <!-- 待发货样式 -->
+            <li class="unSend">
+                <div class="title">
+                    下单日期：2017-2-2 13:14
+                    <i class="state">等待卖家发货</i>
+                </div>
+                <div class="middle">
+                    <div class="pic" style="background-image:url(images/banner3.png)"></div>
+                    <div class="name">云泉湖（空心刀）</div>
+                    <div class="priceBox">
+                        <h2>1299.00</h2>
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="sum">
+                    共计<i class="count">1</i>件商品 合计：<i class="pink">1299.00</i>
+                </div>
+                <div class="bottom">
+                    <a href="tel:057112341234">联系客服</a>
+                    <a href="">退款</a>
+                    <a href="" class="pinkBtn">待发货</a>
+                </div>
+            </li>
+
+            <!-- 待收货样式 -->
+            <li class="unTake">
+                <div class="title">
+                    下单日期：2017-2-2 13:14
+                    <i class="state"></i>
+                </div>
+                <div class="middle">
+                    <div class="pic" style="background-image:url(images/banner3.png)"></div>
+                    <div class="name">云泉湖（空心刀）</div>
+                    <div class="priceBox">
+                        <h2>1299.00</h2>
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="sum">
+                    共计<i class="count">1</i>件商品 合计：<i class="pink">1299.00</i>
+                </div>
+                <div class="bottom">
+                    <a href="tel:057112341234">联系客服</a>
+                    <a href="">退款</a>
+                    <a href="" class="pinkBtn">确认收货</a>
+                </div>
+            </li>
+
+            <!-- 已完成 -->
+            <li class="finish">
+                <div class="title">
+                    下单日期：2017-2-2 13:14
+                    <i class="state">交易成功</i>
+                </div>
+                <div class="middle">
+                    <div class="pic" style="background-image:url(images/banner3.png)"></div>
+                    <div class="name">云泉湖（空心刀）</div>
+                    <div class="priceBox">
+                        <h2>1299.00</h2>
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="sum">
+                    实际付款：1299.00
+                </div>
+            </li>
+        </div>
+    </div>
+
+
+</div><!-- contain -->
+
+<script type="text/javascript">
+	//筛选显示
+    $('.orderNav li').click(function(){
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+
+        var index = $(this).index(),
+            orderUL = $('.orderList'),
+            orderLi = $('.orderList li'),
+            currentLi = orderLi;
+        if(index>0){
+            var objectArr = '';
+            switch(index){
+                case 1: objectArr = '.unPay';
+                break;
+                case 2: objectArr = '.unSend';
+                break;
+                case 3: objectArr = '.unTake';
+                break;
+                case 4: objectArr = '.finish';
+                break;
+            }
+            orderLi.hide();
+            currentLi = orderLi.filter(objectArr);
+        }
+
+        if(currentLi.size()>0){
+            $('.noOrderTips').hide();
+            orderUL.show();
+            currentLi.show(); 
+        }else{
+            $('.noOrderTips').show();
+            orderUL.hide(); 
+        }
+    });
+</script>
+
+</body>
+</html>

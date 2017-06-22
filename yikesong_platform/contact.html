@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>一棵松</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="一棵松">  
+    <meta name="description" content="一棵松">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile-select.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+    <script src="js/layer/layer.js" type="text/javascript"></script>
+    <script src="js/jquery.form-verify.js" type="text/javascript"></script>
+    <script src="js/mobile-select.js" type="text/javascript"></script>
+</head>
+<body class="transfrom">
+
+<div class="header">
+    <div class="header-fixed">
+        <div class="fix-width">
+            <div class="row">
+                <div class="col-2">
+                    <a class="return-btn" onClick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="col-8">
+                    <div class="title">客服咨询</div>
+                </div>
+                <div class="col-2">
+                    <a href="msg.html">
+                        <div class="msg"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="service">
+    <div class="fix-width">
+        <div class="title">拥有你的私人手机顾问</div>
+        <img src="images/test_code.png" class="code">
+        <div class="tips"></div>
+    </div>
+    <div class="tips">长按识别 / 添加客服微信</div>
+    <a href="tel:4000020680" class="btn-call">400-0020-680</a>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="bottom-menu">
+    <div class="bottom-menu-fixed">
+        <a class="cell icon-home" href="index.html">首页</a>
+        <a class="cell icon-service" href="contact.html">服务</a>
+        <a class="cell icon-love pop-menu-trigger" href="javascript:;"></a>
+        <a class="cell icon-info" href="news.html">资讯</a>
+        <a class="cell icon-user" href="user.html">我的</a>
+    </div>
+</div>
+
+<!-- 弹窗菜单 -->
+<div class="pop-menu">
+    <div class="pop-bg">
+        <div class="pop-up">
+            <div class="content">
+                <div class="row">
+                    <div class="col-4">
+                        <a class="cell" href="contract_lib.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon1">合同<br/>管理</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="order.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon2">订单<br/>管理</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="note_remark.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon3">相关<br/>服务</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="msg.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon4">在线<br/>缴费</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="coupon.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon5">优惠<br/>券包</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="upload_info.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon6">我要<br/>上传</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <i class="close-button"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗菜单 END-->
+
+
+
+<script src="js/page.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $('.bottom-menu .cell').eq(1).addClass('on');//导航-服务
+    //计算service全屏高度
+    $('.service').height(window.innerHeight-$('.header').height()-$('.bottom-menu').outerHeight());
+
+</script>
+
+</body>
+</html>

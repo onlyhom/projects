@@ -1,0 +1,1173 @@
+/*html{
+  background: #eee;
+}
+*/
+.center{
+  text-align: center;
+}
+
+.Left{
+    float: left;
+}
+
+.Right{
+    float: right;
+}
+
+a:hover{
+    color: #777;
+}
+
+body{
+   overflow: hidden;
+   height: 100%; 
+}
+
+
+.contain{
+   /* border: 1px solid red;*/
+/*   padding-top: 50px;
+   padding-bottom: 75px;*/
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.contain img{
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+/* banner */
+.banner{ width:100%; overflow:hidden;position:relative;}
+.banner img{ width:100%;}
+.banner ul li{width: 100%; position: relative; display: block;}
+.banner>ol{height:20px;position: absolute;z-index:10;width:100%; bottom:10px; text-align:center;}
+.banner>ol>li{display:inline-block;margin:4px;width:10px;height:10px; background-color:#bbb;background: rgba(2,121,251,0.4); border-radius: 50%;}
+.banner>ol>li.on{ width: 10px; height: 10px; background-color: #0279fb; }
+
+
+.topMenu{
+  max-width: 640px;
+  width: 100%;
+  background: #01a2fa;
+  height: 50px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
+.topMenu p{
+  font-size: 16px;
+  line-height: 50px;
+}
+
+
+.topMenu .returnBtn{
+  position: absolute;
+  width: 50px;
+  height: 38px;
+  line-height: 38px;
+  left: 0;
+  top: 6px;
+  display: inline-block;
+  padding-left: 10px;
+  background: url(../images/return.png) no-repeat left center;
+  background-size: 9px 16px;
+  color: white;
+  font-size: 15px;
+}
+
+.topMenu .shareBtn{
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  display: inline-block;
+  background: url(../images/share.png) no-repeat center;
+  background-size: 26px 26px;
+}
+
+
+
+.noticeBar{
+  min-height: 45px;
+  background: white;
+  border-top: 1px solid #b8b7b7;
+  border-bottom: 1px solid #b8b7b7;
+
+  background:url(../images/notice.png) no-repeat 3% center;
+  background-size: 37px 30px;
+
+}
+.noticeBar .fixWidth{
+  padding: 10px 0 10px 50px;
+  line-height: 21px;
+}
+
+.noticeBar h1{
+  font-size: 13px;
+}
+
+.red{
+  color: #de0000;
+}
+
+
+
+
+
+
+
+.indexTitle{
+  padding: 20px 0 10px;
+  text-align: center;
+}
+
+.indexTitle h1{
+  color: #008ef5;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+
+.indexTitle h2{
+  color: gray;
+  font-size: 12px;
+}
+
+
+.indexTable{
+  width: 100%;
+}
+
+
+.indexTable td{
+  border: 1px solid #d4d4d4;
+  text-align: center;
+  vertical-align: top;
+  padding: 13px 7px 10px;
+}
+
+.indexTable td img{
+  max-width: 80%;
+}
+
+
+.indexTable td h3{
+  font-size: 14px;
+  color: #000;
+  margin-top: 7px;
+  line-height: 20px;
+}
+
+.indexTable td p{
+  color: gray;
+}
+
+.indexService{
+  margin-top: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+
+
+.minBanner{
+  margin: 15px 0;
+}
+
+
+
+.secondTable{
+  /*background: pink;*/
+}
+
+
+.secondTable td{
+    text-align: left;
+}
+
+
+.secondTable .text{
+  width: 47%;
+
+ display: inline-block;
+ vertical-align: middle;
+ margin-right: 3%;
+}
+
+.secondTable td img{
+  width: 50%;
+}
+
+
+
+.secondTable .largeCell{
+  vertical-align: middle;
+}
+
+.secondTable .largeCell .text{
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.secondTable .largeCell img{
+  float: right;
+  width: 70%;
+  margin-top: 5px;
+}
+
+
+.indexInnovate{
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  padding-bottom: 12px; 
+}
+
+
+/*.indexFAQ{
+  background: pink;
+}*/
+
+.indexFAQ ul{
+  display: block;
+}
+
+.indexFAQ ul li{
+  display: inline-block;
+  width: 31%;
+  border: 1px solid #d2d2d2;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-right: 2.5%;
+}
+
+.indexFAQ ul li a{
+  display: block;
+}
+
+
+.indexFAQ ul li:nth-child(3n){
+  margin-right: 0;
+}
+
+.indexFAQ ul li:hover{
+  background: #00a4fa;
+  color: white;
+  border: 1px solid transparent;
+}
+.indexFAQ ul li:hover a{
+  color: white;
+}
+
+
+.bottomMenu{
+  max-width: 640px;
+  width: 100%;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+  padding: 5px 0 8px;
+  position: fixed;
+  bottom: 0;
+  z-index: 99999;
+  background: white;
+}
+
+.bottomMenu li{
+  width: 25%;
+  height: 45px;
+  background:url(../images/menuIcon1.png) no-repeat 50% 0;
+  background-size: 28px 28px;
+  text-align: center;
+  float: left;
+}
+
+.bottomMenu li p{
+  padding-top:30px;
+}
+
+.bottomMenu li a{
+  /*background: orange;*/
+  display: block;
+  height: 100%;
+}
+
+
+.bottomMenu li:nth-child(2){
+  background-image: url(../images/menuIcon2.png);
+}
+
+.bottomMenu li:nth-child(3){
+  background-image: url(../images/menuIcon3.png);
+}
+
+.bottomMenu li:nth-child(4){
+  background-image: url(../images/menuIcon4.png);
+}
+
+.bottomMenu .weixin{
+  position: relative;
+}
+
+
+.bottomMenu .weixin .code{
+ /* display: none;*/
+  position: absolute;
+  bottom:50px;
+  left: 200px;
+  width: 100%;
+  background: white;
+  opacity: 0;
+  line-height: 16px;
+  transition:all 0.4s;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px;
+}
+.bottomMenu .weixin .code h2{
+  padding: 3px;
+}
+
+.bottomMenu .weixin:hover .code{
+  /*display: block;*/
+  opacity: 1;
+  left: 0;
+}
+
+
+
+
+
+
+
+  /*  POP弹窗 */
+
+
+
+.pop{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   /*display: none;*/
+}
+
+.codeWindow .popBG{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #eee;
+  background: rgba(0,0,0,0.7);
+  z-index: 888;
+  display: block;
+}
+
+
+.codeWindow .popUp{
+    width: 320px;
+    display: block;
+    position: fixed;
+    z-index: 889;
+    left: 50%;
+    top: 50%;
+    margin-top: -47%;
+    margin-left: -50%;
+/*    margin-top:-200px; */
+    margin-left:-160px;
+    color: black;
+
+    -moz-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+
+
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.codeWindow .popUp .title{
+  position: relative;
+  width:100%;
+  height: 35px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+.codeWindow .popUp .closeButton{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  background: url(../images/closeButton.png) no-repeat center;
+  background-size: 30px 30px; ;
+}
+
+.codeWindow .popUp .content{
+  padding: 1%;
+  line-height: 22px;
+  color: white;
+  text-align: center;
+}
+
+
+.codeWindow .popUp .content h2{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+
+.codeWindow{
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.popShow{
+  opacity: 1;
+  z-index: 999;
+}
+
+
+.popShow .popUp{
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/*立即预约窗口*/
+
+
+.bookWindow .popBG{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #eee;
+  background: rgba(0,0,0,0.7);
+  z-index: 888;
+  display: block;
+}
+
+
+.bookWindow .popUp{
+    width: 320px;
+    display: block;
+    position: fixed;
+    z-index: 889;
+    left: 50%;
+    top: 50%;
+    margin-top: -40%;
+    margin-left: -50%;
+/*    margin-top:-200px; */
+    margin-left:-160px;
+    color: black;
+
+    -moz-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+
+
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.bookWindow .popUp .title{
+  position: relative;
+  width:100%;
+  padding-left: 10px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  color: white;
+  background: #00a2f9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.bookWindow .popUp .closeButton{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 39px;
+  cursor: pointer;
+  background: url(../images/closeBtn.png) no-repeat center;
+  background-size: 40px 40px;
+
+}
+
+.bookWindow .popUp .content{
+  padding: 15px;
+  line-height: 22px;
+  color: #555;
+/*  text-align: center;*/
+  background: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.bookWindow .popUp .content h2{
+  /*text-align: center;*/
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+
+.bookWindow{
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.popShow{
+  opacity: 1;
+  z-index: 999;
+}
+
+
+.popShow .popUp{
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+.bookWindow table{
+  width: 100%;
+  font-size: 13px;
+}
+
+.bookWindow table th{
+/*  background: pink;*/
+  width: 70px;
+}
+
+.bookWindow table td{
+  padding: 3px 0;
+}
+
+.bookWindow table td i{
+  color: #01a2fa;
+  font-size: 12px;
+  display: block;
+}
+
+.bookWindow input[type="submit"]{
+  display: block;
+  border: none;
+  background: #00a2f9;
+  color: white;
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  margin: 20px auto;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bookWindow input[type="button"]{
+  background: #eee;
+  border: 1px solid #bfbfbf;
+  color: #555;
+  vertical-align: middle;
+  height: 30px;
+  cursor: pointer;
+  float: right;
+}
+
+.bookWindow input[type="button"]:focus{
+  border: 1px solid #00a2f9;
+  color: #00a2f9;
+  background: white;
+}
+
+
+
+
+.bookWindow input[type="text"]{
+  height: 30px;
+  border: 1px solid #bfbfbf;
+  padding-left: 10px;
+  width: 100%;
+  font-size: 13px;
+  transition:all 0.3s;
+}
+
+.bookWindow input[type="text"]:focus{
+  border: 1px solid #00a2f9;
+}
+
+
+.bookWindow table #phone{
+  width: 130px;
+  width: calc(100% - 80px);
+}
+
+
+.bookWindow table th{
+  text-align: left;
+  font-weight: normal;
+}
+
+
+
+
+
+.serveMenu{
+  min-height: 40px;
+  width: 100%;
+  max-width: 640px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  z-index: 10;
+  background: white;
+}
+
+
+.filterBar{
+  height: 40px;
+}
+
+
+.filterBar ul{
+  float: left;
+  width: calc(100% - 40px);
+  text-align: center;
+  margin-top: 5px;
+}
+
+.filterBar ul li{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  width: 20.5%;
+  margin: 0 2%;
+  cursor: pointer;
+  border-radius: 10px;
+  transition:all 0.25s;
+
+}
+
+.filterBar ul .on{
+  color: white;
+  background: #00a2f9;
+}
+
+
+.filterBar .toggleBtn{
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+  background: url(../images/toggleMenu.png) no-repeat center 1px;
+  background-size: 28px 28px;
+  transition:all 0.3s;
+  transform:rotate(0); 
+}
+
+.filterBar .active{
+  transform:rotate(-180deg); 
+}
+
+
+
+.allservice{
+  display: none;
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 0 0 15px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.allservice .title{
+  height: 25px;
+  line-height: 25px;
+  padding-left: 25px;
+  background: url(../images/icon11.png) no-repeat;
+  background-size: 20px 25px;
+  font-size: 14px;
+  color: #00a2f9;
+  margin-bottom: 10px;
+}
+
+
+.allservice .hot{
+  background-image: url(../images/icon10.png);
+  color: #e80000;
+}
+
+.allservice .other{
+  background-image: url(../images/icon12.png);
+  color: #ffa800;
+}
+
+
+.allservice .section{
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #dedede;
+  padding-bottom: 15px;
+}
+
+
+.allservice table{
+  width: 100%;
+}
+
+
+.allservice table td{
+  width: 33.3333%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #d2d2d2; 
+}
+
+.allservice table td a{
+/*  background: pink;*/
+  display: block;
+  height: 100%;
+}
+
+
+.allservice table td:hover{
+  background: #00a2f9;
+
+}
+
+
+.allservice table td:hover a{
+  color: white;
+}
+
+
+.pageContain{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+  padding: 50px 0 80px 0;
+}
+
+
+
+.serviceContain{
+  padding: 110px 0 90px 0;
+}
+
+
+
+.serviceList{
+  display: block;
+}
+
+
+
+
+.serviceList li:first-child{
+  border-top: 1px solid #e5e5e5;
+}
+
+
+.serviceList li{
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0;
+/*  background: orange;*/
+}
+
+.serviceList li:after{
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+
+.serviceList a{
+  display: block;
+  width: 100%;
+}
+
+.serviceList li a:after{
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+  
+
+
+.serviceList li .pic{
+  float: left;
+  width: 16%;
+}
+
+.serviceList li .text{
+  float: left;
+  width: 65%;
+  margin-left: 1.666%;
+/*  background: pink;*/
+}
+
+.serviceList li .tradeVolume{
+  float: right;
+  width: 14%;
+  /*background: orange;*/
+  color: gray;
+  padding-top: 5px;
+  text-align: right;
+}
+
+.serviceList li h1{
+  display: inline-block;
+  font-size: 15px;
+  color: black;
+  vertical-align: middle;
+}
+
+
+.label{
+  display: inline-block;
+}
+
+.label i{
+  line-height: 15px;
+  display: inline-block;
+  border: 1px solid #00a2f9;
+  border-radius: 3px;
+  color: #00a2f9;
+  padding: 1px 5px 0;
+  margin: 0 2px;
+}
+
+
+.serviceList li h2{
+  color: gray;
+  margin-top: 3px;
+}
+
+
+.service{
+  color: gray;
+}
+
+.service .content{
+  padding-bottom: 70px;
+}
+
+
+
+.service .info{
+/*  background: pink;*/
+  padding-bottom: 15px;
+/*  border-bottom: 1px solid #e5e5e5;*/
+}
+
+
+
+
+.service h1{
+  font-size: 17px;
+}
+
+
+.serviceName{
+ /* background: #eee;*/
+  margin: 10px 0;
+}
+
+.serviceName h1{
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+}
+
+
+.serviceName:after{
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.serviceName .text{
+  width: 80%;
+ /* background: pink;*/
+  float: left;
+}
+
+.serviceName .tradeVolume{
+  width: 20%;
+  float: right;
+  text-align: right;
+}
+
+
+.serviceTpye{
+  margin-bottom: 10px;
+}
+
+.serviceTpye h2{
+  display: inline-block;
+  font-size: 14px;
+  color: black;
+  vertical-align: middle;
+/*  background: orange;*/
+  width: 45px;
+  padding-top: 2px;
+  float: left;
+}
+
+.serviceTpye ul{
+  display: inline-block;
+/*  background: pink;*/
+  width: calc(100% - 45px);
+  float: left;
+}
+
+.serviceTpye ul li{
+  border: 1px solid #d2d2d2;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin:0 3px 8px 0;
+  color: #555;
+}
+
+.serviceTpye ul .on{
+  border: 1px solid #ffbf44;
+  background: #ffbf44;
+  color: #555;
+  color: white;
+}
+
+
+.serviceArea{
+  margin-bottom: 10px;
+}
+
+
+.serviceArea h2{
+  display: inline-block;
+  font-size: 14px;
+  color: black;
+  vertical-align: middle;
+}
+
+
+.serviceArea select{
+  vertical-align: middle;
+  padding: 3px 0 5px;
+  background: white;
+  border: 1px solid #d2d2d2;
+}
+
+
+
+
+.servicePrice{
+/*  background: pink;*/
+}
+
+.servicePrice h2:before{
+  content: "¥";
+}
+
+
+.servicePrice h2{
+  color: #f03232;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+.redLabel{
+  display: inline-block;
+  background: #f03232;
+  color: white;
+  border-radius: 5px;
+  padding: 1px 8px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+
+.bookNow{
+  background: #ffa800;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 30px;
+}
+
+
+
+.service .content h1{
+  color: #555;
+  font-size: 14px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 35px;
+  margin-top: 10px;
+}
+
+.service .section{
+  padding: 10px 0;
+/*  border-bottom: 1px solid #e5e5e5;*/
+}
+
+
+.service .section .blueTitle{
+  color: #00a2f9;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.service .section{
+  line-height: 20px;
+}
+
+
+.noticePoint ul{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.noticePoint li{
+  display: block;
+  color: #555;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 3px 0;
+}
+
+.noticePoint li:before{
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background: #00a2f9;
+  margin-right: 3px;
+  position: relative;
+  top: -1px;
+}
+
+.noticePoint li:nth-child(even):before{
+  background: #ffa800;
+}
+
+
+.commonFAQ{
+  padding: 10px 0;
+}
+
+.commonFAQ .question{
+  background: url(../images/Q.jpg) no-repeat left 3px;
+  background-size: 15px 15px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: black;
+  margin: 5px 0;
+}
+
+.commonFAQ .answer{
+  background: url(../images/A.jpg) no-repeat left top;
+  background-size: 15px 15px;
+  padding-left: 20px;
+}
+
+
+
+
+
+/*大于500px*/
+@media (min-width: 640px) {
+
+.codeWindow .popUp{margin-top:-200px; margin-left:-160px;}
+.bookWindow .popUp{margin-top:-200px; margin-left:-160px;}
+
+}
+
+
+/*小于420px*/
+@media (max-width: 420px) {
+
+}
+
+
+/*小于375px*/
+@media (max-width: 375px) {
+
+}
+
+
+
+/*小于330px*/
+@media (max-width: 330px) {
+
+}
+
+

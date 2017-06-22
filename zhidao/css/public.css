@@ -1,0 +1,160 @@
+@media (max-width:1400px) {
+  body{zoom:0.8;}
+}
+
+ html { 
+   overflow-x: hidden; 
+   overflow-y: auto; 
+} 
+
+ .container{
+   width: 1920px;
+   margin:0 auto;
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+   position:absolute;
+   left:50%;margin-left:-960px;
+   background: white;
+   animation:containerInto 1s;
+   -webkit-animation:containerInto 1s;
+   -moz-animation:containerInto 1s;
+   -o-animation:containerInto 1s;
+}
+
+@keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-webkit-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-moz-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+@-o-keyframes containerInto{
+  from{opacity: 0; top: -50px;}
+  to{opacity: 1; top: 0;}
+}
+
+
+
+
+
+ .container a,button{
+   font-family: Arial,'微软雅黑','黑体', sans-serif;
+ }
+
+button{
+  cursor: pointer;
+  outline: none;
+}
+
+
+.pageTop{
+  height: 30px;
+  background:#eee;
+  width: 100%;
+}
+
+.pageTop section{
+  width: 1200px;
+  margin:  0 auto;
+}
+
+
+.pageTop a{
+  float: right;
+  line-height: 30px;
+  color: #8b8b8b;
+}
+
+.navigate{
+  height: 100px;
+  background: #fff;
+}
+
+nav{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+nav figure{
+  float: left;
+  padding-top: 20px;
+  width: 420px;
+}
+
+nav a{
+  color: black;
+  font-size: 16px;
+}
+
+nav a:hover{
+  color: #012468;
+}
+
+nav .active{
+  color: #0338a1;
+}
+
+
+nav li{
+  margin-right: 20px;
+}
+
+nav ul{
+  padding-top: 40px;
+}
+
+
+
+/*------public------*/
+
+
+
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 270px;
+  background: #262626;
+  color: white;
+  padding-top: 50px;
+}
+
+footer h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+footer p{
+  font-size: 16px;
+}
+
+footer button{
+  color: white;
+  padding-left: 30px;
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  background: #f4b007 url(../images/客服BG.jpg) no-repeat;
+  background-position: 20% center ;
+}
+
+.footerBar{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: black;
+  line-height: 60px;
+}

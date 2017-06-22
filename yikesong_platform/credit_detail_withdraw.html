@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>一棵松</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="一棵松">  
+    <meta name="description" content="一棵松">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile-select.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+    <script src="js/layer/layer.js" type="text/javascript"></script>
+    <script src="js/jquery.form-verify.js" type="text/javascript"></script>
+    <script src="js/mobile-select.js" type="text/javascript"></script>
+</head>
+<body class="transfrom">
+
+<div class="header">
+    <div class="header-fixed">
+        <div class="fix-width">
+            <div class="row">
+                <div class="col-2">
+                    <a class="return-btn" onClick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="col-8">
+                    <div class="title">积分明细</div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="public-tag-nav">
+    <div class="tag-nav-fixed">
+        <a href="credit_detail.html" class="cell">积分收入明细</a>
+        <a href="javascript:;" class="cell">积分提现明细</a>
+    </div>
+</div>
+
+
+<div class="user-recommend-list">
+    <div class="cell">
+        <div class="fix-width">
+            <div class="row">
+                <div class="col-9 detail">
+                    <p class="text">提现积分：200</p>
+                    <p class="text-min">2017-05-05 16:22</p>
+                </div>
+                <div class="col-3 status">审核中</div>
+            </div>
+        </div>
+    </div>
+    <div class="cell">
+        <div class="fix-width">
+            <div class="row">
+                <div class="col-9 detail">
+                    <p class="text">提现积分：200</p>
+                    <p class="text-min">2017-05-05 16:22</p>
+                </div>
+                <div class="col-3 status">已审核</div>
+            </div>
+        </div>
+    </div>
+    <div class="cell">
+        <div class="fix-width">
+            <div class="row">
+                <div class="col-9 detail">
+                    <p class="text">提现积分：200</p>
+                    <p class="text-min">2017-05-05 16:22</p>
+                </div>
+                <div class="col-3 status">审核失败</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="bottom-menu">
+    <div class="bottom-menu-fixed">
+        <a class="cell icon-home" href="index.html">首页</a>
+        <a class="cell icon-service" href="contact.html">服务</a>
+        <a class="cell icon-love pop-menu-trigger" href="javascript:;"></a>
+        <a class="cell icon-info" href="news.html">资讯</a>
+        <a class="cell icon-user" href="user.html">我的</a>
+    </div>
+</div>
+
+<!-- 弹窗菜单 -->
+<div class="pop-menu">
+    <div class="pop-bg">
+        <div class="pop-up">
+            <div class="content">
+                <div class="row">
+                    <div class="col-4">
+                        <a class="cell" href="contract_lib.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon1">合同<br/>管理</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="order.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon2">订单<br/>管理</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="note_remark.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon3">相关<br/>服务</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="msg.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon4">在线<br/>缴费</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="coupon.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon5">优惠<br/>券包</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="upload_info.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon6">我要<br/>上传</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <i class="close-button"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗菜单 END-->
+
+
+
+<script src="js/page.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $('.public-tag-nav .cell').eq(1).addClass('on');//积分收入明细
+
+</script>
+
+</body>
+</html>

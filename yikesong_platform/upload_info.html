@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>一棵松</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords" content="一棵松">  
+    <meta name="description" content="一棵松">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile-select.css">
+
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+    <script src="js/layer/layer.js" type="text/javascript"></script>
+    <script src="js/jquery.form-verify.js" type="text/javascript"></script>
+    <script src="js/mobile-select.js" type="text/javascript"></script>
+</head>
+<body class="transfrom">
+
+<div class="header">
+    <div class="header-fixed">
+        <div class="fix-width">
+            <div class="row">
+                <div class="col-2">
+                    <a class="return-btn" onClick="javascript:history.back(-1);"></a>
+                </div>
+                <div class="col-8">
+                    <div class="title">我要上传</div>
+                </div>
+                <div class="col-2">
+                    <a href="msg.html">
+                        <div class="msg"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<form action="" method="" class="verify-form">
+    <div class="public-top upload-info">
+        <div class="fix-width">
+            <div class="line">
+                <div class="title">营业执照</div>
+                <div class="figure">
+                    <img class="figure-pic" id="figurePic" src="images/upload_pic.png">
+
+                    <!-- 如果未上传图片 -->
+                    <input type="file" id="uploadFigure" accept="image/jpeg,image/jpg,image/png" msgError="请选择您的营业执照图片"/>
+                </div>
+                
+                <!-- 如果已有图片 -->
+                <a href="" class="color-btn-min">删除图片</a>
+            </div>
+            <div class="line">
+                <div class="title">店铺模式</div>
+                <ul class="select-group">
+                    <li>
+                        <div class="item">店铺</div>
+                    </li>
+                    <li>
+                        <div class="item">资质</div>
+                    </li>
+                    <li>
+                        <div class="item">普通</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="line">
+                <div class="title">注册资金</div>
+                <ul class="select-group">
+                    <li>
+                        <div class="item">注册资金已到账</div>
+                    </li>
+                    <li>
+                        <div class="item">注册资金未到账</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="line">
+                <div class="title">规模形式</div>
+                <ul class="select-group">
+                    <li>
+                        <div class="item">小规模</div>
+                    </li>
+                    <li>
+                        <div class="item">一般规模</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="line">
+                <div class="title">注册日期</div>
+                <input type="text" name="" id="date" msgError="请填写您的注册日期">
+            </div>
+            <div class="line">
+                <div class="title">补充说明</div>
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="fix-width">
+        <input type="submit" value="确认上传" name="" class="color-btn">
+    </div>
+</form>
+
+
+
+<!-- 弹窗菜单 -->
+<div class="pop-menu">
+    <div class="pop-bg">
+        <div class="pop-up">
+            <div class="content">
+                <div class="row">
+                    <div class="col-4">
+                        <a class="cell" href="contract_lib.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon1">合同<br/>管理</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="order.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon2">订单<br/>管理</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="note_remark.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon3">相关<br/>服务</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="msg.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon4">在线<br/>缴费</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="coupon.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon5">优惠<br/>券包</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="cell" href="upload_info.html">
+                            <div class="letter">ANDU</div>
+                            <div class="title pop-icon6">我要<br/>上传</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <i class="close-button"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗菜单 END-->
+
+
+
+<script src="js/page.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(function(){ //打开页面默认选中第一个
+        for(var i=0; i<$('.select-group').size(); i++){
+            $('.select-group').eq(i).find('li').eq(0).addClass('on');
+        }
+    });
+    $('.select-group li').on('click',function(){//点击选中
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+    });
+
+    //选择身份证图片
+    $("#uploadFigure").on('change',function() {
+        var $file = $(this);
+        var fileObj = $file[0];
+        var windowURL = window.URL || window.webkitURL;
+        var dataURL;
+        var $img = $("#figurePic");
+        if (fileObj && fileObj.files && fileObj.files[0]) {
+            dataURL = windowURL.createObjectURL(fileObj.files[0]);
+            $img.attr("src",dataURL);
+        }
+    });
+
+    //表单验证
+    $('.verify-form').formVerify({
+        data:[
+            {id:"uploadFigure", check:"checkURL"},
+            {id:"date", check:"checkNull"},
+        ],
+        callback:function(){
+            //验证通过后执行的回调函数
+            // return false;
+
+            // $.ajax({
+            //     type:"POST",
+            //     url:"__URL__/checkNameAndPass",
+            //     async:false,
+            //     data:{"name":name,"pass":pass},
+            //     dataType:"JSON",
+            //     success:function(data){
+            //         switch(data.statue){
+            //             case "success":
+            //                 break;
+
+            //             default:
+            //                 layer.msg(data.msg);
+            //                 return false;
+            //         }
+            //     },
+            //     error:function(){
+            //         layer.msg("发生未知错误，请联系网站管理员");
+            //         return false;
+            //     }
+            // });
+            
+        }
+    });
+
+
+</script>
+
+</body>
+</html>

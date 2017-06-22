@@ -1,0 +1,343 @@
+
+.banner{
+  position: relative;
+  width: 1920;
+  height: 875px;
+  overflow: hidden;
+}
+
+.banner figure{
+  position: absolute;
+  z-index: 20;
+  top: 250px;
+  left: 670px;
+
+}
+
+
+.bannerIMG{
+  z-index:1; 
+}
+
+
+/*------------金融学院------------*/
+
+
+.institute{
+  padding-top: 55px;
+  padding-bottom: 65px;
+  width: 100%;
+  background: #eee;
+}
+
+.institute div{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.institute button{
+  margin-top: 40px;
+  width: 250px;
+  height: 50px;
+  background: #1a497d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+/*--------------信息---------------*/
+
+.information{
+  height: 565px;
+  width: 100%;
+  background:url(../images/banner1.jpg) no-repeat;
+  padding-top: 75px;
+}
+
+
+.informationBox{
+  width: 1050px;
+  margin: 0 auto;
+/*  background: pink;*/
+}
+
+.informationBox h2{
+  font-size: 28px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+
+.informationBox ul{
+  margin-top: 53px;
+}
+
+.informationBox li{
+  width: 492px;
+  height: 100px;
+  margin: 0 10px 35px;
+}
+
+
+.informationBox figure{
+  float: left;
+}
+
+
+.informationBox .infoDetail{
+  float: left;
+  width: 362px;
+  height: 70px;
+  background: rgba(247,247,247,0.9);
+  text-align: left;
+  padding: 15px;
+  overflow: hidden;
+}
+
+
+
+.informationBox h3{
+  width: 352px;
+  font-size: 14px;
+  color: #1a497d;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.informationBox p{
+  margin-top: 5px;
+  line-height: 22px;
+
+}
+
+.infoDetail .details{
+  height: 45px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.infoDetail .details a{
+    color: black;
+    transition:color 0.4s;
+}
+
+
+.infoDetail .details a:hover{
+    color: gray;
+}
+
+
+
+
+/*---------- 下载 ---------------*/
+
+.download{
+  padding: 75px 0;
+}
+
+.download .info{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.download button{
+  margin-top: 50px;
+  width: 250px;
+  height: 50px;
+  background: #1a497d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+
+/*------------ 视频 ------------*/
+
+.videoSection{
+  background: #f7f7f7;
+  width: 100%;
+  height: 560px;
+}
+
+
+.videoPart{
+  width: 1000px;
+  height: 490px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.videoSection h2{
+  color: #1a497d;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.videoBox{
+  width: 545px;
+  height: 340px;
+  float: left;
+}
+
+.otherVideoBox{
+  width: 444px;
+  height: 340px;
+  float: right;
+}
+
+.videoBar{
+  height: 168px;
+  background: orange;
+  margin-bottom: 5px;
+}
+
+
+.videoBar figure{
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 222px;
+  height: 168px;
+  overflow: hidden;
+
+}
+
+.videoBar figure img{
+  width: 222px;
+}
+
+.textBox{
+  float: left;
+  display: inline-block;
+  width: 222px;
+  height: 138px;
+  background: #1a497d;
+  padding-top: 30px;
+
+}
+
+.textBox h3{
+  width: 175px;
+  height: 45px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  color: white;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.textBox button{
+  font-size: 15px;
+  margin-top: 20px;
+  width: 135px;
+  height: 35px;
+  background: white;
+  color: #1a497d;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.ArrowLeft {
+    position:absolute; 
+    top: 40%;
+    right: 0;
+    z-index: 100;
+    width:0; 
+    height:0; 
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent; 
+    border-right:15px solid #1a497d; 
+}
+
+
+.ArrowRight {
+    position:absolute; 
+    top: 40%;
+    left: 0;
+    z-index: 100;
+    width:0; 
+    height:0; 
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent; 
+    border-left:15px solid #1a497d; 
+}
+
+
+
+
+
+
+/*--------------公司简介---------------*/
+
+.companyProfile{
+  padding-bottom: 50px;
+  background: url(../images/banner1.jpg) no-repeat;
+  background-position:center 44%;
+}
+
+
+.profile{
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+
+.companyProfile .info{
+  color: white;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.companyProfile button{
+  margin-top: 40px;
+  width: 250px;
+  height: 50px;
+  background: white;
+  color: #0051ab;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+
+
+/*----------座右铭--------------*/
+
+
+.motto{
+  height: 120px;
+  padding-top: 50px;
+}
+
+
+
+
+
+
