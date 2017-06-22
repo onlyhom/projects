@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*全局*/
+body,div,span,h1,h2,h3,h4,h5,h6,p,hr,dl,dt,dd,ul,ol,li,form,input,button,textarea,img,clear,span{ margin:0px;padding:0px;}
+/*body{margin:0px;padding:0px;overflow-x:hidden;font-family:"微软雅黑";font-size:14px;}*/	
+body{margin:0px;padding:0px;overflow-x:hidden;font-family:"Microsoft YaHei", Arial;font-size:14px;}	
+*{margin:0px; padding:0px;} 
+ul{ list-style:none;}
+li{ list-style:none;}
+ol{ list-style:none;}
+img{ border:0px; margin:0px;z-index:1;display: block;}
+input:focus{ outline:none;}
+a{text-decoration:none;border:0px;color:#666666;}
+a:hover{text-decoration:none;}
+.clear{clear:both;width:100%;font-size:0px;line-height:0px;padding:0px;margin:0px;}
+.left{float:left;}
+.right{float:right;}
+.jianju10px{width:100%;height:10px;margin:0px;padding:0px;}
+.jianju30px{width:100%;height:30px;margin:0px;padding:0px;}
+.jianju50px{width:100%;height:50px;margin:0px;padding:0px;}
+em, i, u{font-style:normal;}
+
+.clearfix:after {content: "";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix { display: inline-block; }
+.clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+
+
+/*nav*/
+.header { padding-top: 15px; }
+.header img {width: 465px;float: left;border: 0;}
+.nav1 {float: right;position: relative;z-index: 30;transition: all 500ms ease;-webkit-transition: all 500ms ease;-moz-transition: all 500ms ease;-o-transition: all 500ms ease;}
+.nav1height {height: 296px;transition: all 500ms ease;-webkit-transition: all 500ms ease;-moz-transition: all 500ms ease;-o-transition: all 500ms ease;}
+.nav1 li {float: left;font-size: 16px;line-height: 18px;color: #666;height: 39px;margin-top: 21px;position: relative;}
+.nav1 li a {/*font-weight: 600;*/text-decoration: none;display: block;text-align: center;white-space: nowrap;color: #666;padding-left: 15px;padding-right: 15px;border-right: 1px solid #ddd;line-height: 18px;}
+.nav1 li .bar {position: absolute;bottom: 0px;background: #004993;height: 2px;line-height: 0;overflow: hidden;filter: alpha(opacity=0);opacity: 0;width: 60%;left: 50%;margin-left: -30%;}
+.nav1 li a:hover, .nav1 li.on a { color: #004993; }
+.nav1 li:hover .bar, .nav1 li.on .bar {display: block;filter: alpha(opacity=100);opacity: 1;transition: all 500ms ease;-webkit-transition: all 500ms ease;-moz-transition: all 500ms ease;-o-transition: all 500ms ease;}
+.nav1 li div.pop {background: #FFF url(../images/nav-ling-2.jpg) no-repeat center top;width: 130px;height: 0px;overflow: hidden;position: absolute;top: 37px;left: -20%;transition: all 300ms ease;-webkit-transition: all 300ms ease;-moz-transition: all 300ms ease;-o-transition: all 300ms ease;}
+.nav1 li div.pop-one {width: 130px;margin-left: -177px}
+.nav1 li div.popshow {height: auto;transition: all 300ms ease;-webkit-transition: all 300ms ease;-moz-transition: all 300ms ease;-o-transition: all 300ms ease;}
+.nav1 li div.pop ul {padding-top: 10px;padding-bottom: 3px;height: auto;background: url(../images/xiala.png) no-repeat;}
+.nav1 li div.pop ul li {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 14px;color: #999;line-height: 32px;height: 32px;margin-top: 0;}
+.nav1 li div.pop-one ul li {float: left;width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 14px;color: #999;line-height: 35px;height: 35px;margin-top: 0;}
+.nav1 li div.pop ul li a {display: block;width: 130px;
+    text-decoration: none;text-align: center;white-space: nowrap;color: #999;padding-left: 0;padding-right: 0;border-right: none;line-height: 35px;vertical-align: bottom; }
+.nav1 li div.pop ul li a:hover {color: #666;background: #ddd;}
+/*nav_rolls*/
+.nav_rolls {float: right;position: relative;z-index: 30;transition: all 500ms ease;-webkit-transition: all 500ms ease;-moz-transition: all 500ms ease;-o-transition: all 500ms ease;}
+.nav_rolls li {float: left;font-size: 16px;line-height: 18px;color: #666;height: 39px;margin-top: 21px;position: relative;}
+.nav_rolls li a {text-decoration: none;display: block;text-align: center;white-space: nowrap;color: #666;padding-left: 15px;padding-right: 15px;border-right: 1px solid #ddd;line-height: 18px;}
+.nav_rolls li .bar {position: absolute;bottom: 0px;background: #004993;height: 2px;line-height: 0;overflow: hidden;filter: alpha(opacity=0);opacity: 0;width: 60%;left: 50%;margin-left: -30%;}
+.nav_rolls li a:hover, .nav1 li.on a { color: #004993; }
+.nav_rolls li:hover .bar, .nav1 li.on .bar {display: block;filter: alpha(opacity=100);opacity: 1;transition: all 500ms ease;-webkit-transition: all 500ms ease;-moz-transition: all 500ms ease;-o-transition: all 500ms ease;}
+.nav_rolls li div.pop {background: #FFF url(../images/nav-ling-2.jpg) no-repeat center top;width: 130px;height: 0px;overflow: hidden;position: absolute;top: 37px;left: -20%;transition: all 300ms ease;-webkit-transition: all 300ms ease;-moz-transition: all 300ms ease;-o-transition: all 300ms ease;}
+.nav_rolls li div.pop-one {width: 130px;margin-left: -177px}
+.nav_rolls li div.popshow {height:auto;transition: all 300ms ease;-webkit-transition: all 300ms ease;-moz-transition: all 300ms ease;-o-transition: all 300ms ease;}
+.nav_rolls li div.pop ul {padding-top: 10px;padding-bottom: 3px;height: auto;background: url(../images/xiala.png) no-repeat;}
+.nav_rolls li div.pop ul li {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 14px;color: #999;line-height: 32px;height: 32px;margin-top: 0;}
+.nav_rolls li div.pop-one ul li {float: left;width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 14px;color: #999;line-height: 35px;height: 35px;margin-top: 0;}
+.nav_rolls li div.pop ul li a {font-size: 14px;display: block;width: 130px;
+    text-decoration: none;text-align: center;white-space: nowrap;color: #999;padding-left: 0;padding-right: 0;border-right: none;line-height: 35px;vertical-align: bottom; }
+.nav_rolls li div.pop ul li a:hover {color: #666;background: #ddd;}
+
+/*导航*/
+.outside_1{width:100%;background:#fff;height:88px;}
+.header{height:68px;margin:0 auto;width:1200px;padding-top:20px;}
+.header .logo,.header .txt,.header .nav{float:left;height:88px;}
+.header .logo{width:191px;height:60px;}
+.header .txt{width:279px;height:50px;color:#019fbe;padding-top:10px;padding-left:10px;}
+.header .txt div{border-left:1px solid #cacaca;height:36px;padding-left:10px;position:relative;top:3px;}
+.header .txt div p{position:relative;top:-3px;}
+.header .nav{width:669px;height:30px;padding-top:30px;padding-left:50px;}
+.header .nav ul{position:absolute;}
+.header .nav ul li{float:left;}
+.header .nav ul li a{font-size:16px;color:#333;width:83px;display:inline-block;text-align:center;}
+
+.header .nav ul li .zixun{position:absolute;z-index:800;background:#fff url(../images/xiala.png) no-repeat;width:134px;padding-top:10px;top:36px;}
+.header .nav ul li .zixun li{clear:both;text-align:center;width:134px;height:30px;}
+.header .nav ul li .zixun li a{display:block;width:134px;height:30px;padding:0;line-height:30px;}
+.header .nav ul li .zixun li a:hover{display:block;width:134px;height:30px;background:#999;color:#fff;line-height:30px;}
+
+.header .nav ul li .about{position:absolute;z-index:500;}
+.header .nav ul li .about li{clear:both;}
+
+/*滚动导航*/
+.nav_rolls{display: none;width:100%;height:88px;z-index:9999;background:url(../images/nav_roll_bg.png) repeat-x;position:fixed;z-index:9999;}
+.nav_change{height:68px;margin:0 auto;width:1200px;padding-top:20px;}
+.nav_change .logo_roll,.nav_change .nav_roll,.nav_change .phone_roll{float:left;height:88px;}
+.nav_change .logo_roll{width:160px;}
+.nav_change .nav_roll{width:820px;/*padding-top:15px;*/padding-left:20px;}
+.nav_change .nav_roll ul li{float:left;}
+.nav_change .nav_roll ul li a{font-size:18px;color:#333;padding:0 15px;}
+.nav_change .phone_roll{width:200px;padding-top:10px;}
+
+/*侧导航*/
+.sideNav{ position:fixed; top:90%; right:3%; z-index:100; width:50px; height:152px; overflow:hidden;}
+.sideNav a{width:50px; height:50px; display:block; cursor:pointer;}
+.sideNav .phoneNumber{background:url(../images/spirit.png) no-repeat 0 0; }
+.sideNav .phoneNumber:hover{ background-position:-50px 0;}
+.sideNav .erweima{background:url(../images/spirit.png) no-repeat 0 -50px;}
+.sideNav .erweima:hover{ background-position:-50px -50px;}
+.sideNav .back{ background:url(../images/spirit.png) 0 -100px;}
+.sideNav .back:hover{ background-position:-50px -100px;}
+.hide{ display:none;}
+.weixin{ position:fixed; right:70px; top:45%; width:156px; height:158px; z-index:100;}
+.dianhua{ position:fixed; right:70px; top:50%; width:208px; height:62px; z-index:100;}
+
+
+.outside2{width:100%;z-index:15;}
+.banner{margin:0 auto;}
+.banner img{height: auto ;width:100% ;margin:0 auto ;}
+/*body:nth-of-type(1).banner img{height:100% !important;width:100% !important;margin:0 auto ;display:block;}*/
+
+/* 半透明的遮罩层 */
+.overlay {
+
+    background: #019fbe;
+    /*background:url(../images/sgw_bg.jpg) no-repeat left top #020000;*/
+    text-align: center;
+    filter: alpha(opacity=100); /* IE的透明度 */
+    -moz-opacity:1;
+    opacity: 1; /* 透明度 */
+    display: none;
+    position: relative;
+    /*top: -253px;*/
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100; /* 此处的图层要大于页面 */
+    display: none;
+}
+.overlay  h4{color:#fff;display:block; } /*实现IE文字不透明*/ 
+.overlay  p{color:#fff;display:block; } /*实现IE文字不透明*/ 
+
+/*底部*/
+.outside_12{width:100%;clear: both;background:#ebebeb;border-top:1px solid #e3e3e3; height: 135px; font-size: 14px; padding-top: 70px; }
+.footer{ margin:0 auto;width:1200px;}
+.footer ul li{float:left;/*height:125px;*/ }
+.footer ul li h3{font-size:20px;font-weight:300;margin:30px 0;}
+.footer ul a:hover{color:#019fbe;text-decoration:underline;}
+.footer ul .pengyou{ }
+.footer ul .pengyou a{color:#333; font-size: 14px; font-weight: bold; padding: 0 10px;}
+
+.footer ul .zhandian{width:82px;margin-left:65px;}
+.footer ul .zhandian p{font-size:20px;color:#333;line-height:30px;}
+.footer ul a{font-size:16px;color:#666;}
+
+.footer ul .dizhi{margin: 5px 50px 0 10px;}
+.footer ul .dizhi a{font-size:14px; color:#000; margin-right: 30px;}
+.footer ul .erweima{float:left; margin-left: 50px; position: relative; top: -10px;}
+.footer .buts{width:1200px;height:25px;color:#666;line-height:30px;margin-bottom:20px;float: left;text-align: center;}
+.footer .buts i{font-style: normal;}
+

@@ -1,0 +1,693 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*首页*/
+.outside{width:100%;background:#484848;height:48px;}
+.phone{height:30px;width:1200px;margin:0 auto;padding:9px 0;}
+.phone .pic{position:relative;top:5px;float:right;}
+.number{font-size:16px;font-weight:600;color:#fff;line-height:35px;margin-left:10px;float:right;}
+.serach{width:201px;height:29px;background:url(../images/serach.png) no-repeat;float:right;}
+.serach input{border:0;}
+.serach .text{background:#7a7a7a;height:28px;line-height:29px;margin-left:14px;width:145px;color:#fff;}
+.serach .but{position:absolute;background:url(../images/sousuo.png) no-repeat;width:29px;height:29px;cursor:pointer;top:13px;}
+.wenzi{float:right;font-size:14px;color:#fff;margin:0 10px;padding-top:2px;}
+.wenzi a{font-size:14px;color:#fff;padding:0 8px;line-height:30px;font-weight:300;}
+/*footer*/
+.outside_11{width:100%;background:#fff;height:100px;border-top:1px solid #e3e3e3;}
+.time{height:100px;margin:0 auto;width:1200px;}
+.time div{display:inline-block;height:66px;border-right:1px solid #dad9d9;margin-top:15px;float: left; }
+.time .fuwu1{padding-left:60px;width:190px;}
+.time .fuwu2{padding-left:30px;width:210px;}
+.time .fuwu3{padding-left:60px;width:180px;}
+.time .fuwu4{padding-left:60px;width:150px;}
+.time .fuwu5{padding-left:60px;width:170px;}
+.time .fuwu5 img{width:39px;height:37px;margin-top:10px;}
+.time div dl dt,.time a dl dd{float:left}
+.time div dl dt{font-size:48px;font-weight: 600;color:#666}
+.time div dl dd{position:relative;top:10px;left:10px;margin-left:15px;}
+.time div p {padding-left:4px }
+/*-----------------------------------黑色素瘤 -------------------------------------*/
+.bannerbg2{ width:100%; height:450px;background:url(../images/banner1.jpg) center no-repeat;}
+/*疾病简介*/
+.title_bg{ width:1200px;height:105px; position:relative; margin:0 auto;}
+.title1{ font-size:25px; position:absolute;top:25px;}
+.title1 a{color:#333333;}
+.Englishtitle{ position:absolute;top:67px;}
+.blue{ display:inline-block; position:absolute;top:95px;}
+.content1{ height:522px; position:relative;}
+.content1_bg{ width:1200px; margin:0 auto; height:522px;}
+.grayline{height:20px; border-bottom:1px solid #cccccc; position:absolute; top:50px;}
+.con{
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-right:150px;
+	position: relative;
+	cursor: pointer;
+	 margin-top:54px;
+     overflow:hidden;
+}
+.con img{
+	width:300px;
+	height: 300px;
+}
+.con2{
+	width: 300px;
+	height: 300px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	 margin-top:54px;
+     overflow:hidden;
+}
+.con2 img{
+	width:300px;
+	height: 300px;
+}
+.txt{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: #fff;
+	background: #030303;
+    opacity:0.6; 
+	filter: alpha(opacity=60); 
+	-moz-opacity:0.6;
+   -webkit-opacity:0.6;
+   height:42px;
+   padding:10px 0 0 0;
+    }
+.txt h3{width:272px; height:42px; border-bottom:1px solid #FFF; font-size:22px;margin:0 auto; text-align:center;}
+.txt p{font-size:18px;width:272px; margin:0 auto; padding-top:15px; text-indent:2em; text-align:justify;}
+/*美国最新疗法*/
+.conten2bg{ background: url(../images/content2_bg.png) repeat-x;width:100%; height:650px;position:relative;} 
+.content2_title{ position:absolute; width:725px; height:143px; top:165px; left:198px;}
+.content2_img{ display:inline-block; position:absolute;top:339px;}
+.content2_item1{ width:626px; height:178px; text-align:justify;color:#333333; line-height:30px; position:absolute; top:358px;left:573px; font-size:18px;}
+.content2_title2{ width:100px; height:30px;font-size:25px; color:#333333; position:absolute;top:651px;}
+.content_bg{ width:1200px;position:relative; margin:0 auto;}
+.grayline2{height:20px; border-bottom:1px solid #cccccc; width:100%; position:absolute;top:79px; left:0px;}
+.content2_item2{ width:1200px;height:455px; position:absolute;top:715px;}
+.tab1{height:460px;position:absolute;top:7px;}
+.tab1 .tab{overflow:hidden;}
+.tab1 .tab a{display:block;float:left;text-decoration:none;color:#333;width:187px; height:187px;border-radius:100%; margin-left:7px; text-align:center; line-height:187px; position: relative;}
+.tab1 .content{overflow:hidden;padding:10px;}
+.tab1 .content li{display:none; width:1200px; height:268px; position: relative;}
+.tab1 .content li p{ width:1140px; height:200px; position:absolute; top:100px; font-size:18px; text-align:justify; left:30px;}
+.tabbox .tab a:hover{background:#E64E3F;display:block;width:187px; height:187px;border-radius:100%}
+.tabbox .tab a.on{background:#E64E3F;color:#fff;text-decoration:none;}
+.txt-one{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:188px;
+	height:188px;
+	color: #fff;
+	background: #030303;
+    opacity:0.6; 
+	filter: alpha(opacity=60); 
+	-moz-opacity:0.6;
+   -webkit-opacity:0.6;
+   border-radius:100%;
+   display:none;
+}
+.txt-one1{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:188px;
+	height:94px;
+	color: #fff;
+	background: #030303;
+    opacity:0.6; 
+	filter: alpha(opacity=60); 
+	-moz-opacity:0.6;
+   -webkit-opacity:0.6;
+   border-radius:0 0 94px 94px;
+
+}
+.txt-one1 h3{ height:30px;width:188px; text-align:center;line-height:30px;padding-top:20px; }
+/*国内目前依然采用的治疗方法*/
+.content3{ height:702px; position:relative;}
+.content3_title1{ width:456px; height:28px; font-size:22px; color:#333333; position:absolute;top:132px;}
+.content3_title1 span{ color:#ff7e00; font-size:30px;}
+.content3_bg{width:1200px; margin:0 auto; height:702px;}
+.content3_item01{ width:288px;height:371px; float:left; margin-right:12px;}
+.content3_item01 p{ font-size:18px; color:#333333; margin-top:6px; line-height:35px; text-align:justify; padding:10px;}
+.content3_item1{ width:1200px;position:absolute;top:219px;}
+/*中美治疗对比*/
+.content4{height:auto; background:#f0f0f0; width:100%; position:relative;}
+.content4bg{ width:1200px; margin:0 auto;height:1846px; position:relative;}
+.content4_item1{ width:1222px; height:1664px; background:url(../images/hs89.png) no-repeat; position:absolute;top:122px;}
+.content4_title1{color:#01377f; font-size:25px; width:114px; height:32px; position:absolute;top:268px; left:420px;}
+.content4_title2{color:#de2810; font-size:25px; height:32px; position:absolute;top:395px; left:330px;}
+.content4_title3{color:#b510a0; font-size:25px; height:32px; position:absolute;top:500px; right:700px; }
+.content4_title4{color:#019fbe; font-size:25px; height:32px; position:absolute;top:832px;right:700px;}
+.content4_title5{color:#585858; font-size:25px; height:32px; position:absolute;top:1010px;right:720px;}
+.content4_title6{color:#585858; font-size:25px; height:32px; position:absolute;top:1100px;right:720px;}
+.content4_title7{color:#585858; font-size:25px; height:32px; position:absolute;top:1220px;right:720px;}
+.content4_title8{color:#585858; font-size:25px; height:32px; position:absolute;top:1315px;right:720px;}
+.content4_title9{color:#585858; font-size:25px; height:32px; position:absolute;top:1400px;right:720px;}
+.content4_title10{color:#585858; font-size:25px; height:32px; position:absolute;top:1495px;right:720px; text-align:center;}
+.content4_title11{color:#de2810; font-size:25px; height:32px; position:absolute;top:610px;right:320px; text-align:center;}
+.content4_title12{color:#b510a0; font-size:25px; height:32px; position:absolute;top:720px;right:370px; text-align:center;}
+.content4_title13{color:#01377f; font-size:25px; height:32px; position:absolute;top:940px;right:410px; text-align:center;}
+.content4_title14{color:#019fbe; font-size:25px; height:32px; position:absolute;top:1265px;right:285px; text-align:center;}
+/*中美临床实验差距*/
+.content5{ width:100%; height:1320px; position:relative;}
+.content5_bg{ width:1200px; margin:0 auto;height:1410px; position:relative;}
+.content5_item1{color:#333333; font-size:18px; height:26px; position:absolute; top:140px;}
+.content5_item2{ width:1146px; height:296px; background:url(../images/hs_03.png) no-repeat; margin:0 auto; 
+position:absolute; top:220px;}
+.content5_item2_t1{ width:493px; height:42px; background:#333; -webkit-opacity:0.8; -moz-opacity:0.8; opacity:0.8; 
+filter: alpha(opacity=80); position:absolute; left:0; bottom:0px; font-size:16px;text-align:center; line-height:42px; color:#FFF;}
+.content5_item2_t2{ width:493px; height:42px; background:#333; opacity:0.8; position:absolute; right:0;-webkit-opacity:0.8; -moz-opacity:0.8;bottom:0px;filter: alpha(opacity=80); font-size:16px;text-align:center; line-height:42px; color:#FFF;}
+.content5_item3{ width:1144px; height:573px; margin:0 auto; background:url(../images/hs33.png) no-repeat; position:absolute;
+top:519px;}
+.content5_item3_tt1{ width:564px; position:absolute;top:130px; left:0px; font-size:25px; color:#333333; }
+.content5_item3_tt2{ height:35px; position:absolute;top:210px; left:74px;top:213px;font-size:20px; color:#333333; }
+.content5_item3_tt3{  height:35px;position:absolute;top:130px; left:74px;top:522px;font-size:20px; color:#333333; }
+.content5_item3_tt4{  height:35px; position:absolute;top:130px; left:740px;top:522px;font-size:20px; color:#333333; }
+.content5_item4{ width:810px; height:130px; position:absolute; bottom:470px; left:0px;}
+.content5_item4 p{ font-size:18px; text-indent:2em; text-align:justify;}
+.content5_item5{ width:434px; height:120px; position:absolute; left:13px; bottom:170px; font-size:18px; text-align:justify;}
+.content5_item6{ width:434px; height:120px; position:absolute; right:126px; bottom:170px; font-size:18px; text-align:justify;}
+/*黑色素瘤推荐医院*/
+.content6bg{height:707px;background:url(../images/hs999.png) center no-repeat; margin:0 auto; position:relative;}
+.content6{ width:100%; position:relative;}
+.content6bg2{ width:1200px; margin:0 auto;}
+.content6_title{ font-size:25px; position:absolute;top:25px;}
+.content6_title a{color:#FFF;}
+.content6_item1{ width:1200px; margin:0 auto; position:absolute; top:200px;}
+.content6_item1 img{ display: inline-block; height:332px; float:left; margin-right:10px;}
+.content6_img{ display: inline-block; height:332px; float:left;}
+.content6_item1_title{width: 390px; height:50px;background: #030303; opacity:0.6; filter: alpha(opacity=60); -moz-opacity:0.6; -webkit-opacity:0.6; color:#FFF;font-size:20px; text-align:center; line-height:50px; position:absolute; bottom:0px; left:0px;}
+.con-two{
+	width: 390px;
+	height:332px;
+	float: left;
+	margin-right:15px;
+	position: relative;
+	cursor: pointer;
+}
+.con-two img{
+	width:390px;
+	height: 332px;
+}
+.con-two1{
+	width: 390px;
+	height:332px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+.con-two1 img{
+	width:390px;
+	height: 332px;
+}
+.txt-two{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height:272px;
+	padding-top:60px;
+	color: #fff;
+	background:#019fbe;
+	display: none;
+}
+.txt-two h3{
+	font-weight: normal;
+	width:294px;
+	height:62px;
+	 margin:0 auto;
+	 line-height:62px;
+	 text-align:center;
+	 font-size:25px;
+	 border:1px solid  #FFF; 
+}
+.txt-two p{
+	font-size: 18px;
+	display: block;
+	line-height: 20px;
+	width:294px;
+	margin:0 auto;
+	text-align:justify;
+	padding-top:20px;
+	text-indent:2em;
+	line-height:25px;	
+}
+.txt-two a {
+    color: #fff;
+}
+/*------------- 直接显示遮罩效果 结束------------------------------*/
+/*成功案例*/
+.content7{ width:100%;height:922px; position:relative;}
+.content7_bg{width:1200px; margin:0 auto; height:922px;position:relative;}
+.content7_item1{ width:1200px; height:280px; margin:0 auto; position:absolute; top:193px;}
+.content7_item1 dt{ height:31px; position:absolute; left:391px; font-size:22px;top:0px;}
+.content7_item1 dd{ width:806px; height:242px; position:absolute; left:391px; font-size:22px; bottom:0px; text-align:justify; color:#666666; font-size:18px;
+line-height:30px;}
+.content7_item2{ width:1200px; height:280px; margin:0 auto; position:absolute; top:587px;}
+.content7_item2 dt{ height:31px; position:absolute; left:391px; font-size:22px;top:0px;}
+.content7_item2 dd{ width:806px; height:242px; position:absolute; left:391px; font-size:22px; bottom:0px; text-align:justify; color:#666666; font-size:18px;
+line-height:30px;}
+/*相关阅读*/
+.content8{ width:100%; height:574px; position:relative;}
+.content8_bg{width:1200px; height:574px; position:relative; margin:0 auto;}
+.content8_number2{ width:97px; height:331px; position:absolute;top:186px; left:32px; background: url(../images/hs-65.png) no-repeat;}
+.content8_item1{ width:690px; position:absolute;top:200px; left:140px;}
+.content8_item1 li{ margin-bottom:56px;}
+.content8_item1 li a{ font-size:18px;color:#333333; cursor:pointer;}
+.content8_item1 li a:hover{ color:#019fbe;}
+.hs_sidenav{ width:107px; height:290px; background:url(../images/sw666.png) no-repeat; position:fixed; right:4px; top:200px;}
+.hs_sidenav_ft li a{ font-size:16px; color:#666666;cursor: pointer;}
+.hs_sidenav_ft li{ margin-bottom:33px;}
+.hs_sidenav_ft{ width:107px; height:417px; position: absolute; top:5px; left:4px;}
+.hs_sidenav_ft li a:hover{ color:#00b7ee;}
+/*---------------------------------视网膜母细胞瘤 -------------------------------------*/
+.bannerbg{ background:#000;width:100%; height:450px;}
+.bannerbg1{ width:100%; height:450px;background:url(../images/banner2.jpg) center no-repeat;}
+/*简介*/
+.sw_content1{background:#f0f0f0; height:448px; width:100%;}
+.sw_content1bg{ width:1200px; margin:0 auto; position:relative;}
+.sw_content1bg_title1{ width:225px; height:32px; margin:0 auto;padding-top:40px; font-size:25px; }
+.sw_content1bg_title1 a{color:#8b4584;}
+.sw_content1bg_eg{ width:139px; height:20px; margin:0 auto; margin-top:14px;}
+.sw_content1_line1{ width:84px; height:7px; background:#8b4584; margin:0 auto; margin-top:13px; }
+.sw_content1_p1{ height:16px; position:absolute;top:150px; left:398px; font-size:20px; color:#333333;}
+.sw_content1_p2{ height:16px; position:absolute;top:215px; left:398px; font-size:20px; color:#333333;}
+.sw_content1_imgborder{ width:367px; height:246px; padding:5px; position:absolute;top:144px; border:1px solid #d7d7d7;}
+/*视网膜母细胞瘤的病因*/
+.sw_content2{ width:1200px; margin:0 auto; position:relative; height:953px; }
+.sw_content1bg_title2{ width:250px; height:32px; margin:0 auto;padding-top:40px; font-size:25px;}
+.sw_content1bg_title2 a{color:#8b4584;}
+.sw_content1bg_eg2{ width:128px; height:19px; margin:0 auto; margin-top:14px;}
+.sw_content2_ct{width:1180px; position:absolute;top:165px; height:200px;padding:10px;}
+.sw_content2_item1{ width:569px; height:181px; float:left; text-align:justify; font-size:18px; margin-right:23px; line-height:33px; color:#333333;}
+.sw_content2_item2{ width:571px; height:188px; padding:5px; border:1px solid #d7d7d7; float:left;}
+.sw_content2_item3{ width:1200px; margin:0 auto; background:#303; height:584px; position:absolute; top:375px; background:url(../images/sw16.png) no-repeat;}
+.sw_content2_item4{ width:310px; height:32px; position:absolute; top:57px; font-size:20px;}
+.sw_content2_item5{width:250px; height:59px; text-align:center; font-size:18px; color:#b3d465; position:absolute; top:160px; left:205px; font-weight:bold;}
+.sw_content2_item6{ width:145px; height:47px; text-align:center;font-size:18px; color:#b3d465; position:absolute; top:108px; left:640px; color:#e1a4be; font-weight:bold;}
+.sw_content2_item7{ width:143px; height:42px; text-align:center;font-size:18px; color:#b3d465; position:absolute; top:293px; left:725px; color:#c87296;
+font-weight:bold;}
+.sw_content2_item8{ width:435px; height:40px; text-align:justify;font-size:18px; color:#b3d465; position:absolute; top:487px; left:770px; color:#44083e;}
+/*视网膜母细胞瘤的临床症状*/
+.sw_content3{ width:100%; height:686px; background:#f0f0f0; position: relative;}
+.sw_content1bg_title3{ width:403px;height:32px; margin:0 auto;padding-top:40px; font-size:25px;}
+.sw_content1bg_title3 a{color:#8b4584;}
+.sw_content1bg_eg3{ width:172px; height:19px; margin:0 auto; margin-top:14px;}
+.sw_content3_item1{ width:1200px; height:318px;margin:0 auto; margin-top:63px; position:relative;}
+.sw_content3_item2{ width:268px; height:318px; float:left; margin-right:42px;position:relative;}
+.sw_content3_item3{ width:268px; height:318px; float:left;position:relative;}
+.sw_content3_item2_title{width:268px; height:41px; line-height:41px; background:#333;position:absolute;top:187px;opacity:0.7; font-size:18px; color:#FFF;
+ filter: alpha(opacity=70); text-align:center;}
+.sw_content3_item2_ct{width:268px; height:50px;position:absolute;top:264px;font-size:18px; text-align:center;color:#333333;}
+.sw_content3_icon{ width:39px; height:42px; position:absolute;top:386px; left:580px;display:inline-block;}
+.sw_content3_ct2{ height:56px; position:absolute; right:0px;top:390px; font-size:18px; color:#44083e;}
+/*视网膜母细胞瘤是如何诊断*/
+.sw_content5_bg{ width:1200px; margin:0 auto; position:relative; height:1020px;}
+.sw_content4{ width:1200px; height:860px; margin:0 auto; position:relative; background:url(../images/sw26 .png) no-repeat;}
+.sw_content1bg_title4{ width:362px;height:32px; margin:0 auto;padding-top:40px; font-size:25px;}
+.sw_content1bg_title4 a{ color:#8b4584;}
+.sw_content4_title1{ font-size:22px; font-weight:bold; position:absolute; top:525px; left:345px; color:#FFF;}
+.sw_content4_title2{ font-size:22px; font-weight:bold; position:absolute; top:392px; left:498px; color:#FFF;}
+.sw_content4_title3{ font-size:22px;  position:absolute; top:228px; left:728px; color:#FFF; width:184px;
+height:93px; text-align:center;}
+.sw_content4_title4{ font-size:22px; font-weight:bold; position:absolute; top:520px; left:739px; color:#FFF;}
+.sw_content4_title5{ font-size:18px; font-weight:bold; position:absolute; top:455px; left:55px; color:#FFF; width:175px; height:81px; text-align:center;}
+.sw_content4_title5 a{ color:#FFF; cursor:pointer;}
+.sw_content4_title5 a:hover{ color:#d3a6cf;}
+.sw_content4_title6{ font-size:18px; font-weight:bold; position:absolute; top:730px; left:513px; color:#FFF; width:175px; height:81px; text-align:center;}
+.sw_content4_title6 a{ color:#FFF; cursor:pointer;}
+.sw_content4_title6 a:hover{ color:#d3a6cf;}
+.sw_content4_title7{ font-size:22px; font-weight:bold; position:absolute; top:390px; right:100px; color:#FFF;}
+.sw_content4_ct{ font-size:16px; position:absolute; right:0px; bottom:60px; color:#333333; width:361px;height:120px;
+ text-align: justify;}
+.sw_content5{ width:100%; background:#f0f0f0; height:1240px; position:relative;}
+.sw_content1bg_eg4{margin:0 auto; margin-top:14px; width:93px; height:18px;}
+.sw_content5_item1{ width:1200px;  margin:0 auto; margin-top:43px; font-size:20px; text-align:justify; line-height:35px;}
+.dl-1 {
+   float:left;
+   width:171px;
+   font-size:21px;
+}
+.dl-1 dd{
+   float:left;
+   width:170px;
+   height:107px;
+   background:#efbed3;
+   line-height:107px;
+   text-align:center;
+   color:#333333;
+   border-right:1px solid #fff;
+   border-bottom:2px solid #fff;
+   font-weight:bold;
+}
+.dl-1 dt{
+   float:left;
+   width:170px;
+   height:125px;
+   background:#f3d6e3;
+   line-height:115px;
+   text-align:center;
+   color:#333333;
+   border-right:1px solid #fff;
+   border-bottom:1px solid #fff;
+}
+.dl-2 {
+   float:left;
+   width:836px;
+   font-size:21px;
+}
+.dl-2 dd{
+   float:left;
+   width:836px;
+   height:107px;
+   background:#efbed3;
+   line-height:107px;
+   text-align:center;
+   color:#333333;
+   border-right:1px solid #fff;
+   border-bottom:2px solid #fff;
+   font-weight:bold;
+}
+.dl-2 dt{
+   float:left;
+   width:759px;
+   height:120px;
+   padding-left:77px;
+   background:#f3d6e3;
+   color:#333333;
+   border-right:1px solid #fff;
+   padding-top:5px;
+   border-bottom:1px solid #fff;
+}
+.sw_content5_item2{ width:1016px; margin:0 auto; position:relative;}
+.sw_content5_item3{ width:67px; height:32px; font-size:22px; position:absolute;top:40px; left:65px; color:#333333;}
+.sw_content5_item4{ width:67px; height:32px; font-size:22px; position:absolute;top:40px; left:496px;color:#333333;}
+.sw_content5_item5{ width:663px; height:450px; font-size:20px;color:#333333; position:absolute; left:250px;top:145px;}
+.sw_content5_item5 span{ padding-right:120px; font-size:22px;}
+.sw_content5_item5 li{ margin-bottom:69px;}
+.sw_content5_item6{ width:47px; height:449px; position:absolute; top:145px;left:65px; font-size:22px;color:#333333;}
+.sw_content5_item6 li{margin-bottom:69px;}
+.sw_content5_item7{ width:1030px; text-align:right; font-size:18px; color:#333333; padding-top:14px; margin:0 auto; font-weight:bold; float:right; margin-right:78px;}
+/*视网膜母细胞瘤的治疗有哪些？*/
+.sw_content6{ width:1200px; margin:0 auto; position:relative; height:3058px;}
+.sw_content6_title1{ width:115px; height:48px; position:absolute; left:0px; top:203px; font-size:25px; color:#333333; font-weight:bold;}
+.sw_content6_item1{ width:1200px; position:absolute;top:272px;}
+.sw_content6_item1 img{ display:inline-block; width:459px; height:189px; float:left;}
+.sw_content6_item1 p{ width:694px; height:142px; float:left; margin-left:20px; font-size:18px; line-height:35px;color:#666666; text-align:justify; 
+margin-top:5px;}
+.sw_content6_title2{ width:122px; height:36px;position:absolute; left:0px; top:564px; font-size:25px; color:#333333; font-weight:bold;}
+.sw_content6_item2{ width:1200px; height:222px; margin-top:86px;}
+.sw_content6_item2 img{ width:310px; height:220px; display:inline-block; float:left;}
+.sw_content6_item3{ width:1200px; position:absolute;top:565px;}
+.sw_content6_item2ct{ width:865px; height:220px; float:left; margin-left:20px;}
+.sw_content6_item2ct dt{ font-size:20px; color:#333333; font-weight:bold;}
+.sw_content6_item2ct dd{ font-size:16px; color:#666666; margin-top:24px; text-align:justify; line-height:25px;}
+.sw_content1bg_eg6{margin:0 auto; margin-top:14px; width:106px; height:17px;}
+/*推荐医院*/
+.sw_content1bg_eg7{margin:0 auto; margin-top:14px; width:86px; height:16px;}
+.sw_content7{ width:100%; background:#f0f0f0; /*height:910px;*/height: 910px;}
+.sw_content1bg_title5{ width:103px; height:32px; margin:0 auto;padding-top:40px; font-size:25px; z-index:-100;}
+.sw_content1bg_title5 a{color:#8b4584;}
+.sw_content7_item1{ width:1200px; margin:0 auto;margin-top:77px;}
+.sw_content7_item2{ width:583px; height:680px; float:left; margin-right:34px; position:relative;}
+.sw_content7_item2 p{ margin-top:50px; font-size:18px; color:#333333; text-align:justify;}
+.sw_content7_item3{ width:583px; height:680px; float:left;}
+.sw_content7_item3 p{ margin-top:50px; font-size:18px; color:#333333; text-align:justify;}
+.sw_more{ width:66px; height:16px; background:#c490bf; margin:0 auto; margin-top:20px; padding:12px 37px; color:#FFF;
+ position:relative; cursor:pointer;}
+.sw_more_icon{ width:16px; position:absolute; top:15px; right:20px;}
+.sw_more_ct{ width:400px; background:#d6a3d1; padding:10px; border:#CCC solid 1px; margin:0 auto; z-index:99;}
+.sw_more_ct li{ font-size:16px; color:#FFF; text-indent:2em; line-height:25px; text-align:justify; }
+.sw_more_ct01{ width:400px; background:#d6a3d1; padding:10px; border:#CCC solid 1px; margin:0 auto; z-index:99;}
+.sw_more_ct01 li{ font-size:16px; color:#FFF; text-indent:2em; line-height:25px; text-align:justify; }
+/*相关阅读*/
+.sw_content8{ width:1200px; height:633px; margin:0 auto; position:relative;}
+.sw_content1bg_eg8{margin:0 auto; margin-top:14px; width:168px; height:18px;}
+.sw_content1bg_eg5{margin:0 auto; margin-top:14px; width:75px; height:15px;}
+.sw_content8_number{ width:97px; height:331px; position:absolute;top:186px; left:32px; background:url(../images/sw99.png) no-repeat;
+z-index:-2000;}
+.sw_content8_item1{ width:690px; position:absolute;top:210px; left:140px;}
+.sw_content8_item1 li{ margin-bottom:41px;z-index:-2000;}
+.sw_content8_item1 li a{ font-size:18px;color:#333333; cursor:pointer;}
+.sw_content8_item1 li a:hover{color:#019fbe;}
+.sw_sidenav{ width:107px; height:230px; background:url(../images/sw666.png) no-repeat; position:fixed; right:5px; top:200px;}
+.sw_sidenav_ft li a{ font-size:16px; color:#666666;cursor: pointer;}
+.sw_sidenav_ft li{ margin-bottom:10px;}
+.sw_sidenav_ft{ width:81px; height:417px; position: absolute; top:5px; left:4px;}
+.sw_sidenav_ft li a:hover{ color:#8b4584;}
+/*------------------------------淋巴瘤---------------------------*/
+/*---------------------淋巴瘤简介------------------*/
+.lb_ct1{ width:1200px; height:95px; background:url(../images/lb_09.png) no-repeat; position:relative;}
+.lb_ct1 a{ position:absolute; font-size:30px; font-weight:bold; left:18px; color:#0a8e69; top:40px;}
+.lb_content1{ width:100%; height:447px; background:#f0f0f0;}
+.bannerbg3{ width:100%; height:494px; background:url(../images/lb-0.png) center no-repeat;}
+.lb_content1_bg{ width:1200px; margin:0 auto; height:460px; position:relative;}
+.lb_content1_title{ height:43px; position:absolute; top:47px; display:inline-block;}
+.lbltabbox{width:1200px;height:313px; position:absolute;top:100px;}
+.lbltabbox .tab{overflow:hidden;}
+.lbltabbox .tab a{display:block; width:114px; height:35px;float:left;text-decoration:none;color:#666666; 
+margin-right:25px;text-align:center; line-height:34px; font-size:18px; background:#e0e0e0;}
+.lbltabbox .tab a:hover{background:#34ba6f; color:#FFF;text-decoration:none;}
+.lbltabbox .tab a.on{background:#34ba6f; color:#FFF;text-decoration:none;}
+.lbltabbox .content{overflow:hidden;padding:35px 10px;}
+.lbltabbox .content li{display:none; position:relative;}
+.lbltabbox .content li p{ width:645px; position:absolute; top:30px; left:344px; font-size:18px; text-indent:2em; text-align:justify;}
+/*---------------------国内标准治疗------------------*/
+.lb_ct2 a{ position:absolute; font-size:30px; font-weight:bold; left:18px; color:#0a8e69; top:17px;}
+.lb_ct2{ width:1200px; height:75px; background: url(../images/lb_90_03.png) no-repeat; position:relative;}
+.lb_content2{ width:1200px;height:816px; position:relative; margin:0 auto;}
+.lb_content2_item1{ width:1200px; position:absolute;top:84px; font-size:18px;}
+.lb_content2_item2{ width:1200px; height:552px; background: url(../images/lb_14.png) no-repeat;position:absolute;top:158px; left:0px; }
+.lb_content2_t1{ height:85px;position:absolute;top:22px; left:93px;}
+.lb_content2_t1 li{ width:334px; height:85px; float:left; text-align:center; line-height:85px; font-size:20px; font-weight:bold;}
+.lb_content2_t2{ width:917px; height:42px;position:absolute; top:107px; right:108px;}
+.lb_content2_t21{ width:254px; height:43px;margin-right:86px; float:left; text-align:center; line-height:43px; font-size:18px;}
+.lb_content2_t20{height:43px; float:left;width:235px; line-height:43px;font-size:18px; text-align:center;}
+.lb_content2_t3{ width:917px; height:42px;position:absolute; top:149px; right:108px;}
+.lb_content2_t31{ width:254px; height:43px;margin-right:86px; float:left; text-align:center; line-height:43px; font-size:18px;}
+.lb_content2_t30{height:43px; float:left;width:235px; line-height:43px;font-size:18px; text-align:center;}
+.lb_content2_t4{ width:764px; height:46px;position:absolute; top:192px; right:180px;}
+.lb_content2_t41{ width:382px; float:left; line-height:46px; text-align:left; font-size:18px;}
+.lb_content2_t42{ width:382px; float:left;line-height:46px;text-align: right;font-size:18px;}
+.lb_content2_t5{ width:999px; height:69px;position:absolute;top:237px; left:95px;}
+.lb_content2_t5 li{ float:left;height:74px;width:333px; text-align:center; line-height:74px; font-size:20px; font-weight:bold;}
+.lb_content2_t6{ width:118px; height:40px; font-size:18px; position:absolute; top:317px; left:262px;}
+.lb_content2_t7{ width:266px; position:absolute; top:305px; left:512px;}
+.lb_content2_t7 li{ width:263px; height:47px; text-align:center; line-height:47px; font-size:18px;}
+.lb_content2_t8{width:266px; position:absolute; top:305px; right:105px;}
+.lb_content2_t8 li{ width:263px; height:47px; text-align:center; line-height:47px; font-size:18px;}
+.lb_content2_item3{ width:1002px;font-size:18px; position:absolute; bottom:30px; text-align:justify; left:92px;}
+/*---------------------国外最新疗法------------------*/
+.lb_ct3 a{ position:absolute; font-size:30px; font-weight:bold; left:18px; color:#0a8e69;top:44px;}
+.lb_ct3{ width:1200px; height:113px; background: url(../images/lb_9090_03.png) no-repeat; position:relative;}
+.lb_content3{ width:1200px; height:3586px; margin:0 auto; position:relative;}
+.lb_content3_item1{ width:1200px; height:52px; padding:0 0 0 18px; font-size:18px;}
+.lb_content3_item2{ width:1200px; padding:50px 0 0px 18px; font-size:20px; font-weight:bold;}
+.lb_content3_item3{ width:1206px; height:380px; background:url(../images/lb_09_03.png) no-repeat; position:relative;}
+.lb_content3_item3 span{ font-size:20px; color:#FFF; position:absolute;top:43px; left:18px; font-weight:bold;}
+.lb_content3_item3_ct{ width:1200px; height:190px;}
+.lb_content3_item3_11{ width:377px;float:left; height:199px; margin-right:34px;}
+.lb_content3_item3_tt{ width:377px; text-align:center; font-size:20px; padding-bottom:40px;}
+.lb_content3_item3_tt a{ color: black;}
+.lb_content3_item3_tt2 a{ color: black;}
+.lb_content3_item3_tt2{ width:377px; text-align:center; font-size:20px; padding-bottom:11px;}
+.lb_content3_item3_ct2{ width:377px; text-align:justify; font-size:18px; color:#666666;}
+.lb_content3_item3_ct2 span{ color:#34ba6f;}
+.lb_content3_item3_last{ width:377px;float:left; height:199px;}
+.lb_content3_item4{ width:1200px; height:566px; background: url(../images/lb_9090.png) no-repeat; position:relative;}
+.lb_content3_item4 span{ font-size:20px; position:absolute;top:48px; left:18px; color:#FFF; font-weight:bold;}
+.lb_content3_item3_ct1{width:1200px; height:190px; position:absolute;top:350px;}
+.lb_content3_item3_ct11{ width:377px;float:left; height:199px; margin-right:34px;}
+.lb_content3_item5{ width:1200px; height:72px; background:url(../images/lb_8989_03.png) no-repeat; position:relative;}
+.lb_content3_item5 span{ font-size:20px; color:#FFF; height:29px; position:absolute; top:7px; left:18px; font-weight:bold;}
+.lb_content3_item6{ width:1190px; height:251px; background:#e4e4e4; position:relative;margin-bottom:35px; padding:0 5px;}
+.lb_content3_item6 a{ color: black;}
+.lb_content3_item6_t1{ width:1200px; position:absolute; top:12px; font-size:20px; font-weight:bold;}
+.lb_content3_item6_t2{ width:1200px; position:absolute; top:83px; font-size:20px;font-weight:bold;}
+.lb_content3_item6_ct{ width:1200px; position:absolute; bottom:25px;}
+.lb_content3_li1{ width:570px; height:88px; float:left; font-size:20px; text-align: justify; margin-right:51px; }
+.lb_content3_li2{ width:570px; height:88px; float:left; font-size:20px; text-align: justify;}
+.lb_content3_item7{ width:1200px;font-size:20px;margin-top:47px; text-align:justify;}
+.lb_content3_item8{ width:1200px; height:72px; background:url(../images/lb_8989_03.png) no-repeat; position:relative; margin:115px 0 59px 0;}
+.lb_content3_item8 span{ font-size:20px; color:#FFF; height:29px; position:absolute; top:7px; left:18px; font-weight:bold;}
+.lb_content3_item9{ width:1200px; height:204px; position:relative; margin-bottom:60px;}
+.lb_content3_item9 dt{height:27px; font-size:20px; font-weight:bold; position:absolute; top:10px; left:330px;}
+.lb_content3_item9 dd{ width:860px; font-size:18px; color:#666666; text-align:justify; position:absolute;top:54px; left:330px; line-height:30px;}
+.lb_content3_item10{ width:1200px; height:72px; background:url(../images/lb_95.png) no-repeat; position:relative;
+ margin:100px 0 30px 0;}
+.lb_content3_item10 span{ font-size:20px; color:#FFF; height:29px; position:absolute; top:7px; left:18px; font-weight:bold;}
+/*---------------------临床实验------------------*/
+.lb_content4{ width:1200px; height:2788px;margin:0 auto; position:relative;}
+.lb_content4_ct4{ width:1200px; height:55px; background: url(../images/lb_56.png) no-repeat; position:relative;}
+.lb_content4_ct4 a{ position:absolute; font-size:30px; font-weight:bold; left:25px; color:#0a8e69;top:11px;}
+.lb_content4_item1{ width:1200px; height:67px; font-size:20px; position: absolute; top:83px; text-align:justify;}
+.lb_content4_item2{ width:1200px; height:67px; font-size:20px; position: absolute; top:197px;}
+.lb_content4_item3{ width:1200px; height:65px; position:absolute; top:200px; font-size:25px; color:#0e166b;top:564px;}
+.lb_content4_item4{ width:1200px; height:1217px;position:absolute; top:653px;}
+.lb_content4_item5{ width:1200px; height:240px;position:relative;}
+.lb_content4_item52{ width:1200px; height:266px;position:relative;}
+.lb_content4_item53{ width:1200px; height:217px;position:relative;}
+.lb_content4_item6{ width:1200px; height:23px; font-size:20px; position:absolute;top:5px; left:94px; font-weight:bold;}
+.lb_content4_item7{ width:1100px; height:85px; text-align:justify; font-size:18px; color:#666666; position:absolute;top:60px;
+ left:94px;}
+.lb_content4_item8{height:62px; position:absolute; top: 177px; left:94px; font-size: 18px;}
+.lb_content4_item80{height: 62px;position: absolute;top: 155px;left: 94px;font-size: 18px;}
+.lb_content4_item82{height:62px; position:absolute; top:174px; left:94px; font-size:18px;}
+.lb_content4_item83{height:62px; position:absolute; top:130px; left:94px; font-size:18px;}
+.lb_content4_item84{height:62px; position:absolute; top:105px; left:94px; font-size:18px;}
+.lb_content4_item84 span a{ color:#008aff;}
+.lb_content4_item83 span a{ color:#008aff;}
+.lb_content4_item82 span a{ color:#008aff;}
+.lb_content4_item8 span a{ color:#008aff;}
+.lb_content4_item82{height:62px; position:absolute; top:174px; left:94px; font-size:18px;}
+.lb_content4_item9{ width:1200px; height:43px; position:absolute; top:1615px; font-size:25px; color:#0e166b;}
+.lb_content4_item10{ width:1200px;position:absolute; top:1683px;}
+.lb_content4_item11{ width:1200px; height:343px; position:relative;}
+.lb_content4_item11_tt{ height:30px; position:absolute;top:12px; left:180px; font-size:20px;}
+.lb_content4_item11_ct{ height:197px; position:absolute; top:60px; font-size:18px; left:180px; line-height:30px;}
+.lb_content4_item11_ct a{ color:#0079f5;}
+/*---------------------成功案例------------------*/
+.lb_content5{ width:1200px; height:570px; margin:0 auto; position:relative;}
+.lb_content5_ct5{ width:1200px; height:55px; background:url(../images/lb23.png) no-repeat; position:relative;}
+.lb_content5_ct5 a{ position:absolute; font-size:30px; font-weight:bold; left:18px; color:#0a8e69;top:0px;}
+.lb_content5_item1{ height:323px; position:absolute;top:126px; width:1200px;}
+.lb_con{
+	width: 580px;
+	height: 323px;
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 15px;
+	position: relative;
+	cursor: pointer;
+	float:left;
+}
+.lb_title{ width:580px; height:40px;background: #030303; opacity:0.6; filter: alpha(opacity=60); -moz-opacity:0.6; -webkit-opacity:0.6; color:#FFF;
+font-size:20px; text-align:center; line-height:40px; position:absolute; bottom:0px;}
+.lb_con img{
+	width:580px;
+	height: 323px;
+}
+.lb_txt{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:550px;
+	height:293px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	background:#019fbe;
+	padding:15px;
+    display: none;
+}
+.lb_txt h3{font-size:20px; font-weight:bold; margin-top:30px;}
+.lb_txt p{
+	font-size:18px;
+	line-height:25px;
+	text-align:justify;
+	width:480px;
+	height:100px;
+	margin:0 auto;
+	padding-top:30px;
+	
+}
+.lb_more{ width:179px; height:38px; border:2px solid #FFF; margin:0 auto; text-align:center; line-height:38px; color:#FFF;
+margin-top:20px; font-size:18px; display:inline-block;}
+
+.lb_con2{
+	width: 580px;
+	height: 323px;
+	float: left;
+	margin-bottom: 15px;
+	position: relative;
+	cursor: pointer;
+	float:left;
+}
+.lb_con2 img{
+	width:580px;
+	height: 323px;
+}
+.lb_txt2{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:550px;
+	height:293px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	background:#019fbe;
+	padding:15px;
+    display: none;
+}
+.lb_txt2 h3{font-size:20px; font-weight:bold; margin-top:30px;}
+.lb_txt2 p{
+	font-size:18px;
+	line-height:25px;
+	text-align:justify;
+	width:480px;
+	height:100px;
+	margin:0 auto;
+	padding-top:30px;
+	
+}
+.lb_more2{ width:179px; height:38px; border:2px solid  #FFF; margin:0 auto; text-align:center; line-height:38px; color:#FFF;
+margin-top:20px; font-size:18px; display:inline-block;}
+
+/*---------------------推荐医院------------------*/
+.lb_content6{ width:1200px; height:709px; margin:0 auto;}
+.lb_content6_ct6{ width:1200px; height:55px; background:url(../images/lb24.png) no-repeat; position:relative;}
+.lb_content6_ct6 a{ position:absolute; font-size:30px; font-weight:bold; left:18px; color:#0a8e69;top:0px;}
+.lb_content6_item1{ width:1200px; height:454px; margin-top:60px;}
+.lb_content6_item2{ width:391px; height:455px; float:left; margin-right:13px;}
+.lb_content6_item2_tt{width:391px; height:65px; text-align:center; font-size:20px; font-weight:bold; line-height:65px;}
+.lb_content6_item2_ct{ font-size:18px; text-align:justify; position:relative; padding:10px; }
+.lb_content6_item2_ct span a{ color:#0a8e69; position:absolute; right:0px; }
+.lb_content6_item3{ width:391px; height:455px; float:left;}
+.lb_sidenav{ width:107px; height:290px; background:url(../images/sw666.png) no-repeat; position:fixed; right:4px; top:200px;}
+.lb_sidenav_ft li a{ font-size:16px; color:#666666;cursor: pointer;}
+.lb_sidenav_ft li{ margin-bottom:33px;}
+.lb_sidenav_ft{ width:107px; height:417px; position: absolute; top:5px; left:4px;}
+.lb_sidenav_ft li a:hover{ color:#34ba6f;}
+
+
+.lunbo {
+	   width:1200px;
+	   height:77px;
+	   margin:10px auto 20px auto;
+	   position:relative;
+       z-index:999;
+	   }
+   .banner-lun{
+	   float:left;
+	   width:1200px;
+	   height:77px;
+	   overflow:hidden;
+	   position:relative;
+       z-index:998;
+	   }
+   .banner-lun ul{
+	   float:left;
+	   width:1200px;
+	   position:absolute;
+       z-index:997;
+	   }
+    .banner-lun ul li{
+	   float:left;
+	   width:1200px;
+	   height:77px;
+	   }
+	.dian-lun{
+	   position:absolute;
+	   right:11px;
+	   bottom:-3px;
+       z-index:1000;
+	   }
+	.dian-lun b{float:left;width:21px;height:21px;margin:0;padding:0;background:url(../images/btn_main_img.png) no-repeat;display:block;}
+	.dian-lun b.on{background-position:0 -21px}
